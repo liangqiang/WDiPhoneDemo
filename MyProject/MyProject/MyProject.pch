@@ -1,0 +1,51 @@
+//
+//  MyProject.pch
+//  MyProject
+//
+//  Created by liangqiang on 15/10/22.
+//  Copyright (c) 2015年 liangqiang. All rights reserved.
+//
+
+#ifndef MyProject_MyProject_pch
+#define MyProject_MyProject_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "AJUtil.h"
+#import "AJDefine.h"
+
+#import "AJSectionItem.h"
+#import "AJTableView.h"
+#import "NSObject+AJViewModel.h"
+
+//AJAddition
+#import "AJViewCreator.h"
+#import "NSObject+AJAddition.h"
+#import "NSString+AJAddition.h"
+#import "UIView+AJAddition.h"
+#import "UIControl+AJAddition.h"
+#import "UILabel+AJAddition.h"
+#import "UIImage+AJAddition.h"
+#import "UIScrollView+AJAddition.h"
+
+#import "AJSettings.h"
+
+
+//服务
+#import "NSObject+AJProperty.h"
+#import "AJNavi.h"
+#import "UIViewController+AJNavi.h"
+
+#import "AJIconFontDef.h"
+#import "UIScrollView+AJRefresh.h"
+#import "AJUIDefine.h"
+#import "AJSettingsDefine.h"
+//#import "DMUICommon.h"
+
+//第三方库
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "MKNetworkKit.h"
+//#import "PureLayout.h"
+
+#endif
