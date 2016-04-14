@@ -8,10 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WDComplexViewModel : NSObject
-
-@property (nonatomic,assign) NSInteger pageIndex;
-@property (nonatomic,strong) NSMutableArray *sectionArray;
+@interface WDComplexViewModel : AJViewModel
 
 -(void)loadFirstPage;
 -(void)loadNextPage;

@@ -13,7 +13,7 @@
 
 -(instancetype)init{
     if (self=[super init]) {
-        _sectionArray = [NSMutableArray array];
+        self.sectionArray = [NSMutableArray array];
     }
     return self;
 }
@@ -52,7 +52,7 @@
     }
     self.pageIndex = index;
     
-    [self refresh];
+    [self notifyToRefresh];
 }
 
 -(NSString*)randomStringWithLen:(NSInteger)len{

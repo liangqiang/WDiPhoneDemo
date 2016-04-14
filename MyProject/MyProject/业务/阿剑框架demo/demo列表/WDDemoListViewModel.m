@@ -16,7 +16,7 @@
 @implementation WDDemoListViewModel
 -(instancetype)init{
     if (self=[super init]) {
-        _sectionArray = [NSMutableArray arrayWithObject:[AJSectionItem new]];
+        self.sectionArray = [NSMutableArray arrayWithObject:[AJSectionItem new]];
     }
     return self;
 }
@@ -29,7 +29,7 @@
     [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"弹出ActionSheet" selector:@selector(onActionSheetItemClicked)]];
     [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"复杂列表示例" selector:@selector(onComplexTableDemoClicked)]];
 
-    [self refresh];
+    [self notifyToRefresh];
 }
 
 -(void)onCellClicked:(NSIndexPath*)indexPath{
