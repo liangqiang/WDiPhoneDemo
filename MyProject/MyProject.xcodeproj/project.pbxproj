@@ -81,6 +81,11 @@
 		03FD93D91BDF5FEA00DCC673 /* AJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D41BDF5FEA00DCC673 /* AJRefreshHeaderView.m */; };
 		03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D61BDF5FEA00DCC673 /* AJRefreshFooterView.m */; };
 		03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */; };
+		AD9A66CB1CC0EB8C00B6A4E1 /* Y001ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A66C11CC0EB8C00B6A4E1 /* Y001ViewController.m */; };
+		AD9A66CC1CC0EB8C00B6A4E1 /* IphoneDemoListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A66C41CC0EB8C00B6A4E1 /* IphoneDemoListModel.m */; };
+		AD9A66CD1CC0EB8C00B6A4E1 /* IphoneDemoListTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A66C61CC0EB8C00B6A4E1 /* IphoneDemoListTableView.m */; };
+		AD9A66CE1CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A66C81CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.m */; };
+		AD9A66CF1CC0EB8C00B6A4E1 /* IphoneDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A66CA1CC0EB8C00B6A4E1 /* IphoneDemoListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -253,6 +258,16 @@
 		03FD93D71BDF5FEA00DCC673 /* AJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJRefreshHeaderView.h; sourceTree = "<group>"; };
 		03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJStatusBarDebugWindow.m; sourceTree = "<group>"; };
 		03FFBB5B1BDE2F65008B51E1 /* AJStatusBarDebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJStatusBarDebugWindow.h; sourceTree = "<group>"; };
+		AD9A66C01CC0EB8C00B6A4E1 /* Y001ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y001ViewController.h; sourceTree = "<group>"; };
+		AD9A66C11CC0EB8C00B6A4E1 /* Y001ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y001ViewController.m; sourceTree = "<group>"; };
+		AD9A66C31CC0EB8C00B6A4E1 /* IphoneDemoListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IphoneDemoListModel.h; sourceTree = "<group>"; };
+		AD9A66C41CC0EB8C00B6A4E1 /* IphoneDemoListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IphoneDemoListModel.m; sourceTree = "<group>"; };
+		AD9A66C51CC0EB8C00B6A4E1 /* IphoneDemoListTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IphoneDemoListTableView.h; sourceTree = "<group>"; };
+		AD9A66C61CC0EB8C00B6A4E1 /* IphoneDemoListTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IphoneDemoListTableView.m; sourceTree = "<group>"; };
+		AD9A66C71CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IphoneDemoListTableViewCell.h; sourceTree = "<group>"; };
+		AD9A66C81CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IphoneDemoListTableViewCell.m; sourceTree = "<group>"; };
+		AD9A66C91CC0EB8C00B6A4E1 /* IphoneDemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IphoneDemoListViewController.h; sourceTree = "<group>"; };
+		AD9A66CA1CC0EB8C00B6A4E1 /* IphoneDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IphoneDemoListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +353,7 @@
 		0303D6F01BD8C8CF0024399D /* 业务 */ = {
 			isa = PBXGroup;
 			children = (
+				AD9A66BE1CC0EB8C00B6A4E1 /* iPhone课件Demo */,
 				03479C181C844BE4008D943E /* 首页 */,
 				035C05EE1C856C8F00D050D1 /* 阿剑框架demo */,
 				035C05E71C8543B600D050D1 /* 调试 */,
@@ -774,6 +790,39 @@
 			path = "调试";
 			sourceTree = "<group>";
 		};
+		AD9A66BE1CC0EB8C00B6A4E1 /* iPhone课件Demo */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A66BF1CC0EB8C00B6A4E1 /* 001 */,
+				AD9A66C21CC0EB8C00B6A4E1 /* DemoList */,
+			);
+			path = "iPhone课件Demo";
+			sourceTree = "<group>";
+		};
+		AD9A66BF1CC0EB8C00B6A4E1 /* 001 */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A66C01CC0EB8C00B6A4E1 /* Y001ViewController.h */,
+				AD9A66C11CC0EB8C00B6A4E1 /* Y001ViewController.m */,
+			);
+			path = 001;
+			sourceTree = "<group>";
+		};
+		AD9A66C21CC0EB8C00B6A4E1 /* DemoList */ = {
+			isa = PBXGroup;
+			children = (
+				AD9A66C31CC0EB8C00B6A4E1 /* IphoneDemoListModel.h */,
+				AD9A66C41CC0EB8C00B6A4E1 /* IphoneDemoListModel.m */,
+				AD9A66C51CC0EB8C00B6A4E1 /* IphoneDemoListTableView.h */,
+				AD9A66C61CC0EB8C00B6A4E1 /* IphoneDemoListTableView.m */,
+				AD9A66C71CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.h */,
+				AD9A66C81CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.m */,
+				AD9A66C91CC0EB8C00B6A4E1 /* IphoneDemoListViewController.h */,
+				AD9A66CA1CC0EB8C00B6A4E1 /* IphoneDemoListViewController.m */,
+			);
+			path = DemoList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -917,9 +966,11 @@
 				03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,
 				03B761821C93AB2200297AC7 /* UIView+AJAddition.m in Sources */,
+				AD9A66CD1CC0EB8C00B6A4E1 /* IphoneDemoListTableView.m in Sources */,
 				03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */,
 				03B7617C1C93AB2200297AC7 /* NSObject+AJAddition.m in Sources */,
 				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
+				AD9A66CF1CC0EB8C00B6A4E1 /* IphoneDemoListViewController.m in Sources */,
 				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
@@ -929,6 +980,7 @@
 				03398BE41CBF492F000F3AA4 /* NSObject+AJPropertyCreator.m in Sources */,
 				03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */,
 				035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */,
+				AD9A66CB1CC0EB8C00B6A4E1 /* Y001ViewController.m in Sources */,
 				035C06391C86D10300D050D1 /* WDComplexViewController.m in Sources */,
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
@@ -941,7 +993,9 @@
 				035C063F1C86D21300D050D1 /* WDComplexTableView.m in Sources */,
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,
+				AD9A66CE1CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.m in Sources */,
 				03FA19711BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.m in Sources */,
+				AD9A66CC1CC0EB8C00B6A4E1 /* IphoneDemoListModel.m in Sources */,
 				03B761831C93AB2200297AC7 /* AJSectionItem.m in Sources */,
 				03398BE71CBF4948000F3AA4 /* AJViewModel.m in Sources */,
 			);
