@@ -811,16 +811,32 @@
 		AD9A66C21CC0EB8C00B6A4E1 /* DemoList */ = {
 			isa = PBXGroup;
 			children = (
+				AD9A66D11CC0ED1C00B6A4E1 /* model */,
+				AD9A66D01CC0ED1800B6A4E1 /* view */,
 				AD9A66C31CC0EB8C00B6A4E1 /* IphoneDemoListModel.h */,
 				AD9A66C41CC0EB8C00B6A4E1 /* IphoneDemoListModel.m */,
+			);
+			path = DemoList;
+			sourceTree = "<group>";
+		};
+		AD9A66D01CC0ED1800B6A4E1 /* view */ = {
+			isa = PBXGroup;
+			children = (
 				AD9A66C51CC0EB8C00B6A4E1 /* IphoneDemoListTableView.h */,
 				AD9A66C61CC0EB8C00B6A4E1 /* IphoneDemoListTableView.m */,
 				AD9A66C71CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.h */,
 				AD9A66C81CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		AD9A66D11CC0ED1C00B6A4E1 /* model */ = {
+			isa = PBXGroup;
+			children = (
 				AD9A66C91CC0EB8C00B6A4E1 /* IphoneDemoListViewController.h */,
 				AD9A66CA1CC0EB8C00B6A4E1 /* IphoneDemoListViewController.m */,
 			);
-			path = DemoList;
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
