@@ -34,7 +34,7 @@
     [AJUtil performSelector:item.selector onTarget:self];
 }
 -(void)on001Click{
-    [AJUtil toast:@"IphoneDemoClick"];
+    [AJUtil toast:@"Iphone001DemoClick"];
     [AJNavi pushViewController:@"Y001ViewController"];
 }
 
