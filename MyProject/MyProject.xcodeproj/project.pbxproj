@@ -29,6 +29,7 @@
 		03398C181CC216C1000F3AA4 /* Y000.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03398C171CC216C1000F3AA4 /* Y000.plist */; };
 		03398C1B1CC246A9000F3AA4 /* Y001ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398C1A1CC246A9000F3AA4 /* Y001ViewModel.m */; };
 		03398C1E1CC27298000F3AA4 /* Y002ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398C1D1CC27298000F3AA4 /* Y002ViewModel.m */; };
+		03398C211CC29111000F3AA4 /* Y003ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398C201CC29111000F3AA4 /* Y003ViewModel.m */; };
 		03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1A1C844CFF008D943E /* WDHomeViewController.m */; };
 		03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1D1C845CAE008D943E /* WDHomeViewModel.m */; };
 		035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05E91C85444800D050D1 /* WDDebugViewController.m */; };
@@ -152,6 +153,8 @@
 		03398C1A1CC246A9000F3AA4 /* Y001ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y001ViewModel.m; sourceTree = "<group>"; };
 		03398C1C1CC27298000F3AA4 /* Y002ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y002ViewModel.h; sourceTree = "<group>"; };
 		03398C1D1CC27298000F3AA4 /* Y002ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y002ViewModel.m; sourceTree = "<group>"; };
+		03398C1F1CC29111000F3AA4 /* Y003ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y003ViewModel.h; sourceTree = "<group>"; };
+		03398C201CC29111000F3AA4 /* Y003ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y003ViewModel.m; sourceTree = "<group>"; };
 		03479C191C844CFF008D943E /* WDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewController.h; sourceTree = "<group>"; };
 		03479C1A1C844CFF008D943E /* WDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHomeViewController.m; sourceTree = "<group>"; };
 		03479C1C1C845CAE008D943E /* WDHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewModel.h; sourceTree = "<group>"; };
@@ -508,6 +511,8 @@
 			children = (
 				03398C041CC1F6BA000F3AA4 /* Y003ViewController.h */,
 				03398C051CC1F6BA000F3AA4 /* Y003ViewController.m */,
+				03398C1F1CC29111000F3AA4 /* Y003ViewModel.h */,
+				03398C201CC29111000F3AA4 /* Y003ViewModel.m */,
 			);
 			path = "Y003 UITextField";
 			sourceTree = "<group>";
@@ -977,6 +982,7 @@
 				03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */,
 				03B761801C93AB2200297AC7 /* UILabel+AJAddition.m in Sources */,
 				035C05F21C8573FD00D050D1 /* WDDemoListViewController.m in Sources */,
+				03398C211CC29111000F3AA4 /* Y003ViewModel.m in Sources */,
 				035C063C1C86D1BB00D050D1 /* WDComplexViewModel.m in Sources */,
 				035C06211C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				03B7618A1C93AB2200297AC7 /* AJRefreshViewBase.m in Sources */,

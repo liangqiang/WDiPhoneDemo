@@ -16,17 +16,11 @@
 
 @implementation Y002ViewController
 
-
--(instancetype)init{
-    if (self=[super init]) {
-        self.title = @"Y002 UILabel";
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+ 
+    self.title = @"Y002 UILabel";
+
     self.scrollView = [self createScrollView];
     [self.view addSubview:self.scrollView];
     
@@ -55,7 +49,6 @@
         [self.scrollView addSection:section];
     }
 }
-
 
 //1、	单行文本，设置文字、字体、颜色、对齐，截取方式
 -(UILabel*)createLabelSingleLine{

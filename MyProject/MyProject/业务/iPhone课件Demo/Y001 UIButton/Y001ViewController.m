@@ -12,22 +12,15 @@
 @interface Y001ViewController ()
 @property (nonatomic,strong) Y001ViewModel *viewModel;
 @property (nonatomic,strong) UIScrollView *scrollView;
-
-@property BOOL isSelected;
 @end
 
 @implementation Y001ViewController
 
--(instancetype)init{
-    if (self=[super init]) {
-        self.title = @"Y001 UIButton";
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Y001 UIButton";
+
     self.scrollView = [self createScrollView];
     [self.view addSubview:self.scrollView];
 

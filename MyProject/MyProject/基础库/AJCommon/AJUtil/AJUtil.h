@@ -33,6 +33,9 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 +(NSDate*) dateFromString:(NSString*)date format:(NSString*)format;
 +(NSString*)stringFromDate:(NSDate*)date format:(NSString*)format;
 
++(void)textField:(UITextField*)textField limitMaxLength:(NSInteger)maxLength;
++(void)textView:(UITextView*)textView limitMaxLength:(NSInteger)maxLength;
+
 @end
 
 //------------------------------------------------------------------------------
