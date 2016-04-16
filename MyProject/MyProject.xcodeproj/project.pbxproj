@@ -87,6 +87,7 @@
 		AD9A66CE1CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A66C81CC0EB8C00B6A4E1 /* IphoneDemoListTableViewCell.m */; };
 		AD9A66CF1CC0EB8C00B6A4E1 /* IphoneDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9A66CA1CC0EB8C00B6A4E1 /* IphoneDemoListViewController.m */; };
 		ADA830491CC1D32000D0F5CC /* Y002ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA830481CC1D32000D0F5CC /* Y002ViewController.m */; };
+		ADA8304D1CC1D53000D0F5CC /* Y003ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA8304C1CC1D53000D0F5CC /* Y003ViewController.m */; };
 		ADD722211CC1CC7600B70F0A /* right1.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7221B1CC1CC7600B70F0A /* right1.png */; };
 		ADD722221CC1CC7600B70F0A /* right2.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7221C1CC1CC7600B70F0A /* right2.png */; };
 		ADD722231CC1CC7600B70F0A /* title1.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD7221D1CC1CC7600B70F0A /* title1.png */; };
@@ -277,6 +278,8 @@
 		AD9A66CA1CC0EB8C00B6A4E1 /* IphoneDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IphoneDemoListViewController.m; sourceTree = "<group>"; };
 		ADA830471CC1D32000D0F5CC /* Y002ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y002ViewController.h; path = 002/Y002ViewController.h; sourceTree = "<group>"; };
 		ADA830481CC1D32000D0F5CC /* Y002ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y002ViewController.m; path = 002/Y002ViewController.m; sourceTree = "<group>"; };
+		ADA8304B1CC1D53000D0F5CC /* Y003ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y003ViewController.h; path = 003/Y003ViewController.h; sourceTree = "<group>"; };
+		ADA8304C1CC1D53000D0F5CC /* Y003ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y003ViewController.m; path = 003/Y003ViewController.m; sourceTree = "<group>"; };
 		ADD7221B1CC1CC7600B70F0A /* right1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right1.png; sourceTree = "<group>"; };
 		ADD7221C1CC1CC7600B70F0A /* right2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right2.png; sourceTree = "<group>"; };
 		ADD7221D1CC1CC7600B70F0A /* title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title1.png; sourceTree = "<group>"; };
@@ -808,6 +811,7 @@
 		AD9A66BE1CC0EB8C00B6A4E1 /* iPhone课件Demo */ = {
 			isa = PBXGroup;
 			children = (
+				ADA8304A1CC1D52200D0F5CC /* 003 */,
 				ADA830461CC1D30C00D0F5CC /* 002 */,
 				AD9A66BF1CC0EB8C00B6A4E1 /* 001 */,
 				AD9A66C21CC0EB8C00B6A4E1 /* DemoList */,
@@ -863,6 +867,15 @@
 				ADA830481CC1D32000D0F5CC /* Y002ViewController.m */,
 			);
 			name = 002;
+			sourceTree = "<group>";
+		};
+		ADA8304A1CC1D52200D0F5CC /* 003 */ = {
+			isa = PBXGroup;
+			children = (
+				ADA8304B1CC1D53000D0F5CC /* Y003ViewController.h */,
+				ADA8304C1CC1D53000D0F5CC /* Y003ViewController.m */,
+			);
+			name = 003;
 			sourceTree = "<group>";
 		};
 		ADD7221A1CC1CC7600B70F0A /* Image */ = {
@@ -1046,6 +1059,7 @@
 				035C06391C86D10300D050D1 /* WDComplexViewController.m in Sources */,
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
+				ADA8304D1CC1D53000D0F5CC /* Y003ViewController.m in Sources */,
 				03B761871C93AB2200297AC7 /* AJSettings.m in Sources */,
 				03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */,
 				031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
