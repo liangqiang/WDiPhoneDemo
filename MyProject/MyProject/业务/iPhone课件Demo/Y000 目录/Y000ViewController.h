@@ -1,13 +1,13 @@
 //
-//  IphoneDemoListTableView.h
+//  IphoneDemoListViewController.h
 //  MyProject
 //
 //  Created by caoyang on 16/4/15.
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "AJTableView.h"
+#import <UIKit/UIKit.h>
 
-@interface IphoneDemoListTableView : AJTableView
+@interface Y000ViewController : UIViewController
 
 @end

@@ -8,8 +8,7 @@
 
 #import "AJViewModel.h"
 
-@interface IphoneDemoListModel : AJViewModel
-@property (nonatomic,strong) NSMutableArray *sectionArray; //AJSectionItem
+@interface Y000ViewModel : AJViewModel
 
 -(void)loadData;
 -(void)onCellClicked:(NSIndexPath*)indexPath;

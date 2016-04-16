@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IphoneDemoListTableViewCell : UITableViewCell
+@interface Y000TableViewCell : UITableViewCell
 
 @end

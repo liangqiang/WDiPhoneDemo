@@ -6,16 +6,16 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "IphoneDemoListViewController.h"
-#import "IphoneDemoListTableView.h"
-#import "IphoneDemoListModel.h"
+#import "Y000ViewController.h"
+#import "Y000TableView.h"
+#import "Y000ViewModel.h"
 
-@interface IphoneDemoListViewController ()
-@property (nonatomic,strong) IphoneDemoListModel *viewModel;
-@property (nonatomic,strong) IphoneDemoListTableView *tableView;
+@interface Y000ViewController ()
+@property (nonatomic,strong) Y000ViewModel *viewModel;
+@property (nonatomic,strong) Y000TableView *tableView;
 @end
 
-@implementation IphoneDemoListViewController
+@implementation Y000ViewController
 
 -(instancetype)init{
     if (self=[super init]) {
@@ -41,12 +41,6 @@
     }];
     
     self.tableView.sectionArray = self.viewModel.sectionArray;
-    [self.tableView setRefreshHeaderBlock:^{
-        [weakSelf.viewModel loadData];
-    }];
-    [self.tableView setRefreshFooterBlock:^{
-        [weakSelf.viewModel loadData];
-    }];
     [self.tableView setClickBlock:^(NSIndexPath *indexPath) {
         [weakSelf.viewModel onCellClicked:indexPath];
     }];

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "IphoneDemoListTableView.h"
+#import "Y000TableView.h"
 
-@implementation IphoneDemoListTableView
+@implementation Y000TableView
 
 #pragma mark - 设置cell类
 -(NSString*)cellIdentifier:(NSIndexPath*)indexPath{
@@ -16,7 +16,7 @@
 }
 
 -(void)registerCellClasses{
-    [self registerClass:NSClassFromString(@"IphoneDemoListTableViewCell") forCellReuseIdentifier:@"Cell"];
+    [self registerClass:NSClassFromString(@"Y000TableViewCell") forCellReuseIdentifier:@"Cell"];
 }
 
 #pragma mark - UITableViewDelegate

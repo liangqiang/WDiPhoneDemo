@@ -6,14 +6,13 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "IphoneDemoListTableViewCell.h"
-#import "WDButtonItem.h"
+#import "Y000TableViewCell.h"
 
-@interface IphoneDemoListTableViewCell ()
+@interface Y000TableViewCell ()
 @property (nonatomic,strong) UILabel *titleLabel;
 @end
 
-@implementation IphoneDemoListTableViewCell
+@implementation Y000TableViewCell
 
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
@@ -33,7 +32,7 @@
     [self.titleLabel layoutWithInsets:UIEdgeInsetsZero];
 }
 
--(void)updateWithItem:(WDButtonItem*)cellItem{
+-(void)updateWithItem:(AJNormalItem*)cellItem{
     self.titleLabel.text = cellItem.title;
 }
 

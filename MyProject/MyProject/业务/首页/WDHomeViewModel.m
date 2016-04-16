@@ -10,25 +10,18 @@
 
 @implementation WDHomeViewModel
 
--(void)loadData{
-    self.buttonArray = [NSMutableArray arrayWithArray:
-  @[
-    [WDButtonItem newWithTitle:@"阿剑框架功能Demo" selector:@selector(onFrameworkDemoClicked)],
-    [WDButtonItem newWithTitle:@"iPhone课件Demo" selector:@selector(onIphoneDemoClicked)]
-    ]];
+-(void)loadData
+{
+    NSArray *array = @[@[@"阿剑框架功能Demo", @"WDDemoListViewController"],
+                       @[@"iPhone课件Demo", @"Y000ViewController"]];
+    self.itemArray = [AJNormalItem createArray:array withType:@"PushVC"];
     
     [self notifyToRefresh];
 }
 
--(void)onFrameworkDemoClicked{
-    [AJUtil toast:@"onFrameworkDemoClicked"];
-    [AJNavi pushViewController:@"WDDemoListViewController"];
-    
-}
-
--(void)onIphoneDemoClicked{
-    [AJUtil toast:@"onIphoneDemoClicked"];
-    [AJNavi pushViewController:@"IphoneDemoListViewController"];
+-(void)onItemClicked:(AJNormalItem*)item
+{
+    [item pushViewController];
 }
 
 @end
