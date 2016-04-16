@@ -24,6 +24,7 @@
     
     [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"001" selector:@selector(on001Click)]];
     
+    [sectionItem.cellDataArray addObject:[WDButtonItem newWithTitle:@"002" selector:@selector(on002Click)]];
     
     [self notifyToRefresh];
 }
@@ -36,6 +37,11 @@
 -(void)on001Click{
     [AJUtil toast:@"Iphone001DemoClick"];
     [AJNavi pushViewController:@"Y001ViewController"];
+}
+
+-(void)on002Click{
+    [AJUtil toast:@"Iphone002DemoClick"];
+    [AJNavi pushViewController:@"Y002ViewController"];
 }
 
 
