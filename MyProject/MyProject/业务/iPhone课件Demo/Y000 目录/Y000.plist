@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Y001 UIButton</key>
+	<string>Y001ViewController</string>
+	<key>Y002 UILabel</key>
+	<string>Y002VIewController</string>
+	<key>Y003 UITextField</key>
+	<string>Y003ViewController</string>
+</dict>
+</plist>
