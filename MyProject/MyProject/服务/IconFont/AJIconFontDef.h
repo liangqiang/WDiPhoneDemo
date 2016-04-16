@@ -17,3 +17,10 @@
 
 #define AJIconFontWhiteBack                     AJIconFontMake(@"\U0000e618", 20, HEXCOLOR(0xffffff))
 #define AJIconFontWhiteBackSelected             AJIconFontMake(@"\U0000e618", 20, HEXCOLOR(0xa1dfec))
+
+
+#define AJIconFontSmile                       AJIconFontMake(@"\U0000e601", 36, HEXCOLOR(0x0066cc))
+#define AJIconFontSmileHL                     AJIconFontMake(@"\U0000e601", 36, HEXCOLOR(0x0088cc))
+
+#define AJIconFontUnselected                     AJIconFontMake(@"\U0000e667", 20, HEXCOLOR(0x0066cc))
+#define AJIconFontSelected                     AJIconFontMake(@"\U0000e666", 20, HEXCOLOR(0x0066cc))

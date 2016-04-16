@@ -1,0 +1,18 @@
+//
+//  Y001ViewModel.h
+//  MyProject
+//
+//  Created by liangqiang on 16/4/16.
+//  Copyright © 2016年 liangqiang. All rights reserved.
+//
+
+#import "AJViewModel.h"
+
+@interface Y001ViewModel : AJViewModel
+
+@property (nonatomic,strong) NSArray *buttonTypeArray;
+
+-(void)loadData;
+-(void)onButtonClicked:(UIButton*)button;
+
+@end

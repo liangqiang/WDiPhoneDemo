@@ -26,7 +26,7 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 
 +(NSInteger)tag:(NSString*)key;
 
-+(void)performSelector:(SEL)selector onTarget:(id)target;
++(id)performSelector:(SEL)selector onTarget:(id)target;
 
 +(void)runAfterDelay:(NSTimeInterval)delay block:(void(^)())block;
 

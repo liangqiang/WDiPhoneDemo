@@ -116,13 +116,15 @@ static NSMutableDictionary *s_tags = nil;
     return number;
 }
 
-+(void)performSelector:(SEL)selector onTarget:(id)target{
++(id)performSelector:(SEL)selector onTarget:(id)target{
     if ([target respondsToSelector:selector]){
-//            [target performSelector:callback withObject:nil];
+//        去警告：performSelector may cause a leak because its selector is unknown
+//        [target performSelector:selector];
         IMP imp = [target methodForSelector:selector];
-        void (*func)(id, SEL) = (void *)imp;
-        func(target, selector);
+        id (*func)(id, SEL) = (void *)imp;
+        return func(target, selector);
     }
+    return nil;
 }
 
 +(void)runAfterDelay:(NSTimeInterval)delay block:(void(^)())block{

@@ -7,8 +7,12 @@
 //
 
 #import "Y001ViewController.h"
+#import "Y001ViewModel.h"
 
 @interface Y001ViewController ()
+@property (nonatomic,strong) Y001ViewModel *viewModel;
+@property (nonatomic,strong) UIScrollView *scrollView;
+
 @property BOOL isSelected;
 @end
 
@@ -16,136 +20,175 @@
 
 -(instancetype)init{
     if (self=[super init]) {
-        self.title = @"Iphone课件001";
+        self.title = @"Y001 UIButton";
     }
     return self;
+}
+
+-(void)loadView{
+    [super loadView];
+    
+    self.scrollView = [self createScrollView];
+    [self.view addSubview:self.scrollView];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self NormalButton];
-    
-    [self StyleButton1];
-    
-    [self StyleButton2];
-    
-    [self StyleButton3];
+    WEAKSELF
+    self.viewModel = [self createViewModel];
+    [self.viewModel setRefreshBlock:^{
+        [weakSelf updateViews];
+    }];
+
+    [AJUtil runAfterDelay:0 block:^{
+        [weakSelf.viewModel loadData];
+    }];
 }
 
-//创建默认的文字button，响应点击事件
--(void)NormalButton{
-    
-    UIButton* normalBtn = [[UIButton alloc]init];
-    //设置按钮在手机上的位置
-    [normalBtn setFrame:CGRectMake(100, 60, 120, 44)];
-    //设置按钮的显示标签
-    [normalBtn setTitle:@"点我吧" forState:UIControlStateNormal];
-    //设置按钮的背景颜色
-    [normalBtn setBackgroundColor:[UIColor grayColor]];
-    //添加按钮的触摸事件(按钮按下)
-    [normalBtn addTarget:self action:@selector(ClickBtn:) forControlEvents:UIControlEventTouchUpInside];
-    //按钮添加到当前视图
-    [self.view addSubview:normalBtn];
-}
-
-//点击按钮触发的方法
--(void)ClickBtn:(id)sender{
-    [AJUtil toast:@"NormalClick"];
-}
-
-
-//不同状态（默认、选中、高亮、禁用）下，button的文字（字体颜色）、背景图（包括checkbox）
--(void)StyleButton1{
-    UIButton* normalBtn = [[UIButton alloc]init];
-    //设置按钮在手机上的位置
-    [normalBtn setFrame:CGRectMake(130, 150, 60, 62)];
-    
-    //设置字体大小
-    normalBtn.titleLabel.font = [UIFont systemFontOfSize:12.0f];
-    
-    //设置按钮的显示标签
-    [normalBtn setTitle:@"来点我" forState:UIControlStateNormal];
-    [normalBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [normalBtn setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-    [normalBtn setTitleColor:[UIColor greenColor] forState:UIControlStateSelected];
-    [normalBtn setTitleColor:[UIColor blueColor] forState:UIControlStateDisabled];
-    
-    //设置按钮背景图片
-    [normalBtn setBackgroundImage:[UIImage imageNamed:@"title1.png"] forState:UIControlStateNormal];
-    [normalBtn setBackgroundImage:[UIImage imageNamed:@"title2.png"] forState:UIControlStateHighlighted];
-    [normalBtn setBackgroundImage:[UIImage imageNamed:@"title3.png"] forState:UIControlStateSelected];
-    [normalBtn setBackgroundImage:[UIImage imageNamed:@"title4.png"] forState:UIControlStateDisabled];
-    
-    [normalBtn addTarget:self action:@selector(ClickBtn1:) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:normalBtn];
-}
-
--(void)ClickBtn1:(id)sender{
-    [AJUtil toast:@"StyleAClick"];
-}
-
--(void)StyleButton2{
-    _isSelected = NO;
-    
-    UIButton* normalBtn = [[UIButton alloc]init];
-    //设置按钮在手机上的位置
-    [normalBtn setFrame:CGRectMake(130, 220, 45, 45)];
-    
-    //setImage和setBackGroundImage区别：前不会拉伸，会做遮挡、后会拉伸，不会遮挡
-    [normalBtn setImage:[UIImage imageNamed:@"right1.png"] forState:UIControlStateNormal];
-    
-    [normalBtn addTarget:self action:@selector(ClickBtn2:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:normalBtn];
-}
-
--(void)ClickBtn2:(id)sender{
-    UIButton* normalBtn = (UIButton*)sender;
-    
-    if (_isSelected) {
-        _isSelected = NO;
-        [normalBtn setImage:[UIImage imageNamed:@"right1.png"] forState:UIControlStateNormal];
-        [AJUtil toast:@"remember password"];
-    }else{
-        _isSelected = YES;
-        [normalBtn setImage:[UIImage imageNamed:@"right2.png"] forState:UIControlStateNormal];
-        [AJUtil toast:@"unremember password"];
+-(void)updateViews{
+    [self.scrollView removeAllSections];
+    for (NSString *buttonType in self.viewModel.buttonTypeArray) {
+        UIView *section = [UIView newWith:[UIColor clearColor], nil];
+        section.size = CGSizeMake(self.scrollView.width, 64);
+        
+        NSString *selector = [NSString stringWithFormat:@"create%@", buttonType];
+        UIButton *button = [AJUtil performSelector:NSSelectorFromString(selector) onTarget:self];
+        [section addSubview:button];
+        [button layoutWithInsets:UIEdgeInsetsMake(EAuto, EAuto, EAuto, EAuto)]; // 定位
+        
+        [self.scrollView addSection:section];
     }
 }
 
-
-//带小图片的button，可以调整图片、文字位置
--(void)StyleButton3{
-    UIButton* theButton = [[UIButton alloc]initWithFrame:CGRectMake(50, 290, 220, 100)];
-    [theButton setBackgroundColor:[UIColor grayColor]];
+//1、	创建默认的文字button，响应点击事件
+-(UIButton*)createButtonSimple{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.size = CGSizeMake(self.scrollView.width - 100, 44);
     
-    NSString* str = @"中华人民共和国";
-    [theButton setTitle:str forState:UIControlStateNormal];
-    //文字
-    //上中下
-    theButton.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-    //左中右
-    theButton. contentHorizontalAlignment =UIControlContentHorizontalAlignmentCenter;
-    //上左下右
-    //theButton.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 20, 10);
+    //设置按钮的显示标签
+    [button setTitle:@"点我吧（无状态）" forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    button.titleLabel.font = kFont14;
     
-    //图标
-    [theButton setImage:[UIImage imageNamed:@"title4.png"] forState:UIControlStateNormal];
-    [theButton setImageEdgeInsets:UIEdgeInsetsMake(10, 10, 10, 65)];
+    //设置按钮的背景颜色
+    button.backgroundColor = kWhiteColor ;
     
-    [theButton addTarget:self action:@selector(ClickBtn3) forControlEvents:UIControlEventTouchUpInside];
+    //设置圆角，边线
+    button.layer.cornerRadius = 8;
+    button.layer.borderWidth = LINE_HEIGHT;
+    button.layer.borderColor = kLightGrayColor.CGColor;
+    button.clipsToBounds = YES;
     
-    [self.view addSubview:theButton];
+    //添加按钮的触摸事件(按钮按下)
+    [button addTarget:self action:@selector(onNormalButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
 }
 
--(void)ClickBtn3{
-    [AJUtil toast:@"ImageTextClick"];
+//点击按钮触发的方法
+-(void)onNormalButtonClicked:(id)sender{
+    [self.viewModel onButtonClicked:sender];
 }
 
+//2、	不同状态（默认、选中、高亮、禁用）下，button的文字（字体颜色）、背景图
+-(UIButton*)createButtonStates{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.size = CGSizeMake(self.scrollView.width - 100, 44);
+    
+    //设置按钮的显示标签
+    button.titleLabel.font = kFont14;
+    
+    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryLightColor forState:UIControlStateHighlighted];
+    [button setTitleColor:kLightGrayColor forState:UIControlStateDisabled];
+    
+    //设置按钮的背景颜色
+    [button setBackgroundImage:[UIImage newWithColor:kWhiteColor] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage newWithColor:kLightGrayColor] forState:UIControlStateHighlighted];
+    [button setBackgroundImage:[UIImage newWithColor:kGrayColor] forState:UIControlStateDisabled];
+    
+    //设置圆角，边线
+    button.layer.cornerRadius = 8;
+    button.layer.borderWidth = LINE_HEIGHT;
+    button.layer.borderColor = kLightGrayColor.CGColor;
+    button.clipsToBounds = YES;
+    
+    //添加按钮的触摸事件(按钮按下)
+    [button addTarget:self action:@selector(onNormalButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+-(UIButton*)createButtonHighlighted{
+    UIButton *button = [self createButtonStates];
+    [button setTitle:@"点我吧（有高亮状态）" forState:UIControlStateNormal];
+    return button;
+}
+
+-(UIButton*)createButtonDisabled{
+    UIButton *button = [self createButtonStates];
+    [button setTitle:@"点我吧（不可点）" forState:UIControlStateNormal];
+    button.enabled = NO;
+    return button;
+}
+
+//3、	checkbox样式，图片切换
+-(UIButton*)createButtonSelected{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.size = CGSizeMake(self.scrollView.width - 100, 44);
+    
+    [button setTitle:@"点我吧（选中）" forState:UIControlStateNormal];
+    button.titleLabel.font = kFont14;
+    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+
+    [button setImage:AJIconFontUnselected forState:UIControlStateNormal];
+    [button setImage:AJIconFontSelected forState:UIControlStateSelected];
+    
+    button.titleEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+    
+    [button handleEvent:UIControlEventTouchUpInside withBlock:^(UIControl *control) {
+        UIButton *btn = (UIButton*)control;
+        btn.selected = !btn.selected;
+    }];
+    
+    return button;
+}
+
+//4、	带小图片的button，可以调整图片、文字位置
+-(UIButton*)createButtonImage{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.size = CGSizeMake(self.scrollView.width - 100, 44);
+    
+    //设置按钮的显示标签
+    [button setTitle:@"点我吧（带图片）" forState:UIControlStateNormal];
+    button.titleLabel.font = kFont14;
+    
+    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryLightColor forState:UIControlStateHighlighted];
+    
+    //设置按钮的背景颜色
+    [button setBackgroundImage:[UIImage newWithColor:kWhiteColor] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage newWithColor:kLightGrayColor] forState:UIControlStateHighlighted];
+    
+    [button setImage:AJIconFontSmile forState:UIControlStateNormal];
+    [button setImage:AJIconFontSmileHL forState:UIControlStateHighlighted];
+    
+    button.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    button.contentHorizontalAlignment =UIControlContentHorizontalAlignmentLeft;
+    button.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 20);
+    button.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
+
+    //设置圆角，边线
+    button.layer.cornerRadius = 8;
+    button.layer.borderWidth = LINE_HEIGHT;
+    button.layer.borderColor = kLightGrayColor.CGColor;
+    button.clipsToBounds = YES;
+    
+    //添加按钮的触摸事件(按钮按下)
+    [button addTarget:self action:@selector(onNormalButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
 }
 
 @end
