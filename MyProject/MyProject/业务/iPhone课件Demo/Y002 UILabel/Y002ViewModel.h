@@ -1,5 +1,5 @@
 //
-//  Y001ViewModel.h
+//  Y002ViewModel.h
 //  MyProject
 //
 //  Created by liangqiang on 16/4/16.
@@ -8,11 +8,10 @@
 
 #import "AJViewModel.h"
 
-@interface Y001ViewModel : AJViewModel
+@interface Y002ViewModel : AJViewModel
 
 @property (nonatomic,strong) NSArray *viewTypeArray;
 
 -(void)loadData;
--(void)onButtonClicked:(UIButton*)button;
 
 @end

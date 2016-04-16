@@ -7,9 +7,11 @@
 //
 
 #import "Y002ViewController.h"
+#import "Y002ViewModel.h"
 
 @interface Y002ViewController ()
-
+@property (nonatomic,strong) Y002ViewModel *viewModel;
+@property (nonatomic,strong) UIScrollView *scrollView;
 @end
 
 @implementation Y002ViewController
@@ -17,7 +19,7 @@
 
 -(instancetype)init{
     if (self=[super init]) {
-        self.title = @"Iphone课件002";
+        self.title = @"Y002 UILabel";
     }
     return self;
 }
@@ -25,64 +27,110 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self LabelA];
-    [self LabelB];
+    self.scrollView = [self createScrollView];
+    [self.view addSubview:self.scrollView];
+    
+    WEAKSELF
+    self.viewModel = [self createViewModel];
+    [self.viewModel setRefreshBlock:^{
+        [weakSelf updateViews];
+    }];
+    
+    [AJUtil runAfterDelay:0 block:^{
+        [weakSelf.viewModel loadData];
+    }];
 }
 
-//单行文本，设置文字字体、颜色、对齐，截取方式
--(void)LabelA{
-    UILabel* firstLa = [[UILabel alloc]init];
-    firstLa.frame = CGRectMake(40, 100, 240, 30);
-    //背景颜色
-    firstLa.backgroundColor = [UIColor grayColor];
-    //显示文本
-    firstLa.text = @"中华人民共和国万岁,起来，起来，呜哈哈哈";
-    //字体颜色
-    firstLa.textColor = [UIColor orangeColor];
-    //字体大小
-    firstLa.font = [UIFont systemFontOfSize:15.0f];
-    //对齐方式
-    firstLa.textAlignment = NSTextAlignmentCenter;
-    
-    //超出label边界文字的截取方式
-    firstLa.lineBreakMode = UILineBreakModeTailTruncation;
-    
-    //截取方式有以下6种
-    //typedef enum {
-    // UILineBreakModeWordWrap = 0, 以空格为边界，保留整个单词
-    // UILineBreakModeCharacterWrap, 保留整个字符
-    // UILineBreakModeClip, 到边界为止
-    // UILineBreakModeHeadTruncation, 省略开始，以……代替
-    // UILineBreakModeTailTruncation, 省略结尾，以……代替
-    // UILineBreakModeMiddleTruncation,省略中间，以……代替，多行时作用于最后一行
-    //} UILineBreakMode;
-    
-    [self.view addSubview:firstLa];
-}
-
-//多行文本，计算大小
--(void)LabelB{
-    NSString* str = @"不管别人说的多么难听，现在我拥有的事情是你，我喜欢你是我独家记忆，有关于你绝口不提!";
-    UILabel* firstLa = [[UILabel alloc]init];
-    firstLa.backgroundColor = [UIColor grayColor];
-    
-    firstLa.text = str;
-    firstLa.numberOfLines = 0;
-    
-    UIFont *font = [UIFont fontWithName:@"Arial" size:14];
-    firstLa.font = font;
-    
-    CGSize size = CGSizeMake(160, CGFLOAT_MAX);
-    CGSize labelsize = [str sizeWithFont:font constrainedToSize:size lineBreakMode:firstLa.lineBreakMode];
-    firstLa.frame = CGRectMake(60, 200, 200, labelsize.height);
-    [self.view addSubview:firstLa];
+-(void)updateViews{
+    [self.scrollView removeAllSections];
+    for (NSString *viewType in self.viewModel.viewTypeArray) {
+        UIView *section = [UIView newWith:[UIColor clearColor], nil];
+        NSString *selector = [NSString stringWithFormat:@"create%@", viewType];
+        UIView *subview = [AJUtil performSelector:NSSelectorFromString(selector) onTarget:self];
+        
+        [section addSubview:subview];
+        section.size = CGSizeMake(self.scrollView.width, subview.height + 20);
+        [subview layoutWithInsets:UIEdgeInsetsMake(EAuto, EAuto, EAuto, EAuto)]; // 定位
+        
+        [self.scrollView addSection:section];
+    }
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+//1、	单行文本，设置文字、字体、颜色、对齐，截取方式
+-(UILabel*)createLabelSingleLine{
+    UILabel *label = [UILabel new];
+    label.size = CGSizeMake(200, 30);
+    label.text = @"单行（简单）";
+    label.font = kFont14;
+    return label;
 }
 
+//1、	单行文本，设置文字、字体、颜色、对齐，截取方式
+-(UILabel*)createLabelSingleLine2{
+    UILabel *label = [UILabel new];
+    label.size = CGSizeMake(self.view.width-30, 30);
+    label.text = @"单行（背景色、字体、颜色、居中）";
+    label.backgroundColor = kLightGrayColor;
+    label.font = kFont16B;
+    label.textColor = kPrimaryNormalColor;
+    label.textAlignment = NSTextAlignmentCenter;
+    
+    return label;
+}
+
+//1、	单行文本，设置文字、字体、颜色、对齐，截取方式
+-(UILabel*)createLabelSingleLine3{
+    UILabel *label = [UILabel new];
+    label.size = CGSizeMake(200, 30);
+    label.text = @"单行（超长截断）好长好长好长好长好长好长好长好长";
+    label.font = kFont14;
+    label.lineBreakMode = NSLineBreakByTruncatingTail;
+    return label;
+}
+
+//1、	单行文本，设置文字、字体、颜色、对齐，截取方式
+-(UILabel*)createLabelSingleLine4{
+    UILabel *label = [UILabel new];
+    label.size = CGSizeMake(100, 30);
+    label.text = @"单行（自动调整字体）";
+    label.font = kFont14;
+    label.adjustsFontSizeToFitWidth = YES;
+    return label;
+}
+
+//2、	多行文本，计算文本大小，改变文本框大小
+-(UILabel*)createLabelMultiLine1{
+    UILabel *label = [UILabel new];
+    label.size = CGSizeMake(200, 50);
+    label.text = @"2行（超长截断）好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长";
+    label.font = kFont14;
+    label.numberOfLines = 2;
+    label.lineBreakMode = NSLineBreakByTruncatingTail;
+    return label;
+}
+
+//2、	多行文本，计算文本大小，改变文本框大小
+-(UILabel*)createLabelMultiLine2{
+    UILabel *label = [UILabel new];
+    label.size = CGSizeMake(self.view.width-30, 99999);
+    label.text = @"多行（自适应）好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长";
+    label.font = kFont14;
+    label.numberOfLines = 0;
+    [label sizeToFit];
+    [label setCornerRadiusWith:@(2), @(LINE_HEIGHT), kBlackColor, nil];
+    return label;
+}
+
+//2、	多行文本，计算文本大小，改变文本框大小
+-(UILabel*)createLabelMultiLine3{
+    UILabel *label = [UILabel new];
+    label.text = @"多行（计算大小）好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长好长";
+    label.font = kFont14;
+    label.numberOfLines = 0;
+    [label setCornerRadiusWith:@(2), @(LINE_HEIGHT), kBlackColor, nil];
+    label.size = [label.text sizeWithFont:kFont14 fitWidth:150];
+    return label;
+}
 
 @end

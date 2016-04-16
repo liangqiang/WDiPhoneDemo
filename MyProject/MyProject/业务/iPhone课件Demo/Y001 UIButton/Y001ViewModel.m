@@ -11,8 +11,9 @@
 @implementation Y001ViewModel
 
 -(void)loadData{
-    NSArray *array = @[@"ButtonSimple", @"ButtonHighlighted", @"ButtonDisabled", @"ButtonSelected", @"ButtonImage"];
-    self.buttonTypeArray = [NSMutableArray arrayWithArray:array];
+    NSArray *array = @[@"ButtonSimple", @"ButtonHighlighted", @"ButtonDisabled",
+                       @"ButtonSelected", @"ButtonImage"];
+    self.viewTypeArray = [NSMutableArray arrayWithArray:array];
     
     [self notifyToRefresh];
 }

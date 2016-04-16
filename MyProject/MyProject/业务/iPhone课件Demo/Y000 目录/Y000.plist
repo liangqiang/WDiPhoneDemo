@@ -5,7 +5,7 @@
 	<key>Y001 UIButton</key>
 	<string>Y001ViewController</string>
 	<key>Y002 UILabel</key>
-	<string>Y002VIewController</string>
+	<string>Y002ViewController</string>
 	<key>Y003 UITextField</key>
 	<string>Y003ViewController</string>
 </dict>

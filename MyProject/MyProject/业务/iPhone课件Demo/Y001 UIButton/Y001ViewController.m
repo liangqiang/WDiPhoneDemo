@@ -25,16 +25,12 @@
     return self;
 }
 
--(void)loadView{
-    [super loadView];
-    
-    self.scrollView = [self createScrollView];
-    [self.view addSubview:self.scrollView];
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.scrollView = [self createScrollView];
+    [self.view addSubview:self.scrollView];
+
     WEAKSELF
     self.viewModel = [self createViewModel];
     [self.viewModel setRefreshBlock:^{
@@ -48,14 +44,14 @@
 
 -(void)updateViews{
     [self.scrollView removeAllSections];
-    for (NSString *buttonType in self.viewModel.buttonTypeArray) {
+    for (NSString *viewType in self.viewModel.viewTypeArray) {
         UIView *section = [UIView newWith:[UIColor clearColor], nil];
-        section.size = CGSizeMake(self.scrollView.width, 64);
+        NSString *selector = [NSString stringWithFormat:@"create%@", viewType];
+        UIView *subview = [AJUtil performSelector:NSSelectorFromString(selector) onTarget:self];
         
-        NSString *selector = [NSString stringWithFormat:@"create%@", buttonType];
-        UIButton *button = [AJUtil performSelector:NSSelectorFromString(selector) onTarget:self];
-        [section addSubview:button];
-        [button layoutWithInsets:UIEdgeInsetsMake(EAuto, EAuto, EAuto, EAuto)]; // 定位
+        [section addSubview:subview];
+        section.size = CGSizeMake(self.scrollView.width, subview.height + 20);
+        [subview layoutWithInsets:UIEdgeInsetsMake(EAuto, EAuto, EAuto, EAuto)]; // 定位
         
         [self.scrollView addSection:section];
     }

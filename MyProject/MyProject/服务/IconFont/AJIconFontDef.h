@@ -20,7 +20,7 @@
 
 
 #define AJIconFontSmile                       AJIconFontMake(@"\U0000e601", 36, HEXCOLOR(0x0066cc))
-#define AJIconFontSmileHL                     AJIconFontMake(@"\U0000e601", 36, HEXCOLOR(0x0088cc))
+#define AJIconFontSmileHL                     AJIconFontMake(@"\U0000e601", 36, HEXCOLOR(0xff88cc))
 
 #define AJIconFontUnselected                     AJIconFontMake(@"\U0000e667", 20, HEXCOLOR(0x0066cc))
 #define AJIconFontSelected                     AJIconFontMake(@"\U0000e666", 20, HEXCOLOR(0x0066cc))
