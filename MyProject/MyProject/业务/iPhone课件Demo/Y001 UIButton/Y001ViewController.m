@@ -50,6 +50,7 @@
     }
 }
 
+
 //1、	创建默认的文字button，响应点击事件
 -(UIButton*)createButtonSimple{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

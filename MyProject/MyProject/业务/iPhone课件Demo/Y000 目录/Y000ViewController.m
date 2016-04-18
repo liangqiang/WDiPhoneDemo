@@ -27,6 +27,7 @@
 -(void)loadView{
     [super loadView];
     
+    //createTableView用分类给NSObject添加方法创建表
     self.tableView = [self createTableView];
     [self.view addSubview:self.tableView];
 }
@@ -34,6 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //设置弱引用
     WEAKSELF
     self.viewModel = [self createViewModel];
     [self.viewModel setRefreshBlock:^{
