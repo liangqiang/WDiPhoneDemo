@@ -93,6 +93,8 @@
 		03FD93D91BDF5FEA00DCC673 /* AJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D41BDF5FEA00DCC673 /* AJRefreshHeaderView.m */; };
 		03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D61BDF5FEA00DCC673 /* AJRefreshFooterView.m */; };
 		03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */; };
+		AD5335E51CC5146F00F48FA7 /* Y004ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335E41CC5146F00F48FA7 /* Y004ViewController.m */; };
+		AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335E71CC514BA00F48FA7 /* Y004ViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -287,6 +289,10 @@
 		03FD93D71BDF5FEA00DCC673 /* AJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJRefreshHeaderView.h; sourceTree = "<group>"; };
 		03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJStatusBarDebugWindow.m; sourceTree = "<group>"; };
 		03FFBB5B1BDE2F65008B51E1 /* AJStatusBarDebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJStatusBarDebugWindow.h; sourceTree = "<group>"; };
+		AD5335E31CC5146F00F48FA7 /* Y004ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y004ViewController.h; path = "Y004 UIImageView/Y004ViewController.h"; sourceTree = "<group>"; };
+		AD5335E41CC5146F00F48FA7 /* Y004ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y004ViewController.m; path = "Y004 UIImageView/Y004ViewController.m"; sourceTree = "<group>"; };
+		AD5335E61CC514BA00F48FA7 /* Y004ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y004ViewModel.h; path = "Y004 UIImageView/Y004ViewModel.h"; sourceTree = "<group>"; };
+		AD5335E71CC514BA00F48FA7 /* Y004ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y004ViewModel.m; path = "Y004 UIImageView/Y004ViewModel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -834,6 +840,17 @@
 			path = "调试";
 			sourceTree = "<group>";
 		};
+		AD5335E21CC5142200F48FA7 /* Y004 UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				AD5335E31CC5146F00F48FA7 /* Y004ViewController.h */,
+				AD5335E41CC5146F00F48FA7 /* Y004ViewController.m */,
+				AD5335E61CC514BA00F48FA7 /* Y004ViewModel.h */,
+				AD5335E71CC514BA00F48FA7 /* Y004ViewModel.m */,
+			);
+			name = "Y004 UIImageView";
+			sourceTree = "<group>";
+		};
 		AD9A66BE1CC0EB8C00B6A4E1 /* iPhone课件Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -841,6 +858,7 @@
 				03398BF61CC1F6BA000F3AA4 /* Y001 UIButton */,
 				03398C001CC1F6BA000F3AA4 /* Y002 UILabel */,
 				03398C031CC1F6BA000F3AA4 /* Y003 UITextField */,
+				AD5335E21CC5142200F48FA7 /* Y004 UIImageView */,
 				03398BEB1CC1EE19000F3AA4 /* 问题讨论.md */,
 			);
 			path = "iPhone课件Demo";
@@ -992,6 +1010,7 @@
 				03B7617E1C93AB2200297AC7 /* UIControl+AJAddition.m in Sources */,
 				03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */,
 				03B761811C93AB2200297AC7 /* UIScrollView+AJAddition.m in Sources */,
+				AD5335E51CC5146F00F48FA7 /* Y004ViewController.m in Sources */,
 				03FA195B1BEB2D2A00DD1DAC /* MKNetworkRequest.m in Sources */,
 				03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,
@@ -1012,6 +1031,7 @@
 				035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */,
 				03398C101CC1F6BA000F3AA4 /* Y001ViewController.m in Sources */,
 				035C06391C86D10300D050D1 /* WDComplexViewController.m in Sources */,
+				AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */,
 				03398C121CC1F6BA000F3AA4 /* Y003ViewController.m in Sources */,
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
