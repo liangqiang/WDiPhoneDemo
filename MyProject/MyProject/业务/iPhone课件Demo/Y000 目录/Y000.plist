@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Y006 UISiwtch</key>
+	<string>Y006ViewController</string>
 	<key>Y005 UITextView</key>
 	<string>Y005ViewController</string>
 	<key>Y004 UIImageView</key>
