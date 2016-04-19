@@ -95,6 +95,8 @@
 		03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */; };
 		AD5335E51CC5146F00F48FA7 /* Y004ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335E41CC5146F00F48FA7 /* Y004ViewController.m */; };
 		AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335E71CC514BA00F48FA7 /* Y004ViewModel.m */; };
+		AD5335EF1CC5E55F00F48FA7 /* Y005ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */; };
+		AD5335F21CC5E59D00F48FA7 /* Y005ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -293,6 +295,10 @@
 		AD5335E41CC5146F00F48FA7 /* Y004ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y004ViewController.m; path = "Y004 UIImageView/Y004ViewController.m"; sourceTree = "<group>"; };
 		AD5335E61CC514BA00F48FA7 /* Y004ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y004ViewModel.h; path = "Y004 UIImageView/Y004ViewModel.h"; sourceTree = "<group>"; };
 		AD5335E71CC514BA00F48FA7 /* Y004ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y004ViewModel.m; path = "Y004 UIImageView/Y004ViewModel.m"; sourceTree = "<group>"; };
+		AD5335ED1CC5E55F00F48FA7 /* Y005ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y005ViewController.h; path = "Y005 UITextView/Y005ViewController.h"; sourceTree = "<group>"; };
+		AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y005ViewController.m; path = "Y005 UITextView/Y005ViewController.m"; sourceTree = "<group>"; };
+		AD5335F01CC5E59D00F48FA7 /* Y005ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y005ViewModel.h; path = "Y005 UITextView/Y005ViewModel.h"; sourceTree = "<group>"; };
+		AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y005ViewModel.m; path = "Y005 UITextView/Y005ViewModel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -851,6 +857,17 @@
 			name = "Y004 UIImageView";
 			sourceTree = "<group>";
 		};
+		AD5335E91CC5E4ED00F48FA7 /* Y005 UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				AD5335ED1CC5E55F00F48FA7 /* Y005ViewController.h */,
+				AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */,
+				AD5335F01CC5E59D00F48FA7 /* Y005ViewModel.h */,
+				AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */,
+			);
+			name = "Y005 UITextView";
+			sourceTree = "<group>";
+		};
 		AD9A66BE1CC0EB8C00B6A4E1 /* iPhone课件Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -859,6 +876,7 @@
 				03398C001CC1F6BA000F3AA4 /* Y002 UILabel */,
 				03398C031CC1F6BA000F3AA4 /* Y003 UITextField */,
 				AD5335E21CC5142200F48FA7 /* Y004 UIImageView */,
+				AD5335E91CC5E4ED00F48FA7 /* Y005 UITextView */,
 				03398BEB1CC1EE19000F3AA4 /* 问题讨论.md */,
 			);
 			path = "iPhone课件Demo";
@@ -996,6 +1014,7 @@
 				03B7618B1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m in Sources */,
 				03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */,
 				035C061F1C859FC100D050D1 /* ALView+PureLayout.m in Sources */,
+				AD5335F21CC5E59D00F48FA7 /* Y005ViewModel.m in Sources */,
 				03B7617D1C93AB2200297AC7 /* NSString+AJAddition.m in Sources */,
 				03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */,
 				03B761801C93AB2200297AC7 /* UILabel+AJAddition.m in Sources */,
@@ -1041,6 +1060,7 @@
 				035C05FB1C857A2200D050D1 /* WDDemoListTableViewCell.m in Sources */,
 				03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */,
 				035C06421C86D25700D050D1 /* WDComplexATableViewCell.m in Sources */,
+				AD5335EF1CC5E55F00F48FA7 /* Y005ViewController.m in Sources */,
 				035C063F1C86D21300D050D1 /* WDComplexTableView.m in Sources */,
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,
