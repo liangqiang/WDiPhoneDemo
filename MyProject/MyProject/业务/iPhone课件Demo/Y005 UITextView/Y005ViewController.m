@@ -79,6 +79,7 @@
 
 //多行文本框、字体大小、字体颜色、键盘类型、键盘返回样式、用户交互、滚动、键盘退出。
 -(UITextView*)createTextViewMessage{
+    
     UITextView *textView = [UITextView new];
     textView.size = CGSizeMake(self.view.width-30, 100);
     textView.font = kFont14;
@@ -111,8 +112,9 @@
 }
 
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
-    if(textView.text.length>=80){
-        textView.text = [textView.text substringToIndex:40];
+    if(textView.text.length>=5){
+        self.viewModel.message = textView.text;
+        textView.text = [self.viewModel checkMessage];
     }
     return YES;
 }

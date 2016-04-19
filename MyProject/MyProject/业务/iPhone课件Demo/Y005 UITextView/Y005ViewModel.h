@@ -15,6 +15,7 @@
 
 -(void)loadData;
 -(BOOL)checkValid;
+-(NSString*)checkMessage;
 -(void)submit;
 
 @end

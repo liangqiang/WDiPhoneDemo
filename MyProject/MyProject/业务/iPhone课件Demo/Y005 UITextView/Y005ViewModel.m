@@ -27,6 +27,12 @@
         return YES;
     }
 }
+
+-(NSString*)checkMessage{
+    self.message = [self.message substringToIndex:4];
+    return self.message;
+}
+
 -(NSString*)messageCheckValid{
     if (self.message.length == 0) {
         return @"请输入提交信息";
