@@ -39,6 +39,9 @@
     [self.scrollView removeAllSections];
     
     for (NSString *viewType in self.viewModel.viewTypeArray) {
+        UIView *hintSection = [self createHintSectionWithViewType:viewType];
+        [self.scrollView addSection:hintSection];
+        
         UIView *section = [UIView newWith:[UIColor clearColor], nil];
         NSString *selector = [NSString stringWithFormat:@"create%@", viewType];
         UIView *subview = [AJUtil performSelector:NSSelectorFromString(selector) onTarget:self];
@@ -50,15 +53,33 @@
         [self.scrollView addSection:section];
     }
 }
+-(UIView*)createHintSectionWithViewType:(NSString*)viewType{
+    NSDictionary *dict = @{@"ImageViewSimple": @"显示图片，缩放（原比例）",
+                           @"ImageViewTouch": @"点击事件（手势）",
+                           @"ImageViewGif":@"gif动画"
+                           };
+    NSString *hint = [dict safeObjectFortKey:viewType];
+    
+    UILabel *label = [UILabel newWith: kFont12, kLightBlackColor, hint, nil];
+    [label sizeToFit];
+    
+    UIView *section = [UIView newWith:[UIColor clearColor], nil];
+    [section addSubview:label];
+    section.size = CGSizeMake(self.scrollView.width, label.height + 10);
+    [label layoutWithInsets:UIEdgeInsetsMake(EAuto, 15, EAuto, EAuto)]; // 定位
+    
+    return section;
+}
 
-//显示图片，缩放（充满）
+//显示图片，缩放（原比例）
 -(UIImageView*)createImageViewSimple{
     UIImageView *imageView = [UIImageView new];
     
     imageView.size = CGSizeMake(self.scrollView.width - 200, 44);
     
-    [imageView setImage:AJIconFontSmile];
+    imageView.backgroundColor = kLightGrayColor;
     
+    [imageView setImage:AJIconFontSmile];
     //设置图片原比例展示
     [imageView setContentMode:UIViewContentModeScaleAspectFit];
     
@@ -73,7 +94,7 @@
     [imageViewTouch setImage:AJIconFontSelected];
     
     //设置空间的背景颜色
-    imageViewTouch.backgroundColor = kLightGrayColor ;
+    imageViewTouch.backgroundColor = kLightGrayColor;
     
     //用户交互、设置单击、注册点击事件
     imageViewTouch.userInteractionEnabled=YES;

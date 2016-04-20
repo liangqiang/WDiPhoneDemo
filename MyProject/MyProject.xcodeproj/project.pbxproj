@@ -95,6 +95,8 @@
 		03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */; };
 		AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD264D741CC68996006CA205 /* Y006ViewController.m */; };
 		AD264D781CC689B9006CA205 /* Y006ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD264D771CC689B9006CA205 /* Y006ViewModel.m */; };
+		AD264D7C1CC72F6C006CA205 /* Y007ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD264D7B1CC72F6C006CA205 /* Y007ViewController.m */; };
+		AD264D7F1CC72F8A006CA205 /* Y007ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD264D7E1CC72F8A006CA205 /* Y007ViewModel.m */; };
 		AD5335E51CC5146F00F48FA7 /* Y004ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335E41CC5146F00F48FA7 /* Y004ViewController.m */; };
 		AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335E71CC514BA00F48FA7 /* Y004ViewModel.m */; };
 		AD5335EF1CC5E55F00F48FA7 /* Y005ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */; };
@@ -297,6 +299,10 @@
 		AD264D741CC68996006CA205 /* Y006ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y006ViewController.m; path = "Y006 UISwitch/Y006ViewController.m"; sourceTree = "<group>"; };
 		AD264D761CC689B9006CA205 /* Y006ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y006ViewModel.h; path = "Y006 UISwitch/Y006ViewModel.h"; sourceTree = "<group>"; };
 		AD264D771CC689B9006CA205 /* Y006ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y006ViewModel.m; path = "Y006 UISwitch/Y006ViewModel.m"; sourceTree = "<group>"; };
+		AD264D7A1CC72F6C006CA205 /* Y007ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y007ViewController.h; path = "Y007 UISlider/Y007ViewController.h"; sourceTree = "<group>"; };
+		AD264D7B1CC72F6C006CA205 /* Y007ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y007ViewController.m; path = "Y007 UISlider/Y007ViewController.m"; sourceTree = "<group>"; };
+		AD264D7D1CC72F8A006CA205 /* Y007ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y007ViewModel.h; path = "Y007 UISlider/Y007ViewModel.h"; sourceTree = "<group>"; };
+		AD264D7E1CC72F8A006CA205 /* Y007ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y007ViewModel.m; path = "Y007 UISlider/Y007ViewModel.m"; sourceTree = "<group>"; };
 		AD5335E31CC5146F00F48FA7 /* Y004ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y004ViewController.h; path = "Y004 UIImageView/Y004ViewController.h"; sourceTree = "<group>"; };
 		AD5335E41CC5146F00F48FA7 /* Y004ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y004ViewController.m; path = "Y004 UIImageView/Y004ViewController.m"; sourceTree = "<group>"; };
 		AD5335E61CC514BA00F48FA7 /* Y004ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y004ViewModel.h; path = "Y004 UIImageView/Y004ViewModel.h"; sourceTree = "<group>"; };
@@ -863,6 +869,17 @@
 			name = "Y006 UISwitch";
 			sourceTree = "<group>";
 		};
+		AD264D791CC72F06006CA205 /* Y007 UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				AD264D7A1CC72F6C006CA205 /* Y007ViewController.h */,
+				AD264D7B1CC72F6C006CA205 /* Y007ViewController.m */,
+				AD264D7D1CC72F8A006CA205 /* Y007ViewModel.h */,
+				AD264D7E1CC72F8A006CA205 /* Y007ViewModel.m */,
+			);
+			name = "Y007 UISlider";
+			sourceTree = "<group>";
+		};
 		AD5335E21CC5142200F48FA7 /* Y004 UIImageView */ = {
 			isa = PBXGroup;
 			children = (
@@ -895,6 +912,7 @@
 				AD5335E21CC5142200F48FA7 /* Y004 UIImageView */,
 				AD5335E91CC5E4ED00F48FA7 /* Y005 UITextView */,
 				AD264D6F1CC6891F006CA205 /* Y006 UISwitch */,
+				AD264D791CC72F06006CA205 /* Y007 UISlider */,
 				03398BEB1CC1EE19000F3AA4 /* 问题讨论.md */,
 			);
 			path = "iPhone课件Demo";
@@ -1024,11 +1042,13 @@
 				03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */,
 				03B7617F1C93AB2200297AC7 /* UIImage+AJAddition.m in Sources */,
 				03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */,
+				AD264D7F1CC72F8A006CA205 /* Y007ViewModel.m in Sources */,
 				03398C161CC2004B000F3AA4 /* AJNormalItem.m in Sources */,
 				03FA19591BEB2D2A00DD1DAC /* MKCache.m in Sources */,
 				03B761861C93AB2200297AC7 /* AJColorManager.m in Sources */,
 				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
 				03FA19701BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m in Sources */,
+				AD264D7C1CC72F6C006CA205 /* Y007ViewController.m in Sources */,
 				03B7618B1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m in Sources */,
 				03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */,
 				035C061F1C859FC100D050D1 /* ALView+PureLayout.m in Sources */,

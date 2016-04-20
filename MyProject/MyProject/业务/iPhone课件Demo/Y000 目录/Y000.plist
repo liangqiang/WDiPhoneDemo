@@ -2,17 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Y006 UISiwtch</key>
-	<string>Y006ViewController</string>
-	<key>Y005 UITextView</key>
-	<string>Y005ViewController</string>
-	<key>Y004 UIImageView</key>
-	<string>Y004ViewController</string>
 	<key>Y001 UIButton</key>
 	<string>Y001ViewController</string>
 	<key>Y002 UILabel</key>
 	<string>Y002ViewController</string>
 	<key>Y003 UITextField</key>
 	<string>Y003ViewController</string>
+	<key>Y004 UIImageView</key>
+	<string>Y004ViewController</string>
+	<key>Y005 UITextView</key>
+	<string>Y005ViewController</string>
+	<key>Y006 UISiwtch</key>
+	<string>Y006ViewController</string>
+	<key>Y007 UISlider</key>
+	<string>Y007ViewController</string>
 </dict>
 </plist>

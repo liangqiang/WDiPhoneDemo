@@ -11,7 +11,7 @@
 @implementation Y006ViewModel
 
 -(void)loadData{
-    NSArray *array = @[@"SwitchNormal",@"SwitchNormal1"];
+    NSArray *array = @[@"SwitchNormal",@"SwitchNormal1",@"SwitchColor"];
     
     self.viewTypeArray = [NSMutableArray arrayWithArray:array];
     

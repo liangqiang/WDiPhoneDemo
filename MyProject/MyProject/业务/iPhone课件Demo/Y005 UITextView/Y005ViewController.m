@@ -77,7 +77,7 @@
     return section;
 }
 
-//多行文本框、字体大小、字体颜色、键盘类型、键盘返回样式、用户交互、滚动、键盘退出。
+//多行文本框、字体大小、键盘类型、键盘返回样式、用户交互、滚动、键盘退出。
 -(UITextView*)createTextViewMessage{
     
     UITextView *textView = [UITextView new];
@@ -92,7 +92,7 @@
     return textView;
 }
 
-//多行文本框、字体大小、字体颜色、键盘类型、键盘返回样式、用户交互、滚动、键盘退出。
+//多行文本框、字体大小、键盘类型、键盘返回样式、用户交互、滚动、键盘退出。
 -(UITextView*)createTextViewMessage2{
     UITextView *textView = [UITextView new];
     textView.size = CGSizeMake(self.view.width-30, 100);
