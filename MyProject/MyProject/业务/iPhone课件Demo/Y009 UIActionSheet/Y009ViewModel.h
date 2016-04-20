@@ -10,4 +10,11 @@
 
 @interface Y009ViewModel : AJViewModel
 
+@property(nonatomic,strong) NSArray *viewTypeArray;
+@property(nonatomic,strong) NSString *enjoyMessage;
+
+-(void)loadData;
+
+-(void)submit;
+
 @end

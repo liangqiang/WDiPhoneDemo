@@ -10,4 +10,16 @@
 
 @implementation Y009ViewModel
 
+-(void)loadData{
+    NSArray *array = @[@"ActionSheetNormal"];
+    
+    self.viewTypeArray = [NSMutableArray arrayWithArray:array];
+    
+    [self notifyToRefresh];
+}
+
+-(void)submit{
+    [AJUtil toast:self.enjoyMessage];
+}
+
 @end
