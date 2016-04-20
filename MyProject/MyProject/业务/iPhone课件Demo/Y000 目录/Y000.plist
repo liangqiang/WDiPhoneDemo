@@ -16,5 +16,11 @@
 	<string>Y006ViewController</string>
 	<key>Y007 UISlider</key>
 	<string>Y007ViewController</string>
+	<key>Y008 UIAlertView</key>
+	<string>Y008ViewController</string>
+	<key>Y009 UIActionSheet</key>
+	<string>Y009ViewController</string>
+	<key>Y010 UIDatePicker</key>
+	<string>Y010ViewController</string>
 </dict>
 </plist>
