@@ -47,16 +47,28 @@ static NSMutableDictionary *s_tags = nil;
 }
 
 +(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJActionSheetClickBlock)block{
-    UIActionSheet *as = [UIActionSheet new];
-    //    as.title = [NSString stringWithFormat:@"%@(DEBUG)", title];
-    as.title = title;
+    UIActionSheet *actionSheet = [UIActionSheet new];
+    actionSheet.title = title;
     for (NSString* button in buttons) {
-        [as addButtonWithTitle:button];
+        [actionSheet addButtonWithTitle:button];
     }
-    as.cancelButtonIndex = buttons.count-1; //最后一个是取消
-    [as setClickBlock:block];
-    [as showInView:mainWindow()];
-    return as;
+    actionSheet.cancelButtonIndex = buttons.count-1; //最后一个是取消
+    [actionSheet setClickBlock:block];
+    [actionSheet showInView:mainWindow()];
+    return actionSheet;
+}
+
++(id)alert:(NSString*)message buttons:(NSArray*)buttons block:(AJAlertViewClickBlock)block{
+    UIAlertView *alert = [UIAlertView new];
+    alert.title = nil;
+    alert.message = message;
+    for (NSString* button in buttons) {
+        [alert addButtonWithTitle:button];
+    }
+    alert.cancelButtonIndex = buttons.count-1; //最后一个是取消
+    [alert setClickBlock:block];
+    [alert show];
+    return alert;
 }
 
 
@@ -116,16 +128,27 @@ static NSMutableDictionary *s_tags = nil;
     return number;
 }
 
-+(id)performSelector:(SEL)selector onTarget:(id)target{
++(void)performSelector:(SEL)selector onTarget:(id)target{
     if ([target respondsToSelector:selector]){
 //        去警告：performSelector may cause a leak because its selector is unknown
 //        [target performSelector:selector];
+        IMP imp = [target methodForSelector:selector];
+        void (*func)(id, SEL) = (void *)imp;
+        func(target, selector);
+    }
+}
+
++(id)performReturnSelector:(SEL)selector onTarget:(id)target{
+    if ([target respondsToSelector:selector]){
+        //        去警告：performSelector may cause a leak because its selector is unknown
+        //        [target performSelector:selector];
         IMP imp = [target methodForSelector:selector];
         id (*func)(id, SEL) = (void *)imp;
         return func(target, selector);
     }
     return nil;
 }
+
 
 +(void)runAfterDelay:(NSTimeInterval)delay block:(void(^)())block{
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, NSEC_PER_SEC*delay),
@@ -187,7 +210,7 @@ static NSMutableDictionary *s_tags = nil;
 #pragma mark- UIActionSheet
 #import <objc/runtime.h>
 
-@implementation  UIActionSheet (AJUtil)
+@implementation  UIActionSheet (AJUtil) 
 
 -(void)setClickBlock:(AJActionSheetClickBlock)block{
     objc_setAssociatedObject(self, _cmd, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
@@ -202,6 +225,23 @@ static NSMutableDictionary *s_tags = nil;
 }
 
 @end
+
+@implementation  UIAlertView (AJUtil) 
+
+-(void)setClickBlock:(AJAlertViewClickBlock)block{
+    objc_setAssociatedObject(self, _cmd, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    self.delegate = self;
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    AJAlertViewClickBlock block = objc_getAssociatedObject(self, @selector(setClickBlock:));
+    if (block!= nil){
+        block(buttonIndex);
+    }
+}
+
+@end
+
 
 UIWindow *mainWindow() {
     id appDelegate = [UIApplication sharedApplication].delegate;

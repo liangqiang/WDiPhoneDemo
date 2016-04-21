@@ -26,6 +26,7 @@
     
     NSArray *array = @[@[@"toast当前时间", @"onToastItemClicked"],
                          @[@"弹出ActionSheet", @"onActionSheetItemClicked"],
+                         @[@"弹出AlertView", @"onAlertViewItemClicked"],
                          @[@"复杂列表示例", @"onComplexTableDemoClicked"],
                          ];
     NSArray *itemArray = [AJNormalItem createArray:array withType:@"SEL"];
@@ -46,10 +47,19 @@
     [AJUtil toast:now];
 }
 
--(void)onActionSheetItemClicked{
+-(id)onActionSheetItemClicked{
     NSArray *buttons = @[@"男", @"女", @"取消"];
     
     [AJUtil actionSheet:@"请选择您的性别" buttons:buttons block:^(NSInteger buttonIndex) {
+        NSString *info = [NSString stringWithFormat:@"您选择了：%@", [buttons safeObjectAtIndex:buttonIndex]];
+        [AJUtil toast:info];
+    }];
+    return @"aaaaaa";
+}
+
+-(void)onAlertViewItemClicked{
+    NSArray *buttons = @[@"确定", @"取消"];
+    [AJUtil alert:@"亲，你搞错了吧？" buttons:@[@"确定", @"取消"] block:^(NSInteger buttonIndex) {
         NSString *info = [NSString stringWithFormat:@"您选择了：%@", [buttons safeObjectAtIndex:buttonIndex]];
         [AJUtil toast:info];
     }];

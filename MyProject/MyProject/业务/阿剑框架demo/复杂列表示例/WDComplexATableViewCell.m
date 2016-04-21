@@ -29,7 +29,7 @@
     self.contentLabel = [UILabel newWith:kFont14, kGrayColor, nil];
     
     [self.contentView addSubviews:self.titleLabel, self.contentLabel, nil];
-    [self.titleLabel layoutWithInsets:UIEdgeInsetsZero];    
+    [self.titleLabel layoutWithInsets:UIEdgeInsetsZero];
 }
 
 -(void)layoutSubviews{

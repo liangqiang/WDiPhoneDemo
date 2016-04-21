@@ -10,6 +10,7 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
+typedef void(^AJAlertViewClickBlock)(NSInteger buttonIndex);
 
 @interface AJUtil : NSObject
 
@@ -19,6 +20,8 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 
 +(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJActionSheetClickBlock)block;
 
++(id)alert:(NSString*)message buttons:(NSArray*)buttons block:(AJAlertViewClickBlock)block;
+
 +(UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size;
 
 +(void)showLoading;
@@ -26,7 +29,8 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 
 +(NSInteger)tag:(NSString*)key;
 
-+(id)performSelector:(SEL)selector onTarget:(id)target;
++(void)performSelector:(SEL)selector onTarget:(id)target;
++(id)performReturnSelector:(SEL)selector onTarget:(id)target;
 
 +(void)runAfterDelay:(NSTimeInterval)delay block:(void(^)())block;
 
@@ -41,6 +45,10 @@ typedef void(^AJActionSheetClickBlock)(NSInteger buttonIndex);
 //------------------------------------------------------------------------------
 @interface UIActionSheet (AJUtil) <UIActionSheetDelegate>
 -(void)setClickBlock:(AJActionSheetClickBlock)block;
+@end
+
+@interface UIAlertView (AJUtil) <UIAlertViewDelegate>
+-(void)setClickBlock:(AJAlertViewClickBlock)block;
 @end
 
 //用来生成唯一tag（数字）

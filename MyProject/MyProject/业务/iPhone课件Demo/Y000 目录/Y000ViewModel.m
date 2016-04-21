@@ -23,7 +23,13 @@
         
     NSString *bundleFile = [[NSBundle mainBundle] pathForResource: @"Y000" ofType: @"plist"];
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:bundleFile];
-    for (NSString *key in dict.allKeys) {
+    
+    // key排序
+    NSArray *sortedKeys = [dict.allKeys sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
+        return [obj1 compare:obj2];
+    }];
+    
+    for (NSString *key in sortedKeys) {
         AJNormalItem *item = [AJNormalItem new];
         item.title = key;
         item.actionType = @"PushVC";

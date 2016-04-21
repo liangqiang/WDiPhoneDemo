@@ -45,7 +45,7 @@
         
         UIView *section = [UIView newWith:[UIColor clearColor], nil];
         NSString *selector = [NSString stringWithFormat:@"create%@", viewType];
-        UIView *subview = [AJUtil performSelector:NSSelectorFromString(selector) onTarget:self];
+        UIView *subview = [AJUtil performReturnSelector:NSSelectorFromString(selector) onTarget:self];
         
         [section addSubview:subview];
         section.size = CGSizeMake(self.scrollView.width, subview.height + 20);
