@@ -36,7 +36,9 @@ static NSMutableDictionary *s_tags = nil;
     label.size = CGSizeMake(vFrame.size.width-30, 99999);
     [label sizeToFit];
     view.size = CGSizeMake(label.size.width + 30, label.size.height + 30);
-    [view layoutWithInsets:UIEdgeInsetsCenter];
+//    [view layoutWithInsets:UIEdgeInsetsCenter];
+    float top = (vFrame.size.height-view.size.height) * 0.75;
+    [view layoutWithInsets:UIEdgeInsetsMake(top, EAuto, EAuto, EAuto)];
     [label layoutWithInsets:UIEdgeInsetsCenter];
     
     [UIView animateWithDuration:.5 delay:2.0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
