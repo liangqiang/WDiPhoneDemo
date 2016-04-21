@@ -10,4 +10,16 @@
 
 @implementation Y010ViewModel
 
+-(void)loadData{
+    NSArray *array = @[@"DatePickerNormal",@"DatePickerChina",@"DatePickerStyle",@"DatePickerMinMaxValue",@"DatePickerTimer"];
+    
+    self.viewTypeArray = [NSMutableArray arrayWithArray:array];
+    
+    [self notifyToRefresh];
+}
+
+-(void)submit{
+    [AJUtil toast:self.dateMessage];
+}
+
 @end

@@ -15,5 +15,6 @@
 -(void)addBlankSection:(NSInteger)height;
 -(void)addSection:(UIView*)section;
 -(void)removeAllSections;
+-(void)removeLastSections:(UIView*)section;
 
 @end

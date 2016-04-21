@@ -10,4 +10,11 @@
 
 @interface Y010ViewModel : AJViewModel
 
+@property(nonatomic,strong)NSArray *viewTypeArray;
+@property(nonatomic,strong)NSString *dateMessage;
+
+-(void)loadData;
+
+-(void)submit;
+
 @end

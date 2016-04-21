@@ -46,5 +46,10 @@
     [self setContentSize:CGSizeMake(self.width, 0)];
 }
 
+-(void)removeLastSections:(UIView*)section{
+    self.contentHeight = self.contentHeight - section.height;
+    [self setContentSize:CGSizeMake(self.width, self.contentHeight)];
+}
+
 
 @end
