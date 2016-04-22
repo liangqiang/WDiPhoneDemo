@@ -16,41 +16,6 @@
 
 @implementation Y001ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.title = @"Y001 UIButton";
-
-    self.scrollView = [self createScrollView];
-    [self.view addSubview:self.scrollView];
-
-    WEAKSELF
-    self.viewModel = [self createViewModel];
-    [self.viewModel setRefreshBlock:^{
-        [weakSelf updateViews];
-    }];
-
-    [AJUtil runAfterDelay:0 block:^{
-        [weakSelf.viewModel loadData];
-    }];
-}
-
--(void)updateViews{
-    [self.scrollView removeAllSections];
-    for (NSString *viewType in self.viewModel.viewTypeArray) {
-        UIView *section = [UIView newWith:[UIColor clearColor], nil];
-        NSString *selector = [NSString stringWithFormat:@"create%@", viewType];
-        UIView *subview = [AJUtil performReturnSelector:NSSelectorFromString(selector) onTarget:self];
-        
-        [section addSubview:subview];
-        section.size = CGSizeMake(self.scrollView.width, subview.height + 20);
-        [subview layoutWithInsets:UIEdgeInsetsMake(EAuto, EAuto, EAuto, EAuto)]; // 定位
-        
-        [self.scrollView addSection:section];
-    }
-}
-
-
 //1、	创建默认的文字button，响应点击事件
 -(UIButton*)createButtonSimple{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];

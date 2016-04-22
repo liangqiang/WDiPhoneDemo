@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YScrollViewController.h"
 
 //知识点
 //1、	创建默认的文字button，响应点击事件
@@ -14,6 +15,6 @@
 //3、	checkbox样式，图片切换
 //4、	带小图片的button，可以调整图片、文字位置
 
-@interface Y001ViewController : UIViewController
+@interface Y001ViewController : YScrollViewController
 
 @end

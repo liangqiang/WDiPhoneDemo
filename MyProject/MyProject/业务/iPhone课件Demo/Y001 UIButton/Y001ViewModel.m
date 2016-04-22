@@ -11,8 +11,14 @@
 @implementation Y001ViewModel
 
 -(void)loadData{
-    NSArray *array = @[@"ButtonSimple", @"ButtonHighlighted", @"ButtonDisabled",
-                       @"ButtonSelected", @"ButtonImage"];
+    self.title = @"Y001 UIButton";
+
+    NSArray *array = @[VIEWTYPE( @"ButtonSimple", @"简单按钮" ),
+                       VIEWTYPE( @"ButtonHighlighted", @"按下有高亮效果" ),
+                       VIEWTYPE( @"ButtonDisabled", @"置灰按钮" ),
+                       VIEWTYPE( @"ButtonSelected", @"带选中状态的按钮" ),
+                       VIEWTYPE( @"ButtonImage", @"带图片的按钮" )
+                       ];
     self.viewTypeArray = [NSMutableArray arrayWithArray:array];
     
     [self notifyToRefresh];

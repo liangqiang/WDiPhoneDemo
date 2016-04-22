@@ -33,6 +33,9 @@
 		033FCF3C1CC9F7E900632226 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 033FCF2D1CC9F7E900632226 /* iconfont.ttf */; };
 		033FCF6A1CCA069E00632226 /* iconfontBasic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 033FCF5B1CCA069E00632226 /* iconfontBasic.ttf */; };
 		033FCF711CCA069E00632226 /* iconfontLinear.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 033FCF631CCA069E00632226 /* iconfontLinear.ttf */; };
+		033FCF751CCA0A6000632226 /* YScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 033FCF741CCA0A6000632226 /* YScrollViewController.m */; };
+		033FCF781CCA0C6F00632226 /* YScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 033FCF771CCA0C6F00632226 /* YScrollViewModel.m */; };
+		033FCF7B1CCA1E6800632226 /* YViewTypeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 033FCF7A1CCA1E6800632226 /* YViewTypeItem.m */; };
 		03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1A1C844CFF008D943E /* WDHomeViewController.m */; };
 		03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03479C1D1C845CAE008D943E /* WDHomeViewModel.m */; };
 		035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C05E91C85444800D050D1 /* WDDebugViewController.m */; };
@@ -186,6 +189,12 @@
 		033FCF611CCA069E00632226 /* iconfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = iconfont.svg; sourceTree = "<group>"; };
 		033FCF621CCA069E00632226 /* iconfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.woff; sourceTree = "<group>"; };
 		033FCF631CCA069E00632226 /* iconfontLinear.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfontLinear.ttf; sourceTree = "<group>"; };
+		033FCF731CCA0A6000632226 /* YScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YScrollViewController.h; sourceTree = "<group>"; };
+		033FCF741CCA0A6000632226 /* YScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YScrollViewController.m; sourceTree = "<group>"; };
+		033FCF761CCA0C6F00632226 /* YScrollViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YScrollViewModel.h; sourceTree = "<group>"; };
+		033FCF771CCA0C6F00632226 /* YScrollViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YScrollViewModel.m; sourceTree = "<group>"; };
+		033FCF791CCA1E6800632226 /* YViewTypeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YViewTypeItem.h; sourceTree = "<group>"; };
+		033FCF7A1CCA1E6800632226 /* YViewTypeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YViewTypeItem.m; sourceTree = "<group>"; };
 		03479C191C844CFF008D943E /* WDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewController.h; sourceTree = "<group>"; };
 		03479C1A1C844CFF008D943E /* WDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDHomeViewController.m; sourceTree = "<group>"; };
 		03479C1C1C845CAE008D943E /* WDHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDHomeViewModel.h; sourceTree = "<group>"; };
@@ -612,6 +621,19 @@
 			path = iconfontLinear;
 			sourceTree = "<group>";
 		};
+		033FCF721CCA0A1F00632226 /* 公共 */ = {
+			isa = PBXGroup;
+			children = (
+				033FCF731CCA0A6000632226 /* YScrollViewController.h */,
+				033FCF741CCA0A6000632226 /* YScrollViewController.m */,
+				033FCF761CCA0C6F00632226 /* YScrollViewModel.h */,
+				033FCF771CCA0C6F00632226 /* YScrollViewModel.m */,
+				033FCF791CCA1E6800632226 /* YViewTypeItem.h */,
+				033FCF7A1CCA1E6800632226 /* YViewTypeItem.m */,
+			);
+			path = "公共";
+			sourceTree = "<group>";
+		};
 		03479C181C844BE4008D943E /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1005,6 +1027,7 @@
 		AD9A66BE1CC0EB8C00B6A4E1 /* iPhone课件Demo */ = {
 			isa = PBXGroup;
 			children = (
+				033FCF721CCA0A1F00632226 /* 公共 */,
 				03398BED1CC1F6BA000F3AA4 /* Y000 目录 */,
 				03398BF61CC1F6BA000F3AA4 /* Y001 UIButton */,
 				03398C001CC1F6BA000F3AA4 /* Y002 UILabel */,
@@ -1138,12 +1161,14 @@
 				033FCF261CC9F59700632226 /* AJControllerDeallocChecker.m in Sources */,
 				03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */,
+				033FCF7B1CCA1E6800632226 /* YViewTypeItem.m in Sources */,
 				03B7617F1C93AB2200297AC7 /* UIImage+AJAddition.m in Sources */,
 				03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */,
 				AD264D941CC7758D006CA205 /* Y010ViewModel.m in Sources */,
 				AD264D7F1CC72F8A006CA205 /* Y007ViewModel.m in Sources */,
 				03398C161CC2004B000F3AA4 /* AJNormalItem.m in Sources */,
 				03FA19591BEB2D2A00DD1DAC /* MKCache.m in Sources */,
+				033FCF781CCA0C6F00632226 /* YScrollViewModel.m in Sources */,
 				03B761861C93AB2200297AC7 /* AJColorManager.m in Sources */,
 				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
 				03FA19701BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m in Sources */,
@@ -1159,6 +1184,7 @@
 				03398C211CC29111000F3AA4 /* Y003ViewModel.m in Sources */,
 				035C063C1C86D1BB00D050D1 /* WDComplexViewModel.m in Sources */,
 				035C06211C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m in Sources */,
+				033FCF751CCA0A6000632226 /* YScrollViewController.m in Sources */,
 				03B7618A1C93AB2200297AC7 /* AJRefreshViewBase.m in Sources */,
 				03B761841C93AB2200297AC7 /* AJTableView.m in Sources */,
 				03398C1B1CC246A9000F3AA4 /* Y001ViewModel.m in Sources */,
