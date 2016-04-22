@@ -11,7 +11,6 @@
 @implementation YScrollViewModel
 
 -(void)loadData{
-    self.title = @"";
     self.viewTypeArray = @[];
 }
 

@@ -39,9 +39,6 @@
     // 清除scrollView下所有内容
     [self.scrollView removeAllSections];
     
-    // 设置标题
-    self.title = self.viewModel.title;
-    
     // 根据viewType创建界面
     for (YViewTypeItem *item in self.viewModel.viewTypeArray) {
         [self.scrollView addSection:[self createHintSection:item]];

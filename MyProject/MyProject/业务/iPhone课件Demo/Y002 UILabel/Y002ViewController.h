@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YScrollViewController.h"
 
 //1、	单行文本，设置文字、字体、颜色、对齐，截取方式
 //2、	多行文本，计算文本大小，改变文本框大小
 
-@interface Y002ViewController : UIViewController
+@interface Y002ViewController : YScrollViewController
 
 @end

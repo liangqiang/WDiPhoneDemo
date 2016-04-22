@@ -11,8 +11,7 @@
 
 @interface YScrollViewModel : AJViewModel
 
-@property (nonatomic,strong) NSString *title;
-@property (nonatomic,strong) NSArray *viewTypeArray; // YViewTypeItem
+@property (nonatomic,strong) NSArray<YViewTypeItem*> *viewTypeArray;
 
 -(void)loadData;
 

@@ -11,9 +11,14 @@
 @implementation Y002ViewModel
 
 -(void)loadData{
-    NSArray *array = @[@"LabelSingleLine", @"LabelSingleLine2", @"LabelSingleLine3",
-                       @"LabelSingleLine4", @"LabelMultiLine1", @"LabelMultiLine2",
-                       @"LabelMultiLine3"];
+    NSArray *array = @[VIEWTYPE( @"LabelSingleLine", @"单行文本"),
+                       VIEWTYPE( @"LabelSingleLine2", @"单行文本，设置背景色，字体，颜色，居中"),
+                       VIEWTYPE( @"LabelSingleLine3", @"单行文本，超长截断"),
+                       VIEWTYPE( @"LabelSingleLine4", @"单行文本，自动调整字体"),
+                       VIEWTYPE( @"LabelMultiLine1", @"单行文本，2行截断"),
+                       VIEWTYPE( @"LabelMultiLine2", @"单行文本，自适应"),
+                       VIEWTYPE( @"LabelMultiLine3", @"单行文本，计算大小"),
+                       ];
     self.viewTypeArray = [NSMutableArray arrayWithArray:array];
     
     [self notifyToRefresh];

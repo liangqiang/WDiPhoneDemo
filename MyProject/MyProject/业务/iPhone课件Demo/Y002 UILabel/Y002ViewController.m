@@ -16,40 +16,6 @@
 
 @implementation Y002ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
- 
-    self.title = @"Y002 UILabel";
-
-    self.scrollView = [self createScrollView];
-    [self.view addSubview:self.scrollView];
-    
-    WEAKSELF
-    self.viewModel = [self createViewModel];
-    [self.viewModel setRefreshBlock:^{
-        [weakSelf updateViews];
-    }];
-    
-    [AJUtil runAfterDelay:0 block:^{
-        [weakSelf.viewModel loadData];
-    }];
-}
-
--(void)updateViews{
-    [self.scrollView removeAllSections];
-    for (NSString *viewType in self.viewModel.viewTypeArray) {
-        UIView *section = [UIView newWith:[UIColor clearColor], nil];
-        NSString *selector = [NSString stringWithFormat:@"create%@", viewType];
-        UIView *subview = [AJUtil performReturnSelector:NSSelectorFromString(selector) onTarget:self];
-        
-        [section addSubview:subview];
-        section.size = CGSizeMake(self.scrollView.width, subview.height + 20);
-        [subview layoutWithInsets:UIEdgeInsetsMake(EAuto, EAuto, EAuto, EAuto)]; // 定位
-        
-        [self.scrollView addSection:section];
-    }
-}
-
 //1、	单行文本，设置文字、字体、颜色、对齐，截取方式
 -(UILabel*)createLabelSingleLine{
     UILabel *label = [UILabel new];
@@ -64,7 +30,7 @@
     UILabel *label = [UILabel new];
     label.size = CGSizeMake(self.view.width-30, 30);
     label.text = @"单行（背景色、字体、颜色、居中）";
-    label.backgroundColor = kLightGrayColor;
+    label.backgroundColor = kMainBlueColor;
     label.font = kFont16B;
     label.textColor = kPrimaryNormalColor;
     label.textAlignment = NSTextAlignmentCenter;

@@ -43,7 +43,8 @@
 -(void)onCellClicked:(NSIndexPath*)indexPath{
     AJSectionItem *sectionItem = [self.sectionArray safeObjectAtIndex:indexPath.section];
     AJNormalItem *item = [sectionItem.cellDataArray safeObjectAtIndex:indexPath.row];
-    [item pushViewController];
+    UIViewController *vc = [item pushViewController];
+    vc.title = item.title;
 }
 
 @end
