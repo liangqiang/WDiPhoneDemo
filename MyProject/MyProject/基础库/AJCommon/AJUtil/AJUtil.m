@@ -62,7 +62,7 @@ static NSMutableDictionary *s_tags = nil;
 
 +(id)alert:(NSString*)message buttons:(NSArray*)buttons block:(AJAlertViewClickBlock)block{
     UIAlertView *alert = [UIAlertView new];
-    alert.title = nil;
+    alert.title = @"";
     alert.message = message;
     for (NSString* button in buttons) {
         [alert addButtonWithTitle:button];
@@ -72,7 +72,6 @@ static NSMutableDictionary *s_tags = nil;
     [alert show];
     return alert;
 }
-
 
 + (UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size {
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
