@@ -26,6 +26,13 @@
 #define AJIconFontUnselected                     AJIconFontMake(@"iconfontBasic", @"\U0000e667", 20, HEXCOLOR(0x0066cc))
 #define AJIconFontSelected                     AJIconFontMake(@"iconfontBasic", @"\U0000e666", 20, HEXCOLOR(0x0066cc))
 
+#define AJIconFontSmile1                       AJIconFontMake(@"iconfontBasic", @"\U0000e601", 36, HEXCOLOR(0x6699FF))
+#define AJIconFontSmile2                       AJIconFontMake(@"iconfontBasic", @"\U0000e601", 36, HEXCOLOR(0x6699CC))
+#define AJIconFontSmile3                       AJIconFontMake(@"iconfontBasic", @"\U0000e601", 36, HEXCOLOR(0x669999))
+#define AJIconFontSmile4                       AJIconFontMake(@"iconfontBasic", @"\U0000e601", 36, HEXCOLOR(0x669966))
+#define AJIconFontSmile5                       AJIconFontMake(@"iconfontBasic", @"\U0000e601", 36, HEXCOLOR(0x669933))
+#define AJIconFontSmile6                       AJIconFontMake(@"iconfontBasic", @"\U0000e601", 36, HEXCOLOR(0x669900))
+
 // 常用图标 iconfont.ttf
 //#define AJIconFontWhiteBack                     AJIconFontMake(@"iconfont", @"\U0000e8a2", 20, HEXCOLOR(0xffffff))
 

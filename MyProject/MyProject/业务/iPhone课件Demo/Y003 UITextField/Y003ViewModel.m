@@ -11,11 +11,10 @@
 @implementation Y003ViewModel
 
 -(void)loadData{
-    NSArray *array = @[VIEWTYPE( @"TextFieldName", @"文本框（提示语，字体）"),
-                       VIEWTYPE( @"TextFieldPassword", @"文本框（密码，圆角，边框）"),
-                       VIEWTYPE( @"TextFieldPhone", @"文本框（限制长度，检查输入合法）"),
-                       ];
-    self.viewTypeArray = [NSMutableArray arrayWithArray:array];
+    self.viewTypeArray = @[VIEWTYPE( @"TextFieldName", @"文本框（提示语，字体）"),
+                           VIEWTYPE( @"TextFieldPassword", @"文本框（密码，圆角，边框）"),
+                           VIEWTYPE( @"TextFieldPhone", @"文本框（限制长度，检查输入合法）"),
+                           ];
     
     [self notifyToRefresh];
 }

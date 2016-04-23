@@ -13,6 +13,7 @@
 
 @property (nonatomic,strong) YScrollViewModel *viewModel;
 @property (nonatomic,strong) UIScrollView *scrollView;
+@property (nonatomic,assign) NSInteger viewIndex;
 
 @end
 
@@ -40,6 +41,7 @@
     [self.scrollView removeAllSections];
     
     // 根据viewType创建界面
+    self.viewIndex = 0;
     for (YViewTypeItem *item in self.viewModel.viewTypeArray) {
         [self.scrollView addSection:[self createHintSection:item]];
         [self.scrollView addSection:[self createViewSection:item]];
@@ -47,8 +49,11 @@
 }
 
 -(UIView*)createHintSection:(YViewTypeItem*)item{
-    NSInteger index = [self.viewModel.viewTypeArray indexOfObject:item];
-    NSString *hint = [NSString stringWithFormat:@"%zd、%@", index+1, item.hint];
+    if (item.hint.length == 0) return nil;
+    
+    self.viewIndex += 1;
+//    NSInteger index = [self.viewModel.viewTypeArray indexOfObject:item];
+    NSString *hint = [NSString stringWithFormat:@"%zd、%@", self.viewIndex, item.hint];
     UILabel *label = [UILabel newWith: kFont12, kLightBlackColor, hint, nil];
     [label sizeToFit];
     

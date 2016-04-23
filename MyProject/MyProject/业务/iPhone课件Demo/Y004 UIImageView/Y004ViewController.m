@@ -12,112 +12,92 @@
 @interface Y004ViewController ()
 @property(nonatomic,strong) Y004ViewModel *viewModel;
 @property(nonatomic,strong) UIScrollView *scrollView;
+
+@property (nonatomic,strong) UIImageView *imageViewSimple;
+@property (nonatomic,strong) UILabel *contentModeLabel;
 @end
 
 @implementation Y004ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.title = @"Y004 UIImageView";
-    
-    self.scrollView = [self createScrollView];
-    [self.view addSubview:self.scrollView];
-    
-    WEAKSELF
-    self.viewModel = [self createViewModel];
-    [self.viewModel setRefreshBlock:^{
-        [weakSelf updateViews];
-    }];
-    
-    [AJUtil runAfterDelay:0 block:^{
-        [weakSelf.viewModel loadData];
-    }];
-}
-
--(void)updateViews{
-    [self.scrollView removeAllSections];
-    
-    for (NSString *viewType in self.viewModel.viewTypeArray) {
-        UIView *hintSection = [self createHintSectionWithViewType:viewType];
-        [self.scrollView addSection:hintSection];
-        
-        UIView *section = [UIView newWith:[UIColor clearColor], nil];
-        NSString *selector = [NSString stringWithFormat:@"create%@", viewType];
-        UIView *subview = [AJUtil performReturnSelector:NSSelectorFromString(selector) onTarget:self];
-        
-        [section addSubview:subview];
-        section.size = CGSizeMake(self.scrollView.width, subview.height + 20);
-        [subview layoutWithInsets:UIEdgeInsetsMake(EAuto, EAuto, EAuto, EAuto)]; // 定位
-        
-        [self.scrollView addSection:section];
-    }
-}
--(UIView*)createHintSectionWithViewType:(NSString*)viewType{
-    NSDictionary *dict = @{@"ImageViewSimple": @"显示图片，缩放（原比例）",
-                           @"ImageViewTouch": @"点击事件（手势）",
-                           @"ImageViewGif":@"gif动画"
-                           };
-    NSString *hint = [dict safeObjectFortKey:viewType];
-    
-    UILabel *label = [UILabel newWith: kFont12, kLightBlackColor, hint, nil];
-    [label sizeToFit];
-    
-    UIView *section = [UIView newWith:[UIColor clearColor], nil];
-    [section addSubview:label];
-    section.size = CGSizeMake(self.scrollView.width, label.height + 10);
-    [label layoutWithInsets:UIEdgeInsetsMake(EAuto, 15, EAuto, EAuto)]; // 定位
-    
-    return section;
-}
-
 //显示图片，缩放（原比例）
--(UIImageView*)createImageViewSimple{
+-(UIView*)createImageViewSimple{
     UIImageView *imageView = [UIImageView new];
-    
-    imageView.size = CGSizeMake(self.scrollView.width - 200, 44);
-    
+    imageView.size = CGSizeMake(self.scrollView.width - 200, self.scrollView.width - 200);
     imageView.backgroundColor = kLightGrayColor;
+    [imageView setImage:[UIImage imageNamed:@"image01.jpg"]];
+    imageView.clipsToBounds = YES;
     
-    [imageView setImage:AJIconFontSmile];
     //设置图片原比例展示
-    [imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [imageView setContentMode:UIViewContentModeScaleAspectFit]; //缩放，维持长宽比
     
+    //用户交互、设置单击、注册点击事件
+    imageView.userInteractionEnabled=YES;
+    UITapGestureRecognizer *singleTap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(onImageViewSimpleClicked:)];
+    [imageView addGestureRecognizer:singleTap];
+    
+    self.imageViewSimple = imageView;
     return imageView;
 }
 
-//点击事件（手势）
--(UIImageView*)createImageViewTouch{
-    UIImageView *imageViewTouch = [self createImageViewSimple];
+-(void)onImageViewSimpleClicked:(UITapGestureRecognizer*)sender{
+    UIImageView *imageView = (UIImageView*)sender.view;
     
-    //设置图片空间的展示图片
-    [imageViewTouch setImage:AJIconFontSelected];
+    NSArray *modes = @[@(UIViewContentModeScaleToFill),
+                       @(UIViewContentModeScaleAspectFit),
+                       @(UIViewContentModeScaleAspectFill),
+                       @(UIViewContentModeCenter),
+                       @(UIViewContentModeTopLeft)];
     
-    //设置空间的背景颜色
-    imageViewTouch.backgroundColor = kLightGrayColor;
-    
-    //用户交互、设置单击、注册点击事件
-    imageViewTouch.userInteractionEnabled=YES;
-    UITapGestureRecognizer *singleTap =[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(onNormalImageClick:)];
-    [imageViewTouch addGestureRecognizer:singleTap];
-    
-    return imageViewTouch;
+    NSInteger index = [modes indexOfObject:@(imageView.contentMode)];
+    NSInteger nextIndex = index==modes.count-1 ? 0 : index+1;
+    imageView.contentMode = [[modes objectAtIndex:nextIndex] integerValue];
+    [self updateContentMode];
 }
--(void)onNormalImageClick:(id)sender{
-    [self.viewModel onImageClicked:@"图片控件被点"];
+
+-(UIView*)createLabelContentModel{
+//    NSString *text = @"UIViewContentModeScaleAspectFit \n 缩放，维持长宽比";
+    UILabel *label = [UILabel newWith:kFont14, kLightBlackColor, @"", @(NSTextAlignmentCenter), nil];
+    label.size = CGSizeMake(self.scrollView.width-30, 40);
+    label.adjustsFontSizeToFitWidth = YES;
+    label.numberOfLines = 2;
+    
+    self.contentModeLabel = label;
+    [self updateContentMode];
+    return label;
+}
+
+-(void)updateContentMode{
+    if (self.imageViewSimple.contentMode == UIViewContentModeScaleToFill) {
+        self.contentModeLabel.text = @"UIViewContentModeScaleToFill \n 缩放，拉伸，充满";
+    }
+    else if (self.imageViewSimple.contentMode == UIViewContentModeScaleAspectFit) {
+        self.contentModeLabel.text = @"UIViewContentModeScaleAspectFit \n 缩放，保持宽高比";
+    }
+    else if (self.imageViewSimple.contentMode == UIViewContentModeScaleAspectFill) {
+        self.contentModeLabel.text = @"UIViewContentModeScaleAspectFill \n 缩放，保持宽高比，充满";
+    }
+    else if (self.imageViewSimple.contentMode == UIViewContentModeCenter) {
+        self.contentModeLabel.text = @"UIViewContentModeCenter \n 不缩放，居中";
+    }
+    else if (self.imageViewSimple.contentMode == UIViewContentModeTopLeft) {
+        self.contentModeLabel.text = @"UIViewContentModeTopLeft \n 不缩放，左上";
+    }
 }
 
 //gif动画
 -(UIImageView*)createImageViewGif{
-    UIImageView *imageViewGif = [self createImageViewSimple];
+    UIImageView *imageViewGif = [UIImageView new];
+    imageViewGif.size = CGSizeMake(50, 50);
     
     //循环播放的资源
     imageViewGif.animationImages = [NSArray arrayWithObjects:
-                                         AJIconFontSmile,
-                                         AJIconFontUnselected,
-                                         AJIconFontSmileHL,
-                                         AJIconFontSelected,
-                                         nil];
+                                    AJIconFontSmile1,
+                                    AJIconFontSmile2,
+                                    AJIconFontSmile3,
+                                    AJIconFontSmile4,
+                                    AJIconFontSmile5,
+                                    AJIconFontSmile6,
+                                    nil];
     //动画播放时间
     imageViewGif.animationDuration = 4.0f;
     

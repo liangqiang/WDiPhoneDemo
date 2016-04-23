@@ -11,16 +11,12 @@
 @implementation Y004ViewModel
 
 -(void)loadData{
-    
-    NSArray *array = @[@"ImageViewSimple",@"ImageViewTouch",@"ImageViewGif"];
-    
-    self.viewTypeArray = [NSMutableArray arrayWithArray:array];
+    self.viewTypeArray = @[VIEWTYPE( @"ImageViewSimple", @"显示图片，缩放（原比例）,点击修改contentMode"),
+                           VIEWTYPE( @"LabelContentModel", @""),
+                           VIEWTYPE( @"ImageViewGif", @"gif动画"),
+                           ];
     
     [self notifyToRefresh];
-}
-
--(void)onImageClicked:(NSString*)sender{
-    [AJUtil toast:sender];
 }
 
 @end

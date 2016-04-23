@@ -6,12 +6,8 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "AJViewModel.h"
+#import "YScrollViewModel.h"
 
-@interface Y004ViewModel : AJViewModel
+@interface Y004ViewModel : YScrollViewModel
 
-@property(nonatomic,strong) NSArray *viewTypeArray;
-
--(void)loadData;
--(void)onImageClicked:(NSString*)sender;
 @end

@@ -31,26 +31,6 @@
     }];
 }
 
-
-
--(UIView*)createHintSectionWithViewType:(NSString*)viewType{
-    NSDictionary *dict = @{@"TextFieldName": @"文本框（提示语，字体）",
-                           @"TextFieldPassword": @"文本框（密码，圆角，边框）",
-                           @"TextFieldPhone": @"文本框（限制长度，检查输入合法）",
-                           };
-    NSString *hint = [dict safeObjectFortKey:viewType];
-    
-    UILabel *label = [UILabel newWith: kFont12, kLightBlackColor, hint, nil];
-    [label sizeToFit];
-    
-    UIView *section = [UIView newWith:[UIColor clearColor], nil];
-    [section addSubview:label];
-    section.size = CGSizeMake(self.scrollView.width, label.height + 10);
-    [label layoutWithInsets:UIEdgeInsetsMake(EAuto, 15, EAuto, EAuto)]; // 定位
-    
-    return section;
-}
-
 //1、	输入框，提示语，对齐，大小，清除按钮x，键盘样式，键盘返回样式，密码格式，键盘返回
 -(UITextField*)createTextFieldName{
     UITextField *textField = [UITextField new];

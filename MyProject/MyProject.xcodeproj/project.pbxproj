@@ -52,6 +52,7 @@
 		035C063F1C86D21300D050D1 /* WDComplexTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C063E1C86D21300D050D1 /* WDComplexTableView.m */; };
 		035C06421C86D25700D050D1 /* WDComplexATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06411C86D25700D050D1 /* WDComplexATableViewCell.m */; };
 		035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06441C86DD7100D050D1 /* WDComplexCellItem.m */; };
+		0379C98A1CCBD7F70015107D /* image01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0379C9891CCBD7F70015107D /* image01.jpg */; };
 		03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761511C93AB2200297AC7 /* AJViewCreator.m */; };
 		03B7617C1C93AB2200297AC7 /* NSObject+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761531C93AB2200297AC7 /* NSObject+AJAddition.m */; };
 		03B7617D1C93AB2200297AC7 /* NSString+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761551C93AB2200297AC7 /* NSString+AJAddition.m */; };
@@ -239,6 +240,7 @@
 		035C06411C86D25700D050D1 /* WDComplexATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDComplexATableViewCell.m; sourceTree = "<group>"; };
 		035C06431C86DD7100D050D1 /* WDComplexCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDComplexCellItem.h; sourceTree = "<group>"; };
 		035C06441C86DD7100D050D1 /* WDComplexCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDComplexCellItem.m; sourceTree = "<group>"; };
+		0379C9891CCBD7F70015107D /* image01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image01.jpg; sourceTree = "<group>"; };
 		03B761501C93AB2200297AC7 /* AJViewCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewCreator.h; sourceTree = "<group>"; };
 		03B761511C93AB2200297AC7 /* AJViewCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewCreator.m; sourceTree = "<group>"; };
 		03B761521C93AB2200297AC7 /* NSObject+AJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AJAddition.h"; sourceTree = "<group>"; };
@@ -734,6 +736,14 @@
 			path = "复杂列表示例";
 			sourceTree = "<group>";
 		};
+		0379C9881CCBD7F70015107D /* 资源 */ = {
+			isa = PBXGroup;
+			children = (
+				0379C9891CCBD7F70015107D /* image01.jpg */,
+			);
+			path = "资源";
+			sourceTree = "<group>";
+		};
 		03B7614E1C93AB2200297AC7 /* 基础库 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1027,6 +1037,7 @@
 		AD9A66BE1CC0EB8C00B6A4E1 /* iPhone课件Demo */ = {
 			isa = PBXGroup;
 			children = (
+				0379C9881CCBD7F70015107D /* 资源 */,
 				033FCF721CCA0A1F00632226 /* 公共 */,
 				03398BED1CC1F6BA000F3AA4 /* Y000 目录 */,
 				03398BF61CC1F6BA000F3AA4 /* Y001 UIButton */,
@@ -1126,6 +1137,7 @@
 			files = (
 				033FCF3C1CC9F7E900632226 /* iconfont.ttf in Resources */,
 				03398C181CC216C1000F3AA4 /* Y000.plist in Resources */,
+				0379C98A1CCBD7F70015107D /* image01.jpg in Resources */,
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,
 				033FCF711CCA069E00632226 /* iconfontLinear.ttf in Resources */,
 				033FCF6A1CCA069E00632226 /* iconfontBasic.ttf in Resources */,
