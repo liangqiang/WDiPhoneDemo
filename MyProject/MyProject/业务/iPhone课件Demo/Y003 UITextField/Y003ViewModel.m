@@ -11,7 +11,10 @@
 @implementation Y003ViewModel
 
 -(void)loadData{
-    NSArray *array = @[@"TextFieldName", @"TextFieldPassword", @"TextFieldPhone"];
+    NSArray *array = @[VIEWTYPE( @"TextFieldName", @"文本框（提示语，字体）"),
+                       VIEWTYPE( @"TextFieldPassword", @"文本框（密码，圆角，边框）"),
+                       VIEWTYPE( @"TextFieldPhone", @"文本框（限制长度，检查输入合法）"),
+                       ];
     self.viewTypeArray = [NSMutableArray arrayWithArray:array];
     
     [self notifyToRefresh];
@@ -44,7 +47,12 @@
 }
 
 -(void)submit{
-    [AJUtil toast:@"提交成功"];
+    NSString *messsage = [self messageCheckValid];
+    if (messsage) {
+        [AJUtil toast:@"提交失败"];
+    }else{
+        [AJUtil toast:@"提交成功"];
+    }
 }
 
 

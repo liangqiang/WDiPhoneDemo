@@ -6,17 +6,15 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "AJViewModel.h"
+#import "YScrollViewModel.h"
 
-@interface Y003ViewModel : AJViewModel
+@interface Y003ViewModel : YScrollViewModel
 
-@property (nonatomic,strong) NSArray *viewTypeArray;
 @property (nonatomic,strong) NSString *name;
 @property (nonatomic,strong) NSString *password;
 @property (nonatomic,strong) NSString *phone;
 
 
--(void)loadData;
 -(BOOL)checkValid;
 -(void)submit;
 @end

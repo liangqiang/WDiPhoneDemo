@@ -6,7 +6,6 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "YScrollViewController.h"
 
 //知识点

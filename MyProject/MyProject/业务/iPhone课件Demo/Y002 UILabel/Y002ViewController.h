@@ -6,7 +6,6 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "YScrollViewController.h"
 
 //1、	单行文本，设置文字、字体、颜色、对齐，截取方式
