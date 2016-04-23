@@ -32,7 +32,7 @@
     label.text = @"单行（背景色、字体、颜色、居中）";
     label.backgroundColor = kMainBlueColor;
     label.font = kFont16B;
-    label.textColor = kPrimaryNormalColor;
+    label.textColor = kPrimaryColor;
     label.textAlignment = NSTextAlignmentCenter;
     
     return label;

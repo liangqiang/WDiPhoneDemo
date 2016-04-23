@@ -61,7 +61,7 @@
     
     UIButton *button = [UIButton newWith:kFont16, kLightGrayColor, item.title, nil];
     [button setCornerRadiusWith:@(4), nil];
-    [button setBgColorWith:kPrimaryNormalColor, kPrimaryDarkColor, nil];
+    [button setBgColorWith:kPrimaryColor, kPrimaryFocusColor, nil];
     
     WEAKSELF
     [button handleEvent:UIControlEventTouchUpInside withBlock:^(UIControl *control) {

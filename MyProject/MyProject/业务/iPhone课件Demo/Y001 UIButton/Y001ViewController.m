@@ -23,7 +23,7 @@
     
     //设置按钮的显示标签
     [button setTitle:@"点我吧（无状态）" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色
@@ -54,13 +54,13 @@
     //设置按钮的显示标签
     button.titleLabel.font = kFont14;
     
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryLightColor forState:UIControlStateHighlighted];
+    [button setTitleColor:kWhiteColor forState:UIControlStateNormal];
+    [button setTitleColor:kWhiteColor forState:UIControlStateHighlighted];
     [button setTitleColor:kLightGrayColor forState:UIControlStateDisabled];
     
     //设置按钮的背景颜色
-    [button setBackgroundImage:[UIImage newWithColor:kWhiteColor] forState:UIControlStateNormal];
-    [button setBackgroundImage:[UIImage newWithColor:kLightGrayColor] forState:UIControlStateHighlighted];
+    [button setBackgroundImage:[UIImage newWithColor:kPrimaryColor] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage newWithColor:kPrimaryFocusColor] forState:UIControlStateHighlighted];
     [button setBackgroundImage:[UIImage newWithColor:kGrayColor] forState:UIControlStateDisabled];
     
     //设置圆角，边线
@@ -95,7 +95,7 @@
     
     [button setTitle:@"点我吧（选中）" forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kBlackColor forState:UIControlStateNormal];
 
     [button setImage:AJIconFontUnselected forState:UIControlStateNormal];
     [button setImage:AJIconFontSelected forState:UIControlStateSelected];
@@ -119,8 +119,8 @@
     [button setTitle:@"点我吧（带图片）" forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryLightColor forState:UIControlStateHighlighted];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryFocusColor forState:UIControlStateHighlighted];
     
     //设置按钮的背景颜色
     [button setBackgroundImage:[UIImage newWithColor:kWhiteColor] forState:UIControlStateNormal];

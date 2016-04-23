@@ -64,7 +64,7 @@
     
     //设置按钮的显示标签
     [button setTitle:@"基本提示框、响应事件" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色
@@ -115,7 +115,7 @@
     
     //设置按钮的显示标签
     [button setTitle:@"按钮列表模式" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色
@@ -181,7 +181,7 @@
     
     //设置按钮的显示标签
     [button setTitle:@"提示框(用户交互、信息输入)" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色

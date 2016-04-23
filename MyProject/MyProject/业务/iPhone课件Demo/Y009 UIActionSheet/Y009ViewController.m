@@ -60,7 +60,7 @@
     
     //设置按钮的显示标签
     [button setTitle:@"基本的多选择控制器" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色

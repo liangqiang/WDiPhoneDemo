@@ -64,7 +64,7 @@
     
     //设置按钮的显示标签
     [buttonCancel setTitle:@"取消" forState:UIControlStateNormal];
-    [buttonCancel setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [buttonCancel setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     buttonCancel.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色
@@ -87,7 +87,7 @@
     
     //设置按钮的显示标签
     [buttonCinfirm setTitle:@"确认" forState:UIControlStateNormal];
-    [buttonCinfirm setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [buttonCinfirm setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     buttonCinfirm.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色
@@ -141,7 +141,7 @@
     
     //设置按钮的显示标签
     [button setTitle:@"基本时间控件、选择时间" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色
@@ -177,7 +177,7 @@
     
     //设置按钮的显示标签
     [button setTitle:@"时间控件中文格式" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色
@@ -219,7 +219,7 @@
     
     //设置按钮的显示标签
     [button setTitle:@"显示模式" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色
@@ -264,7 +264,7 @@
     
     //设置按钮的显示标签
     [button setTitle:@"控件中最大最小时间" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色
@@ -315,7 +315,7 @@
     
     //设置按钮的显示标签
     [button setTitle:@"秒表" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryNormalColor forState:UIControlStateNormal];
+    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
     //设置按钮的背景颜色
