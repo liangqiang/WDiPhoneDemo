@@ -33,21 +33,27 @@
 // default 白
 #define kDefaultColor               HEXCOLOR(0xffffff)
 #define kDefaultFocusColor          HEXCOLOR(0xe6e6e6)
+#define kDefaultBorderColor          HEXCOLOR(0xcccccc)
 // primary 蓝
 #define kPrimaryColor               HEXCOLOR(0x337ab7)
 #define kPrimaryFocusColor          HEXCOLOR(0x286090)
+#define kPrimaryBorderColor          HEXCOLOR(0x2e6da4)
 // success 绿
 #define kSuccessColor               HEXCOLOR(0x5cb85c)
 #define kSuccessFocusColor          HEXCOLOR(0x449d44)
+#define kSuccessBorderColor          HEXCOLOR(0x4cae4c)
 // info 蓝
 #define kInfoColor               HEXCOLOR(0x5bc0de)
 #define kInfoFocusColor          HEXCOLOR(0x31b0d5)
+#define kInfoBorderColor          HEXCOLOR(0x46b8da)
 // warning 橙
 #define kWarningColor               HEXCOLOR(0xf0ad4e)
 #define kWarningFocusColor          HEXCOLOR(0xec971f)
+#define kWarningBorderColor          HEXCOLOR(0xeea236)
 // danger 红
 #define kDangerColor               HEXCOLOR(0xd9534f)
 #define kDangerFocusColor          HEXCOLOR(0xc9302c)
+#define kDangerBorderColor          HEXCOLOR(0xd43f3a)
 
 //#define kPrimaryLightColor              HEXCOLOR(0x0088cc)
 //#define kPrimaryNormalColor              HEXCOLOR(0x0066cc)

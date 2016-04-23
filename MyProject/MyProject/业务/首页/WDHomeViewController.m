@@ -59,7 +59,7 @@
     UIView *section = [UIView newWith:kWhiteColor, nil];
     section.size = CGSizeMake(self.scrollView.width, 64);
     
-    UIButton *button = [UIButton newWith:kFont16, kLightGrayColor, item.title, nil];
+    UIButton *button = [UIButton newWith:kFont16, kWhiteColor, item.title, nil];
     [button setCornerRadiusWith:@(4), nil];
     [button setBgColorWith:kPrimaryColor, kPrimaryFocusColor, nil];
     
