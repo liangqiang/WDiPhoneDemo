@@ -6,15 +6,10 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "AJViewModel.h"
+#import "YScrollViewModel.h"
 
-@interface Y007ViewModel : AJViewModel
+@interface Y007ViewModel : YScrollViewModel
 
-@property(nonatomic,strong) NSArray *viewTypeArray;
-@property float sliderValue;
-
--(void)loadData;
-
--(void)onSliderValueChanged;
+-(void)onSliderChanged:(UISlider*)slider;
 
 @end

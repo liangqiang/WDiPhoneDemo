@@ -34,6 +34,13 @@
 #define AJIconFontSmile6                       AJIconFontMake(@"iconfontBasic", @"\U0000e601", 36, HEXCOLOR(0x669900))
 
 // 常用图标 iconfont.ttf
-//#define AJIconFontWhiteBack                     AJIconFontMake(@"iconfont", @"\U0000e8a2", 20, HEXCOLOR(0xffffff))
+#define AJIconFontWater                     AJIconFontMake(@"iconfont", @"\U0000e89e", 36, HEXCOLOR(0x5cb85c))
+#define AJIconFontWaterHL                     AJIconFontMake(@"iconfont", @"\U0000e89e", 36, HEXCOLOR(0xd9534f))
+
 
 // 线性图标 iconfontLinear.ttf
+#define AJIconFontVolumnLow                AJIconFontMake(@"iconfontLinear", @"\U0000e6a6", 20, HEXCOLOR(0x5cb85c))
+#define AJIconFontVolumnHigh                AJIconFontMake(@"iconfontLinear", @"\U0000e6a5", 20, HEXCOLOR(0xd9534f))
+
+
+

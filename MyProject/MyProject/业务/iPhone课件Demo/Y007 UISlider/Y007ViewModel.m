@@ -11,21 +11,21 @@
 @implementation Y007ViewModel
 
 -(void)loadData{
-    NSArray *array = @[@"SliderNormal",@"SliderMaxMinValue",@"SliderMaxColorMinColor",@"SliderHightLighted"];
-    
-    self.viewTypeArray = [NSMutableArray arrayWithArray:array];
-    
+    self.viewTypeArray = @[VIEWTYPE( @"SliderNormal", @"基本滑块(滑动获取值)"),
+                           VIEWTYPE( @"SliderMaxMinValue", @"滑块(最大值、最小值、默认值)"),
+                           VIEWTYPE( @"SliderMaxColorMinColor", @"滑块(最大值颜色、最小值颜色)"),
+                           VIEWTYPE( @"SliderHightLighted", @"滑块(滑轮的图片(默认、高亮))"),
+                           ];
+
     [self notifyToRefresh];
 }
 
--(void)onSliderValueChanged{
-    
-    [AJUtil toast:[self converToString]];
-}
-
--(NSString*)converToString{
-    NSString *strValue = [NSString stringWithFormat:@"%f",self.sliderValue];
-    return strValue;
+-(void)onSliderChanged:(UISlider*)slider{    
+    if (slider.maximumValue >= 100) {
+        [AJUtil toast:[NSString stringWithFormat:@"%zd", (NSInteger)slider.value]];
+    }else{
+        [AJUtil toast:[NSString stringWithFormat:@"%f", slider.value]];
+    }
 }
 
 @end
