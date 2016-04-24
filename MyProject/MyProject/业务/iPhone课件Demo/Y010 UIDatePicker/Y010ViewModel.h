@@ -10,4 +10,8 @@
 
 @interface Y010ViewModel : YScrollViewModel
 
+-(void)onDatePickerClicked:(UIDatePicker*)datePicker;
+
+-(NSString*)getFormatTimer:(NSDate*)date;
+
 @end
