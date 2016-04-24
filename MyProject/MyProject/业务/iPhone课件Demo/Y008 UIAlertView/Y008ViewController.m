@@ -2,12 +2,13 @@
 //  Y008ViewController.m
 //  MyProject
 //
-//  Created by caoyang on 16/4/20.
+//  Created by caoyang on 16/4/24.
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
 #import "Y008ViewController.h"
 #import "Y008ViewModel.h"
+
 
 @interface Y008ViewController ()
 
@@ -17,53 +18,17 @@
 @property(nonatomic,strong) UIAlertAction *otherAction;
 @property(nonatomic,strong) UITextField *userNameField;
 @property(nonatomic,strong) UITextField *passWordField;
-
 @end
 
 @implementation Y008ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.title = @"Y008 UIAlertView";
-    
-    self.scrollView = [self createScrollView];
-    [self.view addSubview:self.scrollView];
-    
-    WEAKSELF
-    self.viewModel = [self createViewModel];
-    [self.viewModel setRefreshBlock:^{
-        [weakSelf updateViews];
-    }];
-    
-    [AJUtil runAfterDelay:0 block:^{
-        [weakSelf.viewModel loadData];
-    }];
-}
-
--(void)updateViews{
-    [self.scrollView removeAllSections];
-    for (NSString *viewType in self.viewModel.viewTypeArray) {
-        UIView *section = [UIView newWith:[UIColor clearColor], nil];
-        NSString *selector = [NSString stringWithFormat:@"create%@", viewType];
-        UIView *subview = [AJUtil performReturnSelector:NSSelectorFromString(selector) onTarget:self];
-        
-        [section addSubview:subview];
-        section.size = CGSizeMake(self.scrollView.width, subview.height + 20);
-        [subview layoutWithInsets:UIEdgeInsetsMake(EAuto, EAuto, EAuto, EAuto)]; // 定位
-        
-        [self.scrollView addSection:section];
-    }
-}
-
-
-//基本提示框、响应事件
+//1、基本提示框、响应事件
 -(UIButton*)createAlertNormal{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.size = CGSizeMake(self.scrollView.width - 100, 44);
     
     //设置按钮的显示标签
-    [button setTitle:@"基本提示框、响应事件" forState:UIControlStateNormal];
+    [button setTitle:@"提示框" forState:UIControlStateNormal];
     [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
@@ -91,13 +56,11 @@
     
     //创建事件按钮
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        self.viewModel.clickMessage = @"你点击了取消";
-        [self.viewModel submit];
+        [self.viewModel submit:cancelButtonTitle];
     }];
     
     UIAlertAction *otherAction = [UIAlertAction actionWithTitle:otherButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        self.viewModel.clickMessage = @"你点击了确认";
-        [self.viewModel submit];
+        [self.viewModel submit:otherButtonTitle];
     }];
     
     //提示框中添加事件按钮
@@ -108,13 +71,13 @@
 }
 
 
-//按钮列表模式
+//2、按钮列表模式
 -(UIButton*)createAlertList{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.size = CGSizeMake(self.scrollView.width - 100, 44);
     
     //设置按钮的显示标签
-    [button setTitle:@"按钮列表模式" forState:UIControlStateNormal];
+    [button setTitle:@"提示框" forState:UIControlStateNormal];
     [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
@@ -144,23 +107,19 @@
     
     //创建事件按钮
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        self.viewModel.clickMessage = @"取消链接";
-        [self.viewModel submit];
+        [self.viewModel submit:cancelButtonTitle];
     }];
     
     UIAlertAction *otherAction1 = [UIAlertAction actionWithTitle:otherButtonTitle1 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        self.viewModel.clickMessage = @"wifi链接";
-        [self.viewModel submit];
+        [self.viewModel submit:otherButtonTitle1];
     }];
     
     UIAlertAction *otherAction2 = [UIAlertAction actionWithTitle:otherButtonTitle2 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        self.viewModel.clickMessage = @"4G链接";
-        [self.viewModel submit];
+        [self.viewModel submit:otherButtonTitle2];
     }];
     
     UIAlertAction *otherAction3 = [UIAlertAction actionWithTitle:otherButtonTitle3 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        self.viewModel.clickMessage = @"本地连接";
-        [self.viewModel submit];
+        [self.viewModel submit:otherButtonTitle3];
     }];
     
     
@@ -174,13 +133,13 @@
 }
 
 
-//提示框(用户交互、信息输入)
+//3、提示框(用户交互、信息输入)
 -(UIButton*)createAlertTextField{
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.size = CGSizeMake(self.scrollView.width - 100, 44);
     
     //设置按钮的显示标签
-    [button setTitle:@"提示框(用户交互、信息输入)" forState:UIControlStateNormal];
+    [button setTitle:@"提示框" forState:UIControlStateNormal];
     [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
     button.titleLabel.font = kFont14;
     
@@ -206,7 +165,7 @@
     
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
     
-    //创建TextFiled
+    //创建用户名、密码 TextFiled
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
         
         textField.placeholder = @"请输入用户名";
@@ -224,8 +183,8 @@
     
     //取消确认按钮
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        self.viewModel.clickMessage = @"取消";
-        [self.viewModel submit];
+        
+        [self.viewModel submit:cancelButtonTitle];
         
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:alertController.textFields.firstObject];
     }];
@@ -233,8 +192,8 @@
     self.otherAction = [UIAlertAction actionWithTitle:otherButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         self.viewModel.userName = self.userNameField.text;
         self.viewModel.passWord = self.passWordField.text;
-        self.viewModel.clickMessage = self.userNameField.text;
-        [self.viewModel submit];
+        
+        [self.viewModel submit:otherButtonTitle];
         
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:alertController.textFields.firstObject];
     }];
@@ -247,11 +206,12 @@
     [self presentViewController:alertController animated:YES completion:nil];
 }
 - (void)handleTextFieldTextDidChangeNotification:(NSNotification *)notification {
-    UITextField *textField = notification.object;
+    UITextField *passWordTextField = notification.object;
     
-    if([self.viewModel checkLength:textField.text]){
+    if([self.viewModel checkLength:passWordTextField.text]){
         self.otherAction.enabled = YES;
     }
 }
+
 
 @end

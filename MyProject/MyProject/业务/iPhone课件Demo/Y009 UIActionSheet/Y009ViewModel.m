@@ -2,7 +2,7 @@
 //  Y009ViewModel.m
 //  MyProject
 //
-//  Created by caoyang on 16/4/20.
+//  Created by caoyang on 16/4/24.
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
@@ -10,16 +10,5 @@
 
 @implementation Y009ViewModel
 
--(void)loadData{
-    NSArray *array = @[@"ActionSheetNormal"];
-    
-    self.viewTypeArray = [NSMutableArray arrayWithArray:array];
-    
-    [self notifyToRefresh];
-}
-
--(void)submit{
-    [AJUtil toast:self.enjoyMessage];
-}
 
 @end

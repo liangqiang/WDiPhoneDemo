@@ -2,23 +2,18 @@
 //  Y008ViewModel.h
 //  MyProject
 //
-//  Created by caoyang on 16/4/20.
+//  Created by caoyang on 16/4/24.
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "AJViewModel.h"
+#import "YScrollViewModel.h"
 
-@interface Y008ViewModel : AJViewModel
-
-@property(nonatomic,strong) NSArray *viewTypeArray;
-@property(nonatomic,strong) NSString *clickMessage;
+@interface Y008ViewModel : YScrollViewModel
 
 @property(nonatomic,strong) NSString *userName;
 @property(nonatomic,strong) NSString *passWord;
 
--(void)loadData;
-
--(void)submit;
+-(void)submit:(NSString*)message;
 
 -(BOOL)checkLength:(NSString*)sender;
 

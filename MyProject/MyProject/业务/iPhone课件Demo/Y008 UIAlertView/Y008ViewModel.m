@@ -2,7 +2,7 @@
 //  Y008ViewModel.m
 //  MyProject
 //
-//  Created by caoyang on 16/4/20.
+//  Created by caoyang on 16/4/24.
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
@@ -11,15 +11,17 @@
 @implementation Y008ViewModel
 
 -(void)loadData{
-    NSArray *array = @[@"AlertNormal",@"AlertList",@"AlertTextField"];
     
-    self.viewTypeArray = [NSMutableArray arrayWithArray:array];
+    self.viewTypeArray = @[VIEWTYPE( @"AlertNormal", @"基本的提示框"),
+                           VIEWTYPE( @"AlertList", @"提示框(提示信息列表形式)"),
+                           VIEWTYPE( @"AlertTextField", @"提示框(用户名密码键入)"),
+                           ];
     
     [self notifyToRefresh];
 }
 
--(void)submit{
-    [AJUtil toast:self.clickMessage];
+-(void)submit:(NSString*)message;{
+    [AJUtil toast:message];
 }
 
 -(BOOL)checkLength:(NSString*)sender{
