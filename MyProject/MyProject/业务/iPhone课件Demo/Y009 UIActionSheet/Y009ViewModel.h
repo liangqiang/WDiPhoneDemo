@@ -10,5 +10,6 @@
 
 @interface Y009ViewModel : YScrollViewModel
 
+-(void)onActionSheetClicked:(NSString*)message;
 
 @end

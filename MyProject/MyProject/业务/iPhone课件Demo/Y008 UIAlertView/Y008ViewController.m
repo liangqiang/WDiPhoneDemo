@@ -56,11 +56,11 @@
     
     //创建事件按钮
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        [self.viewModel submit:cancelButtonTitle];
+        [self.viewModel onAlertViewClicked:cancelButtonTitle];
     }];
     
     UIAlertAction *otherAction = [UIAlertAction actionWithTitle:otherButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel submit:otherButtonTitle];
+        [self.viewModel onAlertViewClicked:otherButtonTitle];
     }];
     
     //提示框中添加事件按钮
@@ -107,19 +107,19 @@
     
     //创建事件按钮
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        [self.viewModel submit:cancelButtonTitle];
+        [self.viewModel onAlertViewClicked:cancelButtonTitle];
     }];
     
     UIAlertAction *otherAction1 = [UIAlertAction actionWithTitle:otherButtonTitle1 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel submit:otherButtonTitle1];
+        [self.viewModel onAlertViewClicked:otherButtonTitle1];
     }];
     
     UIAlertAction *otherAction2 = [UIAlertAction actionWithTitle:otherButtonTitle2 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel submit:otherButtonTitle2];
+        [self.viewModel onAlertViewClicked:otherButtonTitle2];
     }];
     
     UIAlertAction *otherAction3 = [UIAlertAction actionWithTitle:otherButtonTitle3 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel submit:otherButtonTitle3];
+        [self.viewModel onAlertViewClicked:otherButtonTitle3];
     }];
     
     
@@ -184,7 +184,7 @@
     //取消确认按钮
     UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         
-        [self.viewModel submit:cancelButtonTitle];
+        [self.viewModel onAlertViewClicked:cancelButtonTitle];
         
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:alertController.textFields.firstObject];
     }];
@@ -193,7 +193,7 @@
         self.viewModel.userName = self.userNameField.text;
         self.viewModel.passWord = self.passWordField.text;
         
-        [self.viewModel submit:otherButtonTitle];
+        [self.viewModel onAlertViewClicked:otherButtonTitle];
         
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:alertController.textFields.firstObject];
     }];

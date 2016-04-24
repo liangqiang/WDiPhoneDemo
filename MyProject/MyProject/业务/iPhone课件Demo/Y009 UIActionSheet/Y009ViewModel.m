@@ -10,5 +10,14 @@
 
 @implementation Y009ViewModel
 
+-(void)loadData{
+    self.viewTypeArray = @[VIEWTYPE(@"ActionSheetNormal", @"一个基本的多选项控制器")];
+    
+    [self notifyToRefresh];
+}
+
+-(void)onActionSheetClicked:(NSString*)message{
+    [AJUtil toast:message];
+}
 
 @end

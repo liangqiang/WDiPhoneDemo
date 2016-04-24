@@ -20,7 +20,7 @@
     [self notifyToRefresh];
 }
 
--(void)submit:(NSString*)message;{
+-(void)onAlertViewClicked:(NSString*)message;{
     [AJUtil toast:message];
 }
 

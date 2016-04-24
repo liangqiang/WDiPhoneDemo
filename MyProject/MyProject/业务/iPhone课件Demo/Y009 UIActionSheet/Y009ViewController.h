@@ -8,6 +8,8 @@
 
 #import "YScrollViewController.h"
 
-@interface Y009ViewController : YScrollViewController
+//1、基本的多选择控制器
 
+@interface Y009ViewController : YScrollViewController
+ 
 @end
