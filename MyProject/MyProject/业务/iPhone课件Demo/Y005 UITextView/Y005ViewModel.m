@@ -11,37 +11,29 @@
 @implementation Y005ViewModel
 
 -(void)loadData{
-    NSArray *array = @[@"TextViewMessage",@"TextViewMessage2"];
-    
-    self.viewTypeArray = [NSMutableArray arrayWithArray:array];
+    self.viewTypeArray = @[VIEWTYPE( @"TextViewMessage", @"多行文本框(不超过100字，提示语，剩余字数)"),
+                           VIEWTYPE( @"TextViewReadOnly", @"多行文本框(只读显示)"),
+                           ];
     
     [self notifyToRefresh];
 }
 
--(BOOL)checkValid{
-    NSString *messsage = [self messageCheckValid];
-    if (messsage) {
-        [AJUtil toast:messsage];
+-(BOOL)submit{
+    NSString *message = [self messageCheckValid];
+    if (message) {
+        [AJUtil toast:message];
         return NO;
     }else{
+        [AJUtil toast:[NSString stringWithFormat:@"%@\n提交成功", self.content]];
         return YES;
     }
 }
 
--(NSString*)checkMessage{
-    self.message = [self.message substringToIndex:4];
-    return self.message;
-}
-
 -(NSString*)messageCheckValid{
-    if (self.message.length == 0) {
+    if (self.content.length == 0) {
         return @"请输入提交信息";
     }
     return nil;
-}
-
--(void)submit{
-    [AJUtil toast:@"提交成功"];
 }
 
 @end

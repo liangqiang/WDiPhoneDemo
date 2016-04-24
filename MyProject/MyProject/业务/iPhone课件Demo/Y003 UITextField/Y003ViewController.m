@@ -101,9 +101,7 @@
     self.viewModel.name = self.textFieldName.text;
     self.viewModel.password = self.textFieldPassword.text;
     self.viewModel.phone = self.textFieldPhone.text;
-    if ([self.viewModel checkValid]) {
-        [self.viewModel submit];
-    }
+    [self.viewModel submit];
 }
 
 @end

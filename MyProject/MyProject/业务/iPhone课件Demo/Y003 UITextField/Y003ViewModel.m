@@ -19,12 +19,13 @@
     [self notifyToRefresh];
 }
 
--(BOOL)checkValid{
-    NSString *messsage = [self messageCheckValid];
-    if (messsage) {
-        [AJUtil toast:messsage];
+-(BOOL)submit{
+    NSString *message = [self messageCheckValid];
+    if (message) {
+        [AJUtil toast:message];
         return NO;
     }else{
+        [AJUtil toast:@"提交成功"];
         return YES;
     }
 }
@@ -44,15 +45,5 @@
     }
     return nil;
 }
-
--(void)submit{
-    NSString *messsage = [self messageCheckValid];
-    if (messsage) {
-        [AJUtil toast:@"提交失败"];
-    }else{
-        [AJUtil toast:@"提交成功"];
-    }
-}
-
 
 @end

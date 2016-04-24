@@ -14,7 +14,6 @@
 @property (nonatomic,strong) NSString *password;
 @property (nonatomic,strong) NSString *phone;
 
+-(BOOL)submit;
 
--(BOOL)checkValid;
--(void)submit;
 @end

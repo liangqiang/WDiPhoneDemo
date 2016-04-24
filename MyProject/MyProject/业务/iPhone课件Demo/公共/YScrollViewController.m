@@ -52,10 +52,10 @@
     if (item.hint.length == 0) return nil;
     
     self.viewIndex += 1;
-//    NSInteger index = [self.viewModel.viewTypeArray indexOfObject:item];
     NSString *hint = [NSString stringWithFormat:@"%zd、%@", self.viewIndex, item.hint];
     UILabel *label = [UILabel newWith: kFont12, kLightBlackColor, hint, nil];
-    [label sizeToFit];
+    label.numberOfLines = 0; // 可多行
+    [label sizeToFitWidth:self.scrollView.width-30]; //限制最大宽度
     
     UIView *section = [UIView newWith:kLightGrayColor, nil];
     [section addSubview:label];

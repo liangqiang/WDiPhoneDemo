@@ -6,16 +6,12 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "AJViewModel.h"
+#import "YScrollViewModel.h"
 
-@interface Y005ViewModel : AJViewModel
+@interface Y005ViewModel : YScrollViewModel
 
-@property(nonatomic,strong)NSArray *viewTypeArray;
-@property(nonatomic,strong)NSString *message;
+@property (nonatomic,strong) NSString *content;
 
--(void)loadData;
--(BOOL)checkValid;
--(NSString*)checkMessage;
--(void)submit;
+-(BOOL)submit;
 
 @end
