@@ -10,8 +10,12 @@
 
 @interface Y010ViewModel : YScrollViewModel
 
+@property(nonatomic)NSInteger showTime;
+
 -(void)onDatePickerClicked:(UIDatePicker*)datePicker;
 
 -(NSString*)getFormatTimer:(NSDate*)date;
+
+-(BOOL)checkTime;
 
 @end

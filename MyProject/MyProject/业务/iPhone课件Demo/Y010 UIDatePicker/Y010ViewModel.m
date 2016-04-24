@@ -36,4 +36,14 @@
     return dateAndTime;
 }
 
+-(BOOL)checkTime{
+    self.showTime = self.showTime - 60;
+    
+    if(self.showTime<=0){
+        return YES;
+    }else{
+        return NO;
+    }
+}
+
 @end
