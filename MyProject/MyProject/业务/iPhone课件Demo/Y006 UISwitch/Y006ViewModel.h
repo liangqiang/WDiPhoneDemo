@@ -6,13 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "AJViewModel.h"
+#import "YScrollViewModel.h"
 
-@interface Y006ViewModel : AJViewModel
-
-@property(nonatomic,strong) NSArray *viewTypeArray;
-
--(void)loadData;
+@interface Y006ViewModel : YScrollViewModel
 
 -(void)onSwitchClicked:(UISwitch*)theSwitch;
 

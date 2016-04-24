@@ -11,9 +11,10 @@
 @implementation Y006ViewModel
 
 -(void)loadData{
-    NSArray *array = @[@"SwitchNormal",@"SwitchNormal1",@"SwitchColor"];
-    
-    self.viewTypeArray = [NSMutableArray arrayWithArray:array];
+    self.viewTypeArray = @[VIEWTYPE( @"SwitchNormal", @"开关按钮(点击响应)"),
+                           VIEWTYPE( @"SwitchNormal1", @"开关按钮(设置初始状态)"),
+                           VIEWTYPE( @"SwitchColor", @"开关按钮(开关颜色)"),
+                           ];
     
     [self notifyToRefresh];
 }
