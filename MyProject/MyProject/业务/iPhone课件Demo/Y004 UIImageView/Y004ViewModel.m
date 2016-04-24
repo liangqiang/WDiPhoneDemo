@@ -13,7 +13,8 @@
 -(void)loadData{
     self.viewTypeArray = @[VIEWTYPE( @"ImageViewSimple", @"显示图片，缩放（原比例）,点击修改contentMode"),
                            VIEWTYPE( @"LabelContentModel", @""),
-                           VIEWTYPE( @"ImageViewGif", @"gif动画"),
+                           VIEWTYPE( @"ImageViewFrames", @"播放多图片模拟动画"),
+                           VIEWTYPE( @"ImageViewGif", @"播放gif动画（webView）"),
                            ];
     
     [self notifyToRefresh];

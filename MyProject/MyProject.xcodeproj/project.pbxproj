@@ -52,6 +52,7 @@
 		035C063F1C86D21300D050D1 /* WDComplexTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C063E1C86D21300D050D1 /* WDComplexTableView.m */; };
 		035C06421C86D25700D050D1 /* WDComplexATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06411C86D25700D050D1 /* WDComplexATableViewCell.m */; };
 		035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 035C06441C86DD7100D050D1 /* WDComplexCellItem.m */; };
+		036E05371CCC62E5009B683F /* run.gif in Resources */ = {isa = PBXBuildFile; fileRef = 036E05361CCC62E5009B683F /* run.gif */; };
 		0379C98A1CCBD7F70015107D /* image01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0379C9891CCBD7F70015107D /* image01.jpg */; };
 		03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761511C93AB2200297AC7 /* AJViewCreator.m */; };
 		03B7617C1C93AB2200297AC7 /* NSObject+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761531C93AB2200297AC7 /* NSObject+AJAddition.m */; };
@@ -213,7 +214,6 @@
 		035C05F91C857A2200D050D1 /* WDDemoListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDDemoListTableViewCell.h; sourceTree = "<group>"; };
 		035C05FA1C857A2200D050D1 /* WDDemoListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDDemoListTableViewCell.m; sourceTree = "<group>"; };
 		035C06031C859C5F00D050D1 /* 布局方法探讨.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "布局方法探讨.md"; sourceTree = "<group>"; };
-		035C06041C859C6000D050D1 /* 家庭医生患者详情页代码整理对比.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "家庭医生患者详情页代码整理对比.md"; sourceTree = "<group>"; };
 		035C06051C859C6000D050D1 /* 开发规范.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "开发规范.md"; sourceTree = "<group>"; };
 		035C06061C859C6000D050D1 /* 模块文件依赖关系.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "模块文件依赖关系.md"; sourceTree = "<group>"; };
 		035C06071C859C6000D050D1 /* 相对布局方案.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "相对布局方案.md"; sourceTree = "<group>"; };
@@ -240,6 +240,7 @@
 		035C06411C86D25700D050D1 /* WDComplexATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDComplexATableViewCell.m; sourceTree = "<group>"; };
 		035C06431C86DD7100D050D1 /* WDComplexCellItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDComplexCellItem.h; sourceTree = "<group>"; };
 		035C06441C86DD7100D050D1 /* WDComplexCellItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDComplexCellItem.m; sourceTree = "<group>"; };
+		036E05361CCC62E5009B683F /* run.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = run.gif; sourceTree = "<group>"; };
 		0379C9891CCBD7F70015107D /* image01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image01.jpg; sourceTree = "<group>"; };
 		03B761501C93AB2200297AC7 /* AJViewCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewCreator.h; sourceTree = "<group>"; };
 		03B761511C93AB2200297AC7 /* AJViewCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewCreator.m; sourceTree = "<group>"; };
@@ -697,7 +698,6 @@
 			isa = PBXGroup;
 			children = (
 				035C06031C859C5F00D050D1 /* 布局方法探讨.md */,
-				035C06041C859C6000D050D1 /* 家庭医生患者详情页代码整理对比.md */,
 				035C06051C859C6000D050D1 /* 开发规范.md */,
 				035C06061C859C6000D050D1 /* 模块文件依赖关系.md */,
 				035C06071C859C6000D050D1 /* 相对布局方案.md */,
@@ -739,6 +739,7 @@
 		0379C9881CCBD7F70015107D /* 资源 */ = {
 			isa = PBXGroup;
 			children = (
+				036E05361CCC62E5009B683F /* run.gif */,
 				0379C9891CCBD7F70015107D /* image01.jpg */,
 			);
 			path = "资源";
@@ -1136,6 +1137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				033FCF3C1CC9F7E900632226 /* iconfont.ttf in Resources */,
+				036E05371CCC62E5009B683F /* run.gif in Resources */,
 				03398C181CC216C1000F3AA4 /* Y000.plist in Resources */,
 				0379C98A1CCBD7F70015107D /* image01.jpg in Resources */,
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,

@@ -84,13 +84,13 @@
     }
 }
 
-//gif动画
--(UIImageView*)createImageViewGif{
-    UIImageView *imageViewGif = [UIImageView new];
-    imageViewGif.size = CGSizeMake(50, 50);
+// 多帧动画
+-(UIImageView*)createImageViewFrames{
+    UIImageView *imageView = [UIImageView new];
+    imageView.size = CGSizeMake(50, 50);
     
     //循环播放的资源
-    imageViewGif.animationImages = [NSArray arrayWithObjects:
+    imageView.animationImages = [NSArray arrayWithObjects:
                                     AJIconFontSmile1,
                                     AJIconFontSmile2,
                                     AJIconFontSmile3,
@@ -99,15 +99,35 @@
                                     AJIconFontSmile6,
                                     nil];
     //动画播放时间
-    imageViewGif.animationDuration = 4.0f;
+    imageView.animationDuration = 4.0f;
     
     //动画重复次数
-    imageViewGif.animationRepeatCount = 0;
+    imageView.animationRepeatCount = 0;
     
     //开始播放图片动画
-    [imageViewGif startAnimating];
+    [imageView startAnimating];
     
-    return imageViewGif;
+    return imageView;
 }
+
+// 播放gif动画（webView）
+-(UIView*)createImageViewGif{
+    UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    webView.scalesPageToFit = YES;
+    webView.userInteractionEnabled = NO;//用户不可交互
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"run" ofType:@"gif"];
+    NSData *gifData = [NSData dataWithContentsOfFile:path];
+    
+// 去除编译警告：null passed to a callee which requires a non-null argument
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wnonnull"
+    [webView loadData:gifData MIMEType:@"image/gif" textEncodingName:nil baseURL:nil];
+#pragma clang diagnostic pop
+
+    [self.view addSubview:webView];
+
+    return webView;
+}
+
 
 @end
