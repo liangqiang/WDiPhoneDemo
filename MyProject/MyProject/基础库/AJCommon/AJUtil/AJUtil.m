@@ -48,7 +48,7 @@ static NSMutableDictionary *s_tags = nil;
     }];
 }
 
-+(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJActionSheetClickBlock)block{
++(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJButtonIndexBlock)block{
     UIActionSheet *actionSheet = [UIActionSheet new];
     actionSheet.title = title;
     for (NSString* button in buttons) {
@@ -60,9 +60,13 @@ static NSMutableDictionary *s_tags = nil;
     return actionSheet;
 }
 
-+(id)alert:(NSString*)message buttons:(NSArray*)buttons block:(AJAlertViewClickBlock)block{
++(id)alertMessage:(NSString*)message buttons:(NSArray*)buttons block:(AJButtonIndexBlock)block{
+    return [self alertTitle:@"" message:message buttons:buttons block:block];
+}
+
++(id)alertTitle:(NSString*)title message:(NSString*)message buttons:(NSArray*)buttons block:(AJButtonIndexBlock)block{
     UIAlertView *alert = [UIAlertView new];
-    alert.title = @"";
+    alert.title = title;
     alert.message = message;
     for (NSString* button in buttons) {
         [alert addButtonWithTitle:button];
@@ -72,6 +76,7 @@ static NSMutableDictionary *s_tags = nil;
     [alert show];
     return alert;
 }
+
 
 + (UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size {
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
@@ -213,13 +218,13 @@ static NSMutableDictionary *s_tags = nil;
 
 @implementation  UIActionSheet (AJUtil) 
 
--(void)setClickBlock:(AJActionSheetClickBlock)block{
+-(void)setClickBlock:(AJButtonIndexBlock)block{
     objc_setAssociatedObject(self, _cmd, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
     self.delegate = self;
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex{
-    AJActionSheetClickBlock block = objc_getAssociatedObject(self, @selector(setClickBlock:));
+    AJButtonIndexBlock block = objc_getAssociatedObject(self, @selector(setClickBlock:));
     if (block!= nil){
         block(buttonIndex);
     }
@@ -229,13 +234,13 @@ static NSMutableDictionary *s_tags = nil;
 
 @implementation  UIAlertView (AJUtil) 
 
--(void)setClickBlock:(AJAlertViewClickBlock)block{
+-(void)setClickBlock:(AJButtonIndexBlock)block{
     objc_setAssociatedObject(self, _cmd, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
     self.delegate = self;
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    AJAlertViewClickBlock block = objc_getAssociatedObject(self, @selector(setClickBlock:));
+    AJButtonIndexBlock block = objc_getAssociatedObject(self, @selector(setClickBlock:));
     if (block!= nil){
         block(buttonIndex);
     }

@@ -22,30 +22,28 @@
 
 @implementation Y008ViewController
 
+-(UIButton*)createAlertButton{
+    UIButton *button = [UIButton newWith:kFont14, kPrimaryColor, @"弹出提示框", nil];
+    button.size = CGSizeMake(self.scrollView.width - 100, 44);
+    button.backgroundColor = kWhiteColor;
+    [button setCornerRadiusWith:@(8), @(LINE_HEIGHT), kLightGrayColor, nil];
+    return button;
+}
+
 //1、基本提示框、响应事件
 -(UIButton*)createAlertNormal{
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.size = CGSizeMake(self.scrollView.width - 100, 44);
-    
-    //设置按钮的显示标签
-    [button setTitle:@"提示框" forState:UIControlStateNormal];
-    [button setTitleColor:kPrimaryColor forState:UIControlStateNormal];
-    button.titleLabel.font = kFont14;
-    
-    //设置按钮的背景颜色
-    button.backgroundColor = kWhiteColor ;
-    
-    //设置圆角，边线
-    button.layer.cornerRadius = 8;
-    button.layer.borderWidth = LINE_HEIGHT;
-    button.layer.borderColor = kLightGrayColor.CGColor;
-    button.clipsToBounds = YES;
-    
+    UIButton *button = [self createAlertButton];
+
     //添加按钮的触摸事件(按钮按下)
     [button addTarget:self action:@selector(onAlertNormalClicked:) forControlEvents:UIControlEventTouchUpInside];
     
+    [AJUtil alert:@"网络断了" buttons:@[@"确定"] block:^(NSInteger buttonIndex) {
+        
+    }];
+    
     return button;
 }
+
 -(void)onAlertNormalClicked:(id)sender{
     NSString *title = NSLocalizedString(@"提示", nil);
     NSString *message = NSLocalizedString(@"网络断开成功", nil);
@@ -212,6 +210,7 @@
         self.otherAction.enabled = YES;
     }
 }
+
 
 
 @end
