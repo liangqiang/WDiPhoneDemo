@@ -9,7 +9,7 @@
 #import "Y009ViewController.h"
 #import "Y009ViewModel.h"
 
-@interface Y009ViewController ()
+@interface Y009ViewController ()<UIActionSheetDelegate>
 
 @property(nonatomic,strong) Y009ViewModel *viewModel;
 @property(nonatomic,strong) UIScrollView *scrollView;
@@ -36,34 +36,23 @@
     return button;
 }
 -(void)onSheetNormalClicked:(id)sender{
-    NSString *title = NSLocalizedString(@"提示", nil);
-    NSString *message = NSLocalizedString(@"请选择您的爱好", nil);
-    NSString *cancleButtom = NSLocalizedString(@"取消", nil);
-    NSString *otherButton1 = NSLocalizedString(@"篮球", nil);
-    NSString *otherButton2 = NSLocalizedString(@"足球", nil);
-    NSString *otherButton3 = NSLocalizedString(@"羽毛球", nil);
-    NSString *otherButton4 = NSLocalizedString(@"乒乓球", nil);
-    
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
+
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请选择您的爱好" preferredStyle:UIAlertControllerStyleActionSheet];
     
     //创建事件按钮
-    UIAlertAction *cancle = [UIAlertAction actionWithTitle:cancleButtom style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        [self.viewModel onActionSheetClicked:cancleButtom];
+    UIAlertAction *cancle = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        [self.viewModel onActionSheetClicked:@"取消"];
     }];
-    UIAlertAction *One = [UIAlertAction actionWithTitle:otherButton1 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel onActionSheetClicked:otherButton1];
-    }];
-    
-    UIAlertAction *Two = [UIAlertAction actionWithTitle:otherButton2 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel onActionSheetClicked:otherButton2];
+    UIAlertAction *One = [UIAlertAction actionWithTitle:@"篮球" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self.viewModel onActionSheetClicked:@"篮球"];
     }];
     
-    UIAlertAction *Three = [UIAlertAction actionWithTitle:otherButton3 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel onActionSheetClicked:otherButton3];
+    UIAlertAction *Two = [UIAlertAction actionWithTitle:@"足球" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self.viewModel onActionSheetClicked:@"足球"];
     }];
     
-    UIAlertAction *Four = [UIAlertAction actionWithTitle:otherButton4 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel onActionSheetClicked:otherButton4];
+    UIAlertAction *Three = [UIAlertAction actionWithTitle:@"羽毛球" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self.viewModel onActionSheetClicked:@"羽毛球"];
     }];
     
     
@@ -72,9 +61,62 @@
     [alertController addAction:One];
     [alertController addAction:Two];
     [alertController addAction:Three];
-    [alertController addAction:Four];
     
     [self presentViewController:alertController animated:YES completion:nil];
+}
+
+
+//2、多选择控制器(ActionSheet)
+-(UIButton*)createActionSheetNormal1{
+    UIButton *button = [self createActionButton];
+    
+    //添加按钮的触摸事件(按钮按下)
+    [button addTarget:self action:@selector(onSheetNormal1Clicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+-(void)onSheetNormal1Clicked:(id)sender{
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]initWithTitle:@"选择Player" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"Kobe",@"James",@"Mac", nil];
+    
+    [actionSheet showInView:self.view];
+}
+#pragma makr ActionSheet delegate
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch (buttonIndex) {
+
+        case 0:
+            [self.viewModel onActionSheetClicked:@"Kobe"];
+            break;
+        case 1:
+            [self.viewModel onActionSheetClicked:@"James"];
+            break;
+        case 2:
+            [self.viewModel onActionSheetClicked:@"Mac"];
+            break;
+        case 3:
+            [self.viewModel onActionSheetClicked:@"取消"];
+            break;
+        default:
+            break;
+    }
+}
+
+
+//3、框架(多选择器)
+-(UIButton*)createAJActionSheet{
+    UIButton *button = [self createActionButton];
+    
+    //添加按钮的触摸事件(按钮按下)
+    [button addTarget:self action:@selector(onAJSheetClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+-(void)onAJSheetClicked:(id)sender{
+    NSArray *buttons = @[@"Kobe", @"Cury",@"Tom",@"取消"];
+    [AJUtil actionSheet:@"选择你的运动员" buttons:buttons block:^(NSInteger buttonIndex){
+        NSString *info = [NSString stringWithFormat:@"您选择了：%@", [buttons safeObjectAtIndex:buttonIndex]];
+        [AJUtil toast:info];
+    }];
 }
 
 
