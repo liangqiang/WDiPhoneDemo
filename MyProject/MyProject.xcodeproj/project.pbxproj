@@ -107,6 +107,8 @@
 		AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335E71CC514BA00F48FA7 /* Y004ViewModel.m */; };
 		AD5335EF1CC5E55F00F48FA7 /* Y005ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */; };
 		AD5335F21CC5E59D00F48FA7 /* Y005ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */; };
+		AD7E66D41CCE6D4700BC36EC /* Y011ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7E66D31CCE6D4700BC36EC /* Y011ViewController.m */; };
+		AD7E66D71CCE6D5E00BC36EC /* Y011ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7E66D61CCE6D5E00BC36EC /* Y011ViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -351,6 +353,10 @@
 		AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y005ViewController.m; path = "Y005 UITextView/Y005ViewController.m"; sourceTree = "<group>"; };
 		AD5335F01CC5E59D00F48FA7 /* Y005ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y005ViewModel.h; path = "Y005 UITextView/Y005ViewModel.h"; sourceTree = "<group>"; };
 		AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y005ViewModel.m; path = "Y005 UITextView/Y005ViewModel.m"; sourceTree = "<group>"; };
+		AD7E66D21CCE6D4700BC36EC /* Y011ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewController.h; path = "Y011 UIPickerView/Y011ViewController.h"; sourceTree = "<group>"; };
+		AD7E66D31CCE6D4700BC36EC /* Y011ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewController.m; path = "Y011 UIPickerView/Y011ViewController.m"; sourceTree = "<group>"; };
+		AD7E66D51CCE6D5E00BC36EC /* Y011ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewModel.h; path = "Y011 UIPickerView/Y011ViewModel.h"; sourceTree = "<group>"; };
+		AD7E66D61CCE6D5E00BC36EC /* Y011ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewModel.m; path = "Y011 UIPickerView/Y011ViewModel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1035,6 +1041,17 @@
 			name = "Y005 UITextView";
 			sourceTree = "<group>";
 		};
+		AD7E66D11CCE6D1A00BC36EC /* Y011 UIPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				AD7E66D21CCE6D4700BC36EC /* Y011ViewController.h */,
+				AD7E66D31CCE6D4700BC36EC /* Y011ViewController.m */,
+				AD7E66D51CCE6D5E00BC36EC /* Y011ViewModel.h */,
+				AD7E66D61CCE6D5E00BC36EC /* Y011ViewModel.m */,
+			);
+			name = "Y011 UIPickerView";
+			sourceTree = "<group>";
+		};
 		AD9A66BE1CC0EB8C00B6A4E1 /* iPhone课件Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1051,6 +1068,7 @@
 				AD264D801CC774C7006CA205 /* Y008 UIAlertView */,
 				AD264D811CC774D6006CA205 /* Y009 UIActionSheet */,
 				AD264D821CC774E4006CA205 /* Y010 UIDatePicker */,
+				AD7E66D11CCE6D1A00BC36EC /* Y011 UIPickerView */,
 				03398BEB1CC1EE19000F3AA4 /* 问题讨论.md */,
 			);
 			path = "iPhone课件Demo";
@@ -1220,6 +1238,7 @@
 				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
 				03398C071CC1F6BA000F3AA4 /* Y000TableView.m in Sources */,
 				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
+				AD7E66D41CCE6D4700BC36EC /* Y011ViewController.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */,
@@ -1228,6 +1247,7 @@
 				03398C081CC1F6BA000F3AA4 /* Y000TableViewCell.m in Sources */,
 				03398BE41CBF492F000F3AA4 /* NSObject+AJPropertyCreator.m in Sources */,
 				AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */,
+				AD7E66D71CCE6D5E00BC36EC /* Y011ViewModel.m in Sources */,
 				03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */,
 				035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */,
 				03398C101CC1F6BA000F3AA4 /* Y001ViewController.m in Sources */,

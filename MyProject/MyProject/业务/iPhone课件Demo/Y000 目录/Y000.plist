@@ -22,5 +22,7 @@
 	<string>Y009ViewController</string>
 	<key>Y010 UIDatePicker</key>
 	<string>Y010ViewController</string>
+	<key>Y011 UIPickerView</key>
+	<string>Y011ViewController</string>
 </dict>
 </plist>
