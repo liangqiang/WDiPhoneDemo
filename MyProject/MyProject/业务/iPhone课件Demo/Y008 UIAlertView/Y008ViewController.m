@@ -36,11 +36,7 @@
 
     //添加按钮的触摸事件(按钮按下)
     [button addTarget:self action:@selector(onAlertNormalClicked:) forControlEvents:UIControlEventTouchUpInside];
-    
-    //[AJUtil alert:@"网络断了" buttons:@[@"确定"] block:^(NSInteger buttonIndex) {
-        
-    //}];
-    
+
     return button;
 }
 -(void)onAlertNormalClicked:(id)sender{
