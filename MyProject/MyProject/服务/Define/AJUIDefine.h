@@ -76,4 +76,8 @@
 #define kDateFormatShort           @"yyyy-MM-dd"
 #define kDateFormatLong            @"yyyy-MM-dd HH:mm:ss"
 
+
+// view透明度
+#define kViewAlpha              0.9f
+
 #endif

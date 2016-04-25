@@ -18,4 +18,6 @@
 
 -(BOOL)checkTime;
 
+-(void)toastTimer:(NSInteger)timer;
+
 @end

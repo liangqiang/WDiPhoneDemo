@@ -23,7 +23,10 @@
 
 @implementation Y010ViewController
 
-//单个button
+/*
+ UIButton
+ 选择DatePicker上面的取消、确认、开始、暂停
+ */
 -(UIButton*)createButton:(NSString*)title{
     UIButton *button = [UIButton newWith:kFont14, kPrimaryColor, title, nil];
     button.size = CGSizeMake(self.scrollView.width - 100, 44);
@@ -32,7 +35,10 @@
     return button;
 }
 
-//单个View
+/*
+ UIView
+ 蒙样式的View，用来存放按钮
+ */
 -(UIView*)createSimpleView{
     UIView *newView = [UIView new];
     newView.size = CGSizeMake(self.view.width, self.view.height);
@@ -40,9 +46,14 @@
     return newView;
 }
 
-//创建View(取消、确认按钮)
+
+/*
+ UIVIew
+ 存放取消、确认的View
+ */
 -(UIView*)createView{
     UIView *newView = [self createSimpleView];
+    newView.alpha = kViewAlpha;
     [self.view addSubview:newView];
     
     //取消按钮
@@ -51,13 +62,13 @@
     //添加按钮的触摸事件(按钮按下)
     [buttonCancel addTarget:self action:@selector(onCancelClicked:) forControlEvents:UIControlEventTouchUpInside];
     
-    
     //确认按钮
     UIButton *buttonCinfirm = [self createButton:@"确认"];
     float leftWidth = self.view.width-10-120;
     buttonCinfirm.frame = CGRectMake(leftWidth, 200, 120, 40);
     //添加按钮的触摸事件(按钮按下)
     [buttonCinfirm addTarget:self action:@selector(onCinfirmClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
     
     [newView addSubview:buttonCancel];
     [newView addSubview:buttonCinfirm];
@@ -200,9 +211,13 @@
     
     return button;
 }
--(void)onDatePickerTimerClicked:(id)sender{
-    
+/*
+ UIVIew
+ 存放开始、暂停的View
+ */
+-(UIView*)createView1{
     UIView *newView = [self createSimpleView];
+    newView.alpha = kViewAlpha;
     [self.view addSubview:newView];
     
     UIButton *buttonCancel = [self createButton:@"停止"];
@@ -218,6 +233,10 @@
     
     [newView addSubview:buttonCancel];
     [newView addSubview:buttonCinfirm];
+    return newView;
+}
+-(void)onDatePickerTimerClicked:(id)sender{
+    UIView *newView = [self createView1];
     self.datePickerView = newView;
     
     
@@ -248,7 +267,7 @@
 }
 
 -(void)onStartClicked:(id)sender{
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:60
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:5
                                              target:self selector:@selector(timeRun)
                                            userInfo:nil repeats:YES];
 }
@@ -258,6 +277,8 @@
     if(self.viewModel.checkTime){
         // 取消定时器
         [self.timer invalidate];
+    }else{
+        [self.viewModel toastTimer:self.viewModel.showTime];
     }
     
     // 修改UIDatePicker的剩余时间
