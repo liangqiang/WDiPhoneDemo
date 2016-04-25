@@ -10,7 +10,7 @@
 #import "Y008ViewModel.h"
 
 
-@interface Y008ViewController ()
+@interface Y008ViewController ()<UIAlertViewDelegate>
 
 @property(nonatomic,strong) Y008ViewModel *viewModel;
 @property(nonatomic,strong) UIScrollView *scrollView;
@@ -30,6 +30,7 @@
     return button;
 }
 
+
 //1、基本提示框、响应事件
 -(UIButton*)createAlertNormal{
     UIButton *button = [self createAlertButton];
@@ -40,20 +41,16 @@
     return button;
 }
 -(void)onAlertNormalClicked:(id)sender{
-    NSString *title = NSLocalizedString(@"提示", nil);
-    NSString *message = NSLocalizedString(@"网络断开成功", nil);
-    NSString *cancelButtonTitle = NSLocalizedString(@"Cancel", nil);
-    NSString *otherButtonTitle = NSLocalizedString(@"OK", nil);
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"网络断开成功" preferredStyle:UIAlertControllerStyleAlert];
     
     //创建事件按钮
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        [self.viewModel onAlertViewClicked:cancelButtonTitle];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        [self.viewModel onAlertViewClicked:@"取消"];
     }];
     
-    UIAlertAction *otherAction = [UIAlertAction actionWithTitle:otherButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel onAlertViewClicked:otherButtonTitle];
+    UIAlertAction *otherAction = [UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self.viewModel onAlertViewClicked:@"确认"];
     }];
     
     //提示框中添加事件按钮
@@ -62,6 +59,7 @@
     
     [self presentViewController:alertController animated:YES completion:nil];
 }
+
 
 
 //2、按钮列表模式
@@ -74,30 +72,24 @@
     return button;
 }
 -(void)onAlertListClicked:(id)sender{
-    NSString *title = NSLocalizedString(@"友情提示", nil);
-    NSString *message = NSLocalizedString(@"请选择网络链接模式", nil);
-    NSString *cancelButtonTitle = NSLocalizedString(@"Cancel", nil);
-    NSString *otherButtonTitle1 = NSLocalizedString(@"Wifi", nil);
-    NSString *otherButtonTitle2 = NSLocalizedString(@"4G", nil);
-    NSString *otherButtonTitle3 = NSLocalizedString(@"本地连接", nil);
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"友情提示" message:@"请选择网络链接模式" preferredStyle:UIAlertControllerStyleAlert];
     
     //创建事件按钮
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        [self.viewModel onAlertViewClicked:cancelButtonTitle];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        [self.viewModel onAlertViewClicked:@"取消"];
     }];
     
-    UIAlertAction *otherAction1 = [UIAlertAction actionWithTitle:otherButtonTitle1 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel onAlertViewClicked:otherButtonTitle1];
+    UIAlertAction *otherAction1 = [UIAlertAction actionWithTitle:@"Wifi" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self.viewModel onAlertViewClicked:@"Wifi"];
     }];
     
-    UIAlertAction *otherAction2 = [UIAlertAction actionWithTitle:otherButtonTitle2 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel onAlertViewClicked:otherButtonTitle2];
+    UIAlertAction *otherAction2 = [UIAlertAction actionWithTitle:@"4G" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self.viewModel onAlertViewClicked:@"4G"];
     }];
     
-    UIAlertAction *otherAction3 = [UIAlertAction actionWithTitle:otherButtonTitle3 style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
-        [self.viewModel onAlertViewClicked:otherButtonTitle3];
+    UIAlertAction *otherAction3 = [UIAlertAction actionWithTitle:@"以太网" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self.viewModel onAlertViewClicked:@"以太网"];
     }];
     
     
@@ -111,6 +103,7 @@
 }
 
 
+
 //3、提示框(用户交互、信息输入)
 -(UIButton*)createAlertTextField{
     UIButton *button = [self createAlertButton];
@@ -121,12 +114,8 @@
     return button;
 }
 -(void)onAlertTextFieldClicked:(id)sender{
-    NSString *title = NSLocalizedString(@"提示", nil);
-    NSString *message = NSLocalizedString(@"请重新输入登录帐号密码", nil);
-    NSString *cancelButtonTitle = NSLocalizedString(@"取消", nil);
-    NSString *otherButtonTitle = NSLocalizedString(@"登录", nil);
     
-    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请重新输入登录帐号密码" preferredStyle:UIAlertControllerStyleAlert];
     
     //创建用户名、密码 TextFiled
     [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
@@ -145,18 +134,18 @@
     }];
     
     //取消确认按钮
-    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         
-        [self.viewModel onAlertViewClicked:cancelButtonTitle];
+        [self.viewModel onAlertViewClicked:@"取消"];
         
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:alertController.textFields.firstObject];
     }];
     
-    self.otherAction = [UIAlertAction actionWithTitle:otherButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+    self.otherAction = [UIAlertAction actionWithTitle:@"登录" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         self.viewModel.userName = self.userNameField.text;
         self.viewModel.passWord = self.passWordField.text;
         
-        [self.viewModel onAlertViewClicked:otherButtonTitle];
+        [self.viewModel onAlertViewClicked:@"登录"];
         
         [[NSNotificationCenter defaultCenter] removeObserver:self name:UITextFieldTextDidChangeNotification object:alertController.textFields.firstObject];
     }];
@@ -177,5 +166,50 @@
 }
 
 
+//4、基本提示框(AlertView)、响应事件
+-(UIButton*)createAlertViewNormal{
+    UIButton *button = [self createAlertButton];
+    
+    //添加按钮的触摸事件(按钮按下)
+    [button addTarget:self action:@selector(onAlertViewNormalClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+-(void)onAlertViewNormalClicked:(id)sender{
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"确认添加?" delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确认", nil];
+    [alertView show];
+}
+
+#pragma mark ---AlertView delegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch (buttonIndex) {
+        case 0:
+            [self.viewModel onAlertViewClicked:@"取消"];
+            break;
+        case 1:
+            [self.viewModel onAlertViewClicked:@"确认"];
+            break;
+        default:
+            break;
+    }
+}
+
+
+//5、框架(提示框)
+-(UIButton*)createAJAlertNormal{
+    UIButton *button = [self createAlertButton];
+    
+    //添加按钮的触摸事件(按钮按下)
+    [button addTarget:self action:@selector(onAJAlertNormalClicked:) forControlEvents:UIControlEventTouchUpInside];
+    
+    return button;
+}
+-(void)onAJAlertNormalClicked:(id)sender{
+    NSArray *buttons = @[@"确定", @"取消"];
+    [AJUtil alert:@"亲，你搞错了吧？" buttons:@[@"确定", @"取消"] block:^(NSInteger buttonIndex) {
+        NSString *info = [NSString stringWithFormat:@"您选择了：%@", [buttons safeObjectAtIndex:buttonIndex]];
+        [AJUtil toast:info];
+    }];
+}
 
 @end

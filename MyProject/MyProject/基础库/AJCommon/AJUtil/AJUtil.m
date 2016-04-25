@@ -64,6 +64,11 @@ static NSMutableDictionary *s_tags = nil;
     return [self alertTitle:@"" message:message buttons:buttons block:block];
 }
 
+//h中声明，没有实现，在使用框架中的时候发生崩溃
++(id)alert:(NSString*)message buttons:(NSArray*)buttons block:(AJButtonIndexBlock)block{
+    return [self alertTitle:@"" message:message buttons:buttons block:block];
+}
+
 +(id)alertTitle:(NSString*)title message:(NSString*)message buttons:(NSArray*)buttons block:(AJButtonIndexBlock)block{
     UIAlertView *alert = [UIAlertView new];
     alert.title = title;

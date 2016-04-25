@@ -15,6 +15,8 @@
     self.viewTypeArray = @[VIEWTYPE( @"AlertNormal", @"基本的提示框"),
                            VIEWTYPE( @"AlertList", @"提示框(提示信息列表形式)"),
                            VIEWTYPE( @"AlertTextField", @"提示框(用户名密码键入)"),
+                           VIEWTYPE(@"AlertViewNormal", @"基本提示框(AlertView)"),
+                           VIEWTYPE(@"AJAlertNormal", @"框架(提示框)"),
                            ];
     
     [self notifyToRefresh];
