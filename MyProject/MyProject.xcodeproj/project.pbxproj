@@ -109,6 +109,12 @@
 		AD5335F21CC5E59D00F48FA7 /* Y005ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */; };
 		AD7E66D41CCE6D4700BC36EC /* Y011ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7E66D31CCE6D4700BC36EC /* Y011ViewController.m */; };
 		AD7E66D71CCE6D5E00BC36EC /* Y011ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7E66D61CCE6D5E00BC36EC /* Y011ViewModel.m */; };
+		ADF463A91CD25C8800D940C1 /* Y011PickerViewNormalView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF463A81CD25C8800D940C1 /* Y011PickerViewNormalView.m */; };
+		ADF463AC1CD25C9D00D940C1 /* Y011PickerViewNormal1View.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF463AB1CD25C9D00D940C1 /* Y011PickerViewNormal1View.m */; };
+		ADF463AF1CD25CB600D940C1 /* Y011PickerViewWidthHeightView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF463AE1CD25CB600D940C1 /* Y011PickerViewWidthHeightView.m */; };
+		ADF463B21CD25CC800D940C1 /* Y011PickerViewCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF463B11CD25CC800D940C1 /* Y011PickerViewCustomView.m */; };
+		ADF463B71CD25EE700D940C1 /* Y011City1.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADF463B51CD25EE700D940C1 /* Y011City1.plist */; };
+		ADF463B81CD25EE700D940C1 /* Y011City2.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADF463B61CD25EE700D940C1 /* Y011City2.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -357,6 +363,16 @@
 		AD7E66D31CCE6D4700BC36EC /* Y011ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewController.m; path = "Y011 UIPickerView/Y011ViewController.m"; sourceTree = "<group>"; };
 		AD7E66D51CCE6D5E00BC36EC /* Y011ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewModel.h; path = "Y011 UIPickerView/Y011ViewModel.h"; sourceTree = "<group>"; };
 		AD7E66D61CCE6D5E00BC36EC /* Y011ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewModel.m; path = "Y011 UIPickerView/Y011ViewModel.m"; sourceTree = "<group>"; };
+		ADF463A71CD25C8800D940C1 /* Y011PickerViewNormalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011PickerViewNormalView.h; path = "Y011 UIPickerView/Y011PickerViewNormalView.h"; sourceTree = "<group>"; };
+		ADF463A81CD25C8800D940C1 /* Y011PickerViewNormalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011PickerViewNormalView.m; path = "Y011 UIPickerView/Y011PickerViewNormalView.m"; sourceTree = "<group>"; };
+		ADF463AA1CD25C9D00D940C1 /* Y011PickerViewNormal1View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011PickerViewNormal1View.h; path = "Y011 UIPickerView/Y011PickerViewNormal1View.h"; sourceTree = "<group>"; };
+		ADF463AB1CD25C9D00D940C1 /* Y011PickerViewNormal1View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011PickerViewNormal1View.m; path = "Y011 UIPickerView/Y011PickerViewNormal1View.m"; sourceTree = "<group>"; };
+		ADF463AD1CD25CB600D940C1 /* Y011PickerViewWidthHeightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011PickerViewWidthHeightView.h; path = "Y011 UIPickerView/Y011PickerViewWidthHeightView.h"; sourceTree = "<group>"; };
+		ADF463AE1CD25CB600D940C1 /* Y011PickerViewWidthHeightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011PickerViewWidthHeightView.m; path = "Y011 UIPickerView/Y011PickerViewWidthHeightView.m"; sourceTree = "<group>"; };
+		ADF463B01CD25CC800D940C1 /* Y011PickerViewCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011PickerViewCustomView.h; path = "Y011 UIPickerView/Y011PickerViewCustomView.h"; sourceTree = "<group>"; };
+		ADF463B11CD25CC800D940C1 /* Y011PickerViewCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011PickerViewCustomView.m; path = "Y011 UIPickerView/Y011PickerViewCustomView.m"; sourceTree = "<group>"; };
+		ADF463B51CD25EE700D940C1 /* Y011City1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City1.plist; path = "Y011 UIPickerView/Y011City1.plist"; sourceTree = "<group>"; };
+		ADF463B61CD25EE700D940C1 /* Y011City2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City2.plist; path = "Y011 UIPickerView/Y011City2.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1044,10 +1060,20 @@
 		AD7E66D11CCE6D1A00BC36EC /* Y011 UIPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				ADF463B51CD25EE700D940C1 /* Y011City1.plist */,
+				ADF463B61CD25EE700D940C1 /* Y011City2.plist */,
 				AD7E66D21CCE6D4700BC36EC /* Y011ViewController.h */,
 				AD7E66D31CCE6D4700BC36EC /* Y011ViewController.m */,
 				AD7E66D51CCE6D5E00BC36EC /* Y011ViewModel.h */,
 				AD7E66D61CCE6D5E00BC36EC /* Y011ViewModel.m */,
+				ADF463A71CD25C8800D940C1 /* Y011PickerViewNormalView.h */,
+				ADF463A81CD25C8800D940C1 /* Y011PickerViewNormalView.m */,
+				ADF463AA1CD25C9D00D940C1 /* Y011PickerViewNormal1View.h */,
+				ADF463AB1CD25C9D00D940C1 /* Y011PickerViewNormal1View.m */,
+				ADF463AD1CD25CB600D940C1 /* Y011PickerViewWidthHeightView.h */,
+				ADF463AE1CD25CB600D940C1 /* Y011PickerViewWidthHeightView.m */,
+				ADF463B01CD25CC800D940C1 /* Y011PickerViewCustomView.h */,
+				ADF463B11CD25CC800D940C1 /* Y011PickerViewCustomView.m */,
 			);
 			name = "Y011 UIPickerView";
 			sourceTree = "<group>";
@@ -1160,7 +1186,9 @@
 				0379C98A1CCBD7F70015107D /* image01.jpg in Resources */,
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,
 				033FCF711CCA069E00632226 /* iconfontLinear.ttf in Resources */,
+				ADF463B71CD25EE700D940C1 /* Y011City1.plist in Resources */,
 				033FCF6A1CCA069E00632226 /* iconfontBasic.ttf in Resources */,
+				ADF463B81CD25EE700D940C1 /* Y011City2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1193,6 +1221,7 @@
 				03398C061CC1F6BA000F3AA4 /* Y000ViewModel.m in Sources */,
 				033FCF261CC9F59700632226 /* AJControllerDeallocChecker.m in Sources */,
 				03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */,
+				ADF463AC1CD25C9D00D940C1 /* Y011PickerViewNormal1View.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */,
 				033FCF7B1CCA1E6800632226 /* YViewTypeItem.m in Sources */,
 				03B7617F1C93AB2200297AC7 /* UIImage+AJAddition.m in Sources */,
@@ -1241,11 +1270,13 @@
 				AD7E66D41CCE6D4700BC36EC /* Y011ViewController.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
+				ADF463AF1CD25CB600D940C1 /* Y011PickerViewWidthHeightView.m in Sources */,
 				03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */,
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,
 				03398C081CC1F6BA000F3AA4 /* Y000TableViewCell.m in Sources */,
 				03398BE41CBF492F000F3AA4 /* NSObject+AJPropertyCreator.m in Sources */,
+				ADF463A91CD25C8800D940C1 /* Y011PickerViewNormalView.m in Sources */,
 				AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */,
 				AD7E66D71CCE6D5E00BC36EC /* Y011ViewModel.m in Sources */,
 				03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */,
@@ -1272,6 +1303,7 @@
 				03B761831C93AB2200297AC7 /* AJSectionItem.m in Sources */,
 				03398C1E1CC27298000F3AA4 /* Y002ViewModel.m in Sources */,
 				03398BE71CBF4948000F3AA4 /* AJViewModel.m in Sources */,
+				ADF463B21CD25CC800D940C1 /* Y011PickerViewCustomView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,6 +17,20 @@
                            VIEWTYPE(@"PickerViewCustom", @"基本滚动视图、自定义cell")
                            ];
     
+    
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Y011City1" ofType:@"plist"];
+    self.cityArray = [[NSMutableArray alloc] initWithContentsOfFile:plistPath];
+    
+    
+    NSString *plistPath1 = [[NSBundle mainBundle] pathForResource:@"Y011City2" ofType:@"plist"];
+    self.provinceCityDic = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath1];
+    //省数组
+    self.province = [self.provinceCityDic allKeys];
+    //市数组
+    NSString *seletedProvince = [self.province objectAtIndex:0];
+    self.city = [self.provinceCityDic objectForKey:seletedProvince];
+    
+    
     [self notifyToRefresh];
 }
 

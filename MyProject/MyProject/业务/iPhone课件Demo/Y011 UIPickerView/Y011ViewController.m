@@ -9,6 +9,11 @@
 #import "Y011ViewController.h"
 #import "Y011ViewModel.h"
 
+#import "Y011PickerViewNormalView.h"
+#import "Y011PickerViewNormal1View.h"
+#import "Y011PickerViewWidthHeightView.h"
+#import "Y011PickerViewCustomView.h"
+
 @interface Y011ViewController ()
 
 @property(nonatomic,strong) Y011ViewModel *viewModel;
@@ -36,8 +41,12 @@
     return button;
 }
 -(void)onPickerViewNormalClicked:(id)sender{
-    
+    Y011PickerViewNormalView* theView = [[Y011PickerViewNormalView alloc] init];
+    theView.viewModel = self.viewModel;
+    theView.frame = CGRectMake(0, 0, self.view.width, self.view.height);
+    [self.view addSubview:theView];
 }
+
 
 //2、二级滚动视图、响应事件(省市选择)
 -(UIButton*)createPickerViewNormal1{
@@ -49,8 +58,12 @@
     return button;
 }
 -(void)onPickerViewNormal1Clicked:(id)sender{
-    
+    Y011PickerViewNormal1View* theView = [[Y011PickerViewNormal1View alloc] init];
+    theView.viewModel = self.viewModel;
+    theView.frame = CGRectMake(0, 0, self.view.width, self.view.height);
+    [self.view addSubview:theView];
 }
+
 
 //3、基本滚动视图、cell大小
 -(UIButton*)createPickerViewWidthHeight{
@@ -62,8 +75,12 @@
     return button;
 }
 -(void)onPickerViewWidthHeightClicked:(id)sender{
-
+    Y011PickerViewWidthHeightView* theView = [[Y011PickerViewWidthHeightView alloc] init];
+    theView.viewModel = self.viewModel;
+    theView.frame = CGRectMake(0, 0, self.view.width, self.view.height);
+    [self.view addSubview:theView];
 }
+
 
 //4、基本滚动视图、自定义cell
 -(UIButton*)createPickerViewCustom{
@@ -75,7 +92,11 @@
     return button;
 }
 -(void)onPickerViewCustomClicked:(id)sender{
-
+    Y011PickerViewCustomView* theView = [[Y011PickerViewCustomView alloc] init];
+    theView.viewModel = self.viewModel;
+    theView.frame = CGRectMake(0, 0, self.view.width, self.view.height);
+    [self.view addSubview:theView];
 }
+
 
 @end
