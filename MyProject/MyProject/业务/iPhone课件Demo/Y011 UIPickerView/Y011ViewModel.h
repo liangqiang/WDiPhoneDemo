@@ -10,4 +10,6 @@
 
 @interface Y011ViewModel : YScrollViewModel
 
+-(void)onPickerViewSelected:(NSString*)message;
+
 @end
