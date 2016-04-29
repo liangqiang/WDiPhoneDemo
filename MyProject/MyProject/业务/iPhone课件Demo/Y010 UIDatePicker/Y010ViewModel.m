@@ -12,43 +12,18 @@
 
 -(void)loadData{
     
-    self.viewTypeArray = @[VIEWTYPE(@"DatePickerNormal", @"基本时间控件、选择时间"),
-                           VIEWTYPE(@"DatePickerChina", @"时间控件(中文显示格式)"),
-                           VIEWTYPE(@"DatePickerStyle", @"显示模式(DateTime,Date,Time,秒表)"),
+    self.viewTypeArray = @[VIEWTYPE(@"DatePickerTime", @"时间控件（选择时间）"),
+                           VIEWTYPE(@"DatePickerDate", @"时间控件（选择日期）"),
+                           VIEWTYPE(@"DatePickerDateTime", @"时间控件（选择日期时间）"),
                            VIEWTYPE(@"DatePickerMinMaxValue", @"时间控件(选择最大时间、最小时间)"),
-                           VIEWTYPE(@"DatePickerTimer", @"控件(秒表显示效果)"),
                            ];
     
     
     [self notifyToRefresh];
 }
 
--(void)onDatePickerClicked:(UIDatePicker*)datePicker{
-    [AJUtil toast:[self getFormatTimer:datePicker.date]];
-}
-
--(NSString*)getFormatTimer:(NSDate*)date{
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:kDateFormatLong];//设置时间显示样式
-    NSString *dateAndTime =  [dateFormatter stringFromDate:date];
-    
-    return dateAndTime;
-}
-
--(BOOL)checkTime{
-    self.showTime = self.showTime - 5;
-    
-    if(self.showTime<=0){
-        return YES;
-    }else{
-        return NO;
-    }
-}
-
--(void)toastTimer:(NSInteger)timer{
-    NSString *time = [NSString stringWithFormat:@"剩余：%d秒",timer];
-    [AJUtil toast:time];
+-(void)onDatePickerClicked:(NSString*)date{
+    [AJUtil toast:date];
 }
 
 @end

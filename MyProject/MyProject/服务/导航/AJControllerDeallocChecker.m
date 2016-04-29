@@ -22,7 +22,7 @@ static NSMutableArray *kPoppingControllers = nil;
             NSString *message = [NSString stringWithFormat:@"%@(%zd)没有dealloc释放!!",
                                  [kPoppingControllers lastObject],
                                  [kPoppingControllers count]];
-            [AJUtil alert:message buttons:@[@"清除", @"取消"] block:^(NSInteger buttonIndex) {
+            [AJUtil alertMessage:message buttons:@[@"清除", @"取消"] block:^(NSInteger buttonIndex) {
                 if (buttonIndex == 0) {
                     [kPoppingControllers removeAllObjects];
                 }

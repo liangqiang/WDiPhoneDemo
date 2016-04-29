@@ -11,9 +11,9 @@
 @implementation Y009ViewModel
 
 -(void)loadData{
-    self.viewTypeArray = @[VIEWTYPE(@"ActionSheetNormal", @"基本多选择控制器、响应事件"),
-                           VIEWTYPE(@"ActionSheetNormal1", @"多选择控制器(ActionSheet)"),
-                           VIEWTYPE(@"AJActionSheet", @"框架(多选择器)"),
+    self.viewTypeArray = @[VIEWTYPE(@"ActionSheetNormal", @"上拉菜单(AlertController)"),
+                           VIEWTYPE(@"ActionSheetNormal1", @"上拉菜单(ActionSheet)"),
+                           VIEWTYPE(@"AJActionSheet", @"上拉菜单(阿剑框架)"),
                            ];
     
     [self notifyToRefresh];

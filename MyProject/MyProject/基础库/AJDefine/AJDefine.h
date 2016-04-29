@@ -37,7 +37,8 @@
 
 //常用block
 typedef void(^AJVoidBlock)();
-typedef void(^AJButtonIndexBlock)(NSInteger buttonIndex);
+typedef void(^AJStringBlock)(NSString*);
+typedef void(^AJIntegerBlock)(NSInteger);
 
 //使用宏忽略警告
 #define SuppressPerformSelectorLeakWarning(Stuff) \

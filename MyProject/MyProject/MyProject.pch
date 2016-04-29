@@ -28,6 +28,7 @@
 #import "UILabel+AJAddition.h"
 #import "UIImage+AJAddition.h"
 #import "UIScrollView+AJAddition.h"
+#import "NSDate+AJAddition.h"
 
 #import "AJSettings.h"
 

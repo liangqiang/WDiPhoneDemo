@@ -12,6 +12,8 @@
 		0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303D6D71BD8C4E30024399D /* Images.xcassets */; };
 		0303D6E71BD8C4E40024399D /* MyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6E61BD8C4E40024399D /* MyProjectTests.m */; };
 		030900CA1BDB97B70073DAA7 /* AJNavi.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* AJNavi.m */; };
+		030DF6331CD3861F00A0FCC9 /* AJDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DF6321CD3861F00A0FCC9 /* AJDatePicker.m */; };
+		030DF6361CD39BE500A0FCC9 /* NSDate+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DF6351CD39BE500A0FCC9 /* NSDate+AJAddition.m */; };
 		03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BF61C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m */; };
 		03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BF81C4A8C2000FFCA26 /* UIView+LayoutMethods.m */; };
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
@@ -141,6 +143,10 @@
 		0303D7061BD8DBDB0024399D /* MyProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProject.pch; sourceTree = "<group>"; };
 		030900C81BDB97B70073DAA7 /* AJNavi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNavi.h; sourceTree = "<group>"; };
 		030900C91BDB97B70073DAA7 /* AJNavi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNavi.m; sourceTree = "<group>"; };
+		030DF6311CD3861F00A0FCC9 /* AJDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDatePicker.h; sourceTree = "<group>"; };
+		030DF6321CD3861F00A0FCC9 /* AJDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDatePicker.m; sourceTree = "<group>"; };
+		030DF6341CD39BE500A0FCC9 /* NSDate+AJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AJAddition.h"; sourceTree = "<group>"; };
+		030DF6351CD39BE500A0FCC9 /* NSDate+AJAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+AJAddition.m"; sourceTree = "<group>"; };
 		03125BF51C4A8C2000FFCA26 /* UIView+HandyAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HandyAutoLayout.h"; sourceTree = "<group>"; };
 		03125BF61C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HandyAutoLayout.m"; sourceTree = "<group>"; };
 		03125BF71C4A8C2000FFCA26 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
@@ -475,6 +481,7 @@
 				03FD93D11BDF5CE000DCC673 /* 上下拉刷新 */,
 				03FD93C61BDF19D300DCC673 /* IconFont */,
 				030900C71BDB96FB0073DAA7 /* 导航 */,
+				030DF6301CD3861F00A0FCC9 /* AJDatePicker */,
 			);
 			path = "服务";
 			sourceTree = "<group>";
@@ -497,6 +504,15 @@
 				03FA194B1BEB113A00DD1DAC /* UIViewController+AJNavi.m */,
 			);
 			path = "导航";
+			sourceTree = "<group>";
+		};
+		030DF6301CD3861F00A0FCC9 /* AJDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				030DF6311CD3861F00A0FCC9 /* AJDatePicker.h */,
+				030DF6321CD3861F00A0FCC9 /* AJDatePicker.m */,
+			);
+			path = AJDatePicker;
 			sourceTree = "<group>";
 		};
 		03125BF41C4A8BED00FFCA26 /* HandyLayout */ = {
@@ -799,6 +815,8 @@
 				03B7615B1C93AB2200297AC7 /* UILabel+AJAddition.m */,
 				03B7615C1C93AB2200297AC7 /* UIScrollView+AJAddition.h */,
 				03B7615D1C93AB2200297AC7 /* UIScrollView+AJAddition.m */,
+				030DF6341CD39BE500A0FCC9 /* NSDate+AJAddition.h */,
+				030DF6351CD39BE500A0FCC9 /* NSDate+AJAddition.m */,
 			);
 			path = AJAddition;
 			sourceTree = "<group>";
@@ -1209,6 +1227,7 @@
 				03FA195C1BEB2D2A00DD1DAC /* MKObject.m in Sources */,
 				03FD93D91BDF5FEA00DCC673 /* AJRefreshHeaderView.m in Sources */,
 				03FD93D81BDF5FEA00DCC673 /* UIScrollView+AJRefresh.m in Sources */,
+				030DF6361CD39BE500A0FCC9 /* NSDate+AJAddition.m in Sources */,
 				03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */,
 				ADE75DC51CD3518C00F00EC1 /* Y011ViewController1.m in Sources */,
 				035C05F81C8574F900D050D1 /* WDDemoListTableView.m in Sources */,
@@ -1272,6 +1291,8 @@
 				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
+				030DF6331CD3861F00A0FCC9 /* AJDatePicker.m in Sources */,
+				ADF463AF1CD25CB600D940C1 /* Y011PickerViewWidthHeightView.m in Sources */,
 				03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */,
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,

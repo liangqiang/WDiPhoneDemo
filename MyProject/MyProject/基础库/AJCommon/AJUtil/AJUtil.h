@@ -16,9 +16,9 @@
 
 +(void)toast:(NSString*)msg;
 
-+(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJButtonIndexBlock)block;
++(id)actionSheet:(NSString*)title buttons:(NSArray*)buttons block:(AJIntegerBlock)block;
++(id)alertMessage:(NSString*)message buttons:(NSArray*)buttons block:(AJIntegerBlock)block;
 
-+(id)alert:(NSString*)message buttons:(NSArray*)buttons block:(AJButtonIndexBlock)block;
 
 +(UIImage *)createImageWithColor:(UIColor *)color size:(CGSize)size;
 
@@ -42,11 +42,11 @@
 
 //------------------------------------------------------------------------------
 @interface UIActionSheet (AJUtil) <UIActionSheetDelegate>
--(void)setClickBlock:(AJButtonIndexBlock)block;
+-(void)setClickBlock:(AJIntegerBlock)block;
 @end
 
 @interface UIAlertView (AJUtil) <UIAlertViewDelegate>
--(void)setClickBlock:(AJButtonIndexBlock)block;
+-(void)setClickBlock:(AJIntegerBlock)block;
 @end
 
 //用来生成唯一tag（数字）

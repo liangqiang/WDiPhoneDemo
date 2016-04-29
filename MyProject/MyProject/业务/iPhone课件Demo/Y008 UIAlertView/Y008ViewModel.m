@@ -12,11 +12,11 @@
 
 -(void)loadData{
     
-    self.viewTypeArray = @[VIEWTYPE( @"AlertNormal", @"基本的提示框"),
-                           VIEWTYPE( @"AlertList", @"提示框(提示信息列表形式)"),
-                           VIEWTYPE( @"AlertTextField", @"提示框(用户名密码键入)"),
-                           VIEWTYPE(@"AlertViewNormal", @"基本提示框(AlertView)"),
-                           VIEWTYPE(@"AJAlertNormal", @"框架(提示框)"),
+    self.viewTypeArray = @[VIEWTYPE(@"AlertViewNormal", @"基本提示框(AlertView)"),
+                           VIEWTYPE(@"AJAlertNormal", @"基本提示框(阿剑框架)"),
+                           VIEWTYPE(@"AlertNormal", @"基本提示框（UIAlertController）"),
+                           VIEWTYPE(@"AlertList", @"多按钮列表(UIAlertController)"),
+                           VIEWTYPE(@"AlertTextField", @"提示框(用户名密码键入)"),
                            ];
     
     [self notifyToRefresh];
@@ -24,14 +24,6 @@
 
 -(void)onAlertViewClicked:(NSString*)message;{
     [AJUtil toast:message];
-}
-
--(BOOL)checkLength:(NSString*)sender{
-    if(sender.length>=8){
-        return YES;
-    }else{
-        return NO;
-    }
 }
 
 @end

@@ -10,11 +10,6 @@
 
 @interface Y008ViewModel : YScrollViewModel
 
-@property(nonatomic,strong) NSString *userName;
-@property(nonatomic,strong) NSString *passWord;
-
 -(void)onAlertViewClicked:(NSString*)message;
-
--(BOOL)checkLength:(NSString*)sender;
 
 @end
