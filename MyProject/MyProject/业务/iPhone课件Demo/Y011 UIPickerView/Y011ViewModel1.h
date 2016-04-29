@@ -10,4 +10,8 @@
 
 @interface Y011ViewModel1 : YScrollViewModel
 
+@property(nonatomic,strong)NSArray *cityArray;
+
+-(void)onPickerViewSelected:(NSString*)msg;
+
 @end

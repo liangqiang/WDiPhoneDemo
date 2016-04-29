@@ -107,6 +107,8 @@
 		AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335E71CC514BA00F48FA7 /* Y004ViewModel.m */; };
 		AD5335EF1CC5E55F00F48FA7 /* Y005ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */; };
 		AD5335F21CC5E59D00F48FA7 /* Y005ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */; };
+		AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA71CD354F2000023C5 /* Y011City1.plist */; };
+		AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA81CD354F2000023C5 /* Y011City2.plist */; };
 		ADE75DC51CD3518C00F00EC1 /* Y011ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DC41CD3518C00F00EC1 /* Y011ViewController1.m */; };
 		ADE75DCB1CD3521500F00EC1 /* Y011ViewModel1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DCA1CD3521500F00EC1 /* Y011ViewModel1.m */; };
 		ADE75DCE1CD3526900F00EC1 /* Y011ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DCD1CD3526900F00EC1 /* Y011ViewController2.m */; };
@@ -357,6 +359,8 @@
 		AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y005ViewController.m; path = "Y005 UITextView/Y005ViewController.m"; sourceTree = "<group>"; };
 		AD5335F01CC5E59D00F48FA7 /* Y005ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y005ViewModel.h; path = "Y005 UITextView/Y005ViewModel.h"; sourceTree = "<group>"; };
 		AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y005ViewModel.m; path = "Y005 UITextView/Y005ViewModel.m"; sourceTree = "<group>"; };
+		AD71DFA71CD354F2000023C5 /* Y011City1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City1.plist; path = "Y011 UIPickerView/Y011City1.plist"; sourceTree = "<group>"; };
+		AD71DFA81CD354F2000023C5 /* Y011City2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City2.plist; path = "Y011 UIPickerView/Y011City2.plist"; sourceTree = "<group>"; };
 		ADE75DC31CD3518C00F00EC1 /* Y011ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewController1.h; path = "Y011 UIPickerView/Y011ViewController1.h"; sourceTree = "<group>"; };
 		ADE75DC41CD3518C00F00EC1 /* Y011ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewController1.m; path = "Y011 UIPickerView/Y011ViewController1.m"; sourceTree = "<group>"; };
 		ADE75DC91CD3521500F00EC1 /* Y011ViewModel1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewModel1.h; path = "Y011 UIPickerView/Y011ViewModel1.h"; sourceTree = "<group>"; };
@@ -1056,6 +1060,8 @@
 		AD7E66D11CCE6D1A00BC36EC /* Y011 UIPickerView */ = {
 			isa = PBXGroup;
 			children = (
+				AD71DFA71CD354F2000023C5 /* Y011City1.plist */,
+				AD71DFA81CD354F2000023C5 /* Y011City2.plist */,
 				ADE75DC31CD3518C00F00EC1 /* Y011ViewController1.h */,
 				ADE75DC41CD3518C00F00EC1 /* Y011ViewController1.m */,
 				ADE75DC91CD3521500F00EC1 /* Y011ViewModel1.h */,
@@ -1180,7 +1186,9 @@
 				0379C98A1CCBD7F70015107D /* image01.jpg in Resources */,
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,
 				033FCF711CCA069E00632226 /* iconfontLinear.ttf in Resources */,
+				AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */,
 				033FCF6A1CCA069E00632226 /* iconfontBasic.ttf in Resources */,
+				AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

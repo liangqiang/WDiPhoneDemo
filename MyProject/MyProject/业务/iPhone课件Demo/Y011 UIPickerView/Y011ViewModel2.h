@@ -10,4 +10,10 @@
 
 @interface Y011ViewModel2 : YScrollViewModel
 
+@property(nonatomic,strong)NSMutableDictionary* provinceCityDic;
+@property(nonatomic,strong)NSArray* province;
+@property(nonatomic,strong)NSArray* city;
+
+-(void)onPickerViewSelected:(NSString*)msg;
+
 @end
