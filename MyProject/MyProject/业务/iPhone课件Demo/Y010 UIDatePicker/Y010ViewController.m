@@ -20,63 +20,71 @@
 @implementation Y010ViewController
 
 //1、基本时间控件、选择时间
--(UIButton*)createDatePickerTime{
-    return [self createButtonWithTitle:@"弹出时间控件" action:@selector(onDatePickerTimeClicked:)];
-}
-
--(void)onDatePickerTimeClicked:(id)sender{
+-(UIDatePicker*)createDatePickerTime{
+    UIDatePicker *datePicker = [UIDatePicker new];
+    datePicker.size = CGSizeMake(self.view.width, 216);
+    datePicker.datePickerMode = UIDatePickerModeTime;
+    [datePicker setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"Chinese"]];
+    
     WEAKSELF
-    [AJDatePicker showWithChooseBlock:^(NSString *date) {
-        [weakSelf.viewModel onDatePickerClicked:date];
-    } cancelBlock:^{
+    [datePicker handleEvent:UIControlEventValueChanged withBlock:^(UIControl *control) {
+        [weakSelf.viewModel onDatePickerClicked:(UIDatePicker*)control];
     }];
+    
+    return datePicker;
 }
-
 
 //2、时间控件中文格式
--(UIButton*)createDatePickerDate{
-    return [self createButtonWithTitle:@"弹出日期控件" action:@selector(onDatePickerDateClicked:)];
-}
-
--(void)onDatePickerDateClicked:(id)sender{
+-(UIDatePicker*)createDatePickerDate{
+    UIDatePicker *datePicker = [UIDatePicker new];
+    datePicker.size = CGSizeMake(self.view.width, 216);
+    datePicker.datePickerMode = UIDatePickerModeDate;
+    [datePicker setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"Chinese"]];
+    
+    NSDate *today = [NSDate date];
+    datePicker.minimumDate = [today offsetDay:-60];
+    datePicker.maximumDate = today;
+    [datePicker setDate:[today offsetDay:-5]]; // 设置日期
+    
     WEAKSELF
-    AJDatePicker *datePicker = [AJDatePicker showWithChooseBlock:^(NSString *date) {
-        [weakSelf.viewModel onDatePickerClicked:date];
-    } cancelBlock:^{
+    [datePicker handleEvent:UIControlEventValueChanged withBlock:^(UIControl *control) {
+        [weakSelf.viewModel onDatePickerClicked:(UIDatePicker*)control];
     }];
-    datePicker.datePicker.datePickerMode = UIDatePickerModeDate;
+    
+    return datePicker;
 }
 
 
 //3、时间控件(显示模式)
--(UIButton*)createDatePickerDateTime{
-    return [self createButtonWithTitle:@"弹出日期时间控件" action:@selector(onDatePickerDateTimeClicked:)];
-}
-
--(void)onDatePickerDateTimeClicked:(id)sender{
+-(UIDatePicker*)createDatePickerDateTime{
+    UIDatePicker *datePicker = [UIDatePicker new];
+    datePicker.size = CGSizeMake(self.view.width, 216);
+    datePicker.datePickerMode = UIDatePickerModeDateAndTime;
+    [datePicker setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"Chinese"]];
+    
     WEAKSELF
-    AJDatePicker *datePicker = [AJDatePicker showWithChooseBlock:^(NSString *date) {
-        [weakSelf.viewModel onDatePickerClicked:date];
-    } cancelBlock:^{
+    [datePicker handleEvent:UIControlEventValueChanged withBlock:^(UIControl *control) {
+        [weakSelf.viewModel onDatePickerClicked:(UIDatePicker*)control];
     }];
-    datePicker.datePicker.datePickerMode = UIDatePickerModeDateAndTime;
+    
+    return datePicker;
 }
-
 
 //4、时间控件(最大最小显示时间)
--(UIButton*)createDatePickerMinMaxValue{
-    return [self createButtonWithTitle:@"弹出日期控件(60天内)" action:@selector(onDatePickerMinMaxValueClicked:)];
+-(UIButton*)createDatePickerPopup{
+    return [self createButtonWithTitle:@"弹出日期控件" action:@selector(onDatePickerMinMaxValueClicked:)];
 }
 
 -(void)onDatePickerMinMaxValueClicked:(id)sender{
-    WEAKSELF
     AJDatePicker *datePicker = [AJDatePicker showWithChooseBlock:^(NSString *date) {
-        [weakSelf.viewModel onDatePickerClicked:date];
+        [AJUtil toast:date];
     } cancelBlock:^{
     }];
     datePicker.datePicker.datePickerMode = UIDatePickerModeDate;
-    datePicker.datePicker.minimumDate = [[NSDate date] offsetDay:-60];
-    datePicker.datePicker.maximumDate = [NSDate date];
+    NSDate *today = [NSDate date];
+    datePicker.datePicker.minimumDate = [today offsetMonth:-24];
+    datePicker.datePicker.maximumDate = today;
+    [datePicker.datePicker setDate:[today offsetDay:-5]]; // 设置日期
 }
 
 #pragma mark -

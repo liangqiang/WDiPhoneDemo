@@ -10,6 +10,6 @@
 
 @interface Y010ViewModel : YScrollViewModel
 
--(void)onDatePickerClicked:(NSString*)date;
+-(void)onDatePickerClicked:(UIDatePicker*)datePicker;
 
 @end

@@ -12,18 +12,29 @@
 
 -(void)loadData{
     
-    self.viewTypeArray = @[VIEWTYPE(@"DatePickerTime", @"时间控件（选择时间）"),
-                           VIEWTYPE(@"DatePickerDate", @"时间控件（选择日期）"),
+    self.viewTypeArray = @[VIEWTYPE(@"DatePickerPopup", @"时间控件(弹出)"),
+                           VIEWTYPE(@"DatePickerTime", @"时间控件（选择时间）"),
+                           VIEWTYPE(@"DatePickerDate", @"时间控件（选择日期，指定最大最小值）"),
                            VIEWTYPE(@"DatePickerDateTime", @"时间控件（选择日期时间）"),
-                           VIEWTYPE(@"DatePickerMinMaxValue", @"时间控件(选择最大时间、最小时间)"),
+                           
                            ];
     
     
     [self notifyToRefresh];
 }
 
--(void)onDatePickerClicked:(NSString*)date{
-    [AJUtil toast:date];
+-(void)onDatePickerClicked:(UIDatePicker*)datePicker{
+    NSDate *selected = [datePicker date];
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    if (datePicker.datePickerMode == UIDatePickerModeTime) {
+        [dateFormatter setDateFormat:@"HH:mm"];
+    }else if (datePicker.datePickerMode == UIDatePickerModeDate){
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    }else{
+        [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+    }
+    NSString *dateStr = [dateFormatter stringFromDate:selected];
+    [AJUtil toast:dateStr];
 }
 
 @end
