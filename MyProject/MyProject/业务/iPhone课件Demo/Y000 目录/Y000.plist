@@ -24,5 +24,7 @@
 	<string>Y010ViewController</string>
 	<key>Y011 UIPickerView</key>
 	<string>Y011ViewController</string>
+	<key>Y012 UITableView1</key>
+	<string>Y012ViewController1</string>
 </dict>
 </plist>

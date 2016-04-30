@@ -115,6 +115,11 @@
 		AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA81CD354F2000023C5 /* Y011City2.plist */; };
 		ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */; };
 		ADE75DCB1CD3521500F00EC1 /* Y011ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DCA1CD3521500F00EC1 /* Y011ViewModel.m */; };
+		ADEB8C4A1CD500390039EAE6 /* Y012ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C491CD500390039EAE6 /* Y012ViewController1.m */; };
+		ADEB8C4D1CD500580039EAE6 /* Y012ViewModel1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C4C1CD500580039EAE6 /* Y012ViewModel1.m */; };
+		ADEB8C4F1CD5008B0039EAE6 /* sourceArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADEB8C4E1CD5008B0039EAE6 /* sourceArray.plist */; };
+		ADEB8C531CD507070039EAE6 /* Y012ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C521CD507070039EAE6 /* Y012ViewController2.m */; };
+		ADEB8C561CD507290039EAE6 /* Y012ViewModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C551CD507290039EAE6 /* Y012ViewModel2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -373,6 +378,15 @@
 		ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewController.m; path = "Y011 UIPickerView/Y011ViewController.m"; sourceTree = "<group>"; };
 		ADE75DC91CD3521500F00EC1 /* Y011ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewModel.h; path = "Y011 UIPickerView/Y011ViewModel.h"; sourceTree = "<group>"; };
 		ADE75DCA1CD3521500F00EC1 /* Y011ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewModel.m; path = "Y011 UIPickerView/Y011ViewModel.m"; sourceTree = "<group>"; };
+		ADEB8C481CD500390039EAE6 /* Y012ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewController1.h; path = "Y012 UITableView/Y012ViewController1.h"; sourceTree = "<group>"; };
+		ADEB8C491CD500390039EAE6 /* Y012ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController1.m; path = "Y012 UITableView/Y012ViewController1.m"; sourceTree = "<group>"; };
+		ADEB8C4B1CD500580039EAE6 /* Y012ViewModel1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel1.h; path = "Y012 UITableView/Y012ViewModel1.h"; sourceTree = "<group>"; };
+		ADEB8C4C1CD500580039EAE6 /* Y012ViewModel1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewModel1.m; path = "Y012 UITableView/Y012ViewModel1.m"; sourceTree = "<group>"; };
+		ADEB8C4E1CD5008B0039EAE6 /* sourceArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sourceArray.plist; path = "Y012 UITableView/sourceArray.plist"; sourceTree = "<group>"; };
+		ADEB8C511CD507070039EAE6 /* Y012ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewController2.h; path = "Y012 UITableView/Y012ViewController2.h"; sourceTree = "<group>"; };
+		ADEB8C521CD507070039EAE6 /* Y012ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController2.m; path = "Y012 UITableView/Y012ViewController2.m"; sourceTree = "<group>"; };
+		ADEB8C541CD507290039EAE6 /* Y012ViewModel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel2.h; path = "Y012 UITableView/Y012ViewModel2.h"; sourceTree = "<group>"; };
+		ADEB8C551CD507290039EAE6 /* Y012ViewModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewModel2.m; path = "Y012 UITableView/Y012ViewModel2.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1111,9 +1125,42 @@
 				AD264D811CC774D6006CA205 /* Y009 UIActionSheet */,
 				AD264D821CC774E4006CA205 /* Y010 UIDatePicker */,
 				AD7E66D11CCE6D1A00BC36EC /* Y011 UIPickerView */,
+				ADEB8C461CD4FF450039EAE6 /* Y012 UITableView */,
 				03398BEB1CC1EE19000F3AA4 /* 问题讨论.md */,
 			);
 			path = "iPhone课件Demo";
+			sourceTree = "<group>";
+		};
+		ADEB8C461CD4FF450039EAE6 /* Y012 UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				ADEB8C471CD500240039EAE6 /* Plain */,
+				ADEB8C501CD506DB0039EAE6 /* Grouped */,
+			);
+			name = "Y012 UITableView";
+			sourceTree = "<group>";
+		};
+		ADEB8C471CD500240039EAE6 /* Plain */ = {
+			isa = PBXGroup;
+			children = (
+				ADEB8C4E1CD5008B0039EAE6 /* sourceArray.plist */,
+				ADEB8C481CD500390039EAE6 /* Y012ViewController1.h */,
+				ADEB8C491CD500390039EAE6 /* Y012ViewController1.m */,
+				ADEB8C4B1CD500580039EAE6 /* Y012ViewModel1.h */,
+				ADEB8C4C1CD500580039EAE6 /* Y012ViewModel1.m */,
+			);
+			name = Plain;
+			sourceTree = "<group>";
+		};
+		ADEB8C501CD506DB0039EAE6 /* Grouped */ = {
+			isa = PBXGroup;
+			children = (
+				ADEB8C511CD507070039EAE6 /* Y012ViewController2.h */,
+				ADEB8C521CD507070039EAE6 /* Y012ViewController2.m */,
+				ADEB8C541CD507290039EAE6 /* Y012ViewModel2.h */,
+				ADEB8C551CD507290039EAE6 /* Y012ViewModel2.m */,
+			);
+			name = Grouped;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1203,6 +1250,7 @@
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,
 				033FCF711CCA069E00632226 /* iconfontLinear.ttf in Resources */,
 				AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */,
+				ADEB8C4F1CD5008B0039EAE6 /* sourceArray.plist in Resources */,
 				033FCF6A1CCA069E00632226 /* iconfontBasic.ttf in Resources */,
 				AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */,
 			);
@@ -1230,6 +1278,7 @@
 				ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */,
 				035C05F81C8574F900D050D1 /* WDDemoListTableView.m in Sources */,
 				035C05F51C85742000D050D1 /* WDDemoListViewModel.m in Sources */,
+				ADEB8C4D1CD500580039EAE6 /* Y012ViewModel1.m in Sources */,
 				03FA194C1BEB113A00DD1DAC /* UIViewController+AJNavi.m in Sources */,
 				03398C111CC1F6BA000F3AA4 /* Y002ViewController.m in Sources */,
 				AD31D1821CCCD99B00E27188 /* Y010ViewModel.m in Sources */,
@@ -1246,6 +1295,7 @@
 				AD264D7F1CC72F8A006CA205 /* Y007ViewModel.m in Sources */,
 				03398C161CC2004B000F3AA4 /* AJNormalItem.m in Sources */,
 				03FA19591BEB2D2A00DD1DAC /* MKCache.m in Sources */,
+				ADEB8C561CD507290039EAE6 /* Y012ViewModel2.m in Sources */,
 				033FCF781CCA0C6F00632226 /* YScrollViewModel.m in Sources */,
 				03B761861C93AB2200297AC7 /* AJColorManager.m in Sources */,
 				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
@@ -1287,6 +1337,7 @@
 				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
 				030DF63A1CD43B0E00A0FCC9 /* AJPickerView.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
+				ADEB8C531CD507070039EAE6 /* Y012ViewController2.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				030DF6331CD3861F00A0FCC9 /* AJDatePicker.m in Sources */,
 				03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */,
@@ -1295,6 +1346,7 @@
 				03398C081CC1F6BA000F3AA4 /* Y000TableViewCell.m in Sources */,
 				03398BE41CBF492F000F3AA4 /* NSObject+AJPropertyCreator.m in Sources */,
 				AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */,
+				ADEB8C4A1CD500390039EAE6 /* Y012ViewController1.m in Sources */,
 				03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */,
 				035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */,
 				03398C101CC1F6BA000F3AA4 /* Y001ViewController.m in Sources */,
