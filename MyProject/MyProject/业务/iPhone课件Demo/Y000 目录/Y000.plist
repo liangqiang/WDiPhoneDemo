@@ -26,5 +26,7 @@
 	<string>Y011ViewController</string>
 	<key>Y012 UITableView1</key>
 	<string>Y012ViewController1</string>
+	<key>Y012 UITableView2</key>
+	<string>Y012ViewController2</string>
 </dict>
 </plist>

@@ -20,7 +20,7 @@
 
 //1、基本表视图(Plain)
 -(UITableView*)createPlainTableViewNormal{
-    UITableView *tableView = [[UITableView alloc]init];
+    UITableView *tableView = [UITableView new];
     tableView.size = CGSizeMake(self.scrollView.width, 300);
     
     //cell重用
@@ -34,7 +34,7 @@
 
 #pragma mark DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.viewModel.personArray count];
+    return [self.viewModel getCount];
 }
 
 
@@ -42,7 +42,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.viewModel.personArray safeObjectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.viewModel getInfo:[indexPath row]];
     
     return cell;
 }

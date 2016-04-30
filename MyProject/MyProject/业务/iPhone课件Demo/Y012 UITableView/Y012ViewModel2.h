@@ -10,4 +10,18 @@
 
 @interface Y012ViewModel2 : YScrollViewModel
 
+@property(nonatomic,strong)NSMutableDictionary *info;
+@property(nonatomic,strong)NSArray *cityArray;
+@property(nonatomic,strong)NSArray *infoArray;
+
+-(NSInteger)getSection;
+
+-(NSInteger)getNumBySection:(NSInteger)section;
+
+-(NSString*)getInfo:(NSInteger)section row:(NSInteger)row;
+
+-(NSString*)getTitleBySection:(NSInteger)section;
+
+-(void)onTableViewSelected:(NSInteger)section row:(NSInteger)row;
+
 @end

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>吉林</key>
+	<array>
+		<string>广阔的大长春</string>
+		<string>嗯哼的小吉林</string>
+		<string>嘎嘎地彪四平</string>
+		<string>自己的白山市</string>
+	</array>
+	<key>北京</key>
+	<array>
+		<string>最大的朝阳区</string>
+		<string>第二的海淀区</string>
+		<string>工作滴昌平区</string>
+	</array>
+	<key>上海</key>
+	<array>
+		<string>没去过的A区</string>
+		<string>想去的B区</string>
+		<string>生活生活的C区</string>
+		<string>不知道的D区</string>
+		<string>你去过吗E区</string>
+		<string>一起体验的G区</string>
+	</array>
+	<key>天津</key>
+	<array>
+		<string>工作过的南开大学</string>
+		<string>工作的老板史广顺</string>
+		<string>工作的南开饭卡</string>
+		<string>工作吃过的学校食堂</string>
+	</array>
+</dict>
+</plist>

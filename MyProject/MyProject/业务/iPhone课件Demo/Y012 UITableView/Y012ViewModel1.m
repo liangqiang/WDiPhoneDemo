@@ -21,6 +21,14 @@
     [self notifyToRefresh];
 }
 
+-(NSInteger)getCount{
+    return [self.personArray count];
+}
+
+-(NSString*)getInfo:(NSInteger)row{
+    return [self.personArray safeObjectAtIndex:row];
+}
+
 -(void)onTableViewSelected:(NSInteger)row{
     NSString *person = [self.personArray safeObjectAtIndex:row];
     [AJUtil toast:person];

@@ -12,6 +12,10 @@
 
 @property(nonatomic,strong)NSMutableArray *personArray;
 
+-(NSInteger)getCount;
+
+-(NSString*)getInfo:(NSInteger)row;
+
 -(void)onTableViewSelected:(NSInteger)row;
 
 @end
