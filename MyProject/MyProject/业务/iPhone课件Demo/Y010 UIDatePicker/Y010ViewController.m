@@ -22,7 +22,7 @@
 //1、基本时间控件、选择时间
 -(UIDatePicker*)createDatePickerTime{
     UIDatePicker *datePicker = [UIDatePicker new];
-    datePicker.size = CGSizeMake(self.view.width, 216);
+    datePicker.size = CGSizeMake(self.view.width, 160);
     datePicker.datePickerMode = UIDatePickerModeTime;
     [datePicker setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"Chinese"]];
     
@@ -37,7 +37,7 @@
 //2、时间控件中文格式
 -(UIDatePicker*)createDatePickerDate{
     UIDatePicker *datePicker = [UIDatePicker new];
-    datePicker.size = CGSizeMake(self.view.width, 216);
+    datePicker.size = CGSizeMake(self.view.width, 160);
     datePicker.datePickerMode = UIDatePickerModeDate;
     [datePicker setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"Chinese"]];
     
@@ -58,7 +58,7 @@
 //3、时间控件(显示模式)
 -(UIDatePicker*)createDatePickerDateTime{
     UIDatePicker *datePicker = [UIDatePicker new];
-    datePicker.size = CGSizeMake(self.view.width, 216);
+    datePicker.size = CGSizeMake(self.view.width, 160);
     datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     [datePicker setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"Chinese"]];
     

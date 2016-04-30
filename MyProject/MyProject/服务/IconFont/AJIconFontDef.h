@@ -33,6 +33,8 @@
 #define AJIconFontSmile5                       AJIconFontMake(@"iconfontBasic", @"\U0000e601", 36, HEXCOLOR(0x669933))
 #define AJIconFontSmile6                       AJIconFontMake(@"iconfontBasic", @"\U0000e601", 36, HEXCOLOR(0x669900))
 
+#define AJIconFontProvince                     AJIconFontMake(@"iconfontBasic", @"\U0000e627", 20, HEXCOLOR(0xf0ad4e))
+
 // 常用图标 iconfont.ttf
 #define AJIconFontWater                     AJIconFontMake(@"iconfont", @"\U0000e89e", 36, HEXCOLOR(0x5cb85c))
 #define AJIconFontWaterHL                     AJIconFontMake(@"iconfont", @"\U0000e89e", 36, HEXCOLOR(0xd9534f))
