@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>张三</string>
+		<key>sex</key>
+		<string>男</string>
+		<key>enjoy</key>
+		<string>天天就知道看电视</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>李四</string>
+		<key>sex</key>
+		<string>女</string>
+		<key>enjoy</key>
+		<string>从来不搞早饭</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>王五</string>
+		<key>sex</key>
+		<string>女</string>
+		<key>enjoy</key>
+		<string>脾气还不小</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>赵六</string>
+		<key>sex</key>
+		<string>女</string>
+		<key>enjoy</key>
+		<string>最近比较烦，比较烦</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>钱七</string>
+		<key>sex</key>
+		<string>男</string>
+		<key>enjoy</key>
+		<string>呵呵、不知道说什么了</string>
+	</dict>
+</array>
+</plist>

@@ -118,6 +118,7 @@
 		ADCF850D1CD5ADA900D039E4 /* Y012ViewModel3.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF850C1CD5ADA900D039E4 /* Y012ViewModel3.m */; };
 		ADCF85101CD5AE7100D039E4 /* Y012TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF850F1CD5AE7100D039E4 /* Y012TableViewCell.m */; };
 		ADCF85131CD5AEC800D039E4 /* Y012CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF85121CD5AEC800D039E4 /* Y012CustomObject.m */; };
+		ADCF85191CD5B4D200D039E4 /* personArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCF85181CD5B4D200D039E4 /* personArray.plist */; };
 		ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */; };
 		ADE75DCB1CD3521500F00EC1 /* Y011ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DCA1CD3521500F00EC1 /* Y011ViewModel.m */; };
 		ADEB8C4A1CD500390039EAE6 /* Y012ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C491CD500390039EAE6 /* Y012ViewController1.m */; };
@@ -388,6 +389,7 @@
 		ADCF850F1CD5AE7100D039E4 /* Y012TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012TableViewCell.m; path = "Y012 UITableView/Y012TableViewCell.m"; sourceTree = "<group>"; };
 		ADCF85111CD5AEC800D039E4 /* Y012CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012CustomObject.h; path = "Y012 UITableView/Y012CustomObject.h"; sourceTree = "<group>"; };
 		ADCF85121CD5AEC800D039E4 /* Y012CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012CustomObject.m; path = "Y012 UITableView/Y012CustomObject.m"; sourceTree = "<group>"; };
+		ADCF85181CD5B4D200D039E4 /* personArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = personArray.plist; path = "Y012 UITableView/personArray.plist"; sourceTree = "<group>"; };
 		ADE75DC31CD3518C00F00EC1 /* Y011ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewController.h; path = "Y011 UIPickerView/Y011ViewController.h"; sourceTree = "<group>"; };
 		ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewController.m; path = "Y011 UIPickerView/Y011ViewController.m"; sourceTree = "<group>"; };
 		ADE75DC91CD3521500F00EC1 /* Y011ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewModel.h; path = "Y011 UIPickerView/Y011ViewModel.h"; sourceTree = "<group>"; };
@@ -1148,6 +1150,7 @@
 		ADCF85071CD5AD5500D039E4 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				ADCF85181CD5B4D200D039E4 /* personArray.plist */,
 				ADCF85081CD5AD7B00D039E4 /* Y012ViewController3.h */,
 				ADCF85091CD5AD7B00D039E4 /* Y012ViewController3.m */,
 				ADCF850B1CD5ADA900D039E4 /* Y012ViewModel3.h */,
@@ -1160,12 +1163,20 @@
 			name = Custom;
 			sourceTree = "<group>";
 		};
+		ADCF851A1CD5CB6700D039E4 /* AJFoundation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AJFoundation;
+			sourceTree = "<group>";
+		};
 		ADEB8C461CD4FF450039EAE6 /* Y012 UITableView */ = {
 			isa = PBXGroup;
 			children = (
 				ADEB8C471CD500240039EAE6 /* Plain */,
 				ADEB8C501CD506DB0039EAE6 /* Grouped */,
 				ADCF85071CD5AD5500D039E4 /* Custom */,
+				ADCF851A1CD5CB6700D039E4 /* AJFoundation */,
 			);
 			name = "Y012 UITableView";
 			sourceTree = "<group>";
@@ -1275,6 +1286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				033FCF3C1CC9F7E900632226 /* iconfont.ttf in Resources */,
+				ADCF85191CD5B4D200D039E4 /* personArray.plist in Resources */,
 				036E05371CCC62E5009B683F /* run.gif in Resources */,
 				03398C181CC216C1000F3AA4 /* Y000.plist in Resources */,
 				0379C98A1CCBD7F70015107D /* image01.jpg in Resources */,

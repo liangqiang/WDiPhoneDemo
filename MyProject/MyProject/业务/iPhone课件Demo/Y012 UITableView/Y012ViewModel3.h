@@ -7,7 +7,14 @@
 //
 
 #import "YScrollViewModel.h"
+#import "Y012CustomObject.h"
 
 @interface Y012ViewModel3 : YScrollViewModel
+
+@property(nonatomic,strong)NSMutableArray *personArray;
+
+-(NSInteger)getPersonCount;
+
+-(Y012CustomObject*)getObjectByRow:(NSInteger)row;
 
 @end
