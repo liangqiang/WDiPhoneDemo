@@ -36,6 +36,7 @@
 //服务
 #import "NSObject+AJPropertyCreator.h"
 #import "AJNormalItem.h"
+#import "AJNormalItem1.h"
 
 #import "AJNavi.h"
 #import "UIViewController+AJNavi.h"

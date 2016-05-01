@@ -7,18 +7,24 @@
 		<string>张三</string>
 		<key>sex</key>
 		<string>男</string>
+		<key>age</key>
+		<string>20</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>李四</string>
 		<key>sex</key>
 		<string>男</string>
+		<key>age</key>
+		<string>25</string>
 	</dict>
 	<dict>
 		<key>name</key>
 		<string>王五</string>
 		<key>sex</key>
 		<string>女</string>
+		<key>age</key>
+		<string>30</string>
 	</dict>
 </array>
 </plist>
