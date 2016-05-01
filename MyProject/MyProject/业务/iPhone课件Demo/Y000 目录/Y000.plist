@@ -30,5 +30,7 @@
 	<string>Y012ViewController2</string>
 	<key>Y012 UITableView3(CustomCell)</key>
 	<string>Y012ViewController3</string>
+	<key>Y012 UITableView4(AJFoundation)</key>
+	<string>Y012ViewController4</string>
 </dict>
 </plist>
