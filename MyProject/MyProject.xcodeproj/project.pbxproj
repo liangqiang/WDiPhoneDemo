@@ -114,6 +114,10 @@
 		AD5D3D2E1CD511DF006440A5 /* sourceCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD5D3D2D1CD511DF006440A5 /* sourceCity.plist */; };
 		AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA71CD354F2000023C5 /* Y011City1.plist */; };
 		AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA81CD354F2000023C5 /* Y011City2.plist */; };
+		ADCF850A1CD5AD7B00D039E4 /* Y012ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF85091CD5AD7B00D039E4 /* Y012ViewController3.m */; };
+		ADCF850D1CD5ADA900D039E4 /* Y012ViewModel3.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF850C1CD5ADA900D039E4 /* Y012ViewModel3.m */; };
+		ADCF85101CD5AE7100D039E4 /* Y012TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF850F1CD5AE7100D039E4 /* Y012TableViewCell.m */; };
+		ADCF85131CD5AEC800D039E4 /* Y012CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF85121CD5AEC800D039E4 /* Y012CustomObject.m */; };
 		ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */; };
 		ADE75DCB1CD3521500F00EC1 /* Y011ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DCA1CD3521500F00EC1 /* Y011ViewModel.m */; };
 		ADEB8C4A1CD500390039EAE6 /* Y012ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C491CD500390039EAE6 /* Y012ViewController1.m */; };
@@ -376,6 +380,14 @@
 		AD5D3D2D1CD511DF006440A5 /* sourceCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sourceCity.plist; path = "Y012 UITableView/sourceCity.plist"; sourceTree = "<group>"; };
 		AD71DFA71CD354F2000023C5 /* Y011City1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City1.plist; path = "Y011 UIPickerView/Y011City1.plist"; sourceTree = "<group>"; };
 		AD71DFA81CD354F2000023C5 /* Y011City2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City2.plist; path = "Y011 UIPickerView/Y011City2.plist"; sourceTree = "<group>"; };
+		ADCF85081CD5AD7B00D039E4 /* Y012ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewController3.h; path = "Y012 UITableView/Y012ViewController3.h"; sourceTree = "<group>"; };
+		ADCF85091CD5AD7B00D039E4 /* Y012ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController3.m; path = "Y012 UITableView/Y012ViewController3.m"; sourceTree = "<group>"; };
+		ADCF850B1CD5ADA900D039E4 /* Y012ViewModel3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel3.h; path = "Y012 UITableView/Y012ViewModel3.h"; sourceTree = "<group>"; };
+		ADCF850C1CD5ADA900D039E4 /* Y012ViewModel3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewModel3.m; path = "Y012 UITableView/Y012ViewModel3.m"; sourceTree = "<group>"; };
+		ADCF850E1CD5AE7100D039E4 /* Y012TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012TableViewCell.h; path = "Y012 UITableView/Y012TableViewCell.h"; sourceTree = "<group>"; };
+		ADCF850F1CD5AE7100D039E4 /* Y012TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012TableViewCell.m; path = "Y012 UITableView/Y012TableViewCell.m"; sourceTree = "<group>"; };
+		ADCF85111CD5AEC800D039E4 /* Y012CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012CustomObject.h; path = "Y012 UITableView/Y012CustomObject.h"; sourceTree = "<group>"; };
+		ADCF85121CD5AEC800D039E4 /* Y012CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012CustomObject.m; path = "Y012 UITableView/Y012CustomObject.m"; sourceTree = "<group>"; };
 		ADE75DC31CD3518C00F00EC1 /* Y011ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewController.h; path = "Y011 UIPickerView/Y011ViewController.h"; sourceTree = "<group>"; };
 		ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewController.m; path = "Y011 UIPickerView/Y011ViewController.m"; sourceTree = "<group>"; };
 		ADE75DC91CD3521500F00EC1 /* Y011ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewModel.h; path = "Y011 UIPickerView/Y011ViewModel.h"; sourceTree = "<group>"; };
@@ -1133,11 +1145,27 @@
 			path = "iPhone课件Demo";
 			sourceTree = "<group>";
 		};
+		ADCF85071CD5AD5500D039E4 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				ADCF85081CD5AD7B00D039E4 /* Y012ViewController3.h */,
+				ADCF85091CD5AD7B00D039E4 /* Y012ViewController3.m */,
+				ADCF850B1CD5ADA900D039E4 /* Y012ViewModel3.h */,
+				ADCF850C1CD5ADA900D039E4 /* Y012ViewModel3.m */,
+				ADCF850E1CD5AE7100D039E4 /* Y012TableViewCell.h */,
+				ADCF850F1CD5AE7100D039E4 /* Y012TableViewCell.m */,
+				ADCF85111CD5AEC800D039E4 /* Y012CustomObject.h */,
+				ADCF85121CD5AEC800D039E4 /* Y012CustomObject.m */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
 		ADEB8C461CD4FF450039EAE6 /* Y012 UITableView */ = {
 			isa = PBXGroup;
 			children = (
 				ADEB8C471CD500240039EAE6 /* Plain */,
 				ADEB8C501CD506DB0039EAE6 /* Grouped */,
+				ADCF85071CD5AD5500D039E4 /* Custom */,
 			);
 			name = "Y012 UITableView";
 			sourceTree = "<group>";
@@ -1310,6 +1338,7 @@
 				03B7618B1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m in Sources */,
 				03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */,
 				035C061F1C859FC100D050D1 /* ALView+PureLayout.m in Sources */,
+				ADCF85101CD5AE7100D039E4 /* Y012TableViewCell.m in Sources */,
 				AD5335F21CC5E59D00F48FA7 /* Y005ViewModel.m in Sources */,
 				03B7617D1C93AB2200297AC7 /* NSString+AJAddition.m in Sources */,
 				030DF63D1CD458FC00A0FCC9 /* Y001CustomPickerView.m in Sources */,
@@ -1336,6 +1365,7 @@
 				03B761821C93AB2200297AC7 /* UIView+AJAddition.m in Sources */,
 				03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */,
 				03B7617C1C93AB2200297AC7 /* NSObject+AJAddition.m in Sources */,
+				ADCF850D1CD5ADA900D039E4 /* Y012ViewModel3.m in Sources */,
 				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
 				03398C071CC1F6BA000F3AA4 /* Y000TableView.m in Sources */,
 				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
@@ -1361,9 +1391,11 @@
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
 				03B761871C93AB2200297AC7 /* AJSettings.m in Sources */,
+				ADCF850A1CD5AD7B00D039E4 /* Y012ViewController3.m in Sources */,
 				ADE75DCB1CD3521500F00EC1 /* Y011ViewModel.m in Sources */,
 				03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */,
 				031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				ADCF85131CD5AEC800D039E4 /* Y012CustomObject.m in Sources */,
 				035C05FB1C857A2200D050D1 /* WDDemoListTableViewCell.m in Sources */,
 				AD264D781CC689B9006CA205 /* Y006ViewModel.m in Sources */,
 				03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */,
