@@ -32,5 +32,7 @@
 	<string>Y012ViewController3</string>
 	<key>Y012 UITableView4(AJFoundation)</key>
 	<string>Y012ViewController4</string>
+	<key>Y013 UIScrollView</key>
+	<string>Y013ViewController</string>
 </dict>
 </plist>
