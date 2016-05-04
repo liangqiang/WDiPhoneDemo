@@ -99,6 +99,12 @@
 		03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */; };
 		AD1134951CD8C6C9001A2A7A /* Y013ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1134941CD8C6C9001A2A7A /* Y013ViewController.m */; };
 		AD1134981CD8C6DE001A2A7A /* Y013ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1134971CD8C6DE001A2A7A /* Y013ViewModel.m */; };
+		AD1BE71D1CDA1556000ED488 /* Y014ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE71C1CDA1556000ED488 /* Y014ViewController.m */; };
+		AD1BE7201CDA1568000ED488 /* Y014ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE71F1CDA1568000ED488 /* Y014ViewModel.m */; };
+		AD1BE7251CDA166E000ED488 /* Y015ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE7241CDA166E000ED488 /* Y015ViewController.m */; };
+		AD1BE7281CDA167F000ED488 /* Y015ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE7271CDA167F000ED488 /* Y015ViewModel.m */; };
+		AD1BE72B1CDA168E000ED488 /* Y016ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE72A1CDA168E000ED488 /* Y016ViewController.m */; };
+		AD1BE72E1CDA169E000ED488 /* Y016ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE72D1CDA169E000ED488 /* Y016ViewModel.m */; };
 		AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD264D741CC68996006CA205 /* Y006ViewController.m */; };
 		AD264D781CC689B9006CA205 /* Y006ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD264D771CC689B9006CA205 /* Y006ViewModel.m */; };
 		AD264D7C1CC72F6C006CA205 /* Y007ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD264D7B1CC72F6C006CA205 /* Y007ViewController.m */; };
@@ -369,6 +375,18 @@
 		AD1134941CD8C6C9001A2A7A /* Y013ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y013ViewController.m; path = "Y013 UIScrollView/Y013ViewController.m"; sourceTree = "<group>"; };
 		AD1134961CD8C6DE001A2A7A /* Y013ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y013ViewModel.h; path = "Y013 UIScrollView/Y013ViewModel.h"; sourceTree = "<group>"; };
 		AD1134971CD8C6DE001A2A7A /* Y013ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y013ViewModel.m; path = "Y013 UIScrollView/Y013ViewModel.m"; sourceTree = "<group>"; };
+		AD1BE71B1CDA1556000ED488 /* Y014ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y014ViewController.h; path = "Y014 ViewController生命周期/Y014ViewController.h"; sourceTree = "<group>"; };
+		AD1BE71C1CDA1556000ED488 /* Y014ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y014ViewController.m; path = "Y014 ViewController生命周期/Y014ViewController.m"; sourceTree = "<group>"; };
+		AD1BE71E1CDA1568000ED488 /* Y014ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y014ViewModel.h; path = "Y014 ViewController生命周期/Y014ViewModel.h"; sourceTree = "<group>"; };
+		AD1BE71F1CDA1568000ED488 /* Y014ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y014ViewModel.m; path = "Y014 ViewController生命周期/Y014ViewModel.m"; sourceTree = "<group>"; };
+		AD1BE7231CDA166E000ED488 /* Y015ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y015ViewController.h; path = "Y015 导航视图控制器/Y015ViewController.h"; sourceTree = "<group>"; };
+		AD1BE7241CDA166E000ED488 /* Y015ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y015ViewController.m; path = "Y015 导航视图控制器/Y015ViewController.m"; sourceTree = "<group>"; };
+		AD1BE7261CDA167F000ED488 /* Y015ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y015ViewModel.h; path = "Y015 导航视图控制器/Y015ViewModel.h"; sourceTree = "<group>"; };
+		AD1BE7271CDA167F000ED488 /* Y015ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y015ViewModel.m; path = "Y015 导航视图控制器/Y015ViewModel.m"; sourceTree = "<group>"; };
+		AD1BE7291CDA168E000ED488 /* Y016ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016ViewController.h; path = "Y016 分栏视图控制器/Y016ViewController.h"; sourceTree = "<group>"; };
+		AD1BE72A1CDA168E000ED488 /* Y016ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016ViewController.m; path = "Y016 分栏视图控制器/Y016ViewController.m"; sourceTree = "<group>"; };
+		AD1BE72C1CDA169E000ED488 /* Y016ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016ViewModel.h; path = "Y016 分栏视图控制器/Y016ViewModel.h"; sourceTree = "<group>"; };
+		AD1BE72D1CDA169E000ED488 /* Y016ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016ViewModel.m; path = "Y016 分栏视图控制器/Y016ViewModel.m"; sourceTree = "<group>"; };
 		AD264D731CC68996006CA205 /* Y006ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y006ViewController.h; path = "Y006 UISwitch/Y006ViewController.h"; sourceTree = "<group>"; };
 		AD264D741CC68996006CA205 /* Y006ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y006ViewController.m; path = "Y006 UISwitch/Y006ViewController.m"; sourceTree = "<group>"; };
 		AD264D761CC689B9006CA205 /* Y006ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y006ViewModel.h; path = "Y006 UISwitch/Y006ViewModel.h"; sourceTree = "<group>"; };
@@ -1089,6 +1107,39 @@
 			name = "Y013 UIScrollView";
 			sourceTree = "<group>";
 		};
+		AD1BE71A1CDA1527000ED488 /* Y014 ViewController生命周期 */ = {
+			isa = PBXGroup;
+			children = (
+				AD1BE71B1CDA1556000ED488 /* Y014ViewController.h */,
+				AD1BE71C1CDA1556000ED488 /* Y014ViewController.m */,
+				AD1BE71E1CDA1568000ED488 /* Y014ViewModel.h */,
+				AD1BE71F1CDA1568000ED488 /* Y014ViewModel.m */,
+			);
+			name = "Y014 ViewController生命周期";
+			sourceTree = "<group>";
+		};
+		AD1BE7211CDA1636000ED488 /* Y015 导航视图控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				AD1BE7231CDA166E000ED488 /* Y015ViewController.h */,
+				AD1BE7241CDA166E000ED488 /* Y015ViewController.m */,
+				AD1BE7261CDA167F000ED488 /* Y015ViewModel.h */,
+				AD1BE7271CDA167F000ED488 /* Y015ViewModel.m */,
+			);
+			name = "Y015 导航视图控制器";
+			sourceTree = "<group>";
+		};
+		AD1BE7221CDA1646000ED488 /* Y016 分栏视图控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				AD1BE7291CDA168E000ED488 /* Y016ViewController.h */,
+				AD1BE72A1CDA168E000ED488 /* Y016ViewController.m */,
+				AD1BE72C1CDA169E000ED488 /* Y016ViewModel.h */,
+				AD1BE72D1CDA169E000ED488 /* Y016ViewModel.m */,
+			);
+			name = "Y016 分栏视图控制器";
+			sourceTree = "<group>";
+		};
 		AD264D6F1CC6891F006CA205 /* Y006 UISwitch */ = {
 			isa = PBXGroup;
 			children = (
@@ -1200,6 +1251,9 @@
 				AD7E66D11CCE6D1A00BC36EC /* Y011 UIPickerView */,
 				ADEB8C461CD4FF450039EAE6 /* Y012 UITableView */,
 				AD1134921CD8C69E001A2A7A /* Y013 UIScrollView */,
+				AD1BE71A1CDA1527000ED488 /* Y014 ViewController生命周期 */,
+				AD1BE7211CDA1636000ED488 /* Y015 导航视图控制器 */,
+				AD1BE7221CDA1646000ED488 /* Y016 分栏视图控制器 */,
 				03398BEB1CC1EE19000F3AA4 /* 问题讨论.md */,
 			);
 			path = "iPhone课件Demo";
@@ -1396,6 +1450,7 @@
 				03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */,
 				ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */,
 				035C05F81C8574F900D050D1 /* WDDemoListTableView.m in Sources */,
+				AD1BE7281CDA167F000ED488 /* Y015ViewModel.m in Sources */,
 				035C05F51C85742000D050D1 /* WDDemoListViewModel.m in Sources */,
 				ADEB8C4D1CD500580039EAE6 /* Y012ViewModel1.m in Sources */,
 				03FA194C1BEB113A00DD1DAC /* UIViewController+AJNavi.m in Sources */,
@@ -1410,6 +1465,7 @@
 				033FCF261CC9F59700632226 /* AJControllerDeallocChecker.m in Sources */,
 				03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */,
+				AD1BE7251CDA166E000ED488 /* Y015ViewController.m in Sources */,
 				033FCF7B1CCA1E6800632226 /* YViewTypeItem.m in Sources */,
 				03B7617F1C93AB2200297AC7 /* UIImage+AJAddition.m in Sources */,
 				03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */,
@@ -1443,6 +1499,8 @@
 				03B7618A1C93AB2200297AC7 /* AJRefreshViewBase.m in Sources */,
 				AD31D1761CCCD94A00E27188 /* Y008ViewModel.m in Sources */,
 				03B761841C93AB2200297AC7 /* AJTableView.m in Sources */,
+				AD1BE7201CDA1568000ED488 /* Y014ViewModel.m in Sources */,
+				AD1BE71D1CDA1556000ED488 /* Y014ViewController.m in Sources */,
 				03398C1B1CC246A9000F3AA4 /* Y001ViewModel.m in Sources */,
 				035C06201C859FC100D050D1 /* NSArray+PureLayout.m in Sources */,
 				03B7617E1C93AB2200297AC7 /* UIControl+AJAddition.m in Sources */,
@@ -1453,12 +1511,14 @@
 				03FA195B1BEB2D2A00DD1DAC /* MKNetworkRequest.m in Sources */,
 				03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,
+				AD1BE72B1CDA168E000ED488 /* Y016ViewController.m in Sources */,
 				03B761821C93AB2200297AC7 /* UIView+AJAddition.m in Sources */,
 				03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */,
 				03B7617C1C93AB2200297AC7 /* NSObject+AJAddition.m in Sources */,
 				ADCF850D1CD5ADA900D039E4 /* Y012ViewModel3.m in Sources */,
 				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
 				03398C071CC1F6BA000F3AA4 /* Y000TableView.m in Sources */,
+				AD1BE72E1CDA169E000ED488 /* Y016ViewModel.m in Sources */,
 				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
 				030DF63A1CD43B0E00A0FCC9 /* AJPickerView.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,

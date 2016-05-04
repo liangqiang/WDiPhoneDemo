@@ -34,5 +34,11 @@
 	<string>Y012ViewController4</string>
 	<key>Y013 UIScrollView</key>
 	<string>Y013ViewController</string>
+	<key>Y014 ViewController生命周期</key>
+	<string>Y014ViewController</string>
+	<key>Y015 导航视图控制器</key>
+	<string>Y015ViewController</string>
+	<key>Y016 分栏视图控制器</key>
+	<string>Y016ViewController</string>
 </dict>
 </plist>
