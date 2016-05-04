@@ -134,6 +134,13 @@
 		ADEB8C4F1CD5008B0039EAE6 /* sourceArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADEB8C4E1CD5008B0039EAE6 /* sourceArray.plist */; };
 		ADEB8C531CD507070039EAE6 /* Y012ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C521CD507070039EAE6 /* Y012ViewController2.m */; };
 		ADEB8C561CD507290039EAE6 /* Y012ViewModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C551CD507290039EAE6 /* Y012ViewModel2.m */; };
+		ADF140DB1CD9E3A000DA2B23 /* finditem_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D41CD9E3A000DA2B23 /* finditem_ad.png */; };
+		ADF140DC1CD9E3A000DA2B23 /* finditem_hotpeople.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D51CD9E3A000DA2B23 /* finditem_hotpeople.png */; };
+		ADF140DD1CD9E3A000DA2B23 /* finditem_hotsound.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D61CD9E3A000DA2B23 /* finditem_hotsound.png */; };
+		ADF140DE1CD9E3A000DA2B23 /* finditem_newpeople.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D71CD9E3A000DA2B23 /* finditem_newpeople.png */; };
+		ADF140DF1CD9E3A000DA2B23 /* finditem_newsound.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D81CD9E3A000DA2B23 /* finditem_newsound.png */; };
+		ADF140E01CD9E3A000DA2B23 /* finditem_wallspoint.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D91CD9E3A000DA2B23 /* finditem_wallspoint.png */; };
+		ADF140E11CD9E3A000DA2B23 /* minion.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140DA1CD9E3A000DA2B23 /* minion.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -426,6 +433,13 @@
 		ADEB8C521CD507070039EAE6 /* Y012ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController2.m; path = "Y012 UITableView/Y012ViewController2.m"; sourceTree = "<group>"; };
 		ADEB8C541CD507290039EAE6 /* Y012ViewModel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel2.h; path = "Y012 UITableView/Y012ViewModel2.h"; sourceTree = "<group>"; };
 		ADEB8C551CD507290039EAE6 /* Y012ViewModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewModel2.m; path = "Y012 UITableView/Y012ViewModel2.m"; sourceTree = "<group>"; };
+		ADF140D41CD9E3A000DA2B23 /* finditem_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finditem_ad.png; path = "MyProject/业务/iPhone课件Demo/Y013 UIScrollView/finditem_ad.png"; sourceTree = SOURCE_ROOT; };
+		ADF140D51CD9E3A000DA2B23 /* finditem_hotpeople.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finditem_hotpeople.png; path = "MyProject/业务/iPhone课件Demo/Y013 UIScrollView/finditem_hotpeople.png"; sourceTree = SOURCE_ROOT; };
+		ADF140D61CD9E3A000DA2B23 /* finditem_hotsound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finditem_hotsound.png; path = "MyProject/业务/iPhone课件Demo/Y013 UIScrollView/finditem_hotsound.png"; sourceTree = SOURCE_ROOT; };
+		ADF140D71CD9E3A000DA2B23 /* finditem_newpeople.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finditem_newpeople.png; path = "MyProject/业务/iPhone课件Demo/Y013 UIScrollView/finditem_newpeople.png"; sourceTree = SOURCE_ROOT; };
+		ADF140D81CD9E3A000DA2B23 /* finditem_newsound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finditem_newsound.png; path = "MyProject/业务/iPhone课件Demo/Y013 UIScrollView/finditem_newsound.png"; sourceTree = SOURCE_ROOT; };
+		ADF140D91CD9E3A000DA2B23 /* finditem_wallspoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finditem_wallspoint.png; path = "MyProject/业务/iPhone课件Demo/Y013 UIScrollView/finditem_wallspoint.png"; sourceTree = SOURCE_ROOT; };
+		ADF140DA1CD9E3A000DA2B23 /* minion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = minion.png; path = "MyProject/业务/iPhone课件Demo/Y013 UIScrollView/minion.png"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -836,6 +850,13 @@
 		0379C9881CCBD7F70015107D /* 资源 */ = {
 			isa = PBXGroup;
 			children = (
+				ADF140D41CD9E3A000DA2B23 /* finditem_ad.png */,
+				ADF140D51CD9E3A000DA2B23 /* finditem_hotpeople.png */,
+				ADF140D61CD9E3A000DA2B23 /* finditem_hotsound.png */,
+				ADF140D71CD9E3A000DA2B23 /* finditem_newpeople.png */,
+				ADF140D81CD9E3A000DA2B23 /* finditem_newsound.png */,
+				ADF140D91CD9E3A000DA2B23 /* finditem_wallspoint.png */,
+				ADF140DA1CD9E3A000DA2B23 /* minion.png */,
 				036E05361CCC62E5009B683F /* run.gif */,
 				0379C9891CCBD7F70015107D /* image01.jpg */,
 			);
@@ -1333,16 +1354,23 @@
 			files = (
 				033FCF3C1CC9F7E900632226 /* iconfont.ttf in Resources */,
 				AD6D6ED21CD62C830040E737 /* AJPersonArray.plist in Resources */,
+				ADF140E01CD9E3A000DA2B23 /* finditem_wallspoint.png in Resources */,
 				ADCF85191CD5B4D200D039E4 /* personArray.plist in Resources */,
 				036E05371CCC62E5009B683F /* run.gif in Resources */,
 				03398C181CC216C1000F3AA4 /* Y000.plist in Resources */,
 				0379C98A1CCBD7F70015107D /* image01.jpg in Resources */,
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,
 				033FCF711CCA069E00632226 /* iconfontLinear.ttf in Resources */,
+				ADF140DF1CD9E3A000DA2B23 /* finditem_newsound.png in Resources */,
+				ADF140DB1CD9E3A000DA2B23 /* finditem_ad.png in Resources */,
 				AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */,
+				ADF140DE1CD9E3A000DA2B23 /* finditem_newpeople.png in Resources */,
 				ADEB8C4F1CD5008B0039EAE6 /* sourceArray.plist in Resources */,
+				ADF140DD1CD9E3A000DA2B23 /* finditem_hotsound.png in Resources */,
+				ADF140E11CD9E3A000DA2B23 /* minion.png in Resources */,
 				033FCF6A1CCA069E00632226 /* iconfontBasic.ttf in Resources */,
 				AD5D3D2E1CD511DF006440A5 /* sourceCity.plist in Resources */,
+				ADF140DC1CD9E3A000DA2B23 /* finditem_hotpeople.png in Resources */,
 				AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
