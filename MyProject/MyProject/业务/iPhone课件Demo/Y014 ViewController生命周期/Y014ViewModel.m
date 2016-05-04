@@ -10,4 +10,8 @@
 
 @implementation Y014ViewModel
 
+-(void)onButtonClicked:(NSString*)vc{
+    [AJNavi pushViewController:vc];
+}
+
 @end
