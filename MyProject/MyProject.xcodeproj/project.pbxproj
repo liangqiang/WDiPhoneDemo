@@ -128,6 +128,8 @@
 		AD6D6EE11CD63F540040E737 /* AJNormalItem1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6D6EE01CD63F540040E737 /* AJNormalItem1.m */; };
 		AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA71CD354F2000023C5 /* Y011City1.plist */; };
 		AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA81CD354F2000023C5 /* Y011City2.plist */; };
+		AD9B6B821CDB8F7D00103985 /* Y015ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9B6B811CDB8F7D00103985 /* Y015ViewController2.m */; };
+		AD9B6B851CDB99A900103985 /* Y015ViewModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9B6B841CDB99A900103985 /* Y015ViewModel2.m */; };
 		ADCF850A1CD5AD7B00D039E4 /* Y012ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF85091CD5AD7B00D039E4 /* Y012ViewController3.m */; };
 		ADCF850D1CD5ADA900D039E4 /* Y012ViewModel3.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF850C1CD5ADA900D039E4 /* Y012ViewModel3.m */; };
 		ADCF85101CD5AE7100D039E4 /* Y012TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF850F1CD5AE7100D039E4 /* Y012TableViewCell.m */; };
@@ -429,6 +431,10 @@
 		AD6D6EE01CD63F540040E737 /* AJNormalItem1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNormalItem1.m; sourceTree = "<group>"; };
 		AD71DFA71CD354F2000023C5 /* Y011City1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City1.plist; path = "Y011 UIPickerView/Y011City1.plist"; sourceTree = "<group>"; };
 		AD71DFA81CD354F2000023C5 /* Y011City2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City2.plist; path = "Y011 UIPickerView/Y011City2.plist"; sourceTree = "<group>"; };
+		AD9B6B801CDB8F7D00103985 /* Y015ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y015ViewController2.h; path = "Y015 导航视图控制器/Y015ViewController2.h"; sourceTree = "<group>"; };
+		AD9B6B811CDB8F7D00103985 /* Y015ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y015ViewController2.m; path = "Y015 导航视图控制器/Y015ViewController2.m"; sourceTree = "<group>"; };
+		AD9B6B831CDB99A900103985 /* Y015ViewModel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y015ViewModel2.h; path = "Y015 导航视图控制器/Y015ViewModel2.h"; sourceTree = "<group>"; };
+		AD9B6B841CDB99A900103985 /* Y015ViewModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y015ViewModel2.m; path = "Y015 导航视图控制器/Y015ViewModel2.m"; sourceTree = "<group>"; };
 		ADCF85081CD5AD7B00D039E4 /* Y012ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewController3.h; path = "Y012 UITableView/Y012ViewController3.h"; sourceTree = "<group>"; };
 		ADCF85091CD5AD7B00D039E4 /* Y012ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController3.m; path = "Y012 UITableView/Y012ViewController3.m"; sourceTree = "<group>"; };
 		ADCF850B1CD5ADA900D039E4 /* Y012ViewModel3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel3.h; path = "Y012 UITableView/Y012ViewModel3.h"; sourceTree = "<group>"; };
@@ -1125,6 +1131,10 @@
 				AD1BE7241CDA166E000ED488 /* Y015ViewController.m */,
 				AD1BE7261CDA167F000ED488 /* Y015ViewModel.h */,
 				AD1BE7271CDA167F000ED488 /* Y015ViewModel.m */,
+				AD9B6B801CDB8F7D00103985 /* Y015ViewController2.h */,
+				AD9B6B811CDB8F7D00103985 /* Y015ViewController2.m */,
+				AD9B6B831CDB99A900103985 /* Y015ViewModel2.h */,
+				AD9B6B841CDB99A900103985 /* Y015ViewModel2.m */,
 			);
 			name = "Y015 导航视图控制器";
 			sourceTree = "<group>";
@@ -1497,6 +1507,7 @@
 				035C06211C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				033FCF751CCA0A6000632226 /* YScrollViewController.m in Sources */,
 				03B7618A1C93AB2200297AC7 /* AJRefreshViewBase.m in Sources */,
+				AD9B6B851CDB99A900103985 /* Y015ViewModel2.m in Sources */,
 				AD31D1761CCCD94A00E27188 /* Y008ViewModel.m in Sources */,
 				03B761841C93AB2200297AC7 /* AJTableView.m in Sources */,
 				AD1BE7201CDA1568000ED488 /* Y014ViewModel.m in Sources */,
@@ -1555,6 +1566,7 @@
 				035C06421C86D25700D050D1 /* WDComplexATableViewCell.m in Sources */,
 				AD5335EF1CC5E55F00F48FA7 /* Y005ViewController.m in Sources */,
 				035C063F1C86D21300D050D1 /* WDComplexTableView.m in Sources */,
+				AD9B6B821CDB8F7D00103985 /* Y015ViewController2.m in Sources */,
 				AD1134981CD8C6DE001A2A7A /* Y013ViewModel.m in Sources */,
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,

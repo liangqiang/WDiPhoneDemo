@@ -10,4 +10,6 @@
 
 @interface Y015ViewModel : YScrollViewModel
 
+-(void)onPushButtonClicked:(NSString*)viewName;
+
 @end
