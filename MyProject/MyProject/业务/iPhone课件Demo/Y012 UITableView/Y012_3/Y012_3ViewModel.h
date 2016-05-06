@@ -17,6 +17,6 @@
 
 -(NSInteger)getPersonCount;
 
--(Y012_3PersonItem*)getObjectByRow:(NSInteger)row;
+-(Y012_3PersonItem*)personAtRow:(NSInteger)row;
 
 @end

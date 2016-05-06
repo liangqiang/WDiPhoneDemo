@@ -11,7 +11,7 @@
 @implementation Y012_2ViewModel
 
 -(void)loadData{
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"sourceCity" ofType:@"plist"];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Y012_2City" ofType:@"plist"];
     self.allCityArray = [NSDictionary dictionaryWithContentsOfFile:plistPath];
     
     self.regionArray = [self.allCityArray allKeys];

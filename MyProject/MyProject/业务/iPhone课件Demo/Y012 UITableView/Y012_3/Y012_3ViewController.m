@@ -22,7 +22,7 @@
 
 -(instancetype)init{
     if (self=[super init]) {
-        self.title = @"简单表格";
+        self.title = @"自定义表格";
     }
     return self;
 }
@@ -64,16 +64,13 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
     Y012_3TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    
-    Y012_3PersonItem *object = [self.viewModel getObjectByRow:[indexPath row]];
-    cell.nameLabel.text = object.name;
-    cell.sexLabel.text = object.sex;
+    Y012_3PersonItem *personItem = [self.viewModel personAtRow:[indexPath row]];
+    cell.nameLabel.text = personItem.name;
+    cell.sexLabel.text = personItem.sex;
     cell.picImageView.image = AJIconFontSmile;
-    cell.enjoyLabel.text = object.enjoy;
-    
+    cell.enjoyLabel.text = personItem.enjoy;
     
     return cell;
 }

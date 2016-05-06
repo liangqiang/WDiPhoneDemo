@@ -12,23 +12,23 @@
 
 -(void)loadData{
     
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"personArray" ofType:@"plist"];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Y012_3Person" ofType:@"plist"];
     NSArray *array = [NSArray arrayWithContentsOfFile:plistPath];
-    self.personArray = [NSMutableArray new];
     
+    self.personArray = [NSMutableArray new];
     for(int i=0;i<[array count];++i){
-        Y012_3PersonItem *object = [[Y012_3PersonItem alloc] initWithDictionary:[array safeObjectAtIndex:i]];
-        [self.personArray addObject:object];
+        Y012_3PersonItem *personItem = [[Y012_3PersonItem alloc] initWithDictionary:[array safeObjectAtIndex:i]];
+        [self.personArray addObject:personItem];
     }
     
     [self notifyToRefresh];
 }
 
--(NSInteger)getPersonCount{
+-(NSInteger)personCount{
     return [self.personArray count];
 }
 
--(Y012_3PersonItem*)getObjectByRow:(NSInteger)row{
+-(Y012_3PersonItem*)personAtRow:(NSInteger)row{
     return [self.personArray safeObjectAtIndex:row];
 }
 

@@ -12,18 +12,18 @@
 		0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303D6D71BD8C4E30024399D /* Images.xcassets */; };
 		0303D6E71BD8C4E40024399D /* MyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6E61BD8C4E40024399D /* MyProjectTests.m */; };
 		030900CA1BDB97B70073DAA7 /* AJNavi.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* AJNavi.m */; };
-		030C6BCE1CDC230E00AF9993 /* sourceArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BAF1CDC230E00AF9993 /* sourceArray.plist */; };
+		030C6BCE1CDC230E00AF9993 /* Y012_1Person.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BAF1CDC230E00AF9993 /* Y012_1Person.plist */; };
 		030C6BCF1CDC230E00AF9993 /* Y012_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BB11CDC230E00AF9993 /* Y012_1ViewController.m */; };
 		030C6BD01CDC230E00AF9993 /* Y012_1ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BB31CDC230E00AF9993 /* Y012_1ViewModel.m */; };
-		030C6BD11CDC230E00AF9993 /* sourceCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BB51CDC230E00AF9993 /* sourceCity.plist */; };
+		030C6BD11CDC230E00AF9993 /* Y012_2City.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BB51CDC230E00AF9993 /* Y012_2City.plist */; };
 		030C6BD21CDC230E00AF9993 /* Y012_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BB71CDC230E00AF9993 /* Y012_2ViewController.m */; };
 		030C6BD31CDC230E00AF9993 /* Y012_2ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BB91CDC230E00AF9993 /* Y012_2ViewModel.m */; };
-		030C6BD41CDC230E00AF9993 /* personArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BBB1CDC230E00AF9993 /* personArray.plist */; };
+		030C6BD41CDC230E00AF9993 /* Y012_3Person.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BBB1CDC230E00AF9993 /* Y012_3Person.plist */; };
 		030C6BD51CDC230E00AF9993 /* Y012_3PersonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BBD1CDC230E00AF9993 /* Y012_3PersonItem.m */; };
 		030C6BD61CDC230E00AF9993 /* Y012_3TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BBF1CDC230E00AF9993 /* Y012_3TableViewCell.m */; };
 		030C6BD71CDC230E00AF9993 /* Y012_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BC11CDC230E00AF9993 /* Y012_3ViewController.m */; };
 		030C6BD81CDC230E00AF9993 /* Y012_3ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BC31CDC230E00AF9993 /* Y012_3ViewModel.m */; };
-		030C6BD91CDC230E00AF9993 /* AJPersonArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BC51CDC230E00AF9993 /* AJPersonArray.plist */; };
+		030C6BD91CDC230E00AF9993 /* Y012_4Person.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BC51CDC230E00AF9993 /* Y012_4Person.plist */; };
 		030C6BDA1CDC230E00AF9993 /* Y012_4TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BC71CDC230E00AF9993 /* Y012_4TableView.m */; };
 		030C6BDB1CDC230E00AF9993 /* Y012_4TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BC91CDC230E00AF9993 /* Y012_4TableViewCell.m */; };
 		030C6BDC1CDC230E00AF9993 /* Y012_4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BCB1CDC230E00AF9993 /* Y012_4ViewController.m */; };
@@ -178,17 +178,17 @@
 		0303D7061BD8DBDB0024399D /* MyProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProject.pch; sourceTree = "<group>"; };
 		030900C81BDB97B70073DAA7 /* AJNavi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNavi.h; sourceTree = "<group>"; };
 		030900C91BDB97B70073DAA7 /* AJNavi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNavi.m; sourceTree = "<group>"; };
-		030C6BAF1CDC230E00AF9993 /* sourceArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sourceArray.plist; sourceTree = "<group>"; };
+		030C6BAF1CDC230E00AF9993 /* Y012_1Person.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Y012_1Person.plist; sourceTree = "<group>"; };
 		030C6BB01CDC230E00AF9993 /* Y012_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_1ViewController.h; sourceTree = "<group>"; };
 		030C6BB11CDC230E00AF9993 /* Y012_1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_1ViewController.m; sourceTree = "<group>"; };
 		030C6BB21CDC230E00AF9993 /* Y012_1ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_1ViewModel.h; sourceTree = "<group>"; };
 		030C6BB31CDC230E00AF9993 /* Y012_1ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_1ViewModel.m; sourceTree = "<group>"; };
-		030C6BB51CDC230E00AF9993 /* sourceCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sourceCity.plist; sourceTree = "<group>"; };
+		030C6BB51CDC230E00AF9993 /* Y012_2City.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Y012_2City.plist; sourceTree = "<group>"; };
 		030C6BB61CDC230E00AF9993 /* Y012_2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_2ViewController.h; sourceTree = "<group>"; };
 		030C6BB71CDC230E00AF9993 /* Y012_2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_2ViewController.m; sourceTree = "<group>"; };
 		030C6BB81CDC230E00AF9993 /* Y012_2ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_2ViewModel.h; sourceTree = "<group>"; };
 		030C6BB91CDC230E00AF9993 /* Y012_2ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_2ViewModel.m; sourceTree = "<group>"; };
-		030C6BBB1CDC230E00AF9993 /* personArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = personArray.plist; sourceTree = "<group>"; };
+		030C6BBB1CDC230E00AF9993 /* Y012_3Person.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Y012_3Person.plist; sourceTree = "<group>"; };
 		030C6BBC1CDC230E00AF9993 /* Y012_3PersonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_3PersonItem.h; sourceTree = "<group>"; };
 		030C6BBD1CDC230E00AF9993 /* Y012_3PersonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_3PersonItem.m; sourceTree = "<group>"; };
 		030C6BBE1CDC230E00AF9993 /* Y012_3TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_3TableViewCell.h; sourceTree = "<group>"; };
@@ -197,7 +197,7 @@
 		030C6BC11CDC230E00AF9993 /* Y012_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_3ViewController.m; sourceTree = "<group>"; };
 		030C6BC21CDC230E00AF9993 /* Y012_3ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_3ViewModel.h; sourceTree = "<group>"; };
 		030C6BC31CDC230E00AF9993 /* Y012_3ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_3ViewModel.m; sourceTree = "<group>"; };
-		030C6BC51CDC230E00AF9993 /* AJPersonArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AJPersonArray.plist; sourceTree = "<group>"; };
+		030C6BC51CDC230E00AF9993 /* Y012_4Person.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Y012_4Person.plist; sourceTree = "<group>"; };
 		030C6BC61CDC230E00AF9993 /* Y012_4TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_4TableView.h; sourceTree = "<group>"; };
 		030C6BC71CDC230E00AF9993 /* Y012_4TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_4TableView.m; sourceTree = "<group>"; };
 		030C6BC81CDC230E00AF9993 /* Y012_4TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_4TableViewCell.h; sourceTree = "<group>"; };
@@ -604,7 +604,7 @@
 		030C6BAE1CDC230E00AF9993 /* Y012_1 */ = {
 			isa = PBXGroup;
 			children = (
-				030C6BAF1CDC230E00AF9993 /* sourceArray.plist */,
+				030C6BAF1CDC230E00AF9993 /* Y012_1Person.plist */,
 				030C6BB01CDC230E00AF9993 /* Y012_1ViewController.h */,
 				030C6BB11CDC230E00AF9993 /* Y012_1ViewController.m */,
 				030C6BB21CDC230E00AF9993 /* Y012_1ViewModel.h */,
@@ -617,7 +617,7 @@
 		030C6BB41CDC230E00AF9993 /* Y012_2 */ = {
 			isa = PBXGroup;
 			children = (
-				030C6BB51CDC230E00AF9993 /* sourceCity.plist */,
+				030C6BB51CDC230E00AF9993 /* Y012_2City.plist */,
 				030C6BB61CDC230E00AF9993 /* Y012_2ViewController.h */,
 				030C6BB71CDC230E00AF9993 /* Y012_2ViewController.m */,
 				030C6BB81CDC230E00AF9993 /* Y012_2ViewModel.h */,
@@ -630,7 +630,7 @@
 		030C6BBA1CDC230E00AF9993 /* Y012_3 */ = {
 			isa = PBXGroup;
 			children = (
-				030C6BBB1CDC230E00AF9993 /* personArray.plist */,
+				030C6BBB1CDC230E00AF9993 /* Y012_3Person.plist */,
 				030C6BC01CDC230E00AF9993 /* Y012_3ViewController.h */,
 				030C6BC11CDC230E00AF9993 /* Y012_3ViewController.m */,
 				030C6BC21CDC230E00AF9993 /* Y012_3ViewModel.h */,
@@ -647,7 +647,7 @@
 		030C6BC41CDC230E00AF9993 /* Y012_4 */ = {
 			isa = PBXGroup;
 			children = (
-				030C6BC51CDC230E00AF9993 /* AJPersonArray.plist */,
+				030C6BC51CDC230E00AF9993 /* Y012_4Person.plist */,
 				030C6BCA1CDC230E00AF9993 /* Y012_4ViewController.h */,
 				030C6BCB1CDC230E00AF9993 /* Y012_4ViewController.m */,
 				030C6BCC1CDC230E00AF9993 /* Y012_4ViewModel.h */,
@@ -1477,7 +1477,7 @@
 			files = (
 				033FCF3C1CC9F7E900632226 /* iconfont.ttf in Resources */,
 				ADF140E01CD9E3A000DA2B23 /* finditem_wallspoint.png in Resources */,
-				030C6BD11CDC230E00AF9993 /* sourceCity.plist in Resources */,
+				030C6BD11CDC230E00AF9993 /* Y012_2City.plist in Resources */,
 				036E05371CCC62E5009B683F /* run.gif in Resources */,
 				03398C181CC216C1000F3AA4 /* Y000.plist in Resources */,
 				0379C98A1CCBD7F70015107D /* image01.jpg in Resources */,
@@ -1485,14 +1485,14 @@
 				033FCF711CCA069E00632226 /* iconfontLinear.ttf in Resources */,
 				ADF140DF1CD9E3A000DA2B23 /* finditem_newsound.png in Resources */,
 				ADF140DB1CD9E3A000DA2B23 /* finditem_ad.png in Resources */,
-				030C6BD91CDC230E00AF9993 /* AJPersonArray.plist in Resources */,
+				030C6BD91CDC230E00AF9993 /* Y012_4Person.plist in Resources */,
 				AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */,
-				030C6BD41CDC230E00AF9993 /* personArray.plist in Resources */,
+				030C6BD41CDC230E00AF9993 /* Y012_3Person.plist in Resources */,
 				ADF140DE1CD9E3A000DA2B23 /* finditem_newpeople.png in Resources */,
 				ADF140DD1CD9E3A000DA2B23 /* finditem_hotsound.png in Resources */,
 				ADF140E11CD9E3A000DA2B23 /* minion.png in Resources */,
 				033FCF6A1CCA069E00632226 /* iconfontBasic.ttf in Resources */,
-				030C6BCE1CDC230E00AF9993 /* sourceArray.plist in Resources */,
+				030C6BCE1CDC230E00AF9993 /* Y012_1Person.plist in Resources */,
 				ADF140DC1CD9E3A000DA2B23 /* finditem_hotpeople.png in Resources */,
 				AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */,
 			);

@@ -21,7 +21,7 @@
     AJSectionItem *sectionItem = [self.sectionArray firstObject];
     [sectionItem.cellDataArray removeAllObjects];
     
-    NSString *bundleFile = [[NSBundle mainBundle] pathForResource: @"AJPersonArray" ofType: @"plist"];
+    NSString *bundleFile = [[NSBundle mainBundle] pathForResource: @"Y012_4Person" ofType: @"plist"];
     NSArray *array = [NSArray arrayWithContentsOfFile:bundleFile];
     
     for(NSDictionary *dict in array){

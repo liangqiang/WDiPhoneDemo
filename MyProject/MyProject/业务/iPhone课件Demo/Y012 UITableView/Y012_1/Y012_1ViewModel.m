@@ -11,7 +11,7 @@
 @implementation Y012_1ViewModel
 
 -(void)loadData{
-    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"sourceArray" ofType:@"plist"];
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Y012_1Person" ofType:@"plist"];
     NSArray *cityArray = [NSArray arrayWithContentsOfFile:plistPath];
     self.personArray = [NSMutableArray arrayWithArray:cityArray];
     
