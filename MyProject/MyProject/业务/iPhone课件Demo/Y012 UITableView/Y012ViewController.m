@@ -42,7 +42,7 @@
 -(UIButton*)createTableViewFramework{
     WEAKSELF
     return [self createButtonWithTitle:@"自定义表格（框架）" block:^(UIControl *control) {
-        [weakSelf.viewModel onViewTypeButtonClicked:@"TableViewCustom"];
+        [weakSelf.viewModel onViewTypeButtonClicked:@"TableViewFramework"];
     }];
 }
 

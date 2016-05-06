@@ -49,7 +49,7 @@
     NSString *topVCName = NSStringFromClass([topMostViewController() class]);
     if( ![topVCName isEqualToString:@"WDDebugViewController"] ){
 //        [AJNavi presentViewController:@"WDDebugViewController"];
-        [AJNavi pushViewController:@"Y012_1ViewController"];
+        [AJNavi pushViewController:@"Y012_2ViewController"];
     }else{
         [AJUtil toast:@"调试页已开启✈️🐶✈️"];
         [AJNavi dismissViewController];

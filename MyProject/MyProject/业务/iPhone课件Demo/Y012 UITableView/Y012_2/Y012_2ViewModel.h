@@ -6,21 +6,22 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "YScrollViewModel.h"
+#import "AJViewModel.h"
 
-@interface Y012_2ViewModel : YScrollViewModel
+@interface Y012_2ViewModel : AJViewModel
 
-@property(nonatomic,strong)NSMutableDictionary *info;
-@property(nonatomic,strong)NSArray *cityArray;
-@property(nonatomic,strong)NSArray *infoArray;
+@property(nonatomic,strong)NSDictionary *allCityArray;
+@property(nonatomic,strong)NSArray *regionArray;
 
--(NSInteger)getSection;
+-(void)loadData;
 
--(NSInteger)getNumBySection:(NSInteger)section;
+-(NSInteger)regionCount;
 
--(NSString*)getInfo:(NSInteger)section row:(NSInteger)row;
+-(NSInteger)cityCountAtSection:(NSInteger)section;
 
--(NSString*)getTitleBySection:(NSInteger)section;
+-(NSString*)cityNameAtSection:(NSInteger)section row:(NSInteger)row;
+
+-(NSString*)regionNameAtSection:(NSInteger)section;
 
 -(void)onTableViewSelected:(NSInteger)section row:(NSInteger)row;
 

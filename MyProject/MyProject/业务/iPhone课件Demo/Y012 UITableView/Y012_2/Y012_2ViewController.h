@@ -6,10 +6,10 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "YScrollViewController.h"
+#import <UIKit/UIKit.h>
 
 //1、基本表视图(Grouped)
 
-@interface Y012_2ViewController : YScrollViewController
+@interface Y012_2ViewController : UIViewController
 
 @end

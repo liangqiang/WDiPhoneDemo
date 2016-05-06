@@ -51,7 +51,6 @@
 }
 
 -(void)updateViews{
-    [self.tableView stopRefresh];
     [self.tableView reloadData];
 }
 

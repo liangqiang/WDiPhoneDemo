@@ -16,7 +16,7 @@
 }
 
 -(void)registerCellClasses{
-    [self registerClass:NSClassFromString(@"Y012TableViewCell2") forCellReuseIdentifier:@"Cell"];
+    [self registerClass:NSClassFromString(@"Y012_4TableViewCell") forCellReuseIdentifier:@"Cell"];
 }
 
 #pragma mark - UITableViewDelegate
