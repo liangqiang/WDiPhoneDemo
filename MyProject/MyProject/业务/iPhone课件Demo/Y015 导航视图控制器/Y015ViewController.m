@@ -19,19 +19,22 @@
 
 //1、创建按钮、响应事件、页面跳转(导航)
 -(UIButton*)createPushViewNormal{
-    return [self createButtonWithTitle:@"导航进入下页面" action:@selector(onPushViewNormalClicked:)];
-}
--(void)onPushViewNormalClicked:(id)sender{
-    Y015ViewController2 *Y015VC = [[Y015ViewController2 alloc] init];
-    [self.navigationController pushViewController:Y015VC animated:YES];
+    
+    WEAKSELF
+    return [self createButtonWithTitle:@"简单表格" block:^(UIControl *control) {
+        Y015ViewController2 *Y015VC = [[Y015ViewController2 alloc] init];
+        [weakSelf.navigationController pushViewController:Y015VC animated:YES];
+    }];
 }
 
 //2、框架跳转(导航)
 -(UIButton*)createPushViewAJFoundation{
-    return [self createButtonWithTitle:@"导航进入下页面" action:@selector(onPushViewAJFoundationClicked:)];
-}
--(void)onPushViewAJFoundationClicked:(id)sender{
-    [self.viewModel onPushButtonClicked:@"Y015ViewController2"];
+    
+    WEAKSELF
+    return [self createButtonWithTitle:@"简单表格" block:^(UIControl *control) {
+        [weakSelf.viewModel onPushButtonClicked:@"Y015ViewController2"];
+    }];
+
 }
 
 //3、标题左右按钮、响应事件、页面跳转(导航)
@@ -56,14 +59,14 @@
 
 
 #pragma mark -
--(UIButton*)createButtonWithTitle:(NSString*)title action:(SEL)action{
+-(UIButton*)createButtonWithTitle:(NSString*)title block:(UIControlEventBlock)block{
     UIButton *button = [UIButton newWith:kFont14, kPrimaryColor, title, nil];
     button.size = CGSizeMake(self.scrollView.width - 100, 44);
     button.backgroundColor = kWhiteColor;
     [button setCornerRadiusWith:@(8), @(LINE_HEIGHT), kLightGrayColor, nil];
     
     //添加按钮的触摸事件(按钮按下)
-    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    [button handleEvent:UIControlEventTouchUpInside withBlock:block];
     
     return button;
 }
