@@ -6,16 +6,16 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012TableViewCell2.h"
+#import "Y012_4TableViewCell.h"
 
-@interface Y012TableViewCell2 ()
+@interface Y012_4TableViewCell ()
 @property (nonatomic,strong) UILabel *nameLabel;
 @property (nonatomic,strong) UILabel *sexLabel;
 @property (nonatomic,strong) UILabel *ageLabel;
 @property (nonatomic,strong) UIView *bottomLine;
 @end
 
-@implementation Y012TableViewCell2
+@implementation Y012_4TableViewCell
 
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {

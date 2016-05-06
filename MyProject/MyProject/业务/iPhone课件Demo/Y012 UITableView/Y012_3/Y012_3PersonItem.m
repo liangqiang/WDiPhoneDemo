@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012CustomObject.h"
+#import "Y012_3PersonItem.h"
 
-@implementation Y012CustomObject
+@implementation Y012_3PersonItem
 
 -(instancetype)initWithDictionary:(NSDictionary*)dic{
     if(self = [super init]){

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012ViewModel1.h"
+#import "Y012_1ViewModel.h"
 
-@implementation Y012ViewModel1
+@implementation Y012_1ViewModel
 
 -(void)loadData{
     self.viewTypeArray = @[VIEWTYPE(@"PlainTableViewNormal", @"基本表视图(Plain)"),

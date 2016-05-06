@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Y012TableViewCell2 : UITableViewCell
+@interface Y012_4TableViewCell : UITableViewCell
 
 @end

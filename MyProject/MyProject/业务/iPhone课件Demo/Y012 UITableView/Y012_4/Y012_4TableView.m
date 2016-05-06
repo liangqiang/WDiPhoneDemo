@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012TableView.h"
+#import "Y012_4TableView.h"
 
-@implementation Y012TableView
+@implementation Y012_4TableView
 
 #pragma mark - 设置cell类
 -(NSString*)cellIdentifier:(NSIndexPath*)indexPath{

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012TableViewCell.h"
+#import "Y012_3TableViewCell.h"
 
-@implementation Y012TableViewCell
+@implementation Y012_3TableViewCell
 
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {

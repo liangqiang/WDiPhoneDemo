@@ -24,14 +24,8 @@
 	<string>Y010ViewController</string>
 	<key>Y011 UIPickerView</key>
 	<string>Y011ViewController</string>
-	<key>Y012 UITableView1(Plain)</key>
-	<string>Y012ViewController1</string>
-	<key>Y012 UITableView2(Grouped)</key>
-	<string>Y012ViewController2</string>
-	<key>Y012 UITableView3(CustomCell)</key>
-	<string>Y012ViewController3</string>
-	<key>Y012 UITableView4(AJFoundation)</key>
-	<string>Y012ViewController4</string>
+	<key>Y012 UITableView</key>
+	<string>Y012ViewController</string>
 	<key>Y013 UIScrollView</key>
 	<string>Y013ViewController</string>
 	<key>Y014 ViewController生命周期</key>

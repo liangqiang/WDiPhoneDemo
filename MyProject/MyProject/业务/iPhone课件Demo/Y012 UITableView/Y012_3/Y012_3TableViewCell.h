@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Y012TableViewCell : UITableViewCell
+@interface Y012_3TableViewCell : UITableViewCell
 
 @property(nonatomic,strong)UILabel *nameLabel;
 @property(nonatomic,strong)UILabel *sexLabel;

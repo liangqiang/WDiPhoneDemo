@@ -6,16 +6,16 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012ViewController4.h"
-#import "Y012ViewModel4.h"
-#import "Y012TableView.h"
+#import "Y012_4ViewController.h"
+#import "Y012_4ViewModel.h"
+#import "Y012_4TableView.h"
 
-@interface Y012ViewController4 ()
-@property (nonatomic,strong) Y012ViewModel4 *viewModel;
-@property (nonatomic,strong) Y012TableView *tableView;
+@interface Y012_4ViewController ()
+@property (nonatomic,strong) Y012_4ViewModel *viewModel;
+@property (nonatomic,strong) Y012_4TableView *tableView;
 @end
 
-@implementation Y012ViewController4
+@implementation Y012_4ViewController
 
 -(void)loadView{
     [super loadView];

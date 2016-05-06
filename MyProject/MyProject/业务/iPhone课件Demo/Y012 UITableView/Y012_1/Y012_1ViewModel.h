@@ -8,7 +8,7 @@
 
 #import "YScrollViewModel.h"
 
-@interface Y012ViewModel1 : YScrollViewModel
+@interface Y012_1ViewModel : YScrollViewModel
 
 @property(nonatomic,strong)NSMutableArray *personArray;
 

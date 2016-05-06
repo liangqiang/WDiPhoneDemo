@@ -8,7 +8,7 @@
 
 #import "AJViewModel.h"
 
-@interface Y012ViewModel4 : AJViewModel
+@interface Y012_4ViewModel : AJViewModel
 
 -(void)loadData;
 -(void)onCellClicked:(NSIndexPath*)indexPath;

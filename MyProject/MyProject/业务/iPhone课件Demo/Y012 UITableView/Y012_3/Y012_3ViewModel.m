@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012ViewModel3.h"
+#import "Y012_3ViewModel.h"
 
-@implementation Y012ViewModel3
+@implementation Y012_3ViewModel
 
 -(void)loadData{
     self.viewTypeArray = @[VIEWTYPE(@"CustomTableViewNormal", @"表视图(自定义cell内容)"),
@@ -19,7 +19,7 @@
     self.personArray = [NSMutableArray new];
     
     for(int i=0;i<[array count];++i){
-        Y012CustomObject *object = [[Y012CustomObject alloc] initWithDictionary:[array safeObjectAtIndex:i]];
+        Y012_3PersonItem *object = [[Y012_3PersonItem alloc] initWithDictionary:[array safeObjectAtIndex:i]];
         [self.personArray addObject:object];
     }
     
@@ -30,7 +30,7 @@
     return [self.personArray count];
 }
 
--(Y012CustomObject*)getObjectByRow:(NSInteger)row{
+-(Y012_3PersonItem*)getObjectByRow:(NSInteger)row{
     return [self.personArray safeObjectAtIndex:row];
 }
 

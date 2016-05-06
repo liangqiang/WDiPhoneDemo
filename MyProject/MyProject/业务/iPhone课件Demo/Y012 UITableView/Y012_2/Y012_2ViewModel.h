@@ -8,7 +8,7 @@
 
 #import "YScrollViewModel.h"
 
-@interface Y012ViewModel2 : YScrollViewModel
+@interface Y012_2ViewModel : YScrollViewModel
 
 @property(nonatomic,strong)NSMutableDictionary *info;
 @property(nonatomic,strong)NSArray *cityArray;

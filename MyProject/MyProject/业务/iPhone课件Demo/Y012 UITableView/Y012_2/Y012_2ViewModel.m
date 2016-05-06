@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012ViewModel2.h"
+#import "Y012_2ViewModel.h"
 
-@implementation Y012ViewModel2
+@implementation Y012_2ViewModel
 
 -(void)loadData{
     self.viewTypeArray = @[VIEWTYPE(@"GroupedTableViewNormal", @"基本表视图(Grouped)"),

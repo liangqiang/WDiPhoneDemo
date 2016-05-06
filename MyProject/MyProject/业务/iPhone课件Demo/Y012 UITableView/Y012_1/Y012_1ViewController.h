@@ -10,6 +10,6 @@
 
 //1、基本表视图(Plain)
 
-@interface Y012ViewController1 : YScrollViewController
+@interface Y012_1ViewController : YScrollViewController
 
 @end

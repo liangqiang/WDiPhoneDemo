@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012ViewModel4.h"
+#import "Y012_4ViewModel.h"
 
-@implementation Y012ViewModel4
+@implementation Y012_4ViewModel
 
 -(instancetype)init{
     if (self=[super init]) {

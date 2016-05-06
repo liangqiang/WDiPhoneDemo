@@ -1,13 +1,13 @@
 //
-//  Y012ViewController4.h
+//  Y012TableView.h
 //  MyProject
 //
 //  Created by caoyang on 16/5/1.
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "AJTableView.h"
 
-@interface Y012ViewController4 : UIViewController
+@interface Y012_4TableView : AJTableView
 
 @end

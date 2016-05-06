@@ -10,6 +10,6 @@
 
 //1、基本表视图(Grouped)
 
-@interface Y012ViewController2 : YScrollViewController
+@interface Y012_2ViewController : YScrollViewController
 
 @end

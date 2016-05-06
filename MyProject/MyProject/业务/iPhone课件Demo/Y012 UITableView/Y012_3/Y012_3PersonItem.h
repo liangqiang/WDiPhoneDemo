@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Y012CustomObject : NSObject
+@interface Y012_3PersonItem : NSObject
 
 @property(nonatomic,strong)NSString *name;
 @property(nonatomic,strong)NSString *sex;

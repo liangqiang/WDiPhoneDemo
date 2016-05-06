@@ -6,17 +6,17 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012ViewController2.h"
-#import "Y012ViewModel2.h"
+#import "Y012_2ViewController.h"
+#import "Y012_2ViewModel.h"
 
-@interface Y012ViewController2 ()<UITableViewDataSource,UITableViewDelegate>
+@interface Y012_2ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic,strong)UIScrollView *scrollView;
-@property(nonatomic,strong)Y012ViewModel2 *viewModel;
+@property(nonatomic,strong)Y012_2ViewModel *viewModel;
 
 @end
 
-@implementation Y012ViewController2
+@implementation Y012_2ViewController
 
 //1、基本表视图(Grouped)
 -(UIView*)createGroupedTableViewNormal{

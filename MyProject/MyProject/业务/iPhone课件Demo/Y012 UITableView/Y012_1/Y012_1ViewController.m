@@ -6,17 +6,17 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012ViewController1.h"
-#import "Y012ViewModel1.h"
+#import "Y012_1ViewController.h"
+#import "Y012_1ViewModel.h"
 
-@interface Y012ViewController1 ()<UITableViewDataSource,UITableViewDelegate>
+@interface Y012_1ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@property(nonatomic,strong)UIScrollView *scrollView;
-@property(nonatomic,strong)Y012ViewModel1 *viewModel;
+@property(nonatomic,strong) UIScrollView *scrollView;
+@property(nonatomic,strong) Y012_1ViewModel *viewModel;
 
 @end
 
-@implementation Y012ViewController1
+@implementation Y012_1ViewController
 
 //1、基本表视图(Plain)
 -(UITableView*)createPlainTableViewNormal{

@@ -6,19 +6,19 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y012ViewController3.h"
-#import "Y012ViewModel3.h"
-#import "Y012TableViewCell.h"
-#import "Y012CustomObject.h"
+#import "Y012_3ViewController.h"
+#import "Y012_3ViewModel.h"
+#import "Y012_3TableViewCell.h"
+#import "Y012_3PersonItem.h"
 
-@interface Y012ViewController3 ()<UITableViewDataSource,UITableViewDelegate>
+@interface Y012_3ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property(nonatomic,strong)UIScrollView *scrollView;
-@property(nonatomic,strong)Y012ViewModel3 *viewModel;
+@property(nonatomic,strong)Y012_3ViewModel *viewModel;
 
 @end
 
-@implementation Y012ViewController3
+@implementation Y012_3ViewController
 
 
 //1、表视图(自定义cell内容)
@@ -27,7 +27,7 @@
     tableView.size = CGSizeMake(self.scrollView.width, 300);
     
     //cell重用
-    [tableView registerClass:[Y012TableViewCell class] forCellReuseIdentifier:@"cell"];
+    [tableView registerClass:[Y012_3TableViewCell class] forCellReuseIdentifier:@"cell"];
     
     [tableView setDataSource:self];
     [tableView setDelegate:self];
@@ -43,10 +43,10 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    Y012TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    Y012_3TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
     
-    Y012CustomObject *object = [self.viewModel getObjectByRow:[indexPath row]];
+    Y012_3PersonItem *object = [self.viewModel getObjectByRow:[indexPath row]];
     cell.nameLabel.text = object.name;
     cell.sexLabel.text = object.sex;
     cell.picImageView.image = AJIconFontSmile;

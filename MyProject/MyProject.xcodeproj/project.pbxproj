@@ -12,6 +12,24 @@
 		0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0303D6D71BD8C4E30024399D /* Images.xcassets */; };
 		0303D6E71BD8C4E40024399D /* MyProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0303D6E61BD8C4E40024399D /* MyProjectTests.m */; };
 		030900CA1BDB97B70073DAA7 /* AJNavi.m in Sources */ = {isa = PBXBuildFile; fileRef = 030900C91BDB97B70073DAA7 /* AJNavi.m */; };
+		030C6BCE1CDC230E00AF9993 /* sourceArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BAF1CDC230E00AF9993 /* sourceArray.plist */; };
+		030C6BCF1CDC230E00AF9993 /* Y012_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BB11CDC230E00AF9993 /* Y012_1ViewController.m */; };
+		030C6BD01CDC230E00AF9993 /* Y012_1ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BB31CDC230E00AF9993 /* Y012_1ViewModel.m */; };
+		030C6BD11CDC230E00AF9993 /* sourceCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BB51CDC230E00AF9993 /* sourceCity.plist */; };
+		030C6BD21CDC230E00AF9993 /* Y012_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BB71CDC230E00AF9993 /* Y012_2ViewController.m */; };
+		030C6BD31CDC230E00AF9993 /* Y012_2ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BB91CDC230E00AF9993 /* Y012_2ViewModel.m */; };
+		030C6BD41CDC230E00AF9993 /* personArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BBB1CDC230E00AF9993 /* personArray.plist */; };
+		030C6BD51CDC230E00AF9993 /* Y012_3PersonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BBD1CDC230E00AF9993 /* Y012_3PersonItem.m */; };
+		030C6BD61CDC230E00AF9993 /* Y012_3TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BBF1CDC230E00AF9993 /* Y012_3TableViewCell.m */; };
+		030C6BD71CDC230E00AF9993 /* Y012_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BC11CDC230E00AF9993 /* Y012_3ViewController.m */; };
+		030C6BD81CDC230E00AF9993 /* Y012_3ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BC31CDC230E00AF9993 /* Y012_3ViewModel.m */; };
+		030C6BD91CDC230E00AF9993 /* AJPersonArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = 030C6BC51CDC230E00AF9993 /* AJPersonArray.plist */; };
+		030C6BDA1CDC230E00AF9993 /* Y012_4TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BC71CDC230E00AF9993 /* Y012_4TableView.m */; };
+		030C6BDB1CDC230E00AF9993 /* Y012_4TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BC91CDC230E00AF9993 /* Y012_4TableViewCell.m */; };
+		030C6BDC1CDC230E00AF9993 /* Y012_4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BCB1CDC230E00AF9993 /* Y012_4ViewController.m */; };
+		030C6BDD1CDC230E00AF9993 /* Y012_4ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BCD1CDC230E00AF9993 /* Y012_4ViewModel.m */; };
+		030C6BE01CDC234400AF9993 /* Y012ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BDF1CDC234400AF9993 /* Y012ViewController.m */; };
+		030C6BE31CDC23E100AF9993 /* Y012ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BE21CDC23E100AF9993 /* Y012ViewModel.m */; };
 		030DF6331CD3861F00A0FCC9 /* AJDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DF6321CD3861F00A0FCC9 /* AJDatePicker.m */; };
 		030DF6361CD39BE500A0FCC9 /* NSDate+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DF6351CD39BE500A0FCC9 /* NSDate+AJAddition.m */; };
 		030DF63A1CD43B0E00A0FCC9 /* AJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DF6391CD43B0E00A0FCC9 /* AJPickerView.m */; };
@@ -119,29 +137,13 @@
 		AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335E71CC514BA00F48FA7 /* Y004ViewModel.m */; };
 		AD5335EF1CC5E55F00F48FA7 /* Y005ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */; };
 		AD5335F21CC5E59D00F48FA7 /* Y005ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */; };
-		AD5D3D2E1CD511DF006440A5 /* sourceCity.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD5D3D2D1CD511DF006440A5 /* sourceCity.plist */; };
-		AD6D6ED21CD62C830040E737 /* AJPersonArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD6D6ED11CD62C830040E737 /* AJPersonArray.plist */; };
-		AD6D6ED51CD6371C0040E737 /* Y012ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6D6ED41CD6371C0040E737 /* Y012ViewController4.m */; };
-		AD6D6ED81CD6373D0040E737 /* Y012ViewModel4.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6D6ED71CD6373D0040E737 /* Y012ViewModel4.m */; };
-		AD6D6EDB1CD6375E0040E737 /* Y012TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6D6EDA1CD6375E0040E737 /* Y012TableView.m */; };
-		AD6D6EDE1CD637770040E737 /* Y012TableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6D6EDD1CD637770040E737 /* Y012TableViewCell2.m */; };
 		AD6D6EE11CD63F540040E737 /* AJNormalItem1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6D6EE01CD63F540040E737 /* AJNormalItem1.m */; };
 		AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA71CD354F2000023C5 /* Y011City1.plist */; };
 		AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA81CD354F2000023C5 /* Y011City2.plist */; };
 		AD9B6B821CDB8F7D00103985 /* Y015ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9B6B811CDB8F7D00103985 /* Y015ViewController2.m */; };
 		AD9B6B851CDB99A900103985 /* Y015ViewModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9B6B841CDB99A900103985 /* Y015ViewModel2.m */; };
-		ADCF850A1CD5AD7B00D039E4 /* Y012ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF85091CD5AD7B00D039E4 /* Y012ViewController3.m */; };
-		ADCF850D1CD5ADA900D039E4 /* Y012ViewModel3.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF850C1CD5ADA900D039E4 /* Y012ViewModel3.m */; };
-		ADCF85101CD5AE7100D039E4 /* Y012TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF850F1CD5AE7100D039E4 /* Y012TableViewCell.m */; };
-		ADCF85131CD5AEC800D039E4 /* Y012CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCF85121CD5AEC800D039E4 /* Y012CustomObject.m */; };
-		ADCF85191CD5B4D200D039E4 /* personArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCF85181CD5B4D200D039E4 /* personArray.plist */; };
 		ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */; };
 		ADE75DCB1CD3521500F00EC1 /* Y011ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DCA1CD3521500F00EC1 /* Y011ViewModel.m */; };
-		ADEB8C4A1CD500390039EAE6 /* Y012ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C491CD500390039EAE6 /* Y012ViewController1.m */; };
-		ADEB8C4D1CD500580039EAE6 /* Y012ViewModel1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C4C1CD500580039EAE6 /* Y012ViewModel1.m */; };
-		ADEB8C4F1CD5008B0039EAE6 /* sourceArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADEB8C4E1CD5008B0039EAE6 /* sourceArray.plist */; };
-		ADEB8C531CD507070039EAE6 /* Y012ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C521CD507070039EAE6 /* Y012ViewController2.m */; };
-		ADEB8C561CD507290039EAE6 /* Y012ViewModel2.m in Sources */ = {isa = PBXBuildFile; fileRef = ADEB8C551CD507290039EAE6 /* Y012ViewModel2.m */; };
 		ADF140DB1CD9E3A000DA2B23 /* finditem_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D41CD9E3A000DA2B23 /* finditem_ad.png */; };
 		ADF140DC1CD9E3A000DA2B23 /* finditem_hotpeople.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D51CD9E3A000DA2B23 /* finditem_hotpeople.png */; };
 		ADF140DD1CD9E3A000DA2B23 /* finditem_hotsound.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D61CD9E3A000DA2B23 /* finditem_hotsound.png */; };
@@ -175,6 +177,38 @@
 		0303D7061BD8DBDB0024399D /* MyProject.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyProject.pch; sourceTree = "<group>"; };
 		030900C81BDB97B70073DAA7 /* AJNavi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNavi.h; sourceTree = "<group>"; };
 		030900C91BDB97B70073DAA7 /* AJNavi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNavi.m; sourceTree = "<group>"; };
+		030C6BAF1CDC230E00AF9993 /* sourceArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sourceArray.plist; sourceTree = "<group>"; };
+		030C6BB01CDC230E00AF9993 /* Y012_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_1ViewController.h; sourceTree = "<group>"; };
+		030C6BB11CDC230E00AF9993 /* Y012_1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_1ViewController.m; sourceTree = "<group>"; };
+		030C6BB21CDC230E00AF9993 /* Y012_1ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_1ViewModel.h; sourceTree = "<group>"; };
+		030C6BB31CDC230E00AF9993 /* Y012_1ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_1ViewModel.m; sourceTree = "<group>"; };
+		030C6BB51CDC230E00AF9993 /* sourceCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sourceCity.plist; sourceTree = "<group>"; };
+		030C6BB61CDC230E00AF9993 /* Y012_2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_2ViewController.h; sourceTree = "<group>"; };
+		030C6BB71CDC230E00AF9993 /* Y012_2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_2ViewController.m; sourceTree = "<group>"; };
+		030C6BB81CDC230E00AF9993 /* Y012_2ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_2ViewModel.h; sourceTree = "<group>"; };
+		030C6BB91CDC230E00AF9993 /* Y012_2ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_2ViewModel.m; sourceTree = "<group>"; };
+		030C6BBB1CDC230E00AF9993 /* personArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = personArray.plist; sourceTree = "<group>"; };
+		030C6BBC1CDC230E00AF9993 /* Y012_3PersonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_3PersonItem.h; sourceTree = "<group>"; };
+		030C6BBD1CDC230E00AF9993 /* Y012_3PersonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_3PersonItem.m; sourceTree = "<group>"; };
+		030C6BBE1CDC230E00AF9993 /* Y012_3TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_3TableViewCell.h; sourceTree = "<group>"; };
+		030C6BBF1CDC230E00AF9993 /* Y012_3TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_3TableViewCell.m; sourceTree = "<group>"; };
+		030C6BC01CDC230E00AF9993 /* Y012_3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_3ViewController.h; sourceTree = "<group>"; };
+		030C6BC11CDC230E00AF9993 /* Y012_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_3ViewController.m; sourceTree = "<group>"; };
+		030C6BC21CDC230E00AF9993 /* Y012_3ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_3ViewModel.h; sourceTree = "<group>"; };
+		030C6BC31CDC230E00AF9993 /* Y012_3ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_3ViewModel.m; sourceTree = "<group>"; };
+		030C6BC51CDC230E00AF9993 /* AJPersonArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AJPersonArray.plist; sourceTree = "<group>"; };
+		030C6BC61CDC230E00AF9993 /* Y012_4TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_4TableView.h; sourceTree = "<group>"; };
+		030C6BC71CDC230E00AF9993 /* Y012_4TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_4TableView.m; sourceTree = "<group>"; };
+		030C6BC81CDC230E00AF9993 /* Y012_4TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_4TableViewCell.h; sourceTree = "<group>"; };
+		030C6BC91CDC230E00AF9993 /* Y012_4TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_4TableViewCell.m; sourceTree = "<group>"; };
+		030C6BCA1CDC230E00AF9993 /* Y012_4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_4ViewController.h; sourceTree = "<group>"; };
+		030C6BCB1CDC230E00AF9993 /* Y012_4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_4ViewController.m; sourceTree = "<group>"; };
+		030C6BCC1CDC230E00AF9993 /* Y012_4ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Y012_4ViewModel.h; sourceTree = "<group>"; };
+		030C6BCD1CDC230E00AF9993 /* Y012_4ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Y012_4ViewModel.m; sourceTree = "<group>"; };
+		030C6BDE1CDC234400AF9993 /* Y012ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewController.h; path = "Y012 UITableView/Y012ViewController.h"; sourceTree = "<group>"; };
+		030C6BDF1CDC234400AF9993 /* Y012ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController.m; path = "Y012 UITableView/Y012ViewController.m"; sourceTree = "<group>"; };
+		030C6BE11CDC23E100AF9993 /* Y012ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel.h; path = "Y012 UITableView/Y012ViewModel.h"; sourceTree = "<group>"; };
+		030C6BE21CDC23E100AF9993 /* Y012ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewModel.m; path = "Y012 UITableView/Y012ViewModel.m"; sourceTree = "<group>"; };
 		030DF6311CD3861F00A0FCC9 /* AJDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDatePicker.h; sourceTree = "<group>"; };
 		030DF6321CD3861F00A0FCC9 /* AJDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDatePicker.m; sourceTree = "<group>"; };
 		030DF6341CD39BE500A0FCC9 /* NSDate+AJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AJAddition.h"; sourceTree = "<group>"; };
@@ -417,16 +451,6 @@
 		AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y005ViewController.m; path = "Y005 UITextView/Y005ViewController.m"; sourceTree = "<group>"; };
 		AD5335F01CC5E59D00F48FA7 /* Y005ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y005ViewModel.h; path = "Y005 UITextView/Y005ViewModel.h"; sourceTree = "<group>"; };
 		AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y005ViewModel.m; path = "Y005 UITextView/Y005ViewModel.m"; sourceTree = "<group>"; };
-		AD5D3D2D1CD511DF006440A5 /* sourceCity.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sourceCity.plist; path = "Y012 UITableView/sourceCity.plist"; sourceTree = "<group>"; };
-		AD6D6ED11CD62C830040E737 /* AJPersonArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = AJPersonArray.plist; path = "Y012 UITableView/AJPersonArray.plist"; sourceTree = "<group>"; };
-		AD6D6ED31CD6371C0040E737 /* Y012ViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewController4.h; path = "Y012 UITableView/Y012ViewController4.h"; sourceTree = "<group>"; };
-		AD6D6ED41CD6371C0040E737 /* Y012ViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController4.m; path = "Y012 UITableView/Y012ViewController4.m"; sourceTree = "<group>"; };
-		AD6D6ED61CD6373D0040E737 /* Y012ViewModel4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel4.h; path = "Y012 UITableView/Y012ViewModel4.h"; sourceTree = "<group>"; };
-		AD6D6ED71CD6373D0040E737 /* Y012ViewModel4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewModel4.m; path = "Y012 UITableView/Y012ViewModel4.m"; sourceTree = "<group>"; };
-		AD6D6ED91CD6375E0040E737 /* Y012TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012TableView.h; path = "Y012 UITableView/Y012TableView.h"; sourceTree = "<group>"; };
-		AD6D6EDA1CD6375E0040E737 /* Y012TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012TableView.m; path = "Y012 UITableView/Y012TableView.m"; sourceTree = "<group>"; };
-		AD6D6EDC1CD637770040E737 /* Y012TableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012TableViewCell2.h; path = "Y012 UITableView/Y012TableViewCell2.h"; sourceTree = "<group>"; };
-		AD6D6EDD1CD637770040E737 /* Y012TableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012TableViewCell2.m; path = "Y012 UITableView/Y012TableViewCell2.m"; sourceTree = "<group>"; };
 		AD6D6EDF1CD63F540040E737 /* AJNormalItem1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNormalItem1.h; sourceTree = "<group>"; };
 		AD6D6EE01CD63F540040E737 /* AJNormalItem1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNormalItem1.m; sourceTree = "<group>"; };
 		AD71DFA71CD354F2000023C5 /* Y011City1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City1.plist; path = "Y011 UIPickerView/Y011City1.plist"; sourceTree = "<group>"; };
@@ -435,28 +459,10 @@
 		AD9B6B811CDB8F7D00103985 /* Y015ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y015ViewController2.m; path = "Y015 导航视图控制器/Y015ViewController2.m"; sourceTree = "<group>"; };
 		AD9B6B831CDB99A900103985 /* Y015ViewModel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y015ViewModel2.h; path = "Y015 导航视图控制器/Y015ViewModel2.h"; sourceTree = "<group>"; };
 		AD9B6B841CDB99A900103985 /* Y015ViewModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y015ViewModel2.m; path = "Y015 导航视图控制器/Y015ViewModel2.m"; sourceTree = "<group>"; };
-		ADCF85081CD5AD7B00D039E4 /* Y012ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewController3.h; path = "Y012 UITableView/Y012ViewController3.h"; sourceTree = "<group>"; };
-		ADCF85091CD5AD7B00D039E4 /* Y012ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController3.m; path = "Y012 UITableView/Y012ViewController3.m"; sourceTree = "<group>"; };
-		ADCF850B1CD5ADA900D039E4 /* Y012ViewModel3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel3.h; path = "Y012 UITableView/Y012ViewModel3.h"; sourceTree = "<group>"; };
-		ADCF850C1CD5ADA900D039E4 /* Y012ViewModel3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewModel3.m; path = "Y012 UITableView/Y012ViewModel3.m"; sourceTree = "<group>"; };
-		ADCF850E1CD5AE7100D039E4 /* Y012TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012TableViewCell.h; path = "Y012 UITableView/Y012TableViewCell.h"; sourceTree = "<group>"; };
-		ADCF850F1CD5AE7100D039E4 /* Y012TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012TableViewCell.m; path = "Y012 UITableView/Y012TableViewCell.m"; sourceTree = "<group>"; };
-		ADCF85111CD5AEC800D039E4 /* Y012CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012CustomObject.h; path = "Y012 UITableView/Y012CustomObject.h"; sourceTree = "<group>"; };
-		ADCF85121CD5AEC800D039E4 /* Y012CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012CustomObject.m; path = "Y012 UITableView/Y012CustomObject.m"; sourceTree = "<group>"; };
-		ADCF85181CD5B4D200D039E4 /* personArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = personArray.plist; path = "Y012 UITableView/personArray.plist"; sourceTree = "<group>"; };
 		ADE75DC31CD3518C00F00EC1 /* Y011ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewController.h; path = "Y011 UIPickerView/Y011ViewController.h"; sourceTree = "<group>"; };
 		ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewController.m; path = "Y011 UIPickerView/Y011ViewController.m"; sourceTree = "<group>"; };
 		ADE75DC91CD3521500F00EC1 /* Y011ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewModel.h; path = "Y011 UIPickerView/Y011ViewModel.h"; sourceTree = "<group>"; };
 		ADE75DCA1CD3521500F00EC1 /* Y011ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewModel.m; path = "Y011 UIPickerView/Y011ViewModel.m"; sourceTree = "<group>"; };
-		ADEB8C481CD500390039EAE6 /* Y012ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewController1.h; path = "Y012 UITableView/Y012ViewController1.h"; sourceTree = "<group>"; };
-		ADEB8C491CD500390039EAE6 /* Y012ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController1.m; path = "Y012 UITableView/Y012ViewController1.m"; sourceTree = "<group>"; };
-		ADEB8C4B1CD500580039EAE6 /* Y012ViewModel1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel1.h; path = "Y012 UITableView/Y012ViewModel1.h"; sourceTree = "<group>"; };
-		ADEB8C4C1CD500580039EAE6 /* Y012ViewModel1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewModel1.m; path = "Y012 UITableView/Y012ViewModel1.m"; sourceTree = "<group>"; };
-		ADEB8C4E1CD5008B0039EAE6 /* sourceArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = sourceArray.plist; path = "Y012 UITableView/sourceArray.plist"; sourceTree = "<group>"; };
-		ADEB8C511CD507070039EAE6 /* Y012ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewController2.h; path = "Y012 UITableView/Y012ViewController2.h"; sourceTree = "<group>"; };
-		ADEB8C521CD507070039EAE6 /* Y012ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController2.m; path = "Y012 UITableView/Y012ViewController2.m"; sourceTree = "<group>"; };
-		ADEB8C541CD507290039EAE6 /* Y012ViewModel2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel2.h; path = "Y012 UITableView/Y012ViewModel2.h"; sourceTree = "<group>"; };
-		ADEB8C551CD507290039EAE6 /* Y012ViewModel2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewModel2.m; path = "Y012 UITableView/Y012ViewModel2.m"; sourceTree = "<group>"; };
 		ADF140D41CD9E3A000DA2B23 /* finditem_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finditem_ad.png; path = "MyProject/业务/iPhone课件Demo/Y013 UIScrollView/finditem_ad.png"; sourceTree = SOURCE_ROOT; };
 		ADF140D51CD9E3A000DA2B23 /* finditem_hotpeople.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finditem_hotpeople.png; path = "MyProject/业务/iPhone课件Demo/Y013 UIScrollView/finditem_hotpeople.png"; sourceTree = SOURCE_ROOT; };
 		ADF140D61CD9E3A000DA2B23 /* finditem_hotsound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finditem_hotsound.png; path = "MyProject/业务/iPhone课件Demo/Y013 UIScrollView/finditem_hotsound.png"; sourceTree = SOURCE_ROOT; };
@@ -590,6 +596,66 @@
 				03FA194B1BEB113A00DD1DAC /* UIViewController+AJNavi.m */,
 			);
 			path = "导航";
+			sourceTree = "<group>";
+		};
+		030C6BAE1CDC230E00AF9993 /* Y012_1 */ = {
+			isa = PBXGroup;
+			children = (
+				030C6BAF1CDC230E00AF9993 /* sourceArray.plist */,
+				030C6BB01CDC230E00AF9993 /* Y012_1ViewController.h */,
+				030C6BB11CDC230E00AF9993 /* Y012_1ViewController.m */,
+				030C6BB21CDC230E00AF9993 /* Y012_1ViewModel.h */,
+				030C6BB31CDC230E00AF9993 /* Y012_1ViewModel.m */,
+			);
+			name = Y012_1;
+			path = "Y012 UITableView/Y012_1";
+			sourceTree = "<group>";
+		};
+		030C6BB41CDC230E00AF9993 /* Y012_2 */ = {
+			isa = PBXGroup;
+			children = (
+				030C6BB51CDC230E00AF9993 /* sourceCity.plist */,
+				030C6BB61CDC230E00AF9993 /* Y012_2ViewController.h */,
+				030C6BB71CDC230E00AF9993 /* Y012_2ViewController.m */,
+				030C6BB81CDC230E00AF9993 /* Y012_2ViewModel.h */,
+				030C6BB91CDC230E00AF9993 /* Y012_2ViewModel.m */,
+			);
+			name = Y012_2;
+			path = "Y012 UITableView/Y012_2";
+			sourceTree = "<group>";
+		};
+		030C6BBA1CDC230E00AF9993 /* Y012_3 */ = {
+			isa = PBXGroup;
+			children = (
+				030C6BBB1CDC230E00AF9993 /* personArray.plist */,
+				030C6BC01CDC230E00AF9993 /* Y012_3ViewController.h */,
+				030C6BC11CDC230E00AF9993 /* Y012_3ViewController.m */,
+				030C6BC21CDC230E00AF9993 /* Y012_3ViewModel.h */,
+				030C6BC31CDC230E00AF9993 /* Y012_3ViewModel.m */,
+				030C6BBE1CDC230E00AF9993 /* Y012_3TableViewCell.h */,
+				030C6BBF1CDC230E00AF9993 /* Y012_3TableViewCell.m */,
+				030C6BBC1CDC230E00AF9993 /* Y012_3PersonItem.h */,
+				030C6BBD1CDC230E00AF9993 /* Y012_3PersonItem.m */,
+			);
+			name = Y012_3;
+			path = "Y012 UITableView/Y012_3";
+			sourceTree = "<group>";
+		};
+		030C6BC41CDC230E00AF9993 /* Y012_4 */ = {
+			isa = PBXGroup;
+			children = (
+				030C6BC51CDC230E00AF9993 /* AJPersonArray.plist */,
+				030C6BCA1CDC230E00AF9993 /* Y012_4ViewController.h */,
+				030C6BCB1CDC230E00AF9993 /* Y012_4ViewController.m */,
+				030C6BCC1CDC230E00AF9993 /* Y012_4ViewModel.h */,
+				030C6BCD1CDC230E00AF9993 /* Y012_4ViewModel.m */,
+				030C6BC61CDC230E00AF9993 /* Y012_4TableView.h */,
+				030C6BC71CDC230E00AF9993 /* Y012_4TableView.m */,
+				030C6BC81CDC230E00AF9993 /* Y012_4TableViewCell.h */,
+				030C6BC91CDC230E00AF9993 /* Y012_4TableViewCell.m */,
+			);
+			name = Y012_4;
+			path = "Y012 UITableView/Y012_4";
 			sourceTree = "<group>";
 		};
 		030DF6301CD3861F00A0FCC9 /* AJDatePicker */ = {
@@ -1269,71 +1335,19 @@
 			path = "iPhone课件Demo";
 			sourceTree = "<group>";
 		};
-		ADCF85071CD5AD5500D039E4 /* Custom */ = {
-			isa = PBXGroup;
-			children = (
-				ADCF85181CD5B4D200D039E4 /* personArray.plist */,
-				ADCF85081CD5AD7B00D039E4 /* Y012ViewController3.h */,
-				ADCF85091CD5AD7B00D039E4 /* Y012ViewController3.m */,
-				ADCF850B1CD5ADA900D039E4 /* Y012ViewModel3.h */,
-				ADCF850C1CD5ADA900D039E4 /* Y012ViewModel3.m */,
-				ADCF850E1CD5AE7100D039E4 /* Y012TableViewCell.h */,
-				ADCF850F1CD5AE7100D039E4 /* Y012TableViewCell.m */,
-				ADCF85111CD5AEC800D039E4 /* Y012CustomObject.h */,
-				ADCF85121CD5AEC800D039E4 /* Y012CustomObject.m */,
-			);
-			name = Custom;
-			sourceTree = "<group>";
-		};
-		ADCF851A1CD5CB6700D039E4 /* AJFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				AD6D6ED11CD62C830040E737 /* AJPersonArray.plist */,
-				AD6D6ED31CD6371C0040E737 /* Y012ViewController4.h */,
-				AD6D6ED41CD6371C0040E737 /* Y012ViewController4.m */,
-				AD6D6ED61CD6373D0040E737 /* Y012ViewModel4.h */,
-				AD6D6ED71CD6373D0040E737 /* Y012ViewModel4.m */,
-				AD6D6ED91CD6375E0040E737 /* Y012TableView.h */,
-				AD6D6EDA1CD6375E0040E737 /* Y012TableView.m */,
-				AD6D6EDC1CD637770040E737 /* Y012TableViewCell2.h */,
-				AD6D6EDD1CD637770040E737 /* Y012TableViewCell2.m */,
-			);
-			name = AJFoundation;
-			sourceTree = "<group>";
-		};
 		ADEB8C461CD4FF450039EAE6 /* Y012 UITableView */ = {
 			isa = PBXGroup;
 			children = (
-				ADEB8C471CD500240039EAE6 /* Plain */,
-				ADEB8C501CD506DB0039EAE6 /* Grouped */,
-				ADCF85071CD5AD5500D039E4 /* Custom */,
-				ADCF851A1CD5CB6700D039E4 /* AJFoundation */,
+				030C6BDE1CDC234400AF9993 /* Y012ViewController.h */,
+				030C6BDF1CDC234400AF9993 /* Y012ViewController.m */,
+				030C6BE11CDC23E100AF9993 /* Y012ViewModel.h */,
+				030C6BE21CDC23E100AF9993 /* Y012ViewModel.m */,
+				030C6BAE1CDC230E00AF9993 /* Y012_1 */,
+				030C6BB41CDC230E00AF9993 /* Y012_2 */,
+				030C6BBA1CDC230E00AF9993 /* Y012_3 */,
+				030C6BC41CDC230E00AF9993 /* Y012_4 */,
 			);
 			name = "Y012 UITableView";
-			sourceTree = "<group>";
-		};
-		ADEB8C471CD500240039EAE6 /* Plain */ = {
-			isa = PBXGroup;
-			children = (
-				ADEB8C4E1CD5008B0039EAE6 /* sourceArray.plist */,
-				ADEB8C481CD500390039EAE6 /* Y012ViewController1.h */,
-				ADEB8C491CD500390039EAE6 /* Y012ViewController1.m */,
-				ADEB8C4B1CD500580039EAE6 /* Y012ViewModel1.h */,
-				ADEB8C4C1CD500580039EAE6 /* Y012ViewModel1.m */,
-			);
-			name = Plain;
-			sourceTree = "<group>";
-		};
-		ADEB8C501CD506DB0039EAE6 /* Grouped */ = {
-			isa = PBXGroup;
-			children = (
-				AD5D3D2D1CD511DF006440A5 /* sourceCity.plist */,
-				ADEB8C511CD507070039EAE6 /* Y012ViewController2.h */,
-				ADEB8C521CD507070039EAE6 /* Y012ViewController2.m */,
-				ADEB8C541CD507290039EAE6 /* Y012ViewModel2.h */,
-				ADEB8C551CD507290039EAE6 /* Y012ViewModel2.m */,
-			);
-			name = Grouped;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1417,9 +1431,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				033FCF3C1CC9F7E900632226 /* iconfont.ttf in Resources */,
-				AD6D6ED21CD62C830040E737 /* AJPersonArray.plist in Resources */,
 				ADF140E01CD9E3A000DA2B23 /* finditem_wallspoint.png in Resources */,
-				ADCF85191CD5B4D200D039E4 /* personArray.plist in Resources */,
+				030C6BD11CDC230E00AF9993 /* sourceCity.plist in Resources */,
 				036E05371CCC62E5009B683F /* run.gif in Resources */,
 				03398C181CC216C1000F3AA4 /* Y000.plist in Resources */,
 				0379C98A1CCBD7F70015107D /* image01.jpg in Resources */,
@@ -1427,13 +1440,14 @@
 				033FCF711CCA069E00632226 /* iconfontLinear.ttf in Resources */,
 				ADF140DF1CD9E3A000DA2B23 /* finditem_newsound.png in Resources */,
 				ADF140DB1CD9E3A000DA2B23 /* finditem_ad.png in Resources */,
+				030C6BD91CDC230E00AF9993 /* AJPersonArray.plist in Resources */,
 				AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */,
+				030C6BD41CDC230E00AF9993 /* personArray.plist in Resources */,
 				ADF140DE1CD9E3A000DA2B23 /* finditem_newpeople.png in Resources */,
-				ADEB8C4F1CD5008B0039EAE6 /* sourceArray.plist in Resources */,
 				ADF140DD1CD9E3A000DA2B23 /* finditem_hotsound.png in Resources */,
 				ADF140E11CD9E3A000DA2B23 /* minion.png in Resources */,
 				033FCF6A1CCA069E00632226 /* iconfontBasic.ttf in Resources */,
-				AD5D3D2E1CD511DF006440A5 /* sourceCity.plist in Resources */,
+				030C6BCE1CDC230E00AF9993 /* sourceArray.plist in Resources */,
 				ADF140DC1CD9E3A000DA2B23 /* finditem_hotpeople.png in Resources */,
 				AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */,
 			);
@@ -1462,11 +1476,8 @@
 				035C05F81C8574F900D050D1 /* WDDemoListTableView.m in Sources */,
 				AD1BE7281CDA167F000ED488 /* Y015ViewModel.m in Sources */,
 				035C05F51C85742000D050D1 /* WDDemoListViewModel.m in Sources */,
-				ADEB8C4D1CD500580039EAE6 /* Y012ViewModel1.m in Sources */,
 				03FA194C1BEB113A00DD1DAC /* UIViewController+AJNavi.m in Sources */,
-				AD6D6EDE1CD637770040E737 /* Y012TableViewCell2.m in Sources */,
 				03398C111CC1F6BA000F3AA4 /* Y002ViewController.m in Sources */,
-				AD6D6ED81CD6373D0040E737 /* Y012ViewModel4.m in Sources */,
 				AD31D1821CCCD99B00E27188 /* Y010ViewModel.m in Sources */,
 				030900CA1BDB97B70073DAA7 /* AJNavi.m in Sources */,
 				03398C091CC1F6BA000F3AA4 /* Y000ViewController.m in Sources */,
@@ -1482,19 +1493,21 @@
 				AD264D7F1CC72F8A006CA205 /* Y007ViewModel.m in Sources */,
 				03398C161CC2004B000F3AA4 /* AJNormalItem.m in Sources */,
 				03FA19591BEB2D2A00DD1DAC /* MKCache.m in Sources */,
-				ADEB8C561CD507290039EAE6 /* Y012ViewModel2.m in Sources */,
 				033FCF781CCA0C6F00632226 /* YScrollViewModel.m in Sources */,
 				AD6D6EE11CD63F540040E737 /* AJNormalItem1.m in Sources */,
 				03B761861C93AB2200297AC7 /* AJColorManager.m in Sources */,
 				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
+				030C6BD31CDC230E00AF9993 /* Y012_2ViewModel.m in Sources */,
 				AD31D17C1CCCD97200E27188 /* Y009ViewModel.m in Sources */,
+				030C6BE01CDC234400AF9993 /* Y012ViewController.m in Sources */,
 				AD31D17F1CCCD98400E27188 /* Y010ViewController.m in Sources */,
 				03FA19701BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m in Sources */,
 				AD264D7C1CC72F6C006CA205 /* Y007ViewController.m in Sources */,
 				03B7618B1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m in Sources */,
+				030C6BD61CDC230E00AF9993 /* Y012_3TableViewCell.m in Sources */,
 				03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */,
 				035C061F1C859FC100D050D1 /* ALView+PureLayout.m in Sources */,
-				ADCF85101CD5AE7100D039E4 /* Y012TableViewCell.m in Sources */,
+				030C6BDB1CDC230E00AF9993 /* Y012_4TableViewCell.m in Sources */,
 				AD5335F21CC5E59D00F48FA7 /* Y005ViewModel.m in Sources */,
 				03B7617D1C93AB2200297AC7 /* NSString+AJAddition.m in Sources */,
 				030DF63D1CD458FC00A0FCC9 /* Y001CustomPickerView.m in Sources */,
@@ -1502,6 +1515,7 @@
 				03B761801C93AB2200297AC7 /* UILabel+AJAddition.m in Sources */,
 				035C05F21C8573FD00D050D1 /* WDDemoListViewController.m in Sources */,
 				03398C211CC29111000F3AA4 /* Y003ViewModel.m in Sources */,
+				030C6BD21CDC230E00AF9993 /* Y012_2ViewController.m in Sources */,
 				035C063C1C86D1BB00D050D1 /* WDComplexViewModel.m in Sources */,
 				AD31D1791CCCD95A00E27188 /* Y009ViewController.m in Sources */,
 				035C06211C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m in Sources */,
@@ -1518,6 +1532,7 @@
 				03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */,
 				03B761811C93AB2200297AC7 /* UIScrollView+AJAddition.m in Sources */,
 				AD1134951CD8C6C9001A2A7A /* Y013ViewController.m in Sources */,
+				030C6BD71CDC230E00AF9993 /* Y012_3ViewController.m in Sources */,
 				AD5335E51CC5146F00F48FA7 /* Y004ViewController.m in Sources */,
 				03FA195B1BEB2D2A00DD1DAC /* MKNetworkRequest.m in Sources */,
 				03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */,
@@ -1525,28 +1540,29 @@
 				AD1BE72B1CDA168E000ED488 /* Y016ViewController.m in Sources */,
 				03B761821C93AB2200297AC7 /* UIView+AJAddition.m in Sources */,
 				03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */,
+				030C6BDD1CDC230E00AF9993 /* Y012_4ViewModel.m in Sources */,
 				03B7617C1C93AB2200297AC7 /* NSObject+AJAddition.m in Sources */,
-				ADCF850D1CD5ADA900D039E4 /* Y012ViewModel3.m in Sources */,
 				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
 				03398C071CC1F6BA000F3AA4 /* Y000TableView.m in Sources */,
 				AD1BE72E1CDA169E000ED488 /* Y016ViewModel.m in Sources */,
 				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
 				030DF63A1CD43B0E00A0FCC9 /* AJPickerView.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
-				ADEB8C531CD507070039EAE6 /* Y012ViewController2.m in Sources */,
+				030C6BDA1CDC230E00AF9993 /* Y012_4TableView.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				030DF6331CD3861F00A0FCC9 /* AJDatePicker.m in Sources */,
+				030C6BCF1CDC230E00AF9993 /* Y012_1ViewController.m in Sources */,
 				03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */,
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
+				030C6BD81CDC230E00AF9993 /* Y012_3ViewModel.m in Sources */,
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,
 				03398C081CC1F6BA000F3AA4 /* Y000TableViewCell.m in Sources */,
 				03398BE41CBF492F000F3AA4 /* NSObject+AJPropertyCreator.m in Sources */,
+				030C6BE31CDC23E100AF9993 /* Y012ViewModel.m in Sources */,
 				AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */,
-				ADEB8C4A1CD500390039EAE6 /* Y012ViewController1.m in Sources */,
 				03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */,
 				035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */,
 				03398C101CC1F6BA000F3AA4 /* Y001ViewController.m in Sources */,
-				AD6D6ED51CD6371C0040E737 /* Y012ViewController4.m in Sources */,
 				035C06391C86D10300D050D1 /* WDComplexViewController.m in Sources */,
 				AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */,
 				AD31D1731CCCD92E00E27188 /* Y008ViewController.m in Sources */,
@@ -1554,15 +1570,15 @@
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
 				03B761871C93AB2200297AC7 /* AJSettings.m in Sources */,
-				ADCF850A1CD5AD7B00D039E4 /* Y012ViewController3.m in Sources */,
 				ADE75DCB1CD3521500F00EC1 /* Y011ViewModel.m in Sources */,
-				AD6D6EDB1CD6375E0040E737 /* Y012TableView.m in Sources */,
 				03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */,
 				031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				ADCF85131CD5AEC800D039E4 /* Y012CustomObject.m in Sources */,
 				035C05FB1C857A2200D050D1 /* WDDemoListTableViewCell.m in Sources */,
 				AD264D781CC689B9006CA205 /* Y006ViewModel.m in Sources */,
 				03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */,
+				030C6BDC1CDC230E00AF9993 /* Y012_4ViewController.m in Sources */,
+				030C6BD51CDC230E00AF9993 /* Y012_3PersonItem.m in Sources */,
+				030C6BD01CDC230E00AF9993 /* Y012_1ViewModel.m in Sources */,
 				035C06421C86D25700D050D1 /* WDComplexATableViewCell.m in Sources */,
 				AD5335EF1CC5E55F00F48FA7 /* Y005ViewController.m in Sources */,
 				035C063F1C86D21300D050D1 /* WDComplexTableView.m in Sources */,
