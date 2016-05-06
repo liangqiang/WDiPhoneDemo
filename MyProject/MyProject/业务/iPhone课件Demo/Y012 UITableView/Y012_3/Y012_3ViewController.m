@@ -59,7 +59,7 @@
 
 #pragma mark DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.viewModel getPersonCount];
+    return [self.viewModel personCount];
 }
 
 

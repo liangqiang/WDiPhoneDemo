@@ -15,20 +15,18 @@
                            VIEWTYPE(@"ScrollViewNormal", @"一个基本的滑动控件(展示多张图片、垂直、回弹、偏移)"),
                            VIEWTYPE(@"ScrollViewTimer", @"时间循环播放图片展示"),
                            VIEWTYPE(@"ScrollViewPageController", @"联合展示图片、标记滑动到第几个选项"),
-                           VIEWTYPE(@"PageController", @"用来和上面的滚动视图同时进行使用"),
                            ];
     
-    NSArray *array = @[@"finditem_ad.png",
+    NSArray *nameArray = @[@"finditem_ad.png",
                        @"finditem_hotpeople.png",
                        @"finditem_hotsound.png",
                        @"finditem_newpeople.png",
                        @"finditem_newsound.png",
                        @"finditem_wallspoint.png"];
-    
-    self.imageArray = [NSArray arrayWithArray:array];
-    
-    self.width = 145;
-    self.height = 145;
+    self.imageArray = [NSMutableArray array];
+    for (NSString *name in nameArray) {
+        [self.imageArray addObject:[UIImage imageNamed:name]];
+    }
     
     self.indexImage = 0;
     
@@ -41,14 +39,10 @@
 
 -(void)changeIndexImage{
     self.indexImage++;
-    if(self.indexImage == [self.imageArray count]){
+    if(self.indexImage >= [self.imageArray count]){
         self.indexImage = 0;
     }
 }
 
--(NSInteger)getPageNumByOffSet:(UIScrollView*)scrollView{
-    CGPoint offset = scrollView.contentOffset;
-    return offset.x / self.width;
-}
 
 @end

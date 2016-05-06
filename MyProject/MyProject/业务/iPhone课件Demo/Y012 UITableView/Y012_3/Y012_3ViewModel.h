@@ -15,7 +15,7 @@
 
 -(void)loadData;
 
--(NSInteger)getPersonCount;
+-(NSInteger)personCount;
 
 -(Y012_3PersonItem*)personAtRow:(NSInteger)row;
 

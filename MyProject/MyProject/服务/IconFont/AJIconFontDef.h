@@ -44,6 +44,3 @@
 #define AJIconFontVolumnLow                AJIconFontMake(@"iconfontLinear", @"\U0000e6a6", 20, HEXCOLOR(0x5cb85c))
 #define AJIconFontVolumnHigh                AJIconFontMake(@"iconfontLinear", @"\U0000e6a5", 20, HEXCOLOR(0xd9534f))
 
-
-//大图片
-#define AJBigImage @"minion.png"
