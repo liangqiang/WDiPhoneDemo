@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "NSObject+AJPropertyCreator.h"
+#import "UIViewController+AJCreator.h"
 
-@implementation NSObject (AJPropertyCreator)
+@implementation UIViewController (AJCreator)
 +(void)load{
 }
 

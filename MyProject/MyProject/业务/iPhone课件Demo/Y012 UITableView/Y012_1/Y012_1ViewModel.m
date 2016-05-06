@@ -11,9 +11,6 @@
 @implementation Y012_1ViewModel
 
 -(void)loadData{
-    self.viewTypeArray = @[VIEWTYPE(@"PlainTableViewNormal", @"基本表视图(Plain)"),
-                           ];
-    
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"sourceArray" ofType:@"plist"];
     NSArray *cityArray = [NSArray arrayWithContentsOfFile:plistPath];
     self.personArray = [NSMutableArray arrayWithArray:cityArray];
@@ -21,15 +18,15 @@
     [self notifyToRefresh];
 }
 
--(NSInteger)getCount{
+-(NSInteger)personCount{
     return [self.personArray count];
 }
 
--(NSString*)getInfo:(NSInteger)row{
+-(NSString*)personName:(NSInteger)row{
     return [self.personArray safeObjectAtIndex:row];
 }
 
--(void)onTableViewSelected:(NSInteger)row{
+-(void)onPersonSelected:(NSInteger)row{
     NSString *person = [self.personArray safeObjectAtIndex:row];
     [AJUtil toast:person];
 }

@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "AJViewModel.h"
+#import "AJTableViewModel.h"
 
-@interface Y012_4ViewModel : AJViewModel
+@interface Y012_4ViewModel : AJTableViewModel
 
 -(void)loadData;
 -(void)onCellClicked:(NSIndexPath*)indexPath;

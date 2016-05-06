@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AJTableViewModel.h"
 
-@interface WDComplexViewModel : AJViewModel
+@interface WDComplexViewModel : AJTableViewModel
 
 -(void)loadFirstPage;
 -(void)loadNextPage;

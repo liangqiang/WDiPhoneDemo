@@ -25,7 +25,7 @@
     [self setupWindow];
     
     //延迟运行
-    [AJUtil runAfterDelay:3 block:^{
+    [AJUtil runAfterDelay:0 block:^{
         [AJStatusBarDebugWindow show];
     }];
     

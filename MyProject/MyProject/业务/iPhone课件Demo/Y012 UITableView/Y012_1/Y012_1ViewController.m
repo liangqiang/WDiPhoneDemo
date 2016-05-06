@@ -11,30 +11,53 @@
 
 @interface Y012_1ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@property(nonatomic,strong) UIScrollView *scrollView;
-@property(nonatomic,strong) Y012_1ViewModel *viewModel;
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) Y012_1ViewModel *viewModel;
 
 @end
 
 @implementation Y012_1ViewController
 
-//1、基本表视图(Plain)
--(UITableView*)createPlainTableViewNormal{
-    UITableView *tableView = [UITableView new];
-    tableView.size = CGSizeMake(self.scrollView.width, 300);
+-(instancetype)init{
+    if (self=[super init]) {
+        self.title = @"简单表格";
+    }
+    return self;
+}
+
+-(void)loadView{
+    [super loadView];
     
-    //cell重用
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    self.tableView = [self createTableView];
+    [self.view addSubview:self.tableView];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
-    [tableView setDataSource:self];
-    [tableView setDelegate:self];
-    
-    return tableView;
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+  
+    WEAKSELF
+    self.viewModel = [self createViewModel];
+    [self.viewModel setRefreshBlock:^{
+        [weakSelf updateViews];
+    }];
+
+    [AJUtil runAfterDelay:0 block:^{
+        [weakSelf.viewModel loadData];
+    }];
+}
+
+-(void)updateViews{
+    [self.tableView stopRefresh];
+    [self.tableView reloadData];
 }
 
 #pragma mark DataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return [self.viewModel getCount];
+    return [self.viewModel personCount];
 }
 
 
@@ -42,14 +65,14 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.viewModel getInfo:[indexPath row]];
+    cell.textLabel.text = [self.viewModel personName:[indexPath row]];
     
     return cell;
 }
 
 #pragma mark Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [self.viewModel onTableViewSelected:[indexPath row]];
+    [self.viewModel onPersonSelected:[indexPath row]];
 }
 
 

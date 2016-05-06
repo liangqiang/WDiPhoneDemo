@@ -6,16 +6,18 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "YScrollViewModel.h"
+#import "AJViewModel.h"
 
-@interface Y012_1ViewModel : YScrollViewModel
+@interface Y012_1ViewModel : AJViewModel
 
-@property(nonatomic,strong)NSMutableArray *personArray;
+@property(nonatomic,strong) NSMutableArray *personArray;
 
--(NSInteger)getCount;
+-(void)loadData;
 
--(NSString*)getInfo:(NSInteger)row;
+-(NSInteger)personCount;
 
--(void)onTableViewSelected:(NSInteger)row;
+-(NSString*)personName:(NSInteger)row;
+
+-(void)onPersonSelected:(NSInteger)row;
 
 @end

@@ -30,6 +30,7 @@
 		030C6BDD1CDC230E00AF9993 /* Y012_4ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BCD1CDC230E00AF9993 /* Y012_4ViewModel.m */; };
 		030C6BE01CDC234400AF9993 /* Y012ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BDF1CDC234400AF9993 /* Y012ViewController.m */; };
 		030C6BE31CDC23E100AF9993 /* Y012ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BE21CDC23E100AF9993 /* Y012ViewModel.m */; };
+		030C6BE61CDC347700AF9993 /* AJTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 030C6BE51CDC347700AF9993 /* AJTableViewModel.m */; };
 		030DF6331CD3861F00A0FCC9 /* AJDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DF6321CD3861F00A0FCC9 /* AJDatePicker.m */; };
 		030DF6361CD39BE500A0FCC9 /* NSDate+AJAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DF6351CD39BE500A0FCC9 /* NSDate+AJAddition.m */; };
 		030DF63A1CD43B0E00A0FCC9 /* AJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030DF6391CD43B0E00A0FCC9 /* AJPickerView.m */; };
@@ -37,7 +38,7 @@
 		03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BF61C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m */; };
 		03125BFA1C4A8C2000FFCA26 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 03125BF81C4A8C2000FFCA26 /* UIView+LayoutMethods.m */; };
 		031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */; };
-		03398BE41CBF492F000F3AA4 /* NSObject+AJPropertyCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398BE31CBF492F000F3AA4 /* NSObject+AJPropertyCreator.m */; };
+		03398BE41CBF492F000F3AA4 /* UIViewController+AJCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398BE31CBF492F000F3AA4 /* UIViewController+AJCreator.m */; };
 		03398BE71CBF4948000F3AA4 /* AJViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398BE61CBF4948000F3AA4 /* AJViewModel.m */; };
 		03398C061CC1F6BA000F3AA4 /* Y000ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398BEF1CC1F6BA000F3AA4 /* Y000ViewModel.m */; };
 		03398C071CC1F6BA000F3AA4 /* Y000TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03398BF11CC1F6BA000F3AA4 /* Y000TableView.m */; };
@@ -209,6 +210,8 @@
 		030C6BDF1CDC234400AF9993 /* Y012ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewController.m; path = "Y012 UITableView/Y012ViewController.m"; sourceTree = "<group>"; };
 		030C6BE11CDC23E100AF9993 /* Y012ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y012ViewModel.h; path = "Y012 UITableView/Y012ViewModel.h"; sourceTree = "<group>"; };
 		030C6BE21CDC23E100AF9993 /* Y012ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y012ViewModel.m; path = "Y012 UITableView/Y012ViewModel.m"; sourceTree = "<group>"; };
+		030C6BE41CDC347700AF9993 /* AJTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJTableViewModel.h; sourceTree = "<group>"; };
+		030C6BE51CDC347700AF9993 /* AJTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJTableViewModel.m; sourceTree = "<group>"; };
 		030DF6311CD3861F00A0FCC9 /* AJDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJDatePicker.h; sourceTree = "<group>"; };
 		030DF6321CD3861F00A0FCC9 /* AJDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJDatePicker.m; sourceTree = "<group>"; };
 		030DF6341CD39BE500A0FCC9 /* NSDate+AJAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+AJAddition.h"; sourceTree = "<group>"; };
@@ -225,8 +228,8 @@
 		031640251BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		0316402D1BE23AA400526D8A /* AJUIDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJUIDefine.h; sourceTree = "<group>"; };
 		0316402F1BE23E0F00526D8A /* AJSettingsDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AJSettingsDefine.h; sourceTree = "<group>"; };
-		03398BE21CBF492F000F3AA4 /* NSObject+AJPropertyCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AJPropertyCreator.h"; sourceTree = "<group>"; };
-		03398BE31CBF492F000F3AA4 /* NSObject+AJPropertyCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AJPropertyCreator.m"; sourceTree = "<group>"; };
+		03398BE21CBF492F000F3AA4 /* UIViewController+AJCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AJCreator.h"; sourceTree = "<group>"; };
+		03398BE31CBF492F000F3AA4 /* UIViewController+AJCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AJCreator.m"; sourceTree = "<group>"; };
 		03398BE51CBF4948000F3AA4 /* AJViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJViewModel.h; sourceTree = "<group>"; };
 		03398BE61CBF4948000F3AA4 /* AJViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJViewModel.m; sourceTree = "<group>"; };
 		03398BEB1CC1EE19000F3AA4 /* 问题讨论.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "问题讨论.md"; sourceTree = "<group>"; };
@@ -885,8 +888,8 @@
 		035C05FC1C85828D00D050D1 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				03398BE21CBF492F000F3AA4 /* NSObject+AJPropertyCreator.h */,
-				03398BE31CBF492F000F3AA4 /* NSObject+AJPropertyCreator.m */,
+				03398BE21CBF492F000F3AA4 /* UIViewController+AJCreator.h */,
+				03398BE31CBF492F000F3AA4 /* UIViewController+AJCreator.m */,
 				03398C141CC2004B000F3AA4 /* AJNormalItem.h */,
 				03398C151CC2004B000F3AA4 /* AJNormalItem.m */,
 				AD6D6EDF1CD63F540040E737 /* AJNormalItem1.h */,
@@ -1000,6 +1003,8 @@
 				03B761621C93AB2200297AC7 /* AJSectionItem.m */,
 				03B761631C93AB2200297AC7 /* AJTableView.h */,
 				03B761641C93AB2200297AC7 /* AJTableView.m */,
+				030C6BE41CDC347700AF9993 /* AJTableViewModel.h */,
+				030C6BE51CDC347700AF9993 /* AJTableViewModel.m */,
 			);
 			path = AJBase;
 			sourceTree = "<group>";
@@ -1557,7 +1562,7 @@
 				030C6BD81CDC230E00AF9993 /* Y012_3ViewModel.m in Sources */,
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,
 				03398C081CC1F6BA000F3AA4 /* Y000TableViewCell.m in Sources */,
-				03398BE41CBF492F000F3AA4 /* NSObject+AJPropertyCreator.m in Sources */,
+				03398BE41CBF492F000F3AA4 /* UIViewController+AJCreator.m in Sources */,
 				030C6BE31CDC23E100AF9993 /* Y012ViewModel.m in Sources */,
 				AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */,
 				03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */,
@@ -1587,6 +1592,7 @@
 				03FA19721BEB2E6300DD1DAC /* NSMutableDictionary+MKNKAdditions.m in Sources */,
 				03F6B5551BE869FE00E3C47D /* TBCityCoreTextParser.m in Sources */,
 				03FA19711BEB2E6300DD1DAC /* NSHTTPURLResponse+MKNKAdditions.m in Sources */,
+				030C6BE61CDC347700AF9993 /* AJTableViewModel.m in Sources */,
 				03B761831C93AB2200297AC7 /* AJSectionItem.m in Sources */,
 				03398C1E1CC27298000F3AA4 /* Y002ViewModel.m in Sources */,
 				03398BE71CBF4948000F3AA4 /* AJViewModel.m in Sources */,

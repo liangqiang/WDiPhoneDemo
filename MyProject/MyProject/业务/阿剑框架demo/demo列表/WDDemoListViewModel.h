@@ -6,9 +6,9 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "AJTableViewModel.h"
 
-@interface WDDemoListViewModel : AJViewModel
+@interface WDDemoListViewModel : AJTableViewModel
 
 -(void)loadData;
 -(void)onCellClicked:(NSIndexPath*)indexPath;

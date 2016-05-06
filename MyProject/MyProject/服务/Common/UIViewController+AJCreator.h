@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (AJPropertyCreator)
+@interface UIViewController (AJCreator)
 
 -(id)createViewModel;
 -(id)createScrollView;
