@@ -38,12 +38,12 @@
 
 -(void)loadView{
     [super loadView];
-    [self createTableView];
+    //[self createTableView];
 }
 
 
 /*
- 这时候view已经有了，最适合创建一些附加的view和控件了。
+ View创建成功，最适合创建一些附加的view和控件了。
  有一点需要注意的是，viewDidLoad会调用多次（viewcontroller可能多次载入view)
  */
 - (void)viewDidLoad {

@@ -10,6 +10,6 @@
 
 @interface Y014ViewModel : YScrollViewModel
 
--(void)onButtonClicked:(UIViewController*)vc;
+-(void)onButtonClicked:(NSString*)vc;
 
 @end
