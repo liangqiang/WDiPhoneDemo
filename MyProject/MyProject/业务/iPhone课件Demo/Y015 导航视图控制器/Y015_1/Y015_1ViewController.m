@@ -6,15 +6,15 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y015ViewController2.h"
-#import "Y015ViewModel2.h"
+#import "Y015_1ViewController.h"
+#import "Y015_1ViewModel.h"
 
-@interface Y015ViewController2 ()
+@interface Y015_1ViewController ()
 @property(nonatomic,strong)UIScrollView *scrollView;
 @property(nonatomic,strong)Y015ViewModel2 *viewModel;
 @end
 
-@implementation Y015ViewController2
+@implementation Y015_1ViewController
 
 -(instancetype)init{
     if(self = [super init]){

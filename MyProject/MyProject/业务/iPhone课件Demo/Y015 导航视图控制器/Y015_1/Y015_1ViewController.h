@@ -11,6 +11,6 @@
 //1、跳转返回(导航)
 //2、跳转返回(框架)
 
-@interface Y015ViewController2 : YScrollViewController
+@interface Y015_1ViewController : YScrollViewController
 
 @end

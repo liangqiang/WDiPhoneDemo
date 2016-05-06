@@ -6,7 +6,7 @@
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import "Y015ViewModel2.h"
+#import "Y015_1ViewModel.h"
 
 @implementation Y015ViewModel2
 

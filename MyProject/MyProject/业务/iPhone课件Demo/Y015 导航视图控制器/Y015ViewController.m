@@ -8,7 +8,7 @@
 
 #import "Y015ViewController.h"
 #import "Y015ViewModel.h"
-#import "Y015ViewController2.h"
+#import "Y015_1ViewController.h"
 
 @interface Y015ViewController ()
 @property(nonatomic,strong)UIScrollView *scrollView;
@@ -21,8 +21,8 @@
 -(UIButton*)createPushViewNormal{
     
     WEAKSELF
-    return [self createButtonWithTitle:@"简单表格" block:^(UIControl *control) {
-        Y015ViewController2 *Y015VC = [[Y015ViewController2 alloc] init];
+    return [self createButtonWithTitle:@"页面跳转(基本)" block:^(UIControl *control) {
+        Y015_1ViewController *Y015VC = [[Y015_1ViewController alloc] init];
         [weakSelf.navigationController pushViewController:Y015VC animated:YES];
     }];
 }
@@ -31,8 +31,8 @@
 -(UIButton*)createPushViewAJFoundation{
     
     WEAKSELF
-    return [self createButtonWithTitle:@"简单表格" block:^(UIControl *control) {
-        [weakSelf.viewModel onPushButtonClicked:@"Y015ViewController2"];
+    return [self createButtonWithTitle:@"页面跳转(框架)" block:^(UIControl *control) {
+        [weakSelf.viewModel onPushButtonClicked:@"Y015_1ViewController"];
     }];
 
 }
@@ -46,7 +46,8 @@
     self.navigationItem.rightBarButtonItem = anotherButton;
 }
 -(void)onRightBarItemClicked:(id)sender{
-    [self.viewModel onPushButtonClicked:@"Y015ViewController2"];
+    WEAKSELF
+    [weakSelf.viewModel onPushButtonClicked:@"Y015_1ViewController"];
 }
 
 
