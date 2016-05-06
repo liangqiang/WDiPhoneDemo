@@ -9,9 +9,11 @@
 #import "YScrollViewModel.h"
 #import "Y012_3PersonItem.h"
 
-@interface Y012_3ViewModel : YScrollViewModel
+@interface Y012_3ViewModel : AJViewModel
 
 @property(nonatomic,strong)NSMutableArray *personArray;
+
+-(void)loadData;
 
 -(NSInteger)getPersonCount;
 

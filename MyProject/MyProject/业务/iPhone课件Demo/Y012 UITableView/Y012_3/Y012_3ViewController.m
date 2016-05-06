@@ -13,26 +13,48 @@
 
 @interface Y012_3ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@property(nonatomic,strong)UIScrollView *scrollView;
+@property (nonatomic,strong) UITableView *tableView;
 @property(nonatomic,strong)Y012_3ViewModel *viewModel;
 
 @end
 
 @implementation Y012_3ViewController
 
+-(instancetype)init{
+    if (self=[super init]) {
+        self.title = @"简单表格";
+    }
+    return self;
+}
 
-//1、表视图(自定义cell内容)
--(UITableView*)createCustomTableViewNormal{
-    UITableView *tableView = [UITableView new];
-    tableView.size = CGSizeMake(self.scrollView.width, 300);
+-(void)loadView{
+    [super loadView];
     
-    //cell重用
-    [tableView registerClass:[Y012_3TableViewCell class] forCellReuseIdentifier:@"cell"];
+    self.tableView = [self createTableView];
+    [self.view addSubview:self.tableView];
+}
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
-    [tableView setDataSource:self];
-    [tableView setDelegate:self];
+    [self.tableView registerClass:[Y012_3TableViewCell class] forCellReuseIdentifier:@"cell"];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     
-    return tableView;
+    WEAKSELF
+    self.viewModel = [self createViewModel];
+    [self.viewModel setRefreshBlock:^{
+        [weakSelf updateViews];
+    }];
+    
+    [AJUtil runAfterDelay:0 block:^{
+        [weakSelf.viewModel loadData];
+    }];
+}
+
+-(void)updateViews{
+    [self.tableView reloadData];
 }
 
 #pragma mark DataSource

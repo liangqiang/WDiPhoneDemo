@@ -11,8 +11,6 @@
 @implementation Y012_3ViewModel
 
 -(void)loadData{
-    self.viewTypeArray = @[VIEWTYPE(@"CustomTableViewNormal", @"表视图(自定义cell内容)"),
-                           ];
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"personArray" ofType:@"plist"];
     NSArray *array = [NSArray arrayWithContentsOfFile:plistPath];

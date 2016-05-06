@@ -17,6 +17,13 @@
 
 @implementation Y012_4ViewController
 
+-(instancetype)init{
+    if (self=[super init]) {
+        self.title = @"自定义表格(框架)";
+    }
+    return self;
+}
+
 -(void)loadView{
     [super loadView];
     

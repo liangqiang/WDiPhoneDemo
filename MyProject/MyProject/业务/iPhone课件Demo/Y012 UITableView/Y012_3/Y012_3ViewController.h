@@ -11,7 +11,6 @@
 
 //1、表视图(自定义cell内容)
 
-
-@interface Y012_3ViewController : YScrollViewController
+@interface Y012_3ViewController : UIViewController
 
 @end
