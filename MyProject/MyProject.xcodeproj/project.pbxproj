@@ -122,8 +122,6 @@
 		AD1BE7201CDA1568000ED488 /* Y014ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE71F1CDA1568000ED488 /* Y014ViewModel.m */; };
 		AD1BE7251CDA166E000ED488 /* Y015ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE7241CDA166E000ED488 /* Y015ViewController.m */; };
 		AD1BE7281CDA167F000ED488 /* Y015ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE7271CDA167F000ED488 /* Y015ViewModel.m */; };
-		AD1BE72B1CDA168E000ED488 /* Y016ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE72A1CDA168E000ED488 /* Y016ViewController.m */; };
-		AD1BE72E1CDA169E000ED488 /* Y016ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE72D1CDA169E000ED488 /* Y016ViewModel.m */; };
 		AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD264D741CC68996006CA205 /* Y006ViewController.m */; };
 		AD264D781CC689B9006CA205 /* Y006ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD264D771CC689B9006CA205 /* Y006ViewModel.m */; };
 		AD264D7C1CC72F6C006CA205 /* Y007ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD264D7B1CC72F6C006CA205 /* Y007ViewController.m */; };
@@ -140,6 +138,20 @@
 		AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335E71CC514BA00F48FA7 /* Y004ViewModel.m */; };
 		AD5335EF1CC5E55F00F48FA7 /* Y005ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */; };
 		AD5335F21CC5E59D00F48FA7 /* Y005ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */; };
+		AD6374D11CDF3ABD0048EA12 /* Y016ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6374D01CDF3ABD0048EA12 /* Y016ViewController.m */; };
+		AD6374D41CDF42E60048EA12 /* Y016_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6374D31CDF42E60048EA12 /* Y016_1ViewController.m */; };
+		AD6374D71CDF43450048EA12 /* Y016_2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6374D61CDF43450048EA12 /* Y016_2ViewController.m */; };
+		AD6374DA1CDF435D0048EA12 /* Y016_3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6374D91CDF435D0048EA12 /* Y016_3ViewController.m */; };
+		AD6374DD1CDF438A0048EA12 /* Y016_4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6374DC1CDF438A0048EA12 /* Y016_4ViewController.m */; };
+		AD6374E01CDF43AE0048EA12 /* Y016_1ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6374DF1CDF43AE0048EA12 /* Y016_1ViewModel.m */; };
+		AD6374E31CDF43C40048EA12 /* Y016_2ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6374E21CDF43C40048EA12 /* Y016_2ViewModel.m */; };
+		AD6374E61CDF43DA0048EA12 /* Y016_3ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6374E51CDF43DA0048EA12 /* Y016_3ViewModel.m */; };
+		AD6374E91CDF43EB0048EA12 /* Y016_4ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6374E81CDF43EB0048EA12 /* Y016_4ViewModel.m */; };
+		AD6374EC1CDF44820048EA12 /* Y016ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6374EB1CDF44820048EA12 /* Y016ViewModel.m */; };
+		AD6374F11CDF46D10048EA12 /* liu.png in Resources */ = {isa = PBXBuildFile; fileRef = AD6374ED1CDF46D10048EA12 /* liu.png */; };
+		AD6374F21CDF46D10048EA12 /* xing.png in Resources */ = {isa = PBXBuildFile; fileRef = AD6374EE1CDF46D10048EA12 /* xing.png */; };
+		AD6374F31CDF46D10048EA12 /* zhang.png in Resources */ = {isa = PBXBuildFile; fileRef = AD6374EF1CDF46D10048EA12 /* zhang.png */; };
+		AD6374F41CDF46D10048EA12 /* zhou.png in Resources */ = {isa = PBXBuildFile; fileRef = AD6374F01CDF46D10048EA12 /* zhou.png */; };
 		AD6D6EE11CD63F540040E737 /* AJNormalItem1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6D6EE01CD63F540040E737 /* AJNormalItem1.m */; };
 		AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA71CD354F2000023C5 /* Y011City1.plist */; };
 		AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA81CD354F2000023C5 /* Y011City2.plist */; };
@@ -422,10 +434,6 @@
 		AD1BE7241CDA166E000ED488 /* Y015ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y015ViewController.m; path = "Y015 导航视图控制器/Y015ViewController.m"; sourceTree = "<group>"; };
 		AD1BE7261CDA167F000ED488 /* Y015ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y015ViewModel.h; path = "Y015 导航视图控制器/Y015ViewModel.h"; sourceTree = "<group>"; };
 		AD1BE7271CDA167F000ED488 /* Y015ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y015ViewModel.m; path = "Y015 导航视图控制器/Y015ViewModel.m"; sourceTree = "<group>"; };
-		AD1BE7291CDA168E000ED488 /* Y016ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016ViewController.h; path = "Y016 分栏视图控制器/Y016ViewController.h"; sourceTree = "<group>"; };
-		AD1BE72A1CDA168E000ED488 /* Y016ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016ViewController.m; path = "Y016 分栏视图控制器/Y016ViewController.m"; sourceTree = "<group>"; };
-		AD1BE72C1CDA169E000ED488 /* Y016ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016ViewModel.h; path = "Y016 分栏视图控制器/Y016ViewModel.h"; sourceTree = "<group>"; };
-		AD1BE72D1CDA169E000ED488 /* Y016ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016ViewModel.m; path = "Y016 分栏视图控制器/Y016ViewModel.m"; sourceTree = "<group>"; };
 		AD264D731CC68996006CA205 /* Y006ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y006ViewController.h; path = "Y006 UISwitch/Y006ViewController.h"; sourceTree = "<group>"; };
 		AD264D741CC68996006CA205 /* Y006ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y006ViewController.m; path = "Y006 UISwitch/Y006ViewController.m"; sourceTree = "<group>"; };
 		AD264D761CC689B9006CA205 /* Y006ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y006ViewModel.h; path = "Y006 UISwitch/Y006ViewModel.h"; sourceTree = "<group>"; };
@@ -458,6 +466,30 @@
 		AD5335EE1CC5E55F00F48FA7 /* Y005ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y005ViewController.m; path = "Y005 UITextView/Y005ViewController.m"; sourceTree = "<group>"; };
 		AD5335F01CC5E59D00F48FA7 /* Y005ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y005ViewModel.h; path = "Y005 UITextView/Y005ViewModel.h"; sourceTree = "<group>"; };
 		AD5335F11CC5E59D00F48FA7 /* Y005ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y005ViewModel.m; path = "Y005 UITextView/Y005ViewModel.m"; sourceTree = "<group>"; };
+		AD6374CF1CDF3ABD0048EA12 /* Y016ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016ViewController.h; path = "Y016 分栏视图控制器/Y016ViewController.h"; sourceTree = "<group>"; };
+		AD6374D01CDF3ABD0048EA12 /* Y016ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016ViewController.m; path = "Y016 分栏视图控制器/Y016ViewController.m"; sourceTree = "<group>"; };
+		AD6374D21CDF42E60048EA12 /* Y016_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016_1ViewController.h; path = "Y016 分栏视图控制器/Y016_1/Y016_1ViewController.h"; sourceTree = "<group>"; };
+		AD6374D31CDF42E60048EA12 /* Y016_1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016_1ViewController.m; path = "Y016 分栏视图控制器/Y016_1/Y016_1ViewController.m"; sourceTree = "<group>"; };
+		AD6374D51CDF43450048EA12 /* Y016_2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016_2ViewController.h; path = "Y016 分栏视图控制器/Y016_2/Y016_2ViewController.h"; sourceTree = "<group>"; };
+		AD6374D61CDF43450048EA12 /* Y016_2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016_2ViewController.m; path = "Y016 分栏视图控制器/Y016_2/Y016_2ViewController.m"; sourceTree = "<group>"; };
+		AD6374D81CDF435D0048EA12 /* Y016_3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016_3ViewController.h; path = "Y016 分栏视图控制器/Y016_3/Y016_3ViewController.h"; sourceTree = "<group>"; };
+		AD6374D91CDF435D0048EA12 /* Y016_3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016_3ViewController.m; path = "Y016 分栏视图控制器/Y016_3/Y016_3ViewController.m"; sourceTree = "<group>"; };
+		AD6374DB1CDF438A0048EA12 /* Y016_4ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016_4ViewController.h; path = "Y016 分栏视图控制器/Y016_4/Y016_4ViewController.h"; sourceTree = "<group>"; };
+		AD6374DC1CDF438A0048EA12 /* Y016_4ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016_4ViewController.m; path = "Y016 分栏视图控制器/Y016_4/Y016_4ViewController.m"; sourceTree = "<group>"; };
+		AD6374DE1CDF43AE0048EA12 /* Y016_1ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016_1ViewModel.h; path = "Y016 分栏视图控制器/Y016_1/Y016_1ViewModel.h"; sourceTree = "<group>"; };
+		AD6374DF1CDF43AE0048EA12 /* Y016_1ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016_1ViewModel.m; path = "Y016 分栏视图控制器/Y016_1/Y016_1ViewModel.m"; sourceTree = "<group>"; };
+		AD6374E11CDF43C40048EA12 /* Y016_2ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016_2ViewModel.h; path = "Y016 分栏视图控制器/Y016_2/Y016_2ViewModel.h"; sourceTree = "<group>"; };
+		AD6374E21CDF43C40048EA12 /* Y016_2ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016_2ViewModel.m; path = "Y016 分栏视图控制器/Y016_2/Y016_2ViewModel.m"; sourceTree = "<group>"; };
+		AD6374E41CDF43DA0048EA12 /* Y016_3ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016_3ViewModel.h; path = "Y016 分栏视图控制器/Y016_3/Y016_3ViewModel.h"; sourceTree = "<group>"; };
+		AD6374E51CDF43DA0048EA12 /* Y016_3ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016_3ViewModel.m; path = "Y016 分栏视图控制器/Y016_3/Y016_3ViewModel.m"; sourceTree = "<group>"; };
+		AD6374E71CDF43EB0048EA12 /* Y016_4ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016_4ViewModel.h; path = "Y016 分栏视图控制器/Y016_4/Y016_4ViewModel.h"; sourceTree = "<group>"; };
+		AD6374E81CDF43EB0048EA12 /* Y016_4ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016_4ViewModel.m; path = "Y016 分栏视图控制器/Y016_4/Y016_4ViewModel.m"; sourceTree = "<group>"; };
+		AD6374EA1CDF44820048EA12 /* Y016ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y016ViewModel.h; path = "Y016 分栏视图控制器/Y016ViewModel.h"; sourceTree = "<group>"; };
+		AD6374EB1CDF44820048EA12 /* Y016ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y016ViewModel.m; path = "Y016 分栏视图控制器/Y016ViewModel.m"; sourceTree = "<group>"; };
+		AD6374ED1CDF46D10048EA12 /* liu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liu.png; sourceTree = "<group>"; };
+		AD6374EE1CDF46D10048EA12 /* xing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xing.png; sourceTree = "<group>"; };
+		AD6374EF1CDF46D10048EA12 /* zhang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhang.png; sourceTree = "<group>"; };
+		AD6374F01CDF46D10048EA12 /* zhou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zhou.png; sourceTree = "<group>"; };
 		AD6D6EDF1CD63F540040E737 /* AJNormalItem1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJNormalItem1.h; sourceTree = "<group>"; };
 		AD6D6EE01CD63F540040E737 /* AJNormalItem1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNormalItem1.m; sourceTree = "<group>"; };
 		AD71DFA71CD354F2000023C5 /* Y011City1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City1.plist; path = "Y011 UIPickerView/Y011City1.plist"; sourceTree = "<group>"; };
@@ -943,6 +975,10 @@
 		0379C9881CCBD7F70015107D /* 资源 */ = {
 			isa = PBXGroup;
 			children = (
+				AD6374ED1CDF46D10048EA12 /* liu.png */,
+				AD6374EE1CDF46D10048EA12 /* xing.png */,
+				AD6374EF1CDF46D10048EA12 /* zhang.png */,
+				AD6374F01CDF46D10048EA12 /* zhou.png */,
 				ADF140D41CD9E3A000DA2B23 /* finditem_ad.png */,
 				ADF140D51CD9E3A000DA2B23 /* finditem_hotpeople.png */,
 				ADF140D61CD9E3A000DA2B23 /* finditem_hotsound.png */,
@@ -1210,10 +1246,10 @@
 		AD1BE7221CDA1646000ED488 /* Y016 分栏视图控制器 */ = {
 			isa = PBXGroup;
 			children = (
-				AD1BE7291CDA168E000ED488 /* Y016ViewController.h */,
-				AD1BE72A1CDA168E000ED488 /* Y016ViewController.m */,
-				AD1BE72C1CDA169E000ED488 /* Y016ViewModel.h */,
-				AD1BE72D1CDA169E000ED488 /* Y016ViewModel.m */,
+				AD6374CF1CDF3ABD0048EA12 /* Y016ViewController.h */,
+				AD6374D01CDF3ABD0048EA12 /* Y016ViewController.m */,
+				AD6374EA1CDF44820048EA12 /* Y016ViewModel.h */,
+				AD6374EB1CDF44820048EA12 /* Y016ViewModel.m */,
 				AD38AEE81CDC95E90062F1BC /* Y016_1 */,
 				AD38AEE91CDC95F20062F1BC /* Y016_2 */,
 				AD38AEEA1CDC95F80062F1BC /* Y016_3 */,
@@ -1280,6 +1316,10 @@
 		AD38AEE81CDC95E90062F1BC /* Y016_1 */ = {
 			isa = PBXGroup;
 			children = (
+				AD6374D21CDF42E60048EA12 /* Y016_1ViewController.h */,
+				AD6374D31CDF42E60048EA12 /* Y016_1ViewController.m */,
+				AD6374DE1CDF43AE0048EA12 /* Y016_1ViewModel.h */,
+				AD6374DF1CDF43AE0048EA12 /* Y016_1ViewModel.m */,
 			);
 			name = Y016_1;
 			sourceTree = "<group>";
@@ -1287,6 +1327,10 @@
 		AD38AEE91CDC95F20062F1BC /* Y016_2 */ = {
 			isa = PBXGroup;
 			children = (
+				AD6374D51CDF43450048EA12 /* Y016_2ViewController.h */,
+				AD6374D61CDF43450048EA12 /* Y016_2ViewController.m */,
+				AD6374E11CDF43C40048EA12 /* Y016_2ViewModel.h */,
+				AD6374E21CDF43C40048EA12 /* Y016_2ViewModel.m */,
 			);
 			name = Y016_2;
 			sourceTree = "<group>";
@@ -1294,6 +1338,10 @@
 		AD38AEEA1CDC95F80062F1BC /* Y016_3 */ = {
 			isa = PBXGroup;
 			children = (
+				AD6374D81CDF435D0048EA12 /* Y016_3ViewController.h */,
+				AD6374D91CDF435D0048EA12 /* Y016_3ViewController.m */,
+				AD6374E41CDF43DA0048EA12 /* Y016_3ViewModel.h */,
+				AD6374E51CDF43DA0048EA12 /* Y016_3ViewModel.m */,
 			);
 			name = Y016_3;
 			sourceTree = "<group>";
@@ -1301,6 +1349,10 @@
 		AD38AEEB1CDC95FD0062F1BC /* Y016_4 */ = {
 			isa = PBXGroup;
 			children = (
+				AD6374DB1CDF438A0048EA12 /* Y016_4ViewController.h */,
+				AD6374DC1CDF438A0048EA12 /* Y016_4ViewController.m */,
+				AD6374E71CDF43EB0048EA12 /* Y016_4ViewModel.h */,
+				AD6374E81CDF43EB0048EA12 /* Y016_4ViewModel.m */,
 			);
 			name = Y016_4;
 			sourceTree = "<group>";
@@ -1487,11 +1539,15 @@
 				ADF140DB1CD9E3A000DA2B23 /* finditem_ad.png in Resources */,
 				030C6BD91CDC230E00AF9993 /* Y012_4Person.plist in Resources */,
 				AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */,
+				AD6374F11CDF46D10048EA12 /* liu.png in Resources */,
 				030C6BD41CDC230E00AF9993 /* Y012_3Person.plist in Resources */,
 				ADF140DE1CD9E3A000DA2B23 /* finditem_newpeople.png in Resources */,
 				ADF140DD1CD9E3A000DA2B23 /* finditem_hotsound.png in Resources */,
 				ADF140E11CD9E3A000DA2B23 /* minion.png in Resources */,
+				AD6374F41CDF46D10048EA12 /* zhou.png in Resources */,
+				AD6374F21CDF46D10048EA12 /* xing.png in Resources */,
 				033FCF6A1CCA069E00632226 /* iconfontBasic.ttf in Resources */,
+				AD6374F31CDF46D10048EA12 /* zhang.png in Resources */,
 				030C6BCE1CDC230E00AF9993 /* Y012_1Person.plist in Resources */,
 				ADF140DC1CD9E3A000DA2B23 /* finditem_hotpeople.png in Resources */,
 				AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */,
@@ -1516,8 +1572,11 @@
 				03FD93D91BDF5FEA00DCC673 /* AJRefreshHeaderView.m in Sources */,
 				03FD93D81BDF5FEA00DCC673 /* UIScrollView+AJRefresh.m in Sources */,
 				030DF6361CD39BE500A0FCC9 /* NSDate+AJAddition.m in Sources */,
+				AD6374E31CDF43C40048EA12 /* Y016_2ViewModel.m in Sources */,
 				03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */,
+				AD6374E61CDF43DA0048EA12 /* Y016_3ViewModel.m in Sources */,
 				ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */,
+				AD6374DA1CDF435D0048EA12 /* Y016_3ViewController.m in Sources */,
 				035C05F81C8574F900D050D1 /* WDDemoListTableView.m in Sources */,
 				AD38AEF81CDC9C4B0062F1BC /* Y015_1ViewModel.m in Sources */,
 				AD1BE7281CDA167F000ED488 /* Y015ViewModel.m in Sources */,
@@ -1551,6 +1610,7 @@
 				AD264D7C1CC72F6C006CA205 /* Y007ViewController.m in Sources */,
 				03B7618B1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m in Sources */,
 				030C6BD61CDC230E00AF9993 /* Y012_3TableViewCell.m in Sources */,
+				AD6374E91CDF43EB0048EA12 /* Y016_4ViewModel.m in Sources */,
 				03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */,
 				035C061F1C859FC100D050D1 /* ALView+PureLayout.m in Sources */,
 				030C6BDB1CDC230E00AF9993 /* Y012_4TableViewCell.m in Sources */,
@@ -1567,6 +1627,7 @@
 				035C06211C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				033FCF751CCA0A6000632226 /* YScrollViewController.m in Sources */,
 				03B7618A1C93AB2200297AC7 /* AJRefreshViewBase.m in Sources */,
+				AD6374E01CDF43AE0048EA12 /* Y016_1ViewModel.m in Sources */,
 				AD31D1761CCCD94A00E27188 /* Y008ViewModel.m in Sources */,
 				03B761841C93AB2200297AC7 /* AJTableView.m in Sources */,
 				AD1BE7201CDA1568000ED488 /* Y014ViewModel.m in Sources */,
@@ -1576,20 +1637,19 @@
 				03B7617E1C93AB2200297AC7 /* UIControl+AJAddition.m in Sources */,
 				03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */,
 				03B761811C93AB2200297AC7 /* UIScrollView+AJAddition.m in Sources */,
+				AD6374D71CDF43450048EA12 /* Y016_2ViewController.m in Sources */,
 				AD1134951CD8C6C9001A2A7A /* Y013ViewController.m in Sources */,
 				030C6BD71CDC230E00AF9993 /* Y012_3ViewController.m in Sources */,
 				AD5335E51CC5146F00F48FA7 /* Y004ViewController.m in Sources */,
 				03FA195B1BEB2D2A00DD1DAC /* MKNetworkRequest.m in Sources */,
 				03479C1E1C845CAE008D943E /* WDHomeViewModel.m in Sources */,
 				0303D6D01BD8C4E30024399D /* AppDelegate.m in Sources */,
-				AD1BE72B1CDA168E000ED488 /* Y016ViewController.m in Sources */,
 				03B761821C93AB2200297AC7 /* UIView+AJAddition.m in Sources */,
 				03F6B5581BE86A3700E3C47D /* TBCityColorManager.m in Sources */,
 				030C6BDD1CDC230E00AF9993 /* Y012_4ViewModel.m in Sources */,
 				03B7617C1C93AB2200297AC7 /* NSObject+AJAddition.m in Sources */,
 				03FA19751BEB2E6300DD1DAC /* UIImageView+MKNKAdditions.m in Sources */,
 				03398C071CC1F6BA000F3AA4 /* Y000TableView.m in Sources */,
-				AD1BE72E1CDA169E000ED488 /* Y016ViewModel.m in Sources */,
 				035C05ED1C85444800D050D1 /* WDDebugViewModel.m in Sources */,
 				030DF63A1CD43B0E00A0FCC9 /* AJPickerView.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
@@ -1597,6 +1657,7 @@
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				030DF6331CD3861F00A0FCC9 /* AJDatePicker.m in Sources */,
 				030C6BCF1CDC230E00AF9993 /* Y012_1ViewController.m in Sources */,
+				AD6374DD1CDF438A0048EA12 /* Y016_4ViewController.m in Sources */,
 				03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */,
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
 				AD38AEF71CDC9C4B0062F1BC /* Y015_1ViewController.m in Sources */,
@@ -1605,6 +1666,7 @@
 				03398C081CC1F6BA000F3AA4 /* Y000TableViewCell.m in Sources */,
 				03398BE41CBF492F000F3AA4 /* UIViewController+AJCreator.m in Sources */,
 				030C6BE31CDC23E100AF9993 /* Y012ViewModel.m in Sources */,
+				AD6374D11CDF3ABD0048EA12 /* Y016ViewController.m in Sources */,
 				AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */,
 				03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */,
 				035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */,
@@ -1612,6 +1674,7 @@
 				035C06391C86D10300D050D1 /* WDComplexViewController.m in Sources */,
 				AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */,
 				AD31D1731CCCD92E00E27188 /* Y008ViewController.m in Sources */,
+				AD6374EC1CDF44820048EA12 /* Y016ViewModel.m in Sources */,
 				03398C121CC1F6BA000F3AA4 /* Y003ViewController.m in Sources */,
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
@@ -1622,6 +1685,7 @@
 				035C05FB1C857A2200D050D1 /* WDDemoListTableViewCell.m in Sources */,
 				AD264D781CC689B9006CA205 /* Y006ViewModel.m in Sources */,
 				03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */,
+				AD6374D41CDF42E60048EA12 /* Y016_1ViewController.m in Sources */,
 				030C6BDC1CDC230E00AF9993 /* Y012_4ViewController.m in Sources */,
 				030C6BD51CDC230E00AF9993 /* Y012_3PersonItem.m in Sources */,
 				030C6BD01CDC230E00AF9993 /* Y012_1ViewModel.m in Sources */,

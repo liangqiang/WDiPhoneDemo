@@ -1,13 +1,13 @@
 //
-//  Y016ViewController.h
+//  Y016_4ViewController.h
 //  MyProject
 //
 //  Created by caoyang on 16/5/8.
 //  Copyright © 2016年 liangqiang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "YScrollViewController.h"
 
-@interface Y016ViewController : UITabBarController
+@interface Y016_4ViewController : YScrollViewController
 
 @end
