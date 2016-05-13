@@ -13,11 +13,11 @@
 -(void)loadData{
     
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Y012_3Person" ofType:@"plist"];
-    NSArray *array = [NSArray arrayWithContentsOfFile:plistPath];
+    NSArray *personArray = [NSArray arrayWithContentsOfFile:plistPath];
     
     self.personArray = [NSMutableArray new];
-    for(int i=0;i<[array count];++i){
-        Y012_3PersonItem *personItem = [[Y012_3PersonItem alloc] initWithDictionary:[array safeObjectAtIndex:i]];
+    for(int i=0;i<[personArray count];++i){
+        Y012_3PersonItem *personItem = [[Y012_3PersonItem alloc] initWithDictionary:[personArray safeObjectAtIndex:i]];
         [self.personArray addObject:personItem];
     }
     

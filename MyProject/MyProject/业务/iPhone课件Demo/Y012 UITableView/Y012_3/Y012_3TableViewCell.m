@@ -7,6 +7,7 @@
 //
 
 #import "Y012_3TableViewCell.h"
+#import "Y012_3PersonItem.h"
 
 @implementation Y012_3TableViewCell
 
@@ -21,6 +22,13 @@
         [self.contentView addSubviews:self.nameLabel,self.sexLabel,self.picImageView,self.enjoyLabel, nil];
     }
     return self;
+}
+
+-(void)itemData:(Y012_3PersonItem*)item{
+    self.nameLabel.text = item.name;
+    self.sexLabel.text = item.sex;
+    self.enjoyLabel.text = item.enjoy;
+    self.picImageView.image = AJIconFontSmile;
 }
 
 @end

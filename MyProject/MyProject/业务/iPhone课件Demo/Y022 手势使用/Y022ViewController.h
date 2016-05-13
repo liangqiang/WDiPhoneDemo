@@ -8,6 +8,11 @@
 
 #import "YScrollViewController.h"
 
+
+//3、cell不要直接暴露成员
+//5、布局大小不要写死
+
+
 @interface Y022ViewController : YScrollViewController
 
 @end
