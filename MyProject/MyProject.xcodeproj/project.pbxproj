@@ -177,6 +177,10 @@
 		ADCAC8DE1CE5C92F0044F144 /* messageSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8D41CE5C92F0044F144 /* messageSelected.png */; };
 		ADCAC8E11CE5C92F0044F144 /* workNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8D71CE5C92F0044F144 /* workNormal.png */; };
 		ADCAC8E21CE5C92F0044F144 /* workSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8D81CE5C92F0044F144 /* workSelected.png */; };
+		ADCAC8E51CE5D87A0044F144 /* Y017TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCAC8E41CE5D87A0044F144 /* Y017TableView.m */; };
+		ADCAC8E81CE5DC660044F144 /* Y017TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCAC8E71CE5DC660044F144 /* Y017TableViewCell.m */; };
+		ADCAC8EB1CE5DC860044F144 /* Y017_1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCAC8EA1CE5DC860044F144 /* Y017_1TableViewCell.m */; };
+		ADCAC8EE1CE5DCA60044F144 /* Y017_1TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCAC8ED1CE5DCA60044F144 /* Y017_1TableView.m */; };
 		ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */; };
 		ADE75DCB1CD3521500F00EC1 /* Y011ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DCA1CD3521500F00EC1 /* Y011ViewModel.m */; };
 		ADF140DB1CD9E3A000DA2B23 /* finditem_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D41CD9E3A000DA2B23 /* finditem_ad.png */; };
@@ -552,6 +556,14 @@
 		ADCAC8D41CE5C92F0044F144 /* messageSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = messageSelected.png; sourceTree = "<group>"; };
 		ADCAC8D71CE5C92F0044F144 /* workNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workNormal.png; sourceTree = "<group>"; };
 		ADCAC8D81CE5C92F0044F144 /* workSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workSelected.png; sourceTree = "<group>"; };
+		ADCAC8E31CE5D87A0044F144 /* Y017TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017TableView.h; path = "Y017 qq好友列表及对话/Y017TableView.h"; sourceTree = "<group>"; };
+		ADCAC8E41CE5D87A0044F144 /* Y017TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017TableView.m; path = "Y017 qq好友列表及对话/Y017TableView.m"; sourceTree = "<group>"; };
+		ADCAC8E61CE5DC660044F144 /* Y017TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017TableViewCell.h; path = "Y017 qq好友列表及对话/Y017TableViewCell.h"; sourceTree = "<group>"; };
+		ADCAC8E71CE5DC660044F144 /* Y017TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017TableViewCell.m; path = "Y017 qq好友列表及对话/Y017TableViewCell.m"; sourceTree = "<group>"; };
+		ADCAC8E91CE5DC860044F144 /* Y017_1TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017_1TableViewCell.h; path = "Y017 qq好友列表及对话/Y017_1/Y017_1TableViewCell.h"; sourceTree = "<group>"; };
+		ADCAC8EA1CE5DC860044F144 /* Y017_1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1TableViewCell.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1TableViewCell.m"; sourceTree = "<group>"; };
+		ADCAC8EC1CE5DCA60044F144 /* Y017_1TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017_1TableView.h; path = "Y017 qq好友列表及对话/Y017_1/Y017_1TableView.h"; sourceTree = "<group>"; };
+		ADCAC8ED1CE5DCA60044F144 /* Y017_1TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1TableView.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1TableView.m"; sourceTree = "<group>"; };
 		ADE75DC31CD3518C00F00EC1 /* Y011ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewController.h; path = "Y011 UIPickerView/Y011ViewController.h"; sourceTree = "<group>"; };
 		ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewController.m; path = "Y011 UIPickerView/Y011ViewController.m"; sourceTree = "<group>"; };
 		ADE75DC91CD3521500F00EC1 /* Y011ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewModel.h; path = "Y011 UIPickerView/Y011ViewModel.h"; sourceTree = "<group>"; };
@@ -1555,6 +1567,10 @@
 				AD9E9A111CE4C69B0029ECDE /* Y017ViewController.m */,
 				AD9E9A161CE4C6E10029ECDE /* Y017ViewModel.h */,
 				AD9E9A171CE4C6E10029ECDE /* Y017ViewModel.m */,
+				ADCAC8E31CE5D87A0044F144 /* Y017TableView.h */,
+				ADCAC8E41CE5D87A0044F144 /* Y017TableView.m */,
+				ADCAC8E61CE5DC660044F144 /* Y017TableViewCell.h */,
+				ADCAC8E71CE5DC660044F144 /* Y017TableViewCell.m */,
 				AD9E9A1C1CE4C7BA0029ECDE /* Y017_1 */,
 			);
 			name = "Y017 qq好友列表及对话";
@@ -1578,6 +1594,10 @@
 				AD9E9A1E1CE4C7F30029ECDE /* Y017_1ViewController.m */,
 				AD9E9A201CE4C80C0029ECDE /* Y017_1ViewModel.h */,
 				AD9E9A211CE4C80C0029ECDE /* Y017_1ViewModel.m */,
+				ADCAC8E91CE5DC860044F144 /* Y017_1TableViewCell.h */,
+				ADCAC8EA1CE5DC860044F144 /* Y017_1TableViewCell.m */,
+				ADCAC8EC1CE5DCA60044F144 /* Y017_1TableView.h */,
+				ADCAC8ED1CE5DCA60044F144 /* Y017_1TableView.m */,
 			);
 			name = Y017_1;
 			sourceTree = "<group>";
@@ -1736,6 +1756,7 @@
 				AD6374E61CDF43DA0048EA12 /* Y016_3ViewModel.m in Sources */,
 				ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */,
 				AD6374DA1CDF435D0048EA12 /* Y016_3ViewController.m in Sources */,
+				ADCAC8EE1CE5DCA60044F144 /* Y017_1TableView.m in Sources */,
 				AD9E9A221CE4C80C0029ECDE /* Y017_1ViewModel.m in Sources */,
 				035C05F81C8574F900D050D1 /* WDDemoListTableView.m in Sources */,
 				AD38AEF81CDC9C4B0062F1BC /* Y015_1ViewModel.m in Sources */,
@@ -1754,6 +1775,7 @@
 				AD9E9A151CE4C6B90029ECDE /* Y018ViewController.m in Sources */,
 				03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */,
 				AD1BE7251CDA166E000ED488 /* Y015ViewController.m in Sources */,
+				ADCAC8E51CE5D87A0044F144 /* Y017TableView.m in Sources */,
 				033FCF7B1CCA1E6800632226 /* YViewTypeItem.m in Sources */,
 				03B7617F1C93AB2200297AC7 /* UIImage+AJAddition.m in Sources */,
 				03FA196F1BEB2E6300DD1DAC /* NSDate+RFC1123.m in Sources */,
@@ -1791,6 +1813,7 @@
 				033FCF751CCA0A6000632226 /* YScrollViewController.m in Sources */,
 				AD866B4C1CE4DFE8009549D3 /* Y019ViewModel.m in Sources */,
 				03B7618A1C93AB2200297AC7 /* AJRefreshViewBase.m in Sources */,
+				ADCAC8E81CE5DC660044F144 /* Y017TableViewCell.m in Sources */,
 				AD6374E01CDF43AE0048EA12 /* Y016_1ViewModel.m in Sources */,
 				AD866B341CE4DEFF009549D3 /* Y019ViewController.m in Sources */,
 				AD31D1761CCCD94A00E27188 /* Y008ViewModel.m in Sources */,
@@ -1831,6 +1854,7 @@
 				AD38AEF71CDC9C4B0062F1BC /* Y015_1ViewController.m in Sources */,
 				030C6BD81CDC230E00AF9993 /* Y012_3ViewModel.m in Sources */,
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,
+				ADCAC8EB1CE5DC860044F144 /* Y017_1TableViewCell.m in Sources */,
 				03398C081CC1F6BA000F3AA4 /* Y000TableViewCell.m in Sources */,
 				03398BE41CBF492F000F3AA4 /* UIViewController+AJCreator.m in Sources */,
 				030C6BE31CDC23E100AF9993 /* Y012ViewModel.m in Sources */,

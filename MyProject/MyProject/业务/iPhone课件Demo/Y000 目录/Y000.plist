@@ -34,5 +34,7 @@
 	<string>Y015ViewController</string>
 	<key>Y016 分栏视图控制器</key>
 	<string>Y016ViewController</string>
+	<key>Y017 qq好友及对话列表</key>
+	<string>Y017ViewController</string>
 </dict>
 </plist>
