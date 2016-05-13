@@ -55,35 +55,77 @@
     [self.tableView reloadData];
 }
 
-#pragma mark DataSource
+
+#pragma mark DataSource Delegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 5;
+    return [self.viewModel sectionCount];
 }
 
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    
-    return 5;
+    return [self.viewModel friendCountAtSection:section];
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.textLabel.text = @"a";
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.separatorInset = UIEdgeInsetsZero;
+    cell.clipsToBounds = YES;
     
+    cell.textLabel.text = [self.viewModel friendAtSection:[indexPath section] row:[indexPath row]];
+    cell.backgroundColor = kGrayColor;
     return cell;
 }
 
 
-//设置分组标题
-- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return @"a";
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if([self.viewModel isOpenAtSection:[indexPath section]]){
+        return 44;
+    }
+    
+    return 0;
 }
 
 
-#pragma mark Delegate
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"...");
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
+    return 30;
+}
+
+
+- (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    UIView *titleHeader  = [self createView:section];
+    
+    return titleHeader;
+}
+
+-(void)SingTap:(UITapGestureRecognizer*)rec{
+    [self.viewModel changeShowDic:rec.view.tag];
+    [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:rec.view.tag] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+#pragma makr
+-(UIView*)createView:(NSInteger)section{
+    
+    UIView *header = [[UIView alloc] init];
+    header.size = CGSizeMake(self.view.size.width, 30);
+    header.backgroundColor =[UIColor whiteColor];
+    header.tag = section;
+    
+    UILabel *tileLabel = [[UILabel alloc] init];
+    tileLabel.size = header.size;
+    [header addSubview:tileLabel];
+    tileLabel.text = [self.viewModel titleSection:section];
+    
+    UITapGestureRecognizer *sing = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(SingTap:)];
+    sing.numberOfTapsRequired = 1;
+    sing.numberOfTouchesRequired = 1;
+    [header addGestureRecognizer:sing];
+    
+    return header;
 }
 
 @end

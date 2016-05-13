@@ -73,7 +73,6 @@
     return cell;
 }
 
-
 //设置分组标题
 - (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     return [self.viewModel regionNameAtSection:section];

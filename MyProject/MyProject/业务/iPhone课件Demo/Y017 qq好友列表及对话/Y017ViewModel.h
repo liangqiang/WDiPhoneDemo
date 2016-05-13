@@ -10,6 +10,22 @@
 
 @interface Y017ViewModel : AJViewModel
 
+@property (nonatomic, strong) NSMutableArray *sectionArray; //好友分组
+@property (nonatomic, strong) NSMutableArray *allFriendArray;     //组内好友
+@property (nonatomic, strong) NSMutableDictionary *showDic; //是否分开好友
+
 -(void)loadData;
+
+-(NSInteger)sectionCount;
+
+-(NSInteger)friendCountAtSection:(NSInteger)section;
+
+-(NSString*)friendAtSection:(NSInteger)section row:(NSInteger)row;
+
+-(NSString*)titleSection:(NSInteger)section;
+
+-(BOOL)isOpenAtSection:(NSInteger)section;
+
+-(void)changeShowDic:(NSInteger)section;
 
 @end
