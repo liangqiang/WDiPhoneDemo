@@ -36,5 +36,7 @@
 	<string>Y016ViewController</string>
 	<key>Y017 qq好友及对话列表</key>
 	<string>Y017ViewController</string>
+	<key>Y018 UICollectionView</key>
+	<string>Y018ViewController</string>
 </dict>
 </plist>

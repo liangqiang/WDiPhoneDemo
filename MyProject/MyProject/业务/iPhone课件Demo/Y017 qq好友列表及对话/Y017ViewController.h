@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+//1、 qq好友列表
+//2、 qq好友对话
+
 @interface Y017ViewController : UIViewController
+
 
 @end

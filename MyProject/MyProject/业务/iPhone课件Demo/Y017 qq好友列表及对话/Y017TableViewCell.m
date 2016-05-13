@@ -8,16 +8,41 @@
 
 #import "Y017TableViewCell.h"
 
+@interface Y017TableViewCell ()
+@property (nonatomic,strong) UILabel *titleLabel;
+@property (nonatomic,strong) UIView *bottomLine;
+@end
+
 @implementation Y017TableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
+-(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        [self initContentView];
+    }
+    return self;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(void)initContentView{
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    self.titleLabel = [UILabel newWith:kFont16B, kWhiteColor, @"标题", @(NSTextAlignmentCenter), nil];
+    self.titleLabel.backgroundColor = kPrimaryColor;
+    
+    self.bottomLine = [UIView newWith:kBlackColor, nil];
+    
+    [self.contentView addSubviews:self.titleLabel, self.bottomLine, nil];
 }
+
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    
+    self.titleLabel.width = 60;
+    [self.titleLabel layoutWithInsets:UIEdgeInsetsMake(0, 0, 0, EAuto)];
+    
+    self.bottomLine.height = LINE_HEIGHT;
+    [self.bottomLine layoutWithInsets:UIEdgeInsetsMake(EAuto, 0, 0, 0)];
+}
+
+
+
 
 @end

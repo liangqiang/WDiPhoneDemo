@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>我的好友</key>
+	<array>
+		<string>张三</string>
+		<string>李四</string>
+		<string>王五</string>
+	</array>
+	<key>大学同学</key>
+	<array>
+		<string>小埋汰孩</string>
+		<string>土鳖</string>
+		<string>豆豆</string>
+	</array>
+	<key>青春依旧</key>
+	<array>
+		<string>巴神</string>
+		<string>大猪</string>
+		<string>千赫</string>
+		<string>玛丽</string>
+	</array>
+	<key>2B组合</key>
+	<array>
+		<string>老赵</string>
+		<string>老钱</string>
+		<string>老孙</string>
+		<string>老李</string>
+		<string>老周</string>
+		<string>老吴</string>
+		<string>老郑</string>
+	</array>
+</dict>
+</plist>

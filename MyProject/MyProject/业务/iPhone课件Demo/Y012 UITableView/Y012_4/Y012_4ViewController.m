@@ -11,8 +11,10 @@
 #import "Y012_4TableView.h"
 
 @interface Y012_4ViewController ()
+
 @property (nonatomic,strong) Y012_4ViewModel *viewModel;
 @property (nonatomic,strong) Y012_4TableView *tableView;
+
 @end
 
 @implementation Y012_4ViewController
