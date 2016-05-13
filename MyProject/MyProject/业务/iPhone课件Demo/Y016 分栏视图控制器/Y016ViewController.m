@@ -25,15 +25,28 @@
 -(void)loadView{
     [super loadView];
     
+    WEAKSELF
+    self.viewModel = [self createViewModel];
+    
+    [AJUtil runAfterDelay:0 block:^{
+        [weakSelf.viewModel loadData];
+    }];
+    
+    [AJUtil runAfterDelay:0 block:^{
+        [weakSelf updateView];
+    }];
+}
+-(void)updateView{
+    
     Y016_1ViewController *Y016_1VC = [Y016_1ViewController new];
     Y016_2ViewController *Y016_2VC = [Y016_2ViewController new];
     Y016_3ViewController *Y016_3VC = [Y016_3ViewController new];
     Y016_4ViewController *Y016_4VC = [Y016_4ViewController new];
     
-    Y016_1VC.tabBarItem = [self createTabBarWithNormalImage:AJIconFontWater SelectedImage:AJIconFontWaterHL];
-    Y016_2VC.tabBarItem = [self createTabBarWithNormalImage:AJIconFontVolumnLow SelectedImage:AJIconFontVolumnHigh];
-    Y016_3VC.tabBarItem = [self createTabBarWithNormalImage:AJIconFontProvince SelectedImage:AJIconFontSelected];
-    Y016_4VC.tabBarItem = [self createTabBarWithNormalImage:AJIconFontSmile SelectedImage:AJIconFontSmile2];
+    Y016_1VC.tabBarItem = [self createTabBarWithNormalImage:[self.viewModel imageSelected:0] SelectedImage:[self.viewModel imageSelected:1]];
+    Y016_2VC.tabBarItem = [self createTabBarWithNormalImage:[self.viewModel imageSelected:2] SelectedImage:[self.viewModel imageSelected:3]];
+    Y016_3VC.tabBarItem = [self createTabBarWithNormalImage:[self.viewModel imageSelected:4] SelectedImage:[self.viewModel imageSelected:5]];
+    Y016_4VC.tabBarItem = [self createTabBarWithNormalImage:[self.viewModel imageSelected:6] SelectedImage:[self.viewModel imageSelected:7]];
     
     NSArray *array = @[Y016_1VC,Y016_2VC,Y016_3VC,Y016_4VC];
     self.viewControllers = array;

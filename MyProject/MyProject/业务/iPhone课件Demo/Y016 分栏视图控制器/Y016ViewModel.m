@@ -10,4 +10,19 @@
 
 @implementation Y016ViewModel
 
+-(void)loadData{
+    NSArray *imageArray = @[@"messageNormal.png",@"messageSelected.png",
+                       @"dingNormal.png",@"dingSelected.png",
+                       @"workNormal.png",@"workSelected.png",
+                       @"friendNormal.png",@"friendSelected.png"];
+    
+    self.imageArray = [[NSMutableArray alloc] initWithArray:imageArray];
+    
+    [self notifyToRefresh];
+}
+
+-(UIImage*)imageSelected:(NSInteger)index{
+    return [UIImage imageNamed:[self.imageArray safeObjectAtIndex:index]];
+}
+
 @end

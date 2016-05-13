@@ -10,4 +10,8 @@
 
 @interface Y016ViewModel : YScrollViewModel
 
+@property (nonatomic, strong) NSMutableArray *imageArray;
+
+-(UIImage*)imageSelected:(NSInteger)index;
+
 @end
