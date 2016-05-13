@@ -7,6 +7,7 @@
 //
 
 #import "Y017ViewModel.h"
+#import "Y017_1/Y017_1ViewController.h"
 
 @implementation Y017ViewModel
 
@@ -60,7 +61,18 @@
     }else{
         [self.showDic removeObjectForKey:key];
     }
-
+}
+//点击好友
+-(void)onItemClicked:(NSIndexPath*)indexPath{
+    NSString *talkName = [[self.allFriendArray safeObjectAtIndex:[indexPath section]] safeObjectAtIndex:[indexPath row]];
+    
+    AJNormalItem *item = [AJNormalItem new];
+    item.title = talkName;
+    item.actionType = @"PushVC";
+    item.actionContent = @"Y017_1ViewController";
+    
+    UIViewController *vc = [item pushViewController];
+    vc.title = item.title;
 }
 
 

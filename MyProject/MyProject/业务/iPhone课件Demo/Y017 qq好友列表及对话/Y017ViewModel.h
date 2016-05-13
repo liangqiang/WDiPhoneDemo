@@ -28,4 +28,6 @@
 
 -(void)changeShowDic:(NSInteger)section;
 
+-(void)onItemClicked:(NSIndexPath*)indexPath;
+
 @end

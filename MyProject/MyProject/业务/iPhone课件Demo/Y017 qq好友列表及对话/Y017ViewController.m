@@ -77,6 +77,7 @@
     
     cell.textLabel.text = [self.viewModel friendAtSection:[indexPath section] row:[indexPath row]];
     cell.backgroundColor = kGrayColor;
+    
     return cell;
 }
 
@@ -98,13 +99,16 @@
 - (UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     
     UIView *titleHeader  = [self createView:section];
-    
     return titleHeader;
 }
 
 -(void)SingTap:(UITapGestureRecognizer*)rec{
     [self.viewModel changeShowDic:rec.view.tag];
     [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:rec.view.tag] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.viewModel onItemClicked:indexPath];
 }
 
 #pragma makr
