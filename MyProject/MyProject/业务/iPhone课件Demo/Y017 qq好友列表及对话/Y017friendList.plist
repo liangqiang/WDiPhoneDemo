@@ -4,32 +4,32 @@
 <dict>
 	<key>我的好友</key>
 	<array>
-		<string>张三</string>
-		<string>李四</string>
-		<string>王五</string>
+		<string>张三  今天是个好天气</string>
+		<string>李四  今天下着大雨</string>
+		<string>王五  库里加油</string>
 	</array>
 	<key>大学同学</key>
 	<array>
-		<string>小埋汰孩</string>
-		<string>土鳖</string>
-		<string>豆豆</string>
+		<string>小埋汰孩  我不是很埋汰</string>
+		<string>土鳖  自己在看自己</string>
+		<string>豆豆  吃饭睡觉打豆豆</string>
 	</array>
 	<key>青春依旧</key>
 	<array>
-		<string>巴神</string>
-		<string>大猪</string>
-		<string>千赫</string>
-		<string>玛丽</string>
+		<string>巴神  第一名</string>
+		<string>大猪  就知道吃</string>
+		<string>千赫  动作快到让你看不清</string>
+		<string>玛丽  阿狸阿狸有</string>
 	</array>
 	<key>2B组合</key>
 	<array>
-		<string>老赵</string>
-		<string>老钱</string>
-		<string>老孙</string>
-		<string>老李</string>
-		<string>老周</string>
-		<string>老吴</string>
-		<string>老郑</string>
+		<string>老赵  百家姓第一名</string>
+		<string>老钱  喜欢毛爷爷</string>
+		<string>老孙  这个孙子</string>
+		<string>老李  李白哦</string>
+		<string>老周  周周考试</string>
+		<string>老吴  呜哈呜哈</string>
+		<string>老郑  1234567890</string>
 	</array>
 </dict>
 </plist>

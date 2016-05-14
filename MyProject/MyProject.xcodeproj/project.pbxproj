@@ -163,7 +163,6 @@
 		AD866B461CE4DF8E009549D3 /* Y022ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B451CE4DF8E009549D3 /* Y022ViewController.m */; };
 		AD866B491CE4DFA5009549D3 /* Y022ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B481CE4DFA5009549D3 /* Y022ViewModel.m */; };
 		AD866B4C1CE4DFE8009549D3 /* Y019ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B4B1CE4DFE8009549D3 /* Y019ViewModel.m */; };
-		AD9E9A121CE4C69B0029ECDE /* Y017ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A111CE4C69B0029ECDE /* Y017ViewController.m */; };
 		AD9E9A151CE4C6B90029ECDE /* Y018ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A141CE4C6B90029ECDE /* Y018ViewController.m */; };
 		AD9E9A1B1CE4C7100029ECDE /* Y018ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A1A1CE4C7100029ECDE /* Y018ViewModel.m */; };
 		AD9E9A1F1CE4C7F30029ECDE /* Y017_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A1E1CE4C7F30029ECDE /* Y017_1ViewController.m */; };
@@ -171,6 +170,8 @@
 		ADBBC83E1CE6AF160070B748 /* listNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC83B1CE6AF160070B748 /* listNormal.png */; };
 		ADBBC83F1CE6AF160070B748 /* listSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC83C1CE6AF160070B748 /* listSelected.png */; };
 		ADBBC8401CE6AF160070B748 /* sectionBG.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC83D1CE6AF160070B748 /* sectionBG.png */; };
+		ADBBC8461CE6E1C20070B748 /* Y017ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC8451CE6E1C20070B748 /* Y017ViewController.m */; };
+		ADBBC8491CE6E4B90070B748 /* Y017SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC8481CE6E4B90070B748 /* Y017SectionView.m */; };
 		ADCAC8D91CE5C92F0044F144 /* dingNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8CF1CE5C92F0044F144 /* dingNormal.png */; };
 		ADCAC8DA1CE5C92F0044F144 /* dingSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8D01CE5C92F0044F144 /* dingSelected.png */; };
 		ADCAC8DB1CE5C92F0044F144 /* friendNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8D11CE5C92F0044F144 /* friendNormal.png */; };
@@ -539,8 +540,6 @@
 		AD866B481CE4DFA5009549D3 /* Y022ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y022ViewModel.m; path = "Y022 手势使用/Y022ViewModel.m"; sourceTree = "<group>"; };
 		AD866B4A1CE4DFE8009549D3 /* Y019ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y019ViewModel.h; path = "Y019 相机、相册/Y019ViewModel.h"; sourceTree = "<group>"; };
 		AD866B4B1CE4DFE8009549D3 /* Y019ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y019ViewModel.m; path = "Y019 相机、相册/Y019ViewModel.m"; sourceTree = "<group>"; };
-		AD9E9A101CE4C69B0029ECDE /* Y017ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017ViewController.h; path = "Y017 qq好友列表及对话/Y017ViewController.h"; sourceTree = "<group>"; };
-		AD9E9A111CE4C69B0029ECDE /* Y017ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017ViewController.m; path = "Y017 qq好友列表及对话/Y017ViewController.m"; sourceTree = "<group>"; };
 		AD9E9A131CE4C6B90029ECDE /* Y018ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y018ViewController.h; path = "Y018 UICollectionView/Y018ViewController.h"; sourceTree = "<group>"; };
 		AD9E9A141CE4C6B90029ECDE /* Y018ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y018ViewController.m; path = "Y018 UICollectionView/Y018ViewController.m"; sourceTree = "<group>"; };
 		AD9E9A191CE4C7100029ECDE /* Y018ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y018ViewModel.h; path = "Y018 UICollectionView/Y018ViewModel.h"; sourceTree = "<group>"; };
@@ -552,6 +551,10 @@
 		ADBBC83B1CE6AF160070B748 /* listNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listNormal.png; sourceTree = "<group>"; };
 		ADBBC83C1CE6AF160070B748 /* listSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listSelected.png; sourceTree = "<group>"; };
 		ADBBC83D1CE6AF160070B748 /* sectionBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sectionBG.png; sourceTree = "<group>"; };
+		ADBBC8441CE6E1C20070B748 /* Y017ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017ViewController.h; path = "Y017 qq好友列表及对话/Y017ViewController.h"; sourceTree = "<group>"; };
+		ADBBC8451CE6E1C20070B748 /* Y017ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017ViewController.m; path = "Y017 qq好友列表及对话/Y017ViewController.m"; sourceTree = "<group>"; };
+		ADBBC8471CE6E4B90070B748 /* Y017SectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017SectionView.h; path = "Y017 qq好友列表及对话/Y017SectionView.h"; sourceTree = "<group>"; };
+		ADBBC8481CE6E4B90070B748 /* Y017SectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017SectionView.m; path = "Y017 qq好友列表及对话/Y017SectionView.m"; sourceTree = "<group>"; };
 		ADCAC8CF1CE5C92F0044F144 /* dingNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dingNormal.png; sourceTree = "<group>"; };
 		ADCAC8D01CE5C92F0044F144 /* dingSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dingSelected.png; sourceTree = "<group>"; };
 		ADCAC8D11CE5C92F0044F144 /* friendNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendNormal.png; sourceTree = "<group>"; };
@@ -1571,9 +1574,11 @@
 		AD9E9A0E1CE4C6140029ECDE /* Y017 qq好友列表及对话 */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBC8441CE6E1C20070B748 /* Y017ViewController.h */,
+				ADBBC8451CE6E1C20070B748 /* Y017ViewController.m */,
+				ADBBC8471CE6E4B90070B748 /* Y017SectionView.h */,
+				ADBBC8481CE6E4B90070B748 /* Y017SectionView.m */,
 				ADCAC8F71CE5EA8F0044F144 /* Y017friendList.plist */,
-				AD9E9A101CE4C69B0029ECDE /* Y017ViewController.h */,
-				AD9E9A111CE4C69B0029ECDE /* Y017ViewController.m */,
 				ADCAC8EF1CE5E7470044F144 /* Y017ViewModel.h */,
 				ADCAC8F01CE5E7470044F144 /* Y017ViewModel.m */,
 				ADCAC8E61CE5DC660044F144 /* Y017TableViewCell.h */,
@@ -1829,7 +1834,6 @@
 				AD866B341CE4DEFF009549D3 /* Y019ViewController.m in Sources */,
 				AD31D1761CCCD94A00E27188 /* Y008ViewModel.m in Sources */,
 				03B761841C93AB2200297AC7 /* AJTableView.m in Sources */,
-				AD9E9A121CE4C69B0029ECDE /* Y017ViewController.m in Sources */,
 				AD1BE7201CDA1568000ED488 /* Y014ViewModel.m in Sources */,
 				AD1BE71D1CDA1556000ED488 /* Y014ViewController.m in Sources */,
 				03398C1B1CC246A9000F3AA4 /* Y001ViewModel.m in Sources */,
@@ -1873,6 +1877,7 @@
 				AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */,
 				03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */,
 				035C06451C86DD7100D050D1 /* WDComplexCellItem.m in Sources */,
+				ADBBC8491CE6E4B90070B748 /* Y017SectionView.m in Sources */,
 				AD9E9A1B1CE4C7100029ECDE /* Y018ViewModel.m in Sources */,
 				03398C101CC1F6BA000F3AA4 /* Y001ViewController.m in Sources */,
 				035C06391C86D10300D050D1 /* WDComplexViewController.m in Sources */,
@@ -1884,6 +1889,7 @@
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
 				AD9E9A1F1CE4C7F30029ECDE /* Y017_1ViewController.m in Sources */,
 				03FA195A1BEB2D2A00DD1DAC /* MKNetworkHost.m in Sources */,
+				ADBBC8461CE6E1C20070B748 /* Y017ViewController.m in Sources */,
 				03B761871C93AB2200297AC7 /* AJSettings.m in Sources */,
 				ADE75DCB1CD3521500F00EC1 /* Y011ViewModel.m in Sources */,
 				03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */,

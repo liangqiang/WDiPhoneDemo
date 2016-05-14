@@ -29,13 +29,15 @@
     self.selectionStyle = UITableViewCellSelectionStyleNone;
     self.separatorInset = UIEdgeInsetsZero;
     self.clipsToBounds = YES;
+    self.backgroundColor = kNormalBgColor;
     
     self.picImage = [UIImageView newWith:kBlackColor, nil];
     
     self.titleLabel = [UILabel newWith:kFont16B, kWhiteColor, @"标题", @(NSTextAlignmentCenter), nil];
-    self.titleLabel.backgroundColor = kPrimaryColor;
+    self.titleLabel.backgroundColor = [UIColor clearColor];
+    self.titleLabel.textColor = kBlackColor;
     
-    self.bottomLine = [UIView newWith:kBlackColor, nil];
+    self.bottomLine = [UIView newWith:kGrayColor, nil];
     
     [self.contentView addSubviews:self.picImage,self.titleLabel, self.bottomLine, nil];
 }
@@ -45,11 +47,11 @@
     self.picImage.width = 30;
     [self.picImage layoutWithInsets:UIEdgeInsetsMake(0, 10, 0, EAuto)];
     
-    self.titleLabel.width = 80;
+    self.titleLabel.width = 200;
     NSInteger titleLabelLeft = self.picImage.width + 20;
     [self.titleLabel layoutWithInsets:UIEdgeInsetsMake(5, titleLabelLeft, 5, EAuto)];
     
-    self.bottomLine.height = LINE_HEIGHT;
+    self.bottomLine.height = 1;
     [self.bottomLine layoutWithInsets:UIEdgeInsetsMake(EAuto, 0, 0, 0)];
 }
 
