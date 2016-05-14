@@ -168,6 +168,9 @@
 		AD9E9A1B1CE4C7100029ECDE /* Y018ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A1A1CE4C7100029ECDE /* Y018ViewModel.m */; };
 		AD9E9A1F1CE4C7F30029ECDE /* Y017_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A1E1CE4C7F30029ECDE /* Y017_1ViewController.m */; };
 		AD9E9A221CE4C80C0029ECDE /* Y017_1ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A211CE4C80C0029ECDE /* Y017_1ViewModel.m */; };
+		ADBBC83E1CE6AF160070B748 /* listNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC83B1CE6AF160070B748 /* listNormal.png */; };
+		ADBBC83F1CE6AF160070B748 /* listSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC83C1CE6AF160070B748 /* listSelected.png */; };
+		ADBBC8401CE6AF160070B748 /* sectionBG.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC83D1CE6AF160070B748 /* sectionBG.png */; };
 		ADCAC8D91CE5C92F0044F144 /* dingNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8CF1CE5C92F0044F144 /* dingNormal.png */; };
 		ADCAC8DA1CE5C92F0044F144 /* dingSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8D01CE5C92F0044F144 /* dingSelected.png */; };
 		ADCAC8DB1CE5C92F0044F144 /* friendNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8D11CE5C92F0044F144 /* friendNormal.png */; };
@@ -546,6 +549,9 @@
 		AD9E9A1E1CE4C7F30029ECDE /* Y017_1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1ViewController.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1ViewController.m"; sourceTree = "<group>"; };
 		AD9E9A201CE4C80C0029ECDE /* Y017_1ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017_1ViewModel.h; path = "Y017 qq好友列表及对话/Y017_1/Y017_1ViewModel.h"; sourceTree = "<group>"; };
 		AD9E9A211CE4C80C0029ECDE /* Y017_1ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1ViewModel.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1ViewModel.m"; sourceTree = "<group>"; };
+		ADBBC83B1CE6AF160070B748 /* listNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listNormal.png; sourceTree = "<group>"; };
+		ADBBC83C1CE6AF160070B748 /* listSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listSelected.png; sourceTree = "<group>"; };
+		ADBBC83D1CE6AF160070B748 /* sectionBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sectionBG.png; sourceTree = "<group>"; };
 		ADCAC8CF1CE5C92F0044F144 /* dingNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dingNormal.png; sourceTree = "<group>"; };
 		ADCAC8D01CE5C92F0044F144 /* dingSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dingSelected.png; sourceTree = "<group>"; };
 		ADCAC8D11CE5C92F0044F144 /* friendNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendNormal.png; sourceTree = "<group>"; };
@@ -1044,6 +1050,9 @@
 		0379C9881CCBD7F70015107D /* 资源 */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBC83B1CE6AF160070B748 /* listNormal.png */,
+				ADBBC83C1CE6AF160070B748 /* listSelected.png */,
+				ADBBC83D1CE6AF160070B748 /* sectionBG.png */,
 				ADCAC8CF1CE5C92F0044F144 /* dingNormal.png */,
 				ADCAC8D01CE5C92F0044F144 /* dingSelected.png */,
 				ADCAC8D11CE5C92F0044F144 /* friendNormal.png */,
@@ -1697,8 +1706,10 @@
 			files = (
 				033FCF3C1CC9F7E900632226 /* iconfont.ttf in Resources */,
 				ADF140E01CD9E3A000DA2B23 /* finditem_wallspoint.png in Resources */,
+				ADBBC8401CE6AF160070B748 /* sectionBG.png in Resources */,
 				030C6BD11CDC230E00AF9993 /* Y012_2City.plist in Resources */,
 				036E05371CCC62E5009B683F /* run.gif in Resources */,
+				ADBBC83F1CE6AF160070B748 /* listSelected.png in Resources */,
 				ADCAC8DE1CE5C92F0044F144 /* messageSelected.png in Resources */,
 				ADCAC8E21CE5C92F0044F144 /* workSelected.png in Resources */,
 				ADCAC8E11CE5C92F0044F144 /* workNormal.png in Resources */,
@@ -1719,6 +1730,7 @@
 				ADF140DD1CD9E3A000DA2B23 /* finditem_hotsound.png in Resources */,
 				ADF140E11CD9E3A000DA2B23 /* minion.png in Resources */,
 				AD6374F41CDF46D10048EA12 /* zhou.png in Resources */,
+				ADBBC83E1CE6AF160070B748 /* listNormal.png in Resources */,
 				ADCAC8D91CE5C92F0044F144 /* dingNormal.png in Resources */,
 				AD6374F21CDF46D10048EA12 /* xing.png in Resources */,
 				ADCAC8DA1CE5C92F0044F144 /* dingSelected.png in Resources */,

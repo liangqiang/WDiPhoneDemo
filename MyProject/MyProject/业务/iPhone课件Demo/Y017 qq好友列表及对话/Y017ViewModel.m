@@ -30,6 +30,15 @@
     NSArray *friendCountAtSection = [self.allFriendArray safeObjectAtIndex:section];
     return [friendCountAtSection count];
 }
+-(UIImage*)imageSection:(NSInteger)section{
+    if([self isOpenAtSection:section]){
+        UIImage *image = [UIImage imageNamed:@"listSelected.png"];
+        return image;
+    }else{
+        UIImage *image = [UIImage imageNamed:@"listNormal.png"];
+        return image;
+    }
+}
 //每个好友的标题
 -(NSString*)friendAtSection:(NSInteger)section row:(NSInteger)row{
     NSArray *friendArray = [self.allFriendArray safeObjectAtIndex:section];

@@ -22,6 +22,8 @@
 
 -(NSString*)friendAtSection:(NSInteger)section row:(NSInteger)row;
 
+-(UIImage*)imageSection:(NSInteger)section;
+
 -(NSString*)titleSection:(NSInteger)section;
 
 -(BOOL)isOpenAtSection:(NSInteger)section;

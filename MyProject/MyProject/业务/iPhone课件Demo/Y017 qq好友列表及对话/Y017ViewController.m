@@ -8,6 +8,7 @@
 
 #import "Y017ViewController.h"
 #import "Y017ViewModel.h"
+#import "Y017TableViewCell.h"
 
 @interface Y017ViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -35,7 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [self.tableView registerClass:[Y017TableViewCell class] forCellReuseIdentifier:@"cell"];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     
@@ -67,16 +68,11 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (Y017TableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    Y017TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    cell.separatorInset = UIEdgeInsetsZero;
-    cell.clipsToBounds = YES;
-    
-    cell.textLabel.text = [self.viewModel friendAtSection:[indexPath section] row:[indexPath row]];
-    cell.backgroundColor = kGrayColor;
+    [cell updateItem:[self.viewModel friendAtSection:[indexPath section] row:[indexPath row]]];
     
     return cell;
 }
@@ -102,14 +98,17 @@
     return titleHeader;
 }
 
+
 -(void)SingTap:(UITapGestureRecognizer*)rec{
     [self.viewModel changeShowDic:rec.view.tag];
     [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:rec.view.tag] withRowAnimation:UITableViewRowAnimationFade];
 }
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.viewModel onItemClicked:indexPath];
 }
+
 
 #pragma makr
 -(UIView*)createView:(NSInteger)section{
@@ -119,8 +118,17 @@
     header.backgroundColor =[UIColor whiteColor];
     header.tag = section;
     
+    UIImageView *listImage = [[UIImageView alloc] init];
+    NSInteger imageHeight = (header.size.height-10)/2;
+    listImage.width = 10;
+    listImage.height = 10;
+    listImage.frame = CGRectMake(10, imageHeight, listImage.width, listImage.height);
+    listImage.image = [self.viewModel imageSection:section];
+    [header addSubview:listImage];
+    
     UILabel *tileLabel = [[UILabel alloc] init];
-    tileLabel.size = header.size;
+    tileLabel.width = 80;
+    tileLabel.frame = CGRectMake(listImage.width+20, 0, tileLabel.width, header.size.height);
     [header addSubview:tileLabel];
     tileLabel.text = [self.viewModel titleSection:section];
     

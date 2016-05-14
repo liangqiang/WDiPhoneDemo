@@ -10,4 +10,6 @@
 
 @interface Y017TableViewCell : UITableViewCell
 
+-(void)updateItem:(NSString*)name;
+
 @end
