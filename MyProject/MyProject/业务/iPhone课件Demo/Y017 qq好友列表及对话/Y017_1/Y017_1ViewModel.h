@@ -7,9 +7,18 @@
 //
 
 #import "AJTableViewModel.h"
+@class Y017_1CellFrameModel;
 
 @interface Y017_1ViewModel : AJTableViewModel
 
+@property (nonatomic, strong) NSMutableArray *cellFrameDatas;
+
 -(void)loadData;
--(void)onCellClicked:(NSIndexPath*)indexPath;
+
+-(NSInteger)cellCount;
+
+-(CGFloat)cellHeightAtRow:(NSInteger)row;
+
+-(Y017_1CellFrameModel*)cellFrameModelAtRow:(NSInteger)row;
+
 @end

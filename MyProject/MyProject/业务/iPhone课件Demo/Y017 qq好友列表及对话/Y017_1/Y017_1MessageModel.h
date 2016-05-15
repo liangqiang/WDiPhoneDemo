@@ -15,8 +15,8 @@ typedef enum {
     kMessageModelTypeMe
 } MessageModelType;
 
-@property (nonatomic, copy) NSString *text;
-@property (nonatomic, copy) NSString *time;
+@property (nonatomic, strong) NSString *text;
+@property (nonatomic, strong) NSString *time;
 @property (nonatomic, assign) MessageModelType type;
 @property (nonatomic, assign) BOOL showTime;
 

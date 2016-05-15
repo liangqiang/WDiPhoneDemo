@@ -11,11 +11,11 @@
 #import "Y017_1MessageModel.h"
 #import "NSString+Y017_1Extension.h"
 
-#define timeH 40
-#define padding 10
-#define iconW 40
-#define iconH 40
-#define textW 150
+#define timeH    40
+#define padding  10
+#define iconW    40
+#define iconH    40
+#define textW    150
 
 @implementation Y017_1CellFrameModel
 

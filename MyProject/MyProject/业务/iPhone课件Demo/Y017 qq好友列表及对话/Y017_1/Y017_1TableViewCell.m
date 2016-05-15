@@ -13,58 +13,51 @@
 #import "UIImage+Y017_1ResizeImage.h"
 
 @interface Y017_1TableViewCell()
-{
-    UILabel *_timeLabel;
-    UIImageView *_iconView;
-    UIButton *_textView;
-}
+@property (nonatomic, strong) UILabel *timeLabel;
+@property (nonatomic, strong) UIImageView *iconView;
+@property (nonatomic, strong) UIButton *textView;
 @end
 
 @implementation Y017_1TableViewCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.backgroundView = nil;
         self.backgroundColor = [UIColor clearColor];
         
-        _timeLabel = [[UILabel alloc] init];
-        _timeLabel.textAlignment = NSTextAlignmentCenter;
-        _timeLabel.textColor = [UIColor grayColor];
-        _timeLabel.font = [UIFont systemFontOfSize:14];
-        [self.contentView addSubview:_timeLabel];
+        self.timeLabel = [[UILabel alloc] init];
+        self.timeLabel.textAlignment = NSTextAlignmentCenter;
+        self.timeLabel.textColor = [UIColor grayColor];
+        self.timeLabel.font = [UIFont systemFontOfSize:14];
         
-        _iconView = [[UIImageView alloc] init];
-        [self.contentView addSubview:_iconView];
+        self.iconView = [[UIImageView alloc] init];
         
-        _textView = [UIButton buttonWithType:UIButtonTypeCustom];
-        _textView.titleLabel.numberOfLines = 0;
-        _textView.titleLabel.font = [UIFont systemFontOfSize:13];
-        _textView.contentEdgeInsets = UIEdgeInsetsMake(textPadding, textPadding, textPadding, textPadding);
-        [self.contentView addSubview:_textView];
+        self.textView = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.textView.titleLabel.numberOfLines = 0;
+        self.textView.titleLabel.font = [UIFont systemFontOfSize:13];
+        self.textView.contentEdgeInsets = UIEdgeInsetsMake(textPadding, textPadding, textPadding, textPadding);
+        
+        [self.contentView addSubviews:self.timeLabel,self.iconView,self.textView, nil];
     }
     return self;
 }
 
-- (void)setCellFrame:(Y017_1CellFrameModel *)cellFrame
-{
-    _cellFrame = cellFrame;
-    Y017_1MessageModel *message = cellFrame.message;
+-(void)cellFrameRow:(Y017_1CellFrameModel*)cellFrameModel{
+    self.timeLabel.frame = cellFrameModel.timeFrame;
+    self.timeLabel.text = cellFrameModel.message.time;
     
-    _timeLabel.frame = cellFrame.timeFrame;
-    _timeLabel.text = message.time;
+    self.iconView.frame = cellFrameModel.iconFrame;
+    NSString *iconStr = cellFrameModel.message.type ? @"other" : @"me";
+    self.iconView.image = [UIImage imageNamed:iconStr];
     
-    _iconView.frame = cellFrame.iconFrame;
-    NSString *iconStr = message.type ? @"other" : @"me";
-    _iconView.image = [UIImage imageNamed:iconStr];
-    
-    _textView.frame = cellFrame.textFrame;
-    NSString *textBg = message.type ? @"chat_recive_nor" : @"chat_send_nor";
-    UIColor *textColor = message.type ? [UIColor blackColor] : [UIColor whiteColor];
-    [_textView setTitleColor:textColor forState:UIControlStateNormal];
-    [_textView setBackgroundImage:[UIImage resizeImage:textBg] forState:UIControlStateNormal];
-    [_textView setTitle:message.text forState:UIControlStateNormal];
+    self.textView.frame = cellFrameModel.textFrame;
+    NSString *textBg = cellFrameModel.message.type ? @"chat_recive_nor" : @"chat_send_nor";
+    UIColor *textColor = cellFrameModel.message.type ? [UIColor blackColor] : [UIColor whiteColor];
+    [self.textView setTitleColor:textColor forState:UIControlStateNormal];
+    [self.textView setBackgroundImage:[UIImage resizeImage:textBg] forState:UIControlStateNormal];
+    [self.textView setTitle:cellFrameModel.message.text forState:UIControlStateNormal];
 }
 
 @end

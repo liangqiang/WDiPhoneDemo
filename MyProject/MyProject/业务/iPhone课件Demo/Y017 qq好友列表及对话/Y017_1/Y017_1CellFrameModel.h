@@ -17,9 +17,9 @@
 
 @property (nonatomic, strong) Y017_1MessageModel *message;
 
-@property (nonatomic, assign, readonly) CGRect timeFrame;
-@property (nonatomic, assign, readonly) CGRect iconFrame;
-@property (nonatomic, assign, readonly) CGRect textFrame;
-@property (nonatomic, assign, readonly) CGFloat cellHeght;
+@property (nonatomic, assign) CGRect timeFrame;
+@property (nonatomic, assign) CGRect iconFrame;
+@property (nonatomic, assign) CGRect textFrame;
+@property (nonatomic, assign) CGFloat cellHeght;
 
 @end

@@ -12,6 +12,6 @@
 
 @interface Y017_1TableViewCell : UITableViewCell
 
-@property (nonatomic, strong) Y017_1CellFrameModel *cellFrame;
+-(void)cellFrameRow:(Y017_1CellFrameModel*)cellFrameModel;
 
 @end

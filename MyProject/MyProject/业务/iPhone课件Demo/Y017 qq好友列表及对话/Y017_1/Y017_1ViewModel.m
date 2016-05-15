@@ -7,44 +7,41 @@
 //
 
 #import "Y017_1ViewModel.h"
+#import "Y017_1MessageModel.h"
+#import "Y017_1CellFrameModel.h"
 
 @implementation Y017_1ViewModel
 
--(instancetype)init{
-    if (self=[super init]) {
-        self.sectionArray = [NSMutableArray arrayWithObject:[AJSectionItem new]];
-    }
-    return self;
-}
-
 -(void)loadData{
-    AJSectionItem *sectionItem = [self.sectionArray firstObject];
-    [sectionItem.cellDataArray removeAllObjects];
     
-    NSString *bundleFile = [[NSBundle mainBundle] pathForResource: @"Y000" ofType: @"plist"];
-    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:bundleFile];
+    self.cellFrameDatas =[NSMutableArray array];
+    NSURL *dataUrl = [[NSBundle mainBundle] URLForResource:@"Y017_1Messages.plist" withExtension:nil];
+    NSArray *dataArray = [NSArray arrayWithContentsOfURL:dataUrl];
     
-    // key排序
-    NSArray *sortedKeys = [dict.allKeys sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2){
-        return [obj1 compare:obj2];
-    }];
-    
-    for (NSString *key in sortedKeys) {
-        AJNormalItem *item = [AJNormalItem new];
-        item.title = key;
-        item.actionType = @"PushVC";
-        item.actionContent = [dict safeObjectFortKey:key];
-        [sectionItem.cellDataArray addObject:item];
+    for (NSDictionary *dict in dataArray) {
+        Y017_1MessageModel *message = [Y017_1MessageModel messageModelWithDict:dict];
+        Y017_1CellFrameModel *lastFrame = [_cellFrameDatas lastObject];
+        Y017_1CellFrameModel *cellFrame = [[Y017_1CellFrameModel alloc] init];
+        message.showTime = ![message.time isEqualToString:lastFrame.message.time];
+        cellFrame.message = message;
+        [self.cellFrameDatas addObject:cellFrame];
     }
     
     [self notifyToRefresh];
 }
 
--(void)onCellClicked:(NSIndexPath*)indexPath{
-    AJSectionItem *sectionItem = [self.sectionArray safeObjectAtIndex:indexPath.section];
-    AJNormalItem *item = [sectionItem.cellDataArray safeObjectAtIndex:indexPath.row];
-    UIViewController *vc = [item pushViewController];
-    vc.title = item.title;
+-(NSInteger)cellCount{
+    return self.cellFrameDatas.count;
 }
+
+-(CGFloat)cellHeightAtRow:(NSInteger)row{
+    Y017_1CellFrameModel *theCellFrame = self.cellFrameDatas[row];
+    return theCellFrame.cellHeght;
+}
+
+-(Y017_1CellFrameModel*)cellFrameModelAtRow:(NSInteger)row{
+    return self.cellFrameDatas[row];
+}
+
 
 @end
