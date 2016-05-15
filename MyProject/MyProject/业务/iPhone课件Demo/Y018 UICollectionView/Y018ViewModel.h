@@ -10,4 +10,12 @@
 
 @interface Y018ViewModel : AJViewModel
 
+@property (nonatomic, strong) NSMutableArray *hArr;
+
+-(void)loadData;
+
+-(NSInteger)collCount;
+
+-(float)itemHeight:(NSInteger)row;
+
 @end

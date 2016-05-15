@@ -40,7 +40,7 @@
 }
 
 -(Y017_1CellFrameModel*)cellFrameModelAtRow:(NSInteger)row{
-    return self.cellFrameDatas[row];
+    return [self.cellFrameDatas safeObjectAtIndex:row];
 }
 
 

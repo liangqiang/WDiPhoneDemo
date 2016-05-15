@@ -116,6 +116,7 @@
 		03FD93D91BDF5FEA00DCC673 /* AJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D41BDF5FEA00DCC673 /* AJRefreshHeaderView.m */; };
 		03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D61BDF5FEA00DCC673 /* AJRefreshFooterView.m */; };
 		03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */; };
+		AD1119D21CE85F76001C6165 /* Y018CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1119D11CE85F76001C6165 /* Y018CollectionViewCell.m */; };
 		AD1134951CD8C6C9001A2A7A /* Y013ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1134941CD8C6C9001A2A7A /* Y013ViewController.m */; };
 		AD1134981CD8C6DE001A2A7A /* Y013ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1134971CD8C6DE001A2A7A /* Y013ViewModel.m */; };
 		AD1BE71D1CDA1556000ED488 /* Y014ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1BE71C1CDA1556000ED488 /* Y014ViewController.m */; };
@@ -462,6 +463,8 @@
 		03FD93D71BDF5FEA00DCC673 /* AJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJRefreshHeaderView.h; sourceTree = "<group>"; };
 		03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJStatusBarDebugWindow.m; sourceTree = "<group>"; };
 		03FFBB5B1BDE2F65008B51E1 /* AJStatusBarDebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJStatusBarDebugWindow.h; sourceTree = "<group>"; };
+		AD1119D01CE85F76001C6165 /* Y018CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y018CollectionViewCell.h; path = "Y018 UICollectionView/Y018CollectionViewCell.h"; sourceTree = "<group>"; };
+		AD1119D11CE85F76001C6165 /* Y018CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y018CollectionViewCell.m; path = "Y018 UICollectionView/Y018CollectionViewCell.m"; sourceTree = "<group>"; };
 		AD1134931CD8C6C9001A2A7A /* Y013ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y013ViewController.h; path = "Y013 UIScrollView/Y013ViewController.h"; sourceTree = "<group>"; };
 		AD1134941CD8C6C9001A2A7A /* Y013ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y013ViewController.m; path = "Y013 UIScrollView/Y013ViewController.m"; sourceTree = "<group>"; };
 		AD1134961CD8C6DE001A2A7A /* Y013ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y013ViewModel.h; path = "Y013 UIScrollView/Y013ViewModel.h"; sourceTree = "<group>"; };
@@ -1624,6 +1627,8 @@
 				AD9E9A141CE4C6B90029ECDE /* Y018ViewController.m */,
 				AD9E9A191CE4C7100029ECDE /* Y018ViewModel.h */,
 				AD9E9A1A1CE4C7100029ECDE /* Y018ViewModel.m */,
+				AD1119D01CE85F76001C6165 /* Y018CollectionViewCell.h */,
+				AD1119D11CE85F76001C6165 /* Y018CollectionViewCell.m */,
 			);
 			name = "Y018 UICollectionView";
 			sourceTree = "<group>";
@@ -1847,6 +1852,7 @@
 				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
 				030C6BD31CDC230E00AF9993 /* Y012_2ViewModel.m in Sources */,
 				AD31D17C1CCCD97200E27188 /* Y009ViewModel.m in Sources */,
+				AD1119D21CE85F76001C6165 /* Y018CollectionViewCell.m in Sources */,
 				ADBBC85A1CE822E60070B748 /* Y017_1CellFrameModel.m in Sources */,
 				030C6BE01CDC234400AF9993 /* Y012ViewController.m in Sources */,
 				AD31D17F1CCCD98400E27188 /* Y010ViewController.m in Sources */,

@@ -80,4 +80,9 @@
 // view透明度
 #define kViewAlpha              0.9f
 
+// UICollectionView使用
+#define screenHeight [[UIScreen mainScreen]bounds].size.height //屏幕高度
+#define screenWidth  [[UIScreen mainScreen]bounds].size.width   //屏幕宽度
+#define colletionCell  2  //设置具体几列
+
 #endif
