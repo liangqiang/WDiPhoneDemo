@@ -166,12 +166,23 @@
 		AD9E9A151CE4C6B90029ECDE /* Y018ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A141CE4C6B90029ECDE /* Y018ViewController.m */; };
 		AD9E9A1B1CE4C7100029ECDE /* Y018ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A1A1CE4C7100029ECDE /* Y018ViewModel.m */; };
 		AD9E9A1F1CE4C7F30029ECDE /* Y017_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A1E1CE4C7F30029ECDE /* Y017_1ViewController.m */; };
-		AD9E9A221CE4C80C0029ECDE /* Y017_1ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A211CE4C80C0029ECDE /* Y017_1ViewModel.m */; };
 		ADBBC83E1CE6AF160070B748 /* listNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC83B1CE6AF160070B748 /* listNormal.png */; };
 		ADBBC83F1CE6AF160070B748 /* listSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC83C1CE6AF160070B748 /* listSelected.png */; };
 		ADBBC8401CE6AF160070B748 /* sectionBG.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC83D1CE6AF160070B748 /* sectionBG.png */; };
 		ADBBC8461CE6E1C20070B748 /* Y017ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC8451CE6E1C20070B748 /* Y017ViewController.m */; };
 		ADBBC8491CE6E4B90070B748 /* Y017SectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC8481CE6E4B90070B748 /* Y017SectionView.m */; };
+		ADBBC84E1CE8205F0070B748 /* Y017_1ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC84D1CE8205F0070B748 /* Y017_1ViewModel.m */; };
+		ADBBC8511CE821790070B748 /* UIImage+Y017_1ResizeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC8501CE821790070B748 /* UIImage+Y017_1ResizeImage.m */; };
+		ADBBC8541CE822320070B748 /* NSString+Y017_1Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC8531CE822320070B748 /* NSString+Y017_1Extension.m */; };
+		ADBBC8571CE8228D0070B748 /* Y017_1MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC8561CE8228D0070B748 /* Y017_1MessageModel.m */; };
+		ADBBC85A1CE822E60070B748 /* Y017_1CellFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC8591CE822E60070B748 /* Y017_1CellFrameModel.m */; };
+		ADBBC85C1CE825410070B748 /* Y017_1Messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC85B1CE825410070B748 /* Y017_1Messages.plist */; };
+		ADBBC8631CE8264A0070B748 /* chat_recive_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC85D1CE8264A0070B748 /* chat_recive_nor@2x.png */; };
+		ADBBC8641CE8264A0070B748 /* chat_recive_press_pic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC85E1CE8264A0070B748 /* chat_recive_press_pic@2x.png */; };
+		ADBBC8651CE8264A0070B748 /* chat_send_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC85F1CE8264A0070B748 /* chat_send_nor@2x.png */; };
+		ADBBC8661CE8264A0070B748 /* chat_send_press_pic@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC8601CE8264A0070B748 /* chat_send_press_pic@2x.png */; };
+		ADBBC8671CE8264A0070B748 /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC8611CE8264A0070B748 /* me.png */; };
+		ADBBC8681CE8264A0070B748 /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC8621CE8264A0070B748 /* other.png */; };
 		ADCAC8D91CE5C92F0044F144 /* dingNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8CF1CE5C92F0044F144 /* dingNormal.png */; };
 		ADCAC8DA1CE5C92F0044F144 /* dingSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8D01CE5C92F0044F144 /* dingSelected.png */; };
 		ADCAC8DB1CE5C92F0044F144 /* friendNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8D11CE5C92F0044F144 /* friendNormal.png */; };
@@ -182,7 +193,6 @@
 		ADCAC8E21CE5C92F0044F144 /* workSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8D81CE5C92F0044F144 /* workSelected.png */; };
 		ADCAC8E81CE5DC660044F144 /* Y017TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCAC8E71CE5DC660044F144 /* Y017TableViewCell.m */; };
 		ADCAC8EB1CE5DC860044F144 /* Y017_1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCAC8EA1CE5DC860044F144 /* Y017_1TableViewCell.m */; };
-		ADCAC8EE1CE5DCA60044F144 /* Y017_1TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCAC8ED1CE5DCA60044F144 /* Y017_1TableView.m */; };
 		ADCAC8F11CE5E7470044F144 /* Y017ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCAC8F01CE5E7470044F144 /* Y017ViewModel.m */; };
 		ADCAC8F81CE5EA8F0044F144 /* Y017friendList.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8F71CE5EA8F0044F144 /* Y017friendList.plist */; };
 		ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */; };
@@ -546,8 +556,6 @@
 		AD9E9A1A1CE4C7100029ECDE /* Y018ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y018ViewModel.m; path = "Y018 UICollectionView/Y018ViewModel.m"; sourceTree = "<group>"; };
 		AD9E9A1D1CE4C7F30029ECDE /* Y017_1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017_1ViewController.h; path = "Y017 qq好友列表及对话/Y017_1/Y017_1ViewController.h"; sourceTree = "<group>"; };
 		AD9E9A1E1CE4C7F30029ECDE /* Y017_1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1ViewController.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1ViewController.m"; sourceTree = "<group>"; };
-		AD9E9A201CE4C80C0029ECDE /* Y017_1ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017_1ViewModel.h; path = "Y017 qq好友列表及对话/Y017_1/Y017_1ViewModel.h"; sourceTree = "<group>"; };
-		AD9E9A211CE4C80C0029ECDE /* Y017_1ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1ViewModel.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1ViewModel.m"; sourceTree = "<group>"; };
 		ADBBC83B1CE6AF160070B748 /* listNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listNormal.png; sourceTree = "<group>"; };
 		ADBBC83C1CE6AF160070B748 /* listSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = listSelected.png; sourceTree = "<group>"; };
 		ADBBC83D1CE6AF160070B748 /* sectionBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sectionBG.png; sourceTree = "<group>"; };
@@ -555,6 +563,23 @@
 		ADBBC8451CE6E1C20070B748 /* Y017ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017ViewController.m; path = "Y017 qq好友列表及对话/Y017ViewController.m"; sourceTree = "<group>"; };
 		ADBBC8471CE6E4B90070B748 /* Y017SectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017SectionView.h; path = "Y017 qq好友列表及对话/Y017SectionView.h"; sourceTree = "<group>"; };
 		ADBBC8481CE6E4B90070B748 /* Y017SectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017SectionView.m; path = "Y017 qq好友列表及对话/Y017SectionView.m"; sourceTree = "<group>"; };
+		ADBBC84C1CE8205F0070B748 /* Y017_1ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017_1ViewModel.h; path = "Y017 qq好友列表及对话/Y017_1/Y017_1ViewModel.h"; sourceTree = "<group>"; };
+		ADBBC84D1CE8205F0070B748 /* Y017_1ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1ViewModel.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1ViewModel.m"; sourceTree = "<group>"; };
+		ADBBC84F1CE821790070B748 /* UIImage+Y017_1ResizeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Y017_1ResizeImage.h"; path = "Y017 qq好友列表及对话/Y017_1/UIImage+Y017_1ResizeImage.h"; sourceTree = "<group>"; };
+		ADBBC8501CE821790070B748 /* UIImage+Y017_1ResizeImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Y017_1ResizeImage.m"; path = "Y017 qq好友列表及对话/Y017_1/UIImage+Y017_1ResizeImage.m"; sourceTree = "<group>"; };
+		ADBBC8521CE822320070B748 /* NSString+Y017_1Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Y017_1Extension.h"; path = "Y017 qq好友列表及对话/Y017_1/NSString+Y017_1Extension.h"; sourceTree = "<group>"; };
+		ADBBC8531CE822320070B748 /* NSString+Y017_1Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Y017_1Extension.m"; path = "Y017 qq好友列表及对话/Y017_1/NSString+Y017_1Extension.m"; sourceTree = "<group>"; };
+		ADBBC8551CE8228D0070B748 /* Y017_1MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017_1MessageModel.h; path = "Y017 qq好友列表及对话/Y017_1/Y017_1MessageModel.h"; sourceTree = "<group>"; };
+		ADBBC8561CE8228D0070B748 /* Y017_1MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1MessageModel.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1MessageModel.m"; sourceTree = "<group>"; };
+		ADBBC8581CE822E60070B748 /* Y017_1CellFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017_1CellFrameModel.h; path = "Y017 qq好友列表及对话/Y017_1/Y017_1CellFrameModel.h"; sourceTree = "<group>"; };
+		ADBBC8591CE822E60070B748 /* Y017_1CellFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1CellFrameModel.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1CellFrameModel.m"; sourceTree = "<group>"; };
+		ADBBC85B1CE825410070B748 /* Y017_1Messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y017_1Messages.plist; path = "Y017 qq好友列表及对话/Y017_1/Y017_1Messages.plist"; sourceTree = "<group>"; };
+		ADBBC85D1CE8264A0070B748 /* chat_recive_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_recive_nor@2x.png"; sourceTree = "<group>"; };
+		ADBBC85E1CE8264A0070B748 /* chat_recive_press_pic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_recive_press_pic@2x.png"; sourceTree = "<group>"; };
+		ADBBC85F1CE8264A0070B748 /* chat_send_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_send_nor@2x.png"; sourceTree = "<group>"; };
+		ADBBC8601CE8264A0070B748 /* chat_send_press_pic@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat_send_press_pic@2x.png"; sourceTree = "<group>"; };
+		ADBBC8611CE8264A0070B748 /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
+		ADBBC8621CE8264A0070B748 /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
 		ADCAC8CF1CE5C92F0044F144 /* dingNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dingNormal.png; sourceTree = "<group>"; };
 		ADCAC8D01CE5C92F0044F144 /* dingSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dingSelected.png; sourceTree = "<group>"; };
 		ADCAC8D11CE5C92F0044F144 /* friendNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friendNormal.png; sourceTree = "<group>"; };
@@ -567,8 +592,6 @@
 		ADCAC8E71CE5DC660044F144 /* Y017TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017TableViewCell.m; path = "Y017 qq好友列表及对话/Y017TableViewCell.m"; sourceTree = "<group>"; };
 		ADCAC8E91CE5DC860044F144 /* Y017_1TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017_1TableViewCell.h; path = "Y017 qq好友列表及对话/Y017_1/Y017_1TableViewCell.h"; sourceTree = "<group>"; };
 		ADCAC8EA1CE5DC860044F144 /* Y017_1TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1TableViewCell.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1TableViewCell.m"; sourceTree = "<group>"; };
-		ADCAC8EC1CE5DCA60044F144 /* Y017_1TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017_1TableView.h; path = "Y017 qq好友列表及对话/Y017_1/Y017_1TableView.h"; sourceTree = "<group>"; };
-		ADCAC8ED1CE5DCA60044F144 /* Y017_1TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017_1TableView.m; path = "Y017 qq好友列表及对话/Y017_1/Y017_1TableView.m"; sourceTree = "<group>"; };
 		ADCAC8EF1CE5E7470044F144 /* Y017ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017ViewModel.h; path = "Y017 qq好友列表及对话/Y017ViewModel.h"; sourceTree = "<group>"; };
 		ADCAC8F01CE5E7470044F144 /* Y017ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017ViewModel.m; path = "Y017 qq好友列表及对话/Y017ViewModel.m"; sourceTree = "<group>"; };
 		ADCAC8F71CE5EA8F0044F144 /* Y017friendList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y017friendList.plist; path = "Y017 qq好友列表及对话/Y017friendList.plist"; sourceTree = "<group>"; };
@@ -1053,6 +1076,12 @@
 		0379C9881CCBD7F70015107D /* 资源 */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBC85D1CE8264A0070B748 /* chat_recive_nor@2x.png */,
+				ADBBC85E1CE8264A0070B748 /* chat_recive_press_pic@2x.png */,
+				ADBBC85F1CE8264A0070B748 /* chat_send_nor@2x.png */,
+				ADBBC8601CE8264A0070B748 /* chat_send_press_pic@2x.png */,
+				ADBBC8611CE8264A0070B748 /* me.png */,
+				ADBBC8621CE8264A0070B748 /* other.png */,
 				ADBBC83B1CE6AF160070B748 /* listNormal.png */,
 				ADBBC83C1CE6AF160070B748 /* listSelected.png */,
 				ADBBC83D1CE6AF160070B748 /* sectionBG.png */,
@@ -1602,14 +1631,21 @@
 		AD9E9A1C1CE4C7BA0029ECDE /* Y017_1 */ = {
 			isa = PBXGroup;
 			children = (
+				ADBBC85B1CE825410070B748 /* Y017_1Messages.plist */,
 				AD9E9A1D1CE4C7F30029ECDE /* Y017_1ViewController.h */,
 				AD9E9A1E1CE4C7F30029ECDE /* Y017_1ViewController.m */,
-				AD9E9A201CE4C80C0029ECDE /* Y017_1ViewModel.h */,
-				AD9E9A211CE4C80C0029ECDE /* Y017_1ViewModel.m */,
+				ADBBC84C1CE8205F0070B748 /* Y017_1ViewModel.h */,
+				ADBBC84D1CE8205F0070B748 /* Y017_1ViewModel.m */,
 				ADCAC8E91CE5DC860044F144 /* Y017_1TableViewCell.h */,
 				ADCAC8EA1CE5DC860044F144 /* Y017_1TableViewCell.m */,
-				ADCAC8EC1CE5DCA60044F144 /* Y017_1TableView.h */,
-				ADCAC8ED1CE5DCA60044F144 /* Y017_1TableView.m */,
+				ADBBC84F1CE821790070B748 /* UIImage+Y017_1ResizeImage.h */,
+				ADBBC8501CE821790070B748 /* UIImage+Y017_1ResizeImage.m */,
+				ADBBC8521CE822320070B748 /* NSString+Y017_1Extension.h */,
+				ADBBC8531CE822320070B748 /* NSString+Y017_1Extension.m */,
+				ADBBC8551CE8228D0070B748 /* Y017_1MessageModel.h */,
+				ADBBC8561CE8228D0070B748 /* Y017_1MessageModel.m */,
+				ADBBC8581CE822E60070B748 /* Y017_1CellFrameModel.h */,
+				ADBBC8591CE822E60070B748 /* Y017_1CellFrameModel.m */,
 			);
 			name = Y017_1;
 			sourceTree = "<group>";
@@ -1709,20 +1745,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBBC8651CE8264A0070B748 /* chat_send_nor@2x.png in Resources */,
 				033FCF3C1CC9F7E900632226 /* iconfont.ttf in Resources */,
 				ADF140E01CD9E3A000DA2B23 /* finditem_wallspoint.png in Resources */,
 				ADBBC8401CE6AF160070B748 /* sectionBG.png in Resources */,
 				030C6BD11CDC230E00AF9993 /* Y012_2City.plist in Resources */,
 				036E05371CCC62E5009B683F /* run.gif in Resources */,
 				ADBBC83F1CE6AF160070B748 /* listSelected.png in Resources */,
+				ADBBC8681CE8264A0070B748 /* other.png in Resources */,
 				ADCAC8DE1CE5C92F0044F144 /* messageSelected.png in Resources */,
 				ADCAC8E21CE5C92F0044F144 /* workSelected.png in Resources */,
 				ADCAC8E11CE5C92F0044F144 /* workNormal.png in Resources */,
 				03398C181CC216C1000F3AA4 /* Y000.plist in Resources */,
+				ADBBC8641CE8264A0070B748 /* chat_recive_press_pic@2x.png in Resources */,
 				0379C98A1CCBD7F70015107D /* image01.jpg in Resources */,
 				ADCAC8DC1CE5C92F0044F144 /* friendSelected.png in Resources */,
 				0303D6D81BD8C4E30024399D /* Images.xcassets in Resources */,
 				033FCF711CCA069E00632226 /* iconfontLinear.ttf in Resources */,
+				ADBBC8631CE8264A0070B748 /* chat_recive_nor@2x.png in Resources */,
 				ADF140DF1CD9E3A000DA2B23 /* finditem_newsound.png in Resources */,
 				ADF140DB1CD9E3A000DA2B23 /* finditem_ad.png in Resources */,
 				030C6BD91CDC230E00AF9993 /* Y012_4Person.plist in Resources */,
@@ -1733,15 +1773,18 @@
 				ADCAC8F81CE5EA8F0044F144 /* Y017friendList.plist in Resources */,
 				ADF140DE1CD9E3A000DA2B23 /* finditem_newpeople.png in Resources */,
 				ADF140DD1CD9E3A000DA2B23 /* finditem_hotsound.png in Resources */,
+				ADBBC8671CE8264A0070B748 /* me.png in Resources */,
 				ADF140E11CD9E3A000DA2B23 /* minion.png in Resources */,
 				AD6374F41CDF46D10048EA12 /* zhou.png in Resources */,
 				ADBBC83E1CE6AF160070B748 /* listNormal.png in Resources */,
+				ADBBC8661CE8264A0070B748 /* chat_send_press_pic@2x.png in Resources */,
 				ADCAC8D91CE5C92F0044F144 /* dingNormal.png in Resources */,
 				AD6374F21CDF46D10048EA12 /* xing.png in Resources */,
 				ADCAC8DA1CE5C92F0044F144 /* dingSelected.png in Resources */,
 				033FCF6A1CCA069E00632226 /* iconfontBasic.ttf in Resources */,
 				AD6374F31CDF46D10048EA12 /* zhang.png in Resources */,
 				030C6BCE1CDC230E00AF9993 /* Y012_1Person.plist in Resources */,
+				ADBBC85C1CE825410070B748 /* Y017_1Messages.plist in Resources */,
 				ADF140DC1CD9E3A000DA2B23 /* finditem_hotpeople.png in Resources */,
 				AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */,
 				ADCAC8DB1CE5C92F0044F144 /* friendNormal.png in Resources */,
@@ -1766,17 +1809,17 @@
 				03FD93D91BDF5FEA00DCC673 /* AJRefreshHeaderView.m in Sources */,
 				AD866B3A1CE4DF30009549D3 /* Y020ViewController.m in Sources */,
 				03FD93D81BDF5FEA00DCC673 /* UIScrollView+AJRefresh.m in Sources */,
+				ADBBC8511CE821790070B748 /* UIImage+Y017_1ResizeImage.m in Sources */,
 				030DF6361CD39BE500A0FCC9 /* NSDate+AJAddition.m in Sources */,
 				AD6374E31CDF43C40048EA12 /* Y016_2ViewModel.m in Sources */,
 				03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */,
 				AD6374E61CDF43DA0048EA12 /* Y016_3ViewModel.m in Sources */,
 				ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */,
 				AD6374DA1CDF435D0048EA12 /* Y016_3ViewController.m in Sources */,
-				ADCAC8EE1CE5DCA60044F144 /* Y017_1TableView.m in Sources */,
-				AD9E9A221CE4C80C0029ECDE /* Y017_1ViewModel.m in Sources */,
 				035C05F81C8574F900D050D1 /* WDDemoListTableView.m in Sources */,
 				AD38AEF81CDC9C4B0062F1BC /* Y015_1ViewModel.m in Sources */,
 				AD1BE7281CDA167F000ED488 /* Y015ViewModel.m in Sources */,
+				ADBBC8571CE8228D0070B748 /* Y017_1MessageModel.m in Sources */,
 				035C05F51C85742000D050D1 /* WDDemoListViewModel.m in Sources */,
 				03FA194C1BEB113A00DD1DAC /* UIViewController+AJNavi.m in Sources */,
 				03398C111CC1F6BA000F3AA4 /* Y002ViewController.m in Sources */,
@@ -1804,6 +1847,7 @@
 				03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */,
 				030C6BD31CDC230E00AF9993 /* Y012_2ViewModel.m in Sources */,
 				AD31D17C1CCCD97200E27188 /* Y009ViewModel.m in Sources */,
+				ADBBC85A1CE822E60070B748 /* Y017_1CellFrameModel.m in Sources */,
 				030C6BE01CDC234400AF9993 /* Y012ViewController.m in Sources */,
 				AD31D17F1CCCD98400E27188 /* Y010ViewController.m in Sources */,
 				03FA19701BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m in Sources */,
@@ -1830,6 +1874,7 @@
 				AD866B4C1CE4DFE8009549D3 /* Y019ViewModel.m in Sources */,
 				03B7618A1C93AB2200297AC7 /* AJRefreshViewBase.m in Sources */,
 				ADCAC8E81CE5DC660044F144 /* Y017TableViewCell.m in Sources */,
+				ADBBC8541CE822320070B748 /* NSString+Y017_1Extension.m in Sources */,
 				AD6374E01CDF43AE0048EA12 /* Y016_1ViewModel.m in Sources */,
 				AD866B341CE4DEFF009549D3 /* Y019ViewController.m in Sources */,
 				AD31D1761CCCD94A00E27188 /* Y008ViewModel.m in Sources */,
@@ -1862,6 +1907,7 @@
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				030DF6331CD3861F00A0FCC9 /* AJDatePicker.m in Sources */,
 				AD866B461CE4DF8E009549D3 /* Y022ViewController.m in Sources */,
+				ADBBC84E1CE8205F0070B748 /* Y017_1ViewModel.m in Sources */,
 				030C6BCF1CDC230E00AF9993 /* Y012_1ViewController.m in Sources */,
 				AD6374DD1CDF438A0048EA12 /* Y016_4ViewController.m in Sources */,
 				03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */,

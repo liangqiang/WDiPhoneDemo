@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class Y017_1CellFrameModel;
+
 @interface Y017_1TableViewCell : UITableViewCell
+
+@property (nonatomic, strong) Y017_1CellFrameModel *cellFrame;
 
 @end
