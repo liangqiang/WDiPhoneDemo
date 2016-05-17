@@ -156,14 +156,6 @@
 		AD6D6EE11CD63F540040E737 /* AJNormalItem1.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6D6EE01CD63F540040E737 /* AJNormalItem1.m */; };
 		AD71DFA91CD354F2000023C5 /* Y011City1.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA71CD354F2000023C5 /* Y011City1.plist */; };
 		AD71DFAA1CD354F2000023C5 /* Y011City2.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD71DFA81CD354F2000023C5 /* Y011City2.plist */; };
-		AD866B341CE4DEFF009549D3 /* Y019ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B331CE4DEFF009549D3 /* Y019ViewController.m */; };
-		AD866B3A1CE4DF30009549D3 /* Y020ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B391CE4DF30009549D3 /* Y020ViewController.m */; };
-		AD866B3D1CE4DF44009549D3 /* Y020ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B3C1CE4DF44009549D3 /* Y020ViewModel.m */; };
-		AD866B401CE4DF5A009549D3 /* Y021ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B3F1CE4DF5A009549D3 /* Y021ViewController.m */; };
-		AD866B431CE4DF71009549D3 /* Y021ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B421CE4DF71009549D3 /* Y021ViewModel.m */; };
-		AD866B461CE4DF8E009549D3 /* Y022ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B451CE4DF8E009549D3 /* Y022ViewController.m */; };
-		AD866B491CE4DFA5009549D3 /* Y022ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B481CE4DFA5009549D3 /* Y022ViewModel.m */; };
-		AD866B4C1CE4DFE8009549D3 /* Y019ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD866B4B1CE4DFE8009549D3 /* Y019ViewModel.m */; };
 		AD9E9A151CE4C6B90029ECDE /* Y018ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A141CE4C6B90029ECDE /* Y018ViewController.m */; };
 		AD9E9A1B1CE4C7100029ECDE /* Y018ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A1A1CE4C7100029ECDE /* Y018ViewModel.m */; };
 		AD9E9A1F1CE4C7F30029ECDE /* Y017_1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9E9A1E1CE4C7F30029ECDE /* Y017_1ViewController.m */; };
@@ -537,22 +529,6 @@
 		AD6D6EE01CD63F540040E737 /* AJNormalItem1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJNormalItem1.m; sourceTree = "<group>"; };
 		AD71DFA71CD354F2000023C5 /* Y011City1.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City1.plist; path = "Y011 UIPickerView/Y011City1.plist"; sourceTree = "<group>"; };
 		AD71DFA81CD354F2000023C5 /* Y011City2.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y011City2.plist; path = "Y011 UIPickerView/Y011City2.plist"; sourceTree = "<group>"; };
-		AD866B321CE4DEFF009549D3 /* Y019ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y019ViewController.h; path = "Y019 相机、相册/Y019ViewController.h"; sourceTree = "<group>"; };
-		AD866B331CE4DEFF009549D3 /* Y019ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y019ViewController.m; path = "Y019 相机、相册/Y019ViewController.m"; sourceTree = "<group>"; };
-		AD866B381CE4DF30009549D3 /* Y020ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y020ViewController.h; path = "Y020 音乐播放器/Y020ViewController.h"; sourceTree = "<group>"; };
-		AD866B391CE4DF30009549D3 /* Y020ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y020ViewController.m; path = "Y020 音乐播放器/Y020ViewController.m"; sourceTree = "<group>"; };
-		AD866B3B1CE4DF44009549D3 /* Y020ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y020ViewModel.h; path = "Y020 音乐播放器/Y020ViewModel.h"; sourceTree = "<group>"; };
-		AD866B3C1CE4DF44009549D3 /* Y020ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y020ViewModel.m; path = "Y020 音乐播放器/Y020ViewModel.m"; sourceTree = "<group>"; };
-		AD866B3E1CE4DF5A009549D3 /* Y021ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y021ViewController.h; path = "Y021 视频播放器/Y021ViewController.h"; sourceTree = "<group>"; };
-		AD866B3F1CE4DF5A009549D3 /* Y021ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y021ViewController.m; path = "Y021 视频播放器/Y021ViewController.m"; sourceTree = "<group>"; };
-		AD866B411CE4DF71009549D3 /* Y021ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y021ViewModel.h; path = "Y021 视频播放器/Y021ViewModel.h"; sourceTree = "<group>"; };
-		AD866B421CE4DF71009549D3 /* Y021ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y021ViewModel.m; path = "Y021 视频播放器/Y021ViewModel.m"; sourceTree = "<group>"; };
-		AD866B441CE4DF8E009549D3 /* Y022ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y022ViewController.h; path = "Y022 手势使用/Y022ViewController.h"; sourceTree = "<group>"; };
-		AD866B451CE4DF8E009549D3 /* Y022ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y022ViewController.m; path = "Y022 手势使用/Y022ViewController.m"; sourceTree = "<group>"; };
-		AD866B471CE4DFA5009549D3 /* Y022ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y022ViewModel.h; path = "Y022 手势使用/Y022ViewModel.h"; sourceTree = "<group>"; };
-		AD866B481CE4DFA5009549D3 /* Y022ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y022ViewModel.m; path = "Y022 手势使用/Y022ViewModel.m"; sourceTree = "<group>"; };
-		AD866B4A1CE4DFE8009549D3 /* Y019ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y019ViewModel.h; path = "Y019 相机、相册/Y019ViewModel.h"; sourceTree = "<group>"; };
-		AD866B4B1CE4DFE8009549D3 /* Y019ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y019ViewModel.m; path = "Y019 相机、相册/Y019ViewModel.m"; sourceTree = "<group>"; };
 		AD9E9A131CE4C6B90029ECDE /* Y018ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y018ViewController.h; path = "Y018 UICollectionView/Y018ViewController.h"; sourceTree = "<group>"; };
 		AD9E9A141CE4C6B90029ECDE /* Y018ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y018ViewController.m; path = "Y018 UICollectionView/Y018ViewController.m"; sourceTree = "<group>"; };
 		AD9E9A191CE4C7100029ECDE /* Y018ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y018ViewModel.h; path = "Y018 UICollectionView/Y018ViewModel.h"; sourceTree = "<group>"; };
@@ -1526,50 +1502,6 @@
 			name = "Y011 UIPickerView";
 			sourceTree = "<group>";
 		};
-		AD866B2E1CE4DE3F009549D3 /* Y019 相机、相册 */ = {
-			isa = PBXGroup;
-			children = (
-				AD866B321CE4DEFF009549D3 /* Y019ViewController.h */,
-				AD866B331CE4DEFF009549D3 /* Y019ViewController.m */,
-				AD866B4A1CE4DFE8009549D3 /* Y019ViewModel.h */,
-				AD866B4B1CE4DFE8009549D3 /* Y019ViewModel.m */,
-			);
-			name = "Y019 相机、相册";
-			sourceTree = "<group>";
-		};
-		AD866B2F1CE4DE5A009549D3 /* Y020 音乐播放器 */ = {
-			isa = PBXGroup;
-			children = (
-				AD866B381CE4DF30009549D3 /* Y020ViewController.h */,
-				AD866B391CE4DF30009549D3 /* Y020ViewController.m */,
-				AD866B3B1CE4DF44009549D3 /* Y020ViewModel.h */,
-				AD866B3C1CE4DF44009549D3 /* Y020ViewModel.m */,
-			);
-			name = "Y020 音乐播放器";
-			sourceTree = "<group>";
-		};
-		AD866B301CE4DE6C009549D3 /* Y021  视频播放器 */ = {
-			isa = PBXGroup;
-			children = (
-				AD866B3E1CE4DF5A009549D3 /* Y021ViewController.h */,
-				AD866B3F1CE4DF5A009549D3 /* Y021ViewController.m */,
-				AD866B411CE4DF71009549D3 /* Y021ViewModel.h */,
-				AD866B421CE4DF71009549D3 /* Y021ViewModel.m */,
-			);
-			name = "Y021  视频播放器";
-			sourceTree = "<group>";
-		};
-		AD866B311CE4DE8E009549D3 /* Y022 手势使用 */ = {
-			isa = PBXGroup;
-			children = (
-				AD866B441CE4DF8E009549D3 /* Y022ViewController.h */,
-				AD866B451CE4DF8E009549D3 /* Y022ViewController.m */,
-				AD866B471CE4DFA5009549D3 /* Y022ViewModel.h */,
-				AD866B481CE4DFA5009549D3 /* Y022ViewModel.m */,
-			);
-			name = "Y022 手势使用";
-			sourceTree = "<group>";
-		};
 		AD9A66BE1CC0EB8C00B6A4E1 /* iPhone课件Demo */ = {
 			isa = PBXGroup;
 			children = (
@@ -1594,10 +1526,6 @@
 				AD1BE7221CDA1646000ED488 /* Y016 分栏视图控制器 */,
 				AD9E9A0E1CE4C6140029ECDE /* Y017 qq好友列表及对话 */,
 				AD9E9A0F1CE4C6400029ECDE /* Y018 UICollectionView */,
-				AD866B2E1CE4DE3F009549D3 /* Y019 相机、相册 */,
-				AD866B2F1CE4DE5A009549D3 /* Y020 音乐播放器 */,
-				AD866B301CE4DE6C009549D3 /* Y021  视频播放器 */,
-				AD866B311CE4DE8E009549D3 /* Y022 手势使用 */,
 				03398BEB1CC1EE19000F3AA4 /* 问题讨论.md */,
 			);
 			path = "iPhone课件Demo";
@@ -1812,7 +1740,6 @@
 			files = (
 				03FA195C1BEB2D2A00DD1DAC /* MKObject.m in Sources */,
 				03FD93D91BDF5FEA00DCC673 /* AJRefreshHeaderView.m in Sources */,
-				AD866B3A1CE4DF30009549D3 /* Y020ViewController.m in Sources */,
 				03FD93D81BDF5FEA00DCC673 /* UIScrollView+AJRefresh.m in Sources */,
 				ADBBC8511CE821790070B748 /* UIImage+Y017_1ResizeImage.m in Sources */,
 				030DF6361CD39BE500A0FCC9 /* NSDate+AJAddition.m in Sources */,
@@ -1831,7 +1758,6 @@
 				AD31D1821CCCD99B00E27188 /* Y010ViewModel.m in Sources */,
 				030900CA1BDB97B70073DAA7 /* AJNavi.m in Sources */,
 				03398C091CC1F6BA000F3AA4 /* Y000ViewController.m in Sources */,
-				AD866B401CE4DF5A009549D3 /* Y021ViewController.m in Sources */,
 				03B761881C93AB2200297AC7 /* AJUtil.m in Sources */,
 				03398C061CC1F6BA000F3AA4 /* Y000ViewModel.m in Sources */,
 				033FCF261CC9F59700632226 /* AJControllerDeallocChecker.m in Sources */,
@@ -1872,17 +1798,14 @@
 				035C05F21C8573FD00D050D1 /* WDDemoListViewController.m in Sources */,
 				03398C211CC29111000F3AA4 /* Y003ViewModel.m in Sources */,
 				030C6BD21CDC230E00AF9993 /* Y012_2ViewController.m in Sources */,
-				AD866B3D1CE4DF44009549D3 /* Y020ViewModel.m in Sources */,
 				035C063C1C86D1BB00D050D1 /* WDComplexViewModel.m in Sources */,
 				AD31D1791CCCD95A00E27188 /* Y009ViewController.m in Sources */,
 				035C06211C859FC100D050D1 /* NSLayoutConstraint+PureLayout.m in Sources */,
 				033FCF751CCA0A6000632226 /* YScrollViewController.m in Sources */,
-				AD866B4C1CE4DFE8009549D3 /* Y019ViewModel.m in Sources */,
 				03B7618A1C93AB2200297AC7 /* AJRefreshViewBase.m in Sources */,
 				ADCAC8E81CE5DC660044F144 /* Y017TableViewCell.m in Sources */,
 				ADBBC8541CE822320070B748 /* NSString+Y017_1Extension.m in Sources */,
 				AD6374E01CDF43AE0048EA12 /* Y016_1ViewModel.m in Sources */,
-				AD866B341CE4DEFF009549D3 /* Y019ViewController.m in Sources */,
 				AD31D1761CCCD94A00E27188 /* Y008ViewModel.m in Sources */,
 				03B761841C93AB2200297AC7 /* AJTableView.m in Sources */,
 				AD1BE7201CDA1568000ED488 /* Y014ViewModel.m in Sources */,
@@ -1909,10 +1832,8 @@
 				030DF63A1CD43B0E00A0FCC9 /* AJPickerView.m in Sources */,
 				035C05EC1C85444800D050D1 /* WDDebugViewController.m in Sources */,
 				030C6BDA1CDC230E00AF9993 /* Y012_4TableView.m in Sources */,
-				AD866B491CE4DFA5009549D3 /* Y022ViewModel.m in Sources */,
 				0303D6CD1BD8C4E30024399D /* main.m in Sources */,
 				030DF6331CD3861F00A0FCC9 /* AJDatePicker.m in Sources */,
-				AD866B461CE4DF8E009549D3 /* Y022ViewController.m in Sources */,
 				ADBBC84E1CE8205F0070B748 /* Y017_1ViewModel.m in Sources */,
 				030C6BCF1CDC230E00AF9993 /* Y012_1ViewController.m in Sources */,
 				AD6374DD1CDF438A0048EA12 /* Y016_4ViewController.m in Sources */,
@@ -1935,7 +1856,6 @@
 				035C06391C86D10300D050D1 /* WDComplexViewController.m in Sources */,
 				AD5335E81CC514BA00F48FA7 /* Y004ViewModel.m in Sources */,
 				AD31D1731CCCD92E00E27188 /* Y008ViewController.m in Sources */,
-				AD866B431CE4DF71009549D3 /* Y021ViewModel.m in Sources */,
 				AD6374EC1CDF44820048EA12 /* Y016ViewModel.m in Sources */,
 				03398C121CC1F6BA000F3AA4 /* Y003ViewController.m in Sources */,
 				03FA19741BEB2E6300DD1DAC /* UIAlertView+MKNKAdditions.m in Sources */,
