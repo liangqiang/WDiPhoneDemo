@@ -38,5 +38,7 @@
 	<string>Y017ViewController</string>
 	<key>Y018 UICollectionView</key>
 	<string>Y018ViewController</string>
+	<key>Y019 数据库</key>
+	<string>Y019ViewController</string>
 </dict>
 </plist>
