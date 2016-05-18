@@ -196,6 +196,7 @@
 		ADCAC8EB1CE5DC860044F144 /* Y017_1TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCAC8EA1CE5DC860044F144 /* Y017_1TableViewCell.m */; };
 		ADCAC8F11CE5E7470044F144 /* Y017ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADCAC8F01CE5E7470044F144 /* Y017ViewModel.m */; };
 		ADCAC8F81CE5EA8F0044F144 /* Y017friendList.plist in Resources */ = {isa = PBXBuildFile; fileRef = ADCAC8F71CE5EA8F0044F144 /* Y017friendList.plist */; };
+		ADD6FEA21CECBA1700422967 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD6FEA11CECBA1700422967 /* Security.framework */; };
 		ADE75DC51CD3518C00F00EC1 /* Y011ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */; };
 		ADE75DCB1CD3521500F00EC1 /* Y011ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE75DCA1CD3521500F00EC1 /* Y011ViewModel.m */; };
 		ADF140DB1CD9E3A000DA2B23 /* finditem_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF140D41CD9E3A000DA2B23 /* finditem_ad.png */; };
@@ -598,6 +599,7 @@
 		ADCAC8EF1CE5E7470044F144 /* Y017ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y017ViewModel.h; path = "Y017 qq好友列表及对话/Y017ViewModel.h"; sourceTree = "<group>"; };
 		ADCAC8F01CE5E7470044F144 /* Y017ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y017ViewModel.m; path = "Y017 qq好友列表及对话/Y017ViewModel.m"; sourceTree = "<group>"; };
 		ADCAC8F71CE5EA8F0044F144 /* Y017friendList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Y017friendList.plist; path = "Y017 qq好友列表及对话/Y017friendList.plist"; sourceTree = "<group>"; };
+		ADD6FEA11CECBA1700422967 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		ADE75DC31CD3518C00F00EC1 /* Y011ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewController.h; path = "Y011 UIPickerView/Y011ViewController.h"; sourceTree = "<group>"; };
 		ADE75DC41CD3518C00F00EC1 /* Y011ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y011ViewController.m; path = "Y011 UIPickerView/Y011ViewController.m"; sourceTree = "<group>"; };
 		ADE75DC91CD3521500F00EC1 /* Y011ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y011ViewModel.h; path = "Y011 UIPickerView/Y011ViewModel.h"; sourceTree = "<group>"; };
@@ -616,6 +618,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD6FEA21CECBA1700422967 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1333,6 +1336,7 @@
 		AD06D5821CEB4EED00B1E094 /* Y019 数据库 */ = {
 			isa = PBXGroup;
 			children = (
+				ADD6FEA11CECBA1700422967 /* Security.framework */,
 				AD06D5861CEB4FA700B1E094 /* Y019ViewController.h */,
 				AD06D5871CEB4FA700B1E094 /* Y019ViewController.m */,
 				AD06D5891CEB4FC400B1E094 /* Y019ViewModel.h */,

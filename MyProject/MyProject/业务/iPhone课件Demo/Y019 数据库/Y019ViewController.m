@@ -40,7 +40,7 @@
 -(UIButton*)createKeychainRead{
     WEAKSELF
     return [self createButtonWithTitle:@"keychain数据读取" block:^(UIControl *control) {
-        [weakSelf.viewModel createPlistRead];
+        [weakSelf.viewModel createKeychainRead];
     }];
 }
 -(UIButton*)createKeychainDelete{

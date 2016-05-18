@@ -8,6 +8,7 @@
 
 #import "Y019ViewModel.h"
 
+
 @implementation Y019ViewModel
 
 -(void)loadData{
@@ -41,11 +42,34 @@
 }
 
 //plist
--(void)createPlistWrite{
-    [AJUtil toast:@"A"];
+-(void)createPlistWrite {
+    //获取沙盒路径下的可读可写文件夹
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *path=[paths objectAtIndex:0];
+    NSString *filename=[path stringByAppendingPathComponent:@"test.plist"];
+    NSLog(@"=====%@",path);
+    //写入的数据(把数组写入到plist)
+    NSArray *writeArray = @[@"one",@"two",@"three",@"four"];
+    
+    BOOL result =  [writeArray writeToFile:filename atomically:YES];
+    
+    if (result) {
+        [AJUtil toast:@"写入成功"];
+    }else {
+        [AJUtil toast:@"写入失败"];
+    }
 }
--(void)createPlistRead{
-    [AJUtil toast:@"B"];
+-(void)createPlistRead {
+    NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES);
+    NSString *path=[paths objectAtIndex:0];
+    NSString *filename=[path stringByAppendingPathComponent:@"test.plist"];
+
+    NSArray *listArray = [NSArray arrayWithContentsOfFile:filename];
+    NSMutableString *listStr = [[NSMutableString alloc] initWithCapacity:10];
+    for (NSString* str in listArray) {
+        [listStr appendFormat:@"%@  ",str];
+    }
+    [AJUtil toast:listStr];
 }
 
 //keychain
@@ -62,10 +86,17 @@
 
 //UserDefalut
 -(void)createUserDefaultWrite{
-    [AJUtil toast:@"F"];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:@"user" forKey:@"userName"];
+    [defaults setObject:@"pass" forKey:@"passWord"];
+    [AJUtil toast:@"写入成功"];
 }
 -(void)createUserDefaultRead{
-    [AJUtil toast:@"G"];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *userName = [defaults objectForKey:@"userName"];
+    NSString *passWord = [defaults objectForKey:@"passWord"];
+    NSString *str = [NSString stringWithFormat:@"用户名：%@  密码：%@",userName,passWord];
+    [AJUtil toast:str];
 }
 
 
