@@ -125,6 +125,12 @@
 		AD06D5971CEB50F400B1E094 /* Y021ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D5961CEB50F400B1E094 /* Y021ViewModel.m */; };
 		AD06D59A1CEB511100B1E094 /* Y022ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D5991CEB511100B1E094 /* Y022ViewController.m */; };
 		AD06D59D1CEB512D00B1E094 /* Y022ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D59C1CEB512D00B1E094 /* Y022ViewModel.m */; };
+		AD090F281CEE027600809C2C /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = AD090F1D1CEE027600809C2C /* FMDatabase.m */; };
+		AD090F291CEE027600809C2C /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD090F1F1CEE027600809C2C /* FMDatabaseAdditions.m */; };
+		AD090F2A1CEE027600809C2C /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = AD090F211CEE027600809C2C /* FMDatabasePool.m */; };
+		AD090F2B1CEE027600809C2C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AD090F231CEE027600809C2C /* FMDatabaseQueue.m */; };
+		AD090F2C1CEE027600809C2C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AD090F261CEE027600809C2C /* FMResultSet.m */; };
+		AD090F2D1CEE027600809C2C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD090F271CEE027600809C2C /* Info.plist */; };
 		AD1119D21CE85F76001C6165 /* Y018CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1119D11CE85F76001C6165 /* Y018CollectionViewCell.m */; };
 		AD1134951CD8C6C9001A2A7A /* Y013ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1134941CD8C6C9001A2A7A /* Y013ViewController.m */; };
 		AD1134981CD8C6DE001A2A7A /* Y013ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1134971CD8C6DE001A2A7A /* Y013ViewModel.m */; };
@@ -482,6 +488,18 @@
 		AD06D5991CEB511100B1E094 /* Y022ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y022ViewController.m; path = "Y022 多线程/Y022ViewController.m"; sourceTree = "<group>"; };
 		AD06D59B1CEB512D00B1E094 /* Y022ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y022ViewModel.h; path = "Y022 多线程/Y022ViewModel.h"; sourceTree = "<group>"; };
 		AD06D59C1CEB512D00B1E094 /* Y022ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y022ViewModel.m; path = "Y022 多线程/Y022ViewModel.m"; sourceTree = "<group>"; };
+		AD090F1C1CEE027600809C2C /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		AD090F1D1CEE027600809C2C /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		AD090F1E1CEE027600809C2C /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		AD090F1F1CEE027600809C2C /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		AD090F201CEE027600809C2C /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		AD090F211CEE027600809C2C /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		AD090F221CEE027600809C2C /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		AD090F231CEE027600809C2C /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		AD090F241CEE027600809C2C /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		AD090F251CEE027600809C2C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		AD090F261CEE027600809C2C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		AD090F271CEE027600809C2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD1119D01CE85F76001C6165 /* Y018CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y018CollectionViewCell.h; path = "Y018 UICollectionView/Y018CollectionViewCell.h"; sourceTree = "<group>"; };
 		AD1119D11CE85F76001C6165 /* Y018CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y018CollectionViewCell.m; path = "Y018 UICollectionView/Y018CollectionViewCell.m"; sourceTree = "<group>"; };
 		AD1134931CD8C6C9001A2A7A /* Y013ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y013ViewController.h; path = "Y013 UIScrollView/Y013ViewController.h"; sourceTree = "<group>"; };
@@ -1339,6 +1357,7 @@
 		AD06D5821CEB4EED00B1E094 /* Y019 数据库 */ = {
 			isa = PBXGroup;
 			children = (
+				AD090F1B1CEE027600809C2C /* fmdb */,
 				AD04F2DE1CED409900EA4747 /* libsqlite3.0.tbd */,
 				ADD6FEA11CECBA1700422967 /* Security.framework */,
 				AD06D5861CEB4FA700B1E094 /* Y019ViewController.h */,
@@ -1380,6 +1399,26 @@
 				AD06D59C1CEB512D00B1E094 /* Y022ViewModel.m */,
 			);
 			name = "Y022 多线程";
+			sourceTree = "<group>";
+		};
+		AD090F1B1CEE027600809C2C /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				AD090F1C1CEE027600809C2C /* FMDatabase.h */,
+				AD090F1D1CEE027600809C2C /* FMDatabase.m */,
+				AD090F1E1CEE027600809C2C /* FMDatabaseAdditions.h */,
+				AD090F1F1CEE027600809C2C /* FMDatabaseAdditions.m */,
+				AD090F201CEE027600809C2C /* FMDatabasePool.h */,
+				AD090F211CEE027600809C2C /* FMDatabasePool.m */,
+				AD090F221CEE027600809C2C /* FMDatabaseQueue.h */,
+				AD090F231CEE027600809C2C /* FMDatabaseQueue.m */,
+				AD090F241CEE027600809C2C /* FMDB.h */,
+				AD090F251CEE027600809C2C /* FMResultSet.h */,
+				AD090F261CEE027600809C2C /* FMResultSet.m */,
+				AD090F271CEE027600809C2C /* Info.plist */,
+			);
+			name = fmdb;
+			path = "Y019 数据库/fmdb";
 			sourceTree = "<group>";
 		};
 		AD1134921CD8C69E001A2A7A /* Y013 UIScrollView */ = {
@@ -1766,6 +1805,7 @@
 				036E05371CCC62E5009B683F /* run.gif in Resources */,
 				ADBBC83F1CE6AF160070B748 /* listSelected.png in Resources */,
 				ADBBC8681CE8264A0070B748 /* other.png in Resources */,
+				AD090F2D1CEE027600809C2C /* Info.plist in Resources */,
 				ADCAC8DE1CE5C92F0044F144 /* messageSelected.png in Resources */,
 				ADCAC8E21CE5C92F0044F144 /* workSelected.png in Resources */,
 				ADCAC8E11CE5C92F0044F144 /* workNormal.png in Resources */,
@@ -1830,6 +1870,7 @@
 				AD6374DA1CDF435D0048EA12 /* Y016_3ViewController.m in Sources */,
 				035C05F81C8574F900D050D1 /* WDDemoListTableView.m in Sources */,
 				AD38AEF81CDC9C4B0062F1BC /* Y015_1ViewModel.m in Sources */,
+				AD090F2C1CEE027600809C2C /* FMResultSet.m in Sources */,
 				AD1BE7281CDA167F000ED488 /* Y015ViewModel.m in Sources */,
 				ADBBC8571CE8228D0070B748 /* Y017_1MessageModel.m in Sources */,
 				035C05F51C85742000D050D1 /* WDDemoListViewModel.m in Sources */,
@@ -1865,6 +1906,7 @@
 				AD31D17F1CCCD98400E27188 /* Y010ViewController.m in Sources */,
 				03FA19701BEB2E6300DD1DAC /* NSDictionary+MKNKAdditions.m in Sources */,
 				AD264D7C1CC72F6C006CA205 /* Y007ViewController.m in Sources */,
+				AD090F291CEE027600809C2C /* FMDatabaseAdditions.m in Sources */,
 				03B7618B1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m in Sources */,
 				030C6BD61CDC230E00AF9993 /* Y012_3TableViewCell.m in Sources */,
 				AD6374E91CDF43EB0048EA12 /* Y016_4ViewModel.m in Sources */,
@@ -1894,6 +1936,7 @@
 				AD1BE71D1CDA1556000ED488 /* Y014ViewController.m in Sources */,
 				03398C1B1CC246A9000F3AA4 /* Y001ViewModel.m in Sources */,
 				035C06201C859FC100D050D1 /* NSArray+PureLayout.m in Sources */,
+				AD090F2B1CEE027600809C2C /* FMDatabaseQueue.m in Sources */,
 				03B7617E1C93AB2200297AC7 /* UIControl+AJAddition.m in Sources */,
 				03479C1B1C844CFF008D943E /* WDHomeViewController.m in Sources */,
 				03B761811C93AB2200297AC7 /* UIScrollView+AJAddition.m in Sources */,
@@ -1931,6 +1974,7 @@
 				03398BE41CBF492F000F3AA4 /* UIViewController+AJCreator.m in Sources */,
 				030C6BE31CDC23E100AF9993 /* Y012ViewModel.m in Sources */,
 				AD6374D11CDF3ABD0048EA12 /* Y016ViewController.m in Sources */,
+				AD090F281CEE027600809C2C /* FMDatabase.m in Sources */,
 				AD264D751CC68996006CA205 /* Y006ViewController.m in Sources */,
 				03B7617B1C93AB2200297AC7 /* AJViewCreator.m in Sources */,
 				AD06D59D1CEB512D00B1E094 /* Y022ViewModel.m in Sources */,
@@ -1954,6 +1998,7 @@
 				03125BF91C4A8C2000FFCA26 /* UIView+HandyAutoLayout.m in Sources */,
 				031640261BE206D800526D8A /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				035C05FB1C857A2200D050D1 /* WDDemoListTableViewCell.m in Sources */,
+				AD090F2A1CEE027600809C2C /* FMDatabasePool.m in Sources */,
 				AD264D781CC689B9006CA205 /* Y006ViewModel.m in Sources */,
 				03FA19731BEB2E6300DD1DAC /* NSString+MKNKAdditions.m in Sources */,
 				AD6374D41CDF42E60048EA12 /* Y016_1ViewController.m in Sources */,

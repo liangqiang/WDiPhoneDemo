@@ -8,6 +8,7 @@
 
 #import "YScrollViewModel.h"
 #import <sqlite3.h>
+#import "fmdb/FMDatabase.h"
 
 @interface Y019ViewModel : YScrollViewModel
 

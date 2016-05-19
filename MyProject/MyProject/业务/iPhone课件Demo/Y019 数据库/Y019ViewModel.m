@@ -118,16 +118,42 @@
     [self execSql:sqlCreateTable];
 }
 -(void)createSqlite3Insert{
-    [AJUtil toast:@"J"];
+    NSString *insertSql = @"insert into PERSONINFO (name, age , address) values('Young', 20, '北京昌平');";
+    [self execSql:insertSql];
 }
 -(void)createSqlite3Select{
-    [AJUtil toast:@"K"];
+    NSMutableString *mStr = [NSMutableString stringWithCapacity:10];
+    NSString *selSql = @"SELECT * FROM PERSONINFO";
+    sqlite3_stmt *stmt;
+    if (sqlite3_prepare_v2(_db, [selSql UTF8String], -1, &stmt, nil) == SQLITE_OK) {
+        
+        while (sqlite3_step(stmt)==SQLITE_ROW) {
+            
+            char *name = (char *)sqlite3_column_text(stmt, 1);
+            NSString *nameString = [[NSString alloc] initWithUTF8String:name];
+            [mStr appendString:nameString];
+            
+            int age = sqlite3_column_int(stmt, 2);
+            [mStr appendFormat:@" %d",age];
+            
+            char *address = (char *)sqlite3_column_text(stmt, 3);
+            NSString *addressString = [[NSString alloc] initWithUTF8String:address];
+            [mStr appendFormat:@" %@",addressString];
+        }  
+        
+        sqlite3_finalize(stmt);  
+    }
+    [AJUtil toast:mStr];
+    //用完了一定记得关闭，释放内存  
+    sqlite3_close(_db);
 }
 -(void)createSqlite3Update{
-    [AJUtil toast:@"L"];
+    NSString *updateSql = @"UPDATE PERSONINFO SET age = '50' WHERE name = 'Young'";
+    [self execSql:updateSql];
 }
 -(void)createSqlite3Delete{
-    [AJUtil toast:@"M"];
+    NSString *deleteSql = @"DELETE FROM PERSONINFO WHERE name = 'Young'";
+    [self execSql:deleteSql];
 }
 -(void)execSql:(NSString *)sql
 {
@@ -137,29 +163,100 @@
         NSString *errorMessage = [NSString stringWithFormat:@"error:%s",err];
         [AJUtil toast:errorMessage];
     } else{
-        [AJUtil toast:@"表创建成功"];
+        [AJUtil toast:@"成功"];
     }
 }
 
 
+-(FMDatabase*)createFile{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDir = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDir stringByAppendingPathComponent:@"Young.db"];
+    FMDatabase *db = [FMDatabase databaseWithPath:filePath];
+    return db;
+}
 //FMDB
 -(void)createFMDBDB{
-    [AJUtil toast:@"N"];
+    FMDatabase *db = [self createFile];
+    
+    if (![db open]) {
+        [AJUtil toast:@"数据库打开失败"];
+    } else {
+        [AJUtil toast:@"数据库打开成功"];
+    }
 }
 -(void)createFMDBTable{
-    [AJUtil toast:@"O"];
+    
+    FMDatabase *db = [self createFile];
+    if ([db open]){
+        NSString *sqlCreateTable = @"CREATE TABLE IF NOT EXISTS PERSONINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, age INTEGER, address TEXT)";
+        BOOL res = [db executeUpdate:sqlCreateTable];
+        if (!res) {
+            [AJUtil toast:@"error when creating db table"];
+        } else {
+            [AJUtil toast:@"success to creating db table"];
+        }
+        [db close];
+    }
 }
 -(void)createFMDBInsert{
-    [AJUtil toast:@"Q"];
+    FMDatabase *db = [self createFile];
+    if ([db open]){
+        NSString *insertSql = @"insert into PERSONINFO (name, age , address) values('Young', 20, '北京昌平');";
+        BOOL res = [db executeUpdate:insertSql];
+        if (!res) {
+            [AJUtil toast:@"error when insert db table"];
+        } else {
+            [AJUtil toast:@"success to insert db table"];
+        }
+        [db close];
+    }
 }
 -(void)createFMDBSelect{
-    [AJUtil toast:@"R"];
+    NSMutableString *mStr = [NSMutableString stringWithCapacity:10];
+    FMDatabase *db = [self createFile];
+    if ([db open]) {
+        NSString *selSql = @"SELECT * FROM PERSONINFO";
+        FMResultSet * rs = [db executeQuery:selSql];
+        while ([rs next]) {
+            int Id = [rs intForColumn:@"ID"];
+            NSString * name = [rs stringForColumn:@"name"];
+            NSString * age = [rs stringForColumn:@"age"];
+            NSString * address = [rs stringForColumn:@"address"];
+            [mStr appendFormat:@"id:%d",Id];
+            [mStr appendFormat:@" name:%@",name];
+            [mStr appendFormat:@" age:%@",age];
+            [mStr appendFormat:@" address:%@",address];
+        }
+        [db close];
+    }
+    [AJUtil toast:mStr];
 }
 -(void)createFMDBUpdate{
-    [AJUtil toast:@"S"];
+    FMDatabase *db = [self createFile];
+    if ([db open]){
+        NSString *updateSql = @"UPDATE PERSONINFO SET age = '50' WHERE name = 'Young'";
+        BOOL res = [db executeUpdate:updateSql];
+        if (!res) {
+            [AJUtil toast:@"error when update db table"];
+        } else {
+            [AJUtil toast:@"success to update db table"];
+        }
+        [db close];
+    }
 }
 -(void)createFMDBDelete{
-    [AJUtil toast:@"T"];
+    FMDatabase *db = [self createFile];
+    if ([db open]){
+        NSString *deleteSql = @"DELETE FROM PERSONINFO WHERE name = 'Young'";
+        BOOL res = [db executeUpdate:deleteSql];
+        if (!res) {
+            [AJUtil toast:@"error when delete db table"];
+        } else {
+            [AJUtil toast:@"success to delete db table"];
+        }
+        [db close];
+    }
 }
 
 @end
