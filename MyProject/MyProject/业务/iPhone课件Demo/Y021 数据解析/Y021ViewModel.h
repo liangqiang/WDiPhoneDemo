@@ -8,6 +8,17 @@
 
 #import "YScrollViewModel.h"
 
-@interface Y021ViewModel : YScrollViewModel
+@interface Y021ViewModel : YScrollViewModel<NSXMLParserDelegate>
+
+@property (nonatomic, strong) NSMutableArray *newsList;
+@property (nonatomic, strong) NSMutableString *currentString;
+@property (nonatomic, strong) NSMutableDictionary *dictionary;
+
+
+@property (nonatomic, strong) NSMutableArray *cityArray;
+
+- (void) onXMLParse;
+
+- (void) onJsonParse;
 
 @end

@@ -8,6 +8,9 @@
 
 #import "YScrollViewController.h"
 
+//1、XML数据解析
+//2、Json数据解析
+
 @interface Y021ViewController : YScrollViewController
 
 @end

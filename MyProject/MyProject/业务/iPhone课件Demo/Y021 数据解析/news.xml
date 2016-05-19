@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" title="XSL Formatting" href="/show_new_final.xsl" media="all"?>
+
+<rss version="2.0">
+	<channel>
+		<title>
+			 国际要闻-新浪新闻 
+		</title>
+		<image>
+			<title> 新闻中心-国际新闻 
+			</title>
+			<link>http://news.sina.com.cn/world</link>
+			<url>http://www.sinaimg.cn/home/deco/2009/0330/logo_home_news.gif</url>
+		</image>
+		<description>
+			 国际新闻-焦点新闻 
+		</description>
+		<link>http://news.sina.com.cn/491/2008/0827/1.html</link>
+		<language>zh-cn</language>
+		<generator>WWW.SINA.COM.CN</generator>
+		<ttl>5</ttl>
+		<copyright>
+			 Copyright 1996 - 2012 SINA Inc. All Rights Reserved 
+		</copyright>
+		<pubDate>Thu, 15 Mar 2012 13:42:02 GMT</pubDate>
+		<category>
+		</category>
+		
+		<item>
+			<title> 茅台缩减专卖店打假
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/w/2012-03-15/173924121326.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/w/2012-03-15/173924121326.shtml</guid>
+			<category> 国际新闻-焦点新闻 
+			</category>
+			<pubDate>Thu, 15 Mar 2012 09:39:30 GMT</pubDate>
+			<comments></comments>
+			<description> 　　生产成本不到百元，2012年继续申报奢侈品牌
+                    
+                    　　茅台打假计： 专卖店“瘦身”
+                    
+                    　　本报记者 刘小童 发自贵州仁怀茅台镇
+                    
+                    　　贵州仁怀市赤水河畔的茅台镇，群山环峙，形势险要，是川黔水陆交通的咽喉要地。赤水河水质纯洁清甜，含有少量矿物质，正好酿酒。茅台酒(6005.... 
+			</description>
+		</item>
+		<item>
+			<title>土耳其注册人数达到1.4万人
+			</title>
+			<link>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/w/2012-03-15/171924121275.shtml</link>
+			<author>WWW.SINA.COM.CN</author>
+			<guid>http://go.rss.sina.com.cn/redirect.php?url=http://news.sina.com.cn/w/2012-03-15/171924121275.shtml</guid>
+			<category> 国际新闻-焦点新闻 
+			</category>
+			<pubDate>Thu, 15 Mar 2012 09:19:00 GMT</pubDate>
+			<comments></comments>
+			<description>中新网3月15日电 据外电报道，一名土耳其官员15日称，过去24小时内约有1000名叙利亚难民越过边境进入土耳其。这使得目前土耳其的叙利亚难民注册人数达到1.4万人。
+                    
+                    　　之前，土耳其官方电视台报道称，随着叙利亚政府军向更多反政府示威地区发动攻势，包括2名将军与1名上校....
+			</description>
+		</item>
+	</channel>
+</rss>

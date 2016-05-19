@@ -131,6 +131,8 @@
 		AD090F2B1CEE027600809C2C /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AD090F231CEE027600809C2C /* FMDatabaseQueue.m */; };
 		AD090F2C1CEE027600809C2C /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AD090F261CEE027600809C2C /* FMResultSet.m */; };
 		AD090F2D1CEE027600809C2C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD090F271CEE027600809C2C /* Info.plist */; };
+		AD090F301CEE07A600809C2C /* city.txt in Resources */ = {isa = PBXBuildFile; fileRef = AD090F2E1CEE07A600809C2C /* city.txt */; };
+		AD090F311CEE07A600809C2C /* news.xml in Resources */ = {isa = PBXBuildFile; fileRef = AD090F2F1CEE07A600809C2C /* news.xml */; };
 		AD1119D21CE85F76001C6165 /* Y018CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1119D11CE85F76001C6165 /* Y018CollectionViewCell.m */; };
 		AD1134951CD8C6C9001A2A7A /* Y013ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1134941CD8C6C9001A2A7A /* Y013ViewController.m */; };
 		AD1134981CD8C6DE001A2A7A /* Y013ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1134971CD8C6DE001A2A7A /* Y013ViewModel.m */; };
@@ -500,6 +502,8 @@
 		AD090F251CEE027600809C2C /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
 		AD090F261CEE027600809C2C /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		AD090F271CEE027600809C2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD090F2E1CEE07A600809C2C /* city.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = city.txt; path = "Y021 数据解析/city.txt"; sourceTree = "<group>"; };
+		AD090F2F1CEE07A600809C2C /* news.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = news.xml; path = "Y021 数据解析/news.xml"; sourceTree = "<group>"; };
 		AD1119D01CE85F76001C6165 /* Y018CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y018CollectionViewCell.h; path = "Y018 UICollectionView/Y018CollectionViewCell.h"; sourceTree = "<group>"; };
 		AD1119D11CE85F76001C6165 /* Y018CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y018CollectionViewCell.m; path = "Y018 UICollectionView/Y018CollectionViewCell.m"; sourceTree = "<group>"; };
 		AD1134931CD8C6C9001A2A7A /* Y013ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y013ViewController.h; path = "Y013 UIScrollView/Y013ViewController.h"; sourceTree = "<group>"; };
@@ -1382,6 +1386,8 @@
 		AD06D5841CEB4F0500B1E094 /* Y021 数据解析 */ = {
 			isa = PBXGroup;
 			children = (
+				AD090F2E1CEE07A600809C2C /* city.txt */,
+				AD090F2F1CEE07A600809C2C /* news.xml */,
 				AD06D5921CEB50C600B1E094 /* Y021ViewController.h */,
 				AD06D5931CEB50C600B1E094 /* Y021ViewController.m */,
 				AD06D5951CEB50F400B1E094 /* Y021ViewModel.h */,
@@ -1823,6 +1829,7 @@
 				AD6374F11CDF46D10048EA12 /* liu.png in Resources */,
 				ADCAC8DD1CE5C92F0044F144 /* messageNormal.png in Resources */,
 				030C6BD41CDC230E00AF9993 /* Y012_3Person.plist in Resources */,
+				AD090F311CEE07A600809C2C /* news.xml in Resources */,
 				ADCAC8F81CE5EA8F0044F144 /* Y017friendList.plist in Resources */,
 				ADF140DE1CD9E3A000DA2B23 /* finditem_newpeople.png in Resources */,
 				ADF140DD1CD9E3A000DA2B23 /* finditem_hotsound.png in Resources */,
@@ -1831,6 +1838,7 @@
 				AD6374F41CDF46D10048EA12 /* zhou.png in Resources */,
 				ADBBC83E1CE6AF160070B748 /* listNormal.png in Resources */,
 				ADBBC8661CE8264A0070B748 /* chat_send_press_pic@2x.png in Resources */,
+				AD090F301CEE07A600809C2C /* city.txt in Resources */,
 				ADCAC8D91CE5C92F0044F144 /* dingNormal.png in Resources */,
 				AD6374F21CDF46D10048EA12 /* xing.png in Resources */,
 				ADCAC8DA1CE5C92F0044F144 /* dingSelected.png in Resources */,
