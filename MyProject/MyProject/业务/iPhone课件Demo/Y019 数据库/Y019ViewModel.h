@@ -7,8 +7,11 @@
 //
 
 #import "YScrollViewModel.h"
+#import <sqlite3.h>
 
 @interface Y019ViewModel : YScrollViewModel
+
+@property (nonatomic, assign) sqlite3 *db;
 
 //plist
 -(void)createPlistWrite;

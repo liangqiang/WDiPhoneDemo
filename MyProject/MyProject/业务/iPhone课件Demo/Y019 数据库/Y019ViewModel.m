@@ -102,10 +102,20 @@
 
 //sqlite3
 -(void)createSqlite3DB{
-    [AJUtil toast:@"H"];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDir = [paths objectAtIndex:0];
+    NSString *filePath = [documentsDir stringByAppendingPathComponent:@"Young.sqlite"];
+    
+    if (sqlite3_open([filePath UTF8String], &(_db)) != SQLITE_OK) {
+        sqlite3_close(_db);
+        [AJUtil toast:@"数据库打开失败"];
+    }else {
+        [AJUtil toast:@"数据库打开成功"];
+    }
 }
 -(void)createSqlite3Table{
-    [AJUtil toast:@"I"];
+    NSString *sqlCreateTable = @"CREATE TABLE IF NOT EXISTS PERSONINFO (ID INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, age INTEGER, address TEXT)";
+    [self execSql:sqlCreateTable];
 }
 -(void)createSqlite3Insert{
     [AJUtil toast:@"J"];
@@ -118,6 +128,17 @@
 }
 -(void)createSqlite3Delete{
     [AJUtil toast:@"M"];
+}
+-(void)execSql:(NSString *)sql
+{
+    char *err;
+    if (sqlite3_exec(_db, [sql UTF8String], NULL, NULL, &err) != SQLITE_OK) {
+        sqlite3_close(_db);
+        NSString *errorMessage = [NSString stringWithFormat:@"error:%s",err];
+        [AJUtil toast:errorMessage];
+    } else{
+        [AJUtil toast:@"表创建成功"];
+    }
 }
 
 

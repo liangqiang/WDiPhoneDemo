@@ -116,6 +116,7 @@
 		03FD93D91BDF5FEA00DCC673 /* AJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D41BDF5FEA00DCC673 /* AJRefreshHeaderView.m */; };
 		03FD93DA1BDF5FEA00DCC673 /* AJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FD93D61BDF5FEA00DCC673 /* AJRefreshFooterView.m */; };
 		03FFBB5C1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */; };
+		AD04F2DF1CED409900EA4747 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AD04F2DE1CED409900EA4747 /* libsqlite3.0.tbd */; };
 		AD06D5881CEB4FA700B1E094 /* Y019ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D5871CEB4FA700B1E094 /* Y019ViewController.m */; };
 		AD06D58B1CEB4FC400B1E094 /* Y019ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D58A1CEB4FC400B1E094 /* Y019ViewModel.m */; };
 		AD06D58E1CEB506E00B1E094 /* Y020ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD06D58D1CEB506E00B1E094 /* Y020ViewController.m */; };
@@ -464,6 +465,7 @@
 		03FD93D71BDF5FEA00DCC673 /* AJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJRefreshHeaderView.h; sourceTree = "<group>"; };
 		03FFBB5A1BDE2F65008B51E1 /* AJStatusBarDebugWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJStatusBarDebugWindow.m; sourceTree = "<group>"; };
 		03FFBB5B1BDE2F65008B51E1 /* AJStatusBarDebugWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJStatusBarDebugWindow.h; sourceTree = "<group>"; };
+		AD04F2DE1CED409900EA4747 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		AD06D5861CEB4FA700B1E094 /* Y019ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y019ViewController.h; path = "Y019 数据库/Y019ViewController.h"; sourceTree = "<group>"; };
 		AD06D5871CEB4FA700B1E094 /* Y019ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Y019ViewController.m; path = "Y019 数据库/Y019ViewController.m"; sourceTree = "<group>"; };
 		AD06D5891CEB4FC400B1E094 /* Y019ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Y019ViewModel.h; path = "Y019 数据库/Y019ViewModel.h"; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD04F2DF1CED409900EA4747 /* libsqlite3.0.tbd in Frameworks */,
 				ADD6FEA21CECBA1700422967 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1336,6 +1339,7 @@
 		AD06D5821CEB4EED00B1E094 /* Y019 数据库 */ = {
 			isa = PBXGroup;
 			children = (
+				AD04F2DE1CED409900EA4747 /* libsqlite3.0.tbd */,
 				ADD6FEA11CECBA1700422967 /* Security.framework */,
 				AD06D5861CEB4FA700B1E094 /* Y019ViewController.h */,
 				AD06D5871CEB4FA700B1E094 /* Y019ViewController.m */,
