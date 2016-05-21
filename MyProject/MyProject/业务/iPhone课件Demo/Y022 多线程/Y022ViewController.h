@@ -8,6 +8,11 @@
 
 #import "YScrollViewController.h"
 
+//1、NSThread类方法
+//2、NSThread实例方法
+//3、NSThread多线程卖票系统
+//4、NSBlockOperation同步线程
+//5、线程加入队列中NSOperationQueue
 
 @interface Y022ViewController : YScrollViewController
 

@@ -85,4 +85,6 @@
 #define screenWidth  [[UIScreen mainScreen]bounds].size.width   //屏幕宽度
 #define colletionCell  2  //设置具体几列
 
+//多线程图片使用
+#define kURL @"http://avatar.csdn.net/2/C/D/1_totogo2010.jpg"
 #endif
