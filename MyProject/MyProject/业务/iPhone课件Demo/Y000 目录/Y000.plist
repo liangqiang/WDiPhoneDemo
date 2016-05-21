@@ -42,5 +42,7 @@
 	<string>Y019ViewController</string>
 	<key>Y021 数据解析</key>
 	<string>Y021ViewController</string>
+	<key>Y022 多线程</key>
+	<string>Y022ViewController</string>
 </dict>
 </plist>
