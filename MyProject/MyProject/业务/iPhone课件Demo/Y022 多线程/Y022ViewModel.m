@@ -10,4 +10,8 @@
 
 @implementation Y022ViewModel
 
+- (void)loadData{
+    
+}
+
 @end
