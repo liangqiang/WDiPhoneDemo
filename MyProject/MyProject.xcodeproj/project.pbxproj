@@ -93,6 +93,7 @@
 		03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761751C93AB2200297AC7 /* AJIconFont.m */; };
 		03B7618A1C93AB2200297AC7 /* AJRefreshViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B761781C93AB2200297AC7 /* AJRefreshViewBase.m */; };
 		03B7618B1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B7617A1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m */; };
+		03BE8ECA1CF2065E00E72A3A /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 03BE8EC91CF2065E00E72A3A /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		03F6B5521BE869FE00E3C47D /* TBCityCoreTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */; };
 		03F6B5531BE869FE00E3C47D /* TBCityCoreTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54D1BE869FE00E3C47D /* TBCityCoreTextLabel.m */; };
 		03F6B5541BE869FE00E3C47D /* TBCityCoreTextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F6B54F1BE869FE00E3C47D /* TBCityCoreTextManager.m */; };
@@ -425,6 +426,8 @@
 		03B761781C93AB2200297AC7 /* AJRefreshViewBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJRefreshViewBase.m; sourceTree = "<group>"; };
 		03B761791C93AB2200297AC7 /* UIScrollView+AJRefreshBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+AJRefreshBase.h"; sourceTree = "<group>"; };
 		03B7617A1C93AB2200297AC7 /* UIScrollView+AJRefreshBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+AJRefreshBase.m"; sourceTree = "<group>"; };
+		03BE8EC81CF2065E00E72A3A /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		03BE8EC91CF2065E00E72A3A /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		03F6B54A1BE869FE00E3C47D /* TBCityCoreTextAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextAttribute.h; sourceTree = "<group>"; };
 		03F6B54B1BE869FE00E3C47D /* TBCityCoreTextAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBCityCoreTextAttribute.m; sourceTree = "<group>"; };
 		03F6B54C1BE869FE00E3C47D /* TBCityCoreTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBCityCoreTextLabel.h; sourceTree = "<group>"; };
@@ -1259,6 +1262,16 @@
 			path = AJRefreshBase;
 			sourceTree = "<group>";
 		};
+		03BE8EC41CF1FFCE00E72A3A /* KeychainItemWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				03BE8EC81CF2065E00E72A3A /* KeychainItemWrapper.h */,
+				03BE8EC91CF2065E00E72A3A /* KeychainItemWrapper.m */,
+			);
+			name = KeychainItemWrapper;
+			path = "Y019 数据库/KeychainItemWrapper";
+			sourceTree = "<group>";
+		};
 		03F6B5491BE869C600E3C47D /* TBCityCoreText */ = {
 			isa = PBXGroup;
 			children = (
@@ -1361,6 +1374,7 @@
 		AD06D5821CEB4EED00B1E094 /* Y019 数据库 */ = {
 			isa = PBXGroup;
 			children = (
+				03BE8EC41CF1FFCE00E72A3A /* KeychainItemWrapper */,
 				AD090F1B1CEE027600809C2C /* fmdb */,
 				AD04F2DE1CED409900EA4747 /* libsqlite3.0.tbd */,
 				ADD6FEA11CECBA1700422967 /* Security.framework */,
@@ -1974,6 +1988,7 @@
 				03B761891C93AB2200297AC7 /* AJIconFont.m in Sources */,
 				AD06D5941CEB50C600B1E094 /* Y021ViewController.m in Sources */,
 				03F6B55B1BE8970700E3C47D /* TBCityCoreTextDemoViewController.m in Sources */,
+				03BE8ECA1CF2065E00E72A3A /* KeychainItemWrapper.m in Sources */,
 				AD38AEF71CDC9C4B0062F1BC /* Y015_1ViewController.m in Sources */,
 				030C6BD81CDC230E00AF9993 /* Y012_3ViewModel.m in Sources */,
 				03F9A4A01BE0E39000E492F6 /* MBProgressHUD.m in Sources */,

@@ -40,9 +40,10 @@
 #endif
 #endif
 
-#if ! __has_feature(objc_arc)
-#error MKNetworkKit is ARC only. Either turn on ARC for the project or use -fobjc-arc flag
-#endif
+// liangqiang: 引入非ARC文件，添加-fno-objc-arc参数后，出现该句error。暂注释掉
+//#if ! __has_feature(objc_arc)
+//#error MKNetworkKit is ARC only. Either turn on ARC for the project or use -fobjc-arc flag
+//#endif
 
 #ifdef DEBUG
 #define DLog(fmt, ...) {NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);}
