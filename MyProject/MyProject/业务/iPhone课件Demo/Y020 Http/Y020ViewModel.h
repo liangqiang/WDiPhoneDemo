@@ -8,6 +8,20 @@
 
 #import "YScrollViewModel.h"
 
-@interface Y020ViewModel : YScrollViewModel
+@interface Y020ViewModel : YScrollViewModel<NSURLConnectionDelegate>
+
+@property (nonatomic, strong) NSMutableData *mutableData;
+
+-(void)AsyncDownLoadNormal;
+
+-(void)AsyncUpdateNormal;
+
+-(void)AsyncDownLoadNormal2;
+
+-(void)SyncDownLoadNormal2;
+
+-(void)AsyncUpdateNormal2;
+
+-(void)SyncUpdateNormal2;
 
 @end
