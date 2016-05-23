@@ -73,6 +73,22 @@
     }];
 }
 
+//6、GCD基本数据下载使用
+-(UIButton*) createGCDNormal{
+    WEAKSELF
+    return [self createButtonWithTitle:@"GCD基本数据下载使用" block:^(UIControl *control) {
+        [weakSelf.viewModel startNSOperationQueue:kURL];
+    }];
+}
+
+//7、GCD异步队列
+-(UIButton*) createGCDQueue{
+    WEAKSELF
+    return [self createButtonWithTitle:@"GCD异步队列" block:^(UIControl *control) {
+        [weakSelf.viewModel startGCDQueue];
+    }];
+}
+
 
 
 #pragma mark -

@@ -17,6 +17,8 @@
                            VIEWTYPE(@"ThreadTicked", @"NSThread多线程卖票系统"),
                            VIEWTYPE(@"BlockOperation", @"NSBlockOperation同步线程"),
                            VIEWTYPE(@"OperationQueue", @"NSOperationQueue队列线程"),
+                           VIEWTYPE(@"GCDNormal", @"GCD基本数据下载使用"),
+                           VIEWTYPE(@"GCDQueue", @"GCD异步队列"),
                            ];
     
     self.ticketCount = 15;
@@ -112,6 +114,46 @@
     [queue addOperation:operation]; //加到队列中的线程会立即执行(异步)
     [queue setMaxConcurrentOperationCount:1];//设置同时并发线程数量
     //[queue setSuspended:YES];//暂停队列
+}
+
+#pragma mark GCD
+-(void)startGCDNormal:(NSString*)url{
+    //DISPATCH_QUEUE_PRIORITY_DEFAULT 优先级
+    //0 这个值留着将来使用
+    //dispatch_async就是开启一个普通的多线程
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        //耗时操作
+        NSURL * url = [NSURL URLWithString:kURL];
+        NSData * data = [[NSData alloc]initWithContentsOfURL:url];
+        UIImage *image = [[UIImage alloc]initWithData:data];
+        if (data != nil) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //更新界面
+                self.loadImage = image;
+                [self notifyToRefresh];
+            });
+        }
+    });
+}
+
+-(void)startGCDQueue{
+    //创建队列(暂时为空)
+    dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    //创建一组(暂时为空)
+    dispatch_group_t group = dispatch_group_create();
+    
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:5];
+    });
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:2];
+    });
+    dispatch_group_async(group, queue, ^{
+        [NSThread sleepForTimeInterval:3];
+    });
+    dispatch_group_notify(group, dispatch_get_main_queue(), ^{
+        [AJUtil toast:@"终于轮到我了"];
+    });
 }
 
 @end

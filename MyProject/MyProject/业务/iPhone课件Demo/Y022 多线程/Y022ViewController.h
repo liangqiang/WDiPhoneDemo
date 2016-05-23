@@ -13,6 +13,8 @@
 //3、NSThread多线程卖票系统
 //4、NSBlockOperation同步线程
 //5、线程加入队列中NSOperationQueue
+//6、GCD基本数据下载使用
+//7、GCD异步队列
 
 @interface Y022ViewController : YScrollViewController
 

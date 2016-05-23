@@ -27,4 +27,8 @@
 
 -(void)startNSOperationQueue:(NSString*)url;
 
+-(void)startGCDNormal:(NSString*)url;
+
+-(void)startGCDQueue;
+
 @end
