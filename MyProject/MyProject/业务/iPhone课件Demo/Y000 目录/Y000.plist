@@ -40,6 +40,8 @@
 	<string>Y018ViewController</string>
 	<key>Y019 数据库</key>
 	<string>Y019ViewController</string>
+	<key>Y020 Http</key>
+	<string>Y020ViewController</string>
 	<key>Y021 数据解析</key>
 	<string>Y021ViewController</string>
 	<key>Y022 多线程</key>

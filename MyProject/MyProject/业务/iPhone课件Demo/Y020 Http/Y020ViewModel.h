@@ -18,10 +18,8 @@
 
 -(void)AsyncDownLoadNormal2;
 
--(void)SyncDownLoadNormal2;
 
 -(void)AsyncUpdateNormal2;
 
--(void)SyncUpdateNormal2;
 
 @end

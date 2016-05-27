@@ -24,6 +24,7 @@
     }];
 }
 
+
 //2、使用NSURLConnection创建异步上传请求
 -(UIButton*)createAsyncUpdateNormal{
     WEAKSELF
@@ -31,6 +32,7 @@
         [weakSelf.viewModel AsyncUpdateNormal];
     }];
 }
+
 
 //3、sendAsynchronousRequest方法创建异步下载请求
 -(UIButton*)createAsyncDownLoadNormal2{
@@ -40,29 +42,14 @@
     }];
 }
 
-//4、sendSynchronousRequest方法创建同步下载请求
--(UIButton*)createSyncDownLoadNormal2{
-    WEAKSELF
-    return [self createButtonWithTitle:@"开始" block:^(UIControl *control) {
-        //[weakSelf.viewModel createFMDBDelete];
-    }];
-}
-
-//5、sendAsynchronousRequest方法创建异步上传请求
+//4、sendAsynchronousRequest方法创建异步上传请求
 -(UIButton*)createAsyncUpdateNormal2{
     WEAKSELF
     return [self createButtonWithTitle:@"开始" block:^(UIControl *control) {
-        //[weakSelf.viewModel createFMDBDelete];
+        [weakSelf.viewModel AsyncUpdateNormal2];
     }];
 }
 
-//6、sendSynchronousRequest方法创建同步上传请求
--(UIButton*)createSyncUpdateNormal2{
-    WEAKSELF
-    return [self createButtonWithTitle:@"开始" block:^(UIControl *control) {
-        //[weakSelf.viewModel createFMDBDelete];
-    }];
-}
 
 
 #pragma mark -
